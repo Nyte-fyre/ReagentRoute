@@ -7,6 +7,7 @@ already owns.
 """
 import glob
 import json
+import math
 import os
 import sys
 
@@ -22,7 +23,7 @@ os.chdir(ROOT)  # so relative "data/..." paths in imported modules resolve
 
 from price_recipes import fetch_realm_prices, price_recipes_data, copper_to_gsc  # noqa: E402
 from optimize_leveling import (  # noqa: E402
-    build_recipe_costs_data, optimize, apply_owned_materials, apply_ah_hedge, summarize_plan,
+    build_recipe_costs_data, optimize, apply_owned_materials, apply_ah_hedge, summarize_plan, build_shopping_list,
 )
 
 app = FastAPI(title="ReagentRoute API")
@@ -185,6 +186,10 @@ def list_recipes(profession: str, game_version: str = "tbc"):
                 "trivial_low": r.get("trivial_low"), "trivial_high": r.get("trivial_high"),
                 "acquisition": r.get("acquisition", "trainer"),
                 "acquisition_note": r.get("acquisition_note"),
+                "learn_item_id": (r.get("learned_from") or {}).get("item_id")
+                    if (r.get("learned_from") or {}).get("type") == "schematic_item" else None,
+                "learn_item_name": (r.get("learned_from") or {}).get("item_name")
+                    if (r.get("learned_from") or {}).get("type") == "schematic_item" else None,
                 "reagents": [
                     {"item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"]}
                     for g in r["reagents"]
@@ -242,6 +247,12 @@ def compute_plan(req: PlanRequest):
         ah_recovered, ah_detail = apply_ah_hedge(plan, ah_hedge_cap)
         cost_to_you -= ah_recovered
 
+    def learn_link_fields(recipe):
+        lf = recipe.get("learned_from") or {}
+        if lf.get("type") == "schematic_item" and lf.get("item_id"):
+            return {"learn_item_id": lf["item_id"], "learn_item_name": lf.get("item_name")}
+        return {"learn_item_id": None, "learn_item_name": None}
+
     plan_summary = [
         {
             "skill_from": lo, "skill_to": hi,
@@ -252,9 +263,12 @@ def compute_plan(req: PlanRequest):
             "ah_value_single_unit_display": copper_to_gsc(recipe["ah_value_single_unit"]) if recipe["ah_value_single_unit"] else None,
             "acquisition": recipe.get("acquisition", "trainer"),
             "acquisition_note": recipe.get("acquisition_note"),
+            **learn_link_fields(recipe),
+            "total_crafts": (total_crafts := math.ceil(expected_crafts - 1e-9)),
             "reagents": [
                 {
                     "item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"],
+                    "total_count": total_crafts * g["count"],
                     "gathered": g.get("gathered", False), "vendor_bought": g.get("vendor_bought", False),
                 }
                 for g in recipe["reagents"]
@@ -266,7 +280,17 @@ def compute_plan(req: PlanRequest):
             "ah_hedge_value_copper": round(ah_value) if ah_value else 0,
             "ah_hedge_value_display": copper_to_gsc(ah_value) if ah_value else None,
         }
-        for lo, hi, recipe, net_cost, gross_cost, running, ah_units, ah_value in summarize_plan(plan, ah_detail)
+        for lo, hi, recipe, net_cost, gross_cost, running, expected_crafts, ah_units, ah_value in summarize_plan(plan, ah_detail)
+    ]
+
+    shopping_list = [
+        {
+            "item_id": e["item_id"], "item_name": e["item_name"], "total_count": e["total_count"],
+            "unit_cost_copper": round(e["unit_cost_copper"]), "unit_cost_display": copper_to_gsc(e["unit_cost_copper"]),
+            "total_cost_copper": round(e["total_cost_copper"]), "total_cost_display": copper_to_gsc(e["total_cost_copper"]),
+            "gathered": e["gathered"], "vendor_bought": e["vendor_bought"],
+        }
+        for e in build_shopping_list(plan)
     ]
 
     return {
@@ -290,6 +314,7 @@ def compute_plan(req: PlanRequest):
         "cost_to_you_display": copper_to_gsc(cost_to_you),
         "leftover_owned_materials": {k: v for k, v in remaining_stock.items() if v > 0.01},
         "plan": plan_summary,
+        "shopping_list": shopping_list,
         "gaps": gaps,
     }
 
