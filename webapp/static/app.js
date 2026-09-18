@@ -311,21 +311,26 @@ function renderResults(data) {
           let tag = "";
           if (g.gathered) tag = ` <span class="gathered-tag">(gather)</span>`;
           else if (g.vendor_bought) tag = ` <span class="vendor-tag">(vendor)</span>`;
-          return `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}${tag}`;
+          const totalNote = g.total_count !== g.count ? ` <span class="total-note">(${g.total_count} total)</span>` : "";
+          return `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}${totalNote}${tag}`;
         })
         .join(", ");
+      const craftsNote = row.total_crafts > 1 ? ` <span class="total-note">(craft ${row.total_crafts}&times;)</span>` : "";
+      const learnLink = row.learn_item_id
+        ? ` &mdash; ${wowheadLink(row.learn_item_id, null, row.learn_item_name || "teaching item")}`
+        : "";
       const acqNote =
         row.acquisition && row.acquisition !== "trainer"
           ? `<div class="acquisition-note">Learned from: ${escapeHtml(row.acquisition)}${
               row.acquisition_note ? ` &mdash; ${escapeHtml(truncateNoteLists(row.acquisition_note))}` : ""
-            }</div>`
+            }${learnLink}</div>`
           : "";
       const ahHedgeNote =
         row.ah_hedge_units > 0
           ? `<div class="gathered-tag">${row.ah_hedge_units} sold to AH for ${row.ah_hedge_value_display} (after 5% cut) -- included in "cost to you" above, not this row's net cost</div>`
           : "";
       return `<tr>
-        <td>${range}</td>
+        <td>${range}${craftsNote}</td>
         <td>${craftLink}${ahNote}${acqNote}${ahHedgeNote}</td>
         <td class="reagents-cell">${reagentLinks}</td>
         <td>${row.net_cost_display}</td>
@@ -334,7 +339,25 @@ function renderResults(data) {
     })
     .join("");
 
+  renderShoppingList(data.shopping_list || []);
   resultsEl.classList.remove("hidden");
+}
+
+function renderShoppingList(list) {
+  const tbody = document.querySelector("#shopping-list-table tbody");
+  tbody.innerHTML = list
+    .map((e) => {
+      let tag = "";
+      if (e.gathered) tag = ` <span class="gathered-tag">(gather)</span>`;
+      else if (e.vendor_bought) tag = ` <span class="vendor-tag">(vendor)</span>`;
+      return `<tr>
+        <td>${wowheadLink(e.item_id, null, e.item_name)}${tag}</td>
+        <td>${e.total_count}</td>
+        <td>${e.unit_cost_display}</td>
+        <td>${e.total_cost_display}</td>
+      </tr>`;
+    })
+    .join("");
 }
 
 function renderBrowseResults(data, startSkill, targetSkill) {
@@ -355,7 +378,12 @@ function renderBrowseResults(data, startSkill, targetSkill) {
         .map((g) => `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}`)
         .join(", ");
       const skill = r.required_skill_value ?? "?";
-      const acq = r.acquisition_note ? `${r.acquisition} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : r.acquisition;
+      const learnLink = r.learn_item_id
+        ? ` &mdash; ${wowheadLink(r.learn_item_id, null, r.learn_item_name || "teaching item")}`
+        : "";
+      const acq =
+        (r.acquisition_note ? `${r.acquisition} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : r.acquisition) +
+        learnLink;
       return `<tr>
         <td>${skill}</td>
         <td>${craftLink}</td>

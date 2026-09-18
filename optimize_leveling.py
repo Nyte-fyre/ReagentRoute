@@ -34,6 +34,7 @@ path actually costs you, applied afterward as a single shared inventory
 pool that depletes as the plan consumes it in order.
 """
 import json
+import math
 import sys
 
 CHANCE_ORANGE = 1.00
@@ -97,6 +98,7 @@ def build_recipe_costs_data(recipes_data, priced_data):
             "reagents": p["reagent_costs"],  # [{item_id, item_name, count, unit_cost_copper}, ...]
             "acquisition": r.get("acquisition", "trainer"),
             "acquisition_note": r.get("acquisition_note"),
+            "learned_from": r.get("learned_from"),
         })
     return out
 
@@ -222,30 +224,70 @@ def summarize_plan(plan, ah_detail=None):
         return ah_detail.get(skill, (0, 0.0))
 
     ranges = []
-    start_skill, recipe, _, net_ev, gross_ev = plan[0]
-    run_net, run_gross = net_ev, gross_ev
+    start_skill, recipe, expected_crafts, net_ev, gross_ev = plan[0]
+    run_net, run_gross, run_crafts = net_ev, gross_ev, expected_crafts
     run_ah_units, run_ah_value = ah_for(start_skill)
     prev_skill = start_skill
-    for skill, recipe2, _, net_ev, gross_ev in plan[1:]:
+    for skill, recipe2, expected_crafts, net_ev, gross_ev in plan[1:]:
         ah_units, ah_value = ah_for(skill)
         if recipe2["name"] == recipe["name"] and skill == prev_skill + 1:
             run_net += net_ev
             run_gross += gross_ev
+            run_crafts += expected_crafts
             run_ah_units += ah_units
             run_ah_value += ah_value
             prev_skill = skill
             continue
-        ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_ah_units, run_ah_value))
-        start_skill, recipe, run_net, run_gross = skill, recipe2, net_ev, gross_ev
+        ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_crafts, run_ah_units, run_ah_value))
+        start_skill, recipe, run_net, run_gross, run_crafts = skill, recipe2, net_ev, gross_ev, expected_crafts
         run_ah_units, run_ah_value = ah_units, ah_value
         prev_skill = skill
-    ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_ah_units, run_ah_value))
+    ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_crafts, run_ah_units, run_ah_value))
 
     running_total = 0.0
     out = []
-    for lo, hi, recipe, net_cost, gross_cost, ah_units, ah_value in ranges:
+    for lo, hi, recipe, net_cost, gross_cost, expected_crafts, ah_units, ah_value in ranges:
         running_total += net_cost
-        out.append((lo, hi, recipe, net_cost, gross_cost, running_total, ah_units, ah_value))
+        out.append((lo, hi, recipe, net_cost, gross_cost, running_total, expected_crafts, ah_units, ah_value))
+    return out
+
+
+def build_shopping_list(plan):
+    """Aggregate every reagent across the WHOLE plan into one consolidated
+    list -- the basis for both the on-page quantity breakdown and any
+    shopping-list export. Quantities are rounded UP (ceil): the
+    expected-value math is fractional (e.g. 1.33 crafts), but a real
+    shopping list needs a whole number of items to actually go buy, and
+    rounding down would leave you short. Returns a list of dicts sorted
+    by total cost descending (most expensive reagent first), each with
+    item_id, item_name, total_count, unit_cost_copper, total_cost_copper,
+    gathered, and vendor_bought (true only if EVERY unit of that item
+    across the whole plan came from a gather/vendor source, for display
+    purposes -- a mixed reagent, e.g. partly AH-priced and partly
+    vendor-priced across different recipes, shows as neither)."""
+    totals = {}
+    for skill, recipe, expected_crafts, net_ev, gross_ev in plan:
+        for g in recipe["reagents"]:
+            key = g["item_name"]
+            entry = totals.setdefault(key, {
+                "item_id": g["item_id"], "item_name": g["item_name"],
+                "raw_count": 0.0, "unit_cost_copper": g["unit_cost_copper"] or 0,
+                "gathered": True, "vendor_bought": True,
+            })
+            entry["raw_count"] += expected_crafts * g["count"]
+            entry["gathered"] = entry["gathered"] and bool(g.get("gathered"))
+            entry["vendor_bought"] = entry["vendor_bought"] and bool(g.get("vendor_bought"))
+
+    out = []
+    for entry in totals.values():
+        total_count = math.ceil(entry["raw_count"] - 1e-9)  # tolerance for float accumulation
+        out.append({
+            "item_id": entry["item_id"], "item_name": entry["item_name"],
+            "total_count": total_count, "unit_cost_copper": entry["unit_cost_copper"],
+            "total_cost_copper": total_count * entry["unit_cost_copper"],
+            "gathered": entry["gathered"], "vendor_bought": entry["vendor_bought"],
+        })
+    out.sort(key=lambda e: e["total_cost_copper"], reverse=True)
     return out
 
 
@@ -275,7 +317,7 @@ if __name__ == "__main__":
     print()
 
     print("Plan (skill range -> recipe -> net cost -> running total):")
-    for lo, hi, recipe, net_cost, gross_cost, running, ah_units, ah_value in summarize_plan(plan):
+    for lo, hi, recipe, net_cost, gross_cost, running, expected_crafts, ah_units, ah_value in summarize_plan(plan):
         rng = f"{lo}" if lo == hi else f"{lo}-{hi}"
         print(f"  [{rng:>9}] {recipe['name']:<35} {copper_to_gsc(net_cost):>12}   running: {copper_to_gsc(running)}")
 

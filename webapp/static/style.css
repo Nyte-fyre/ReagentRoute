@@ -303,6 +303,18 @@ table a:hover, .hint a:hover {
   font-weight: 400;
 }
 
+.total-note {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
+.section-heading {
+  margin: 28px 0 4px;
+  font-size: 1.1rem;
+  color: var(--accent);
+}
+
 .toggle-card {
   background: #0f1115;
   border: 1px solid var(--border);
