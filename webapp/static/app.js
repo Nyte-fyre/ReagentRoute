@@ -40,6 +40,24 @@ function escapeHtml(str) {
     .replace(/"/g, "&quot;");
 }
 
+function truncateNoteLists(text, maxItems = 5) {
+  // Acquisition notes embed raw Python list reprs for drop/loot sources,
+  // e.g. "dropped by: ['Mob A', 'Mob B', ...]" -- some recipes (widely
+  // farmable formulas especially) list 100+ mobs, which bloats the page
+  // for no real benefit. Truncate each bracketed list to the first few
+  // names + a count of the rest, wherever it appears in the note.
+  return text.replace(/\[([^\]]*)\]/g, (match, inner) => {
+    const items = [];
+    const re = /'([^']*)'|"([^"]*)"/g;
+    let m;
+    while ((m = re.exec(inner)) !== null) {
+      items.push(m[1] !== undefined ? m[1] : m[2]);
+    }
+    if (items.length <= maxItems) return match;
+    return `${items.slice(0, maxItems).join(", ")}, and ${items.length - maxItems} more`;
+  });
+}
+
 function wowheadLink(itemId, spellId, label) {
   const safeLabel = escapeHtml(label);
   if (itemId) {
@@ -285,7 +303,7 @@ function renderResults(data) {
       const acqNote =
         row.acquisition && row.acquisition !== "trainer"
           ? `<div class="acquisition-note">Learned from: ${escapeHtml(row.acquisition)}${
-              row.acquisition_note ? ` &mdash; ${escapeHtml(row.acquisition_note)}` : ""
+              row.acquisition_note ? ` &mdash; ${escapeHtml(truncateNoteLists(row.acquisition_note))}` : ""
             }</div>`
           : "";
       return `<tr>
@@ -319,7 +337,7 @@ function renderBrowseResults(data, startSkill, targetSkill) {
         .map((g) => `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}`)
         .join(", ");
       const skill = r.required_skill_value ?? "?";
-      const acq = r.acquisition_note ? `${r.acquisition} &mdash; ${escapeHtml(r.acquisition_note)}` : r.acquisition;
+      const acq = r.acquisition_note ? `${r.acquisition} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : r.acquisition;
       return `<tr>
         <td>${skill}</td>
         <td>${craftLink}</td>
