@@ -38,10 +38,20 @@ def fetch_realm_prices(game_type, region_slug, realm_slug):
     return prices
 
 
-def price_recipes_data(data, prices, price_field="minBuyout"):
+def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=None):
     """Price every recipe's reagents (buy side, via minBuyout) and hedge
     against what crafting it back out recovers. `data` is an already-loaded
     recipes dict (i.e. json.load()'d from a *_recipes.json file).
+
+    `gatherable_names`, if given, is a set of reagent item names the player
+    says they can gather themselves (via Herbalism/Mining/Skinning -- see
+    data/gatherable_materials.json). When a reagent has no AH price AND its
+    name is in that set, it's treated as free (unit cost 0) instead of
+    marking the whole recipe price-incomplete: the assumption is you go
+    gather it rather than buy it, so a thin/missing AH listing for that
+    specific item shouldn't block the recipe from the cost model. Reagents
+    priced from real AH data always use that price even if also gatherable
+    -- this only fills gaps, it never overrides a real listing.
 
     Net cost only ever subtracts the VENDOR sell price. Vendor sale has
     genuinely unlimited depth at a fixed price, so it's safe to apply to
@@ -57,6 +67,7 @@ def price_recipes_data(data, prices, price_field="minBuyout"):
     profession", which is obvious nonsense). Selling a couple of the nicer
     byproducts on the AH is a real, valid way to offset cost -- it just
     isn't safe to bake into the per-craft math the way vendor price is."""
+    gatherable_names = gatherable_names or set()
     priced = []
     missing_price_items = set()
     for r in data["recipes"]:
@@ -65,14 +76,19 @@ def price_recipes_data(data, prices, price_field="minBuyout"):
         reagent_costs = []
         for g in r["reagents"]:
             p = prices.get(g["item_id"])
+            gathered = False
             if p is None or p[price_field] == 0:
-                complete = False
-                missing_price_items.add((g["item_id"], g["item_name"]))
-                unit_cost = None
+                if g["item_name"] in gatherable_names:
+                    gathered = True
+                    unit_cost = 0
+                else:
+                    complete = False
+                    missing_price_items.add((g["item_id"], g["item_name"]))
+                    unit_cost = None
             else:
                 unit_cost = p[price_field]
                 total += unit_cost * g["count"]
-            reagent_costs.append({**g, "unit_cost_copper": unit_cost})
+            reagent_costs.append({**g, "unit_cost_copper": unit_cost, "gathered": gathered})
 
         crafted_item_id = r.get("crafted_item_id")
         vendor_sell = r.get("vendor_sell_price") or 0

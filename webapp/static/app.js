@@ -10,6 +10,7 @@ const realmSelect = document.getElementById("realm-select");
 const factionSelect = document.getElementById("faction-select");
 const realmHint = document.getElementById("realm-hint");
 const ownedTextarea = document.getElementById("owned-materials");
+const gatheringCheckboxes = document.getElementById("gathering-checkboxes");
 const computeBtn = document.getElementById("compute-btn");
 const errorEl = document.getElementById("error");
 const resultsPanel = document.getElementById("results-panel");
@@ -82,6 +83,20 @@ async function loadGameVersions() {
   versions.forEach((v) => (gameVersions[v.id] = v));
   gameVersionSelect.innerHTML = versions.map((v) => `<option value="${v.id}">${v.label}</option>`).join("");
   onVersionChange();
+}
+
+async function loadGatheringProfessions() {
+  const res = await fetch("/api/gathering-professions");
+  const professions = await res.json();
+  gatheringCheckboxes.innerHTML = professions
+    .map(
+      (p) => `<label><input type="checkbox" name="gathering" value="${p.id}" /> I have ${p.label}</label>`
+    )
+    .join("");
+}
+
+function selectedGatheringProfessions() {
+  return Array.from(gatheringCheckboxes.querySelectorAll("input:checked")).map((el) => el.value);
 }
 
 function onVersionChange() {
@@ -180,6 +195,7 @@ async function computePlan(event) {
         target_skill: parseInt(targetSkillInput.value, 10) || 300,
         realm: `${realmSelect.value}-${factionSelect.value}`,
         owned_materials: parseOwnedMaterials(ownedTextarea.value),
+        gathering_professions: selectedGatheringProfessions(),
       };
       const res = await fetch("/api/plan", {
         method: "POST",
@@ -259,7 +275,10 @@ function renderResults(data) {
         ? ` <span class="ah-note-inline">(AH: ~${row.ah_value_single_unit_display} for 1)</span>`
         : "";
       const reagentLinks = row.reagents
-        .map((g) => `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}`)
+        .map((g) => {
+          const tag = g.gathered ? ` <span class="gathered-tag">(gather)</span>` : "";
+          return `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}${tag}`;
+        })
         .join(", ");
       return `<tr>
         <td>${range}</td>
@@ -309,3 +328,4 @@ planForm.addEventListener("submit", computePlan);
 gameVersionSelect.addEventListener("change", onVersionChange);
 realmSelect.addEventListener("change", () => realmSelect.classList.remove("input-error"));
 loadGameVersions();
+loadGatheringProfessions();

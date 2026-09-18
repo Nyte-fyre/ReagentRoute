@@ -55,6 +55,18 @@
           <label for="owned-materials">Materials you already own <span class="hint">(optional &mdash; one per line, "Item Name: quantity")</span></label>
           <textarea id="owned-materials" rows="5" placeholder="Rough Stone: 20&#10;Copper Bar: 40"></textarea>
         </div>
+
+        <div class="field">
+          <label>Gathering professions <span class="hint">(optional)</span></label>
+          <div id="gathering-checkboxes" class="checkbox-row"></div>
+          <p class="hint">
+            If a reagent has no Auction House listing but is a raw material
+            you could gather yourself, checking the matching profession
+            treats it as free instead of blocking the recipe from the plan.
+            Gathered reagents are marked in the results and link to their
+            Wowhead page for farming locations.
+          </p>
+        </div>
       </div>
 
       <button id="compute-btn" type="submit">Compute plan</button>
