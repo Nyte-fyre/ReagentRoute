@@ -214,12 +214,25 @@ def run(profession_name, skill_line_id, item_subclass):
 
     recipes = {}
     unreliable_skill_count = 0
+    cross_profession_skipped = 0
     for item_id, item_name, teach_spell_id in recipe_items:
         found = find_craft_effect(teach_spell_id, spell_effects)
         if found is None:
             continue
         craft_spell_id, effect_code, item_type = found
         if craft_spell_id in recipes:
+            continue
+        # find_craft_effect() chases a LEARN_SPELL hop wherever it leads --
+        # it doesn't know or care which profession the resolved craft
+        # spell actually belongs to. Verified real bug: an Alchemy-classed
+        # recipe item's chain resolved to spell 1224636, which
+        # SkillLineAbility.csv confirms is registered under Blacksmithing
+        # (164), not Alchemy (171) -- it showed up as a fake Alchemy
+        # recipe with the Blacksmithing item's reagents attached. Require
+        # the resolved spell to actually be registered under THIS
+        # profession's own skill line before accepting it.
+        if craft_spell_id not in by_spell:
+            cross_profession_skipped += 1
             continue
 
         # Prefer the item's own RequiredSkillRank; it's verified reliable
@@ -252,6 +265,7 @@ def run(profession_name, skill_line_id, item_subclass):
         if req_skill == trivial_low and item_field_skill == 0:
             recipes[craft_spell_id]["skill_value_source"] = "trivial_low_fallback"
     matched = sum(1 for r in recipes.values() if r["trivial_low"] is not None)
+    print(f"  {cross_profession_skipped} recipe items skipped -- resolved craft spell belongs to a different profession's skill line.")
     print(f"  {len(recipes)} recipes resolved with full reagent data.")
     print(f"  Matched {matched}/{len(recipes)} recipes with real thresholds.")
     print(f"  {unreliable_skill_count} recipes had no item-level skill requirement -- used trivial_low or defaulted to 1 instead.")

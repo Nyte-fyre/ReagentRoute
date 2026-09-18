@@ -2,36 +2,8 @@
   "profession": "Enchanting",
   "skill_line_id": 333,
   "game_version": "forever-beta",
-  "recipe_count": 61,
+  "recipe_count": 60,
   "recipes": [
-    {
-      "spell_id": 7451,
-      "craft_spell_id": 7451,
-      "crafted_item_id": null,
-      "crafted_item_name": "spell:7451",
-      "required_skill_value": 60,
-      "skill_tier": "Apprentice",
-      "reagents": [
-        {
-          "item_id": 765,
-          "item_name": "Silverleaf",
-          "count": 2
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 6222,
-        "item_name": "Formula: Imbue Chest - Minor Spirit"
-      },
-      "vendor_sell_price": 0,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": null,
-      "trivial_high": null
-    },
     {
       "spell_id": 1306520,
       "craft_spell_id": 1306520,

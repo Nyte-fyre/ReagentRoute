@@ -2,36 +2,8 @@
   "profession": "First Aid",
   "skill_line_id": 129,
   "game_version": "forever-beta",
-  "recipe_count": 12,
+  "recipe_count": 11,
   "recipes": [
-    {
-      "spell_id": 10844,
-      "craft_spell_id": 10844,
-      "crafted_item_id": 8546,
-      "crafted_item_name": "Powerful Smelling Salts",
-      "required_skill_value": 250,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 8150,
-          "item_name": "Deeprock Salt",
-          "count": 4
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 8547,
-        "item_name": "Formula: Powerful Smelling Salts "
-      },
-      "vendor_sell_price": 50,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": null,
-      "trivial_high": null
-    },
     {
       "spell_id": 1244434,
       "craft_spell_id": 1244434,

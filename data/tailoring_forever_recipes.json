@@ -2,7 +2,7 @@
   "profession": "Tailoring",
   "skill_line_id": 197,
   "game_version": "forever-beta",
-  "recipe_count": 186,
+  "recipe_count": 184,
   "recipes": [
     {
       "spell_id": 1263032,
@@ -7487,92 +7487,6 @@
       "confidence": "verified-reagents-unverified-acquisition",
       "trivial_low": 295,
       "trivial_high": 300
-    },
-    {
-      "spell_id": 1297126,
-      "craft_spell_id": 1297126,
-      "crafted_item_id": 275610,
-      "crafted_item_name": "Bileblister Claws",
-      "required_skill_value": 285,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 8170,
-          "item_name": "Rugged Leather",
-          "count": 12
-        },
-        {
-          "item_id": 12810,
-          "item_name": "Enchanted Leather",
-          "count": 3
-        },
-        {
-          "item_id": 7082,
-          "item_name": "Essence of Air",
-          "count": 3
-        },
-        {
-          "item_id": 14341,
-          "item_name": "Rune Thread",
-          "count": 6
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 275586,
-        "item_name": "Pattern: Bileblister Claws"
-      },
-      "vendor_sell_price": 11612,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": null,
-      "trivial_high": null
-    },
-    {
-      "spell_id": 1297127,
-      "craft_spell_id": 1297127,
-      "crafted_item_id": 275611,
-      "crafted_item_name": "Bileblister Girdle",
-      "required_skill_value": 290,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 8170,
-          "item_name": "Rugged Leather",
-          "count": 18
-        },
-        {
-          "item_id": 12810,
-          "item_name": "Enchanted Leather",
-          "count": 3
-        },
-        {
-          "item_id": 7082,
-          "item_name": "Essence of Air",
-          "count": 3
-        },
-        {
-          "item_id": 14341,
-          "item_name": "Rune Thread",
-          "count": 6
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 275587,
-        "item_name": "Pattern: Bileblister Girdle"
-      },
-      "vendor_sell_price": 11655,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": null,
-      "trivial_high": null
     },
     {
       "spell_id": 1263080,
