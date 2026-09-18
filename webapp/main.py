@@ -69,6 +69,18 @@ REALMS = {
 }
 FACTIONS = [{"id": "horde", "label": "Horde"}, {"id": "alliance", "label": "Alliance"}]
 
+# Which reagents (by name) are raw materials gathered via Herbalism/Mining/
+# Skinning -- see scripts/build_gatherable_materials.py for how this was
+# built and verified (real item class/subclass data, cross-checked against
+# our own recipes so crafted intermediates like Cured Hides or bars don't
+# get miscounted as raw gathers).
+GATHERABLE_MATERIALS = json.load(open(os.path.join(ROOT, "data", "gatherable_materials.json"), encoding="utf-8"))
+GATHERING_PROFESSIONS = [
+    {"id": "herbalism", "label": "Herbalism"},
+    {"id": "mining", "label": "Mining"},
+    {"id": "skinning", "label": "Skinning"},
+]
+
 
 def recipes_path_for(profession, game_version):
     v = GAME_VERSIONS.get(game_version)
@@ -98,6 +110,7 @@ class PlanRequest(BaseModel):
     region: str = "us"
     realm: str
     owned_materials: dict[str, float] = {}
+    gathering_professions: list[str] = []
 
 
 @app.get("/api/game-versions")
@@ -133,6 +146,11 @@ def list_realms(game_version: str = "classic"):
     if game_version not in GAME_VERSIONS:
         raise HTTPException(400, f"Unknown game_version '{game_version}'. Use one of: {list(GAME_VERSIONS)}")
     return {"realms": REALMS.get(game_version, []), "factions": FACTIONS}
+
+
+@app.get("/api/gathering-professions")
+def list_gathering_professions():
+    return GATHERING_PROFESSIONS
 
 
 @app.get("/api/recipes")
@@ -190,8 +208,12 @@ def compute_plan(req: PlanRequest):
     except Exception as e:
         raise HTTPException(502, f"Could not fetch prices for {req.game_type}/{req.region}/{req.realm}: {e}")
 
+    gatherable_names = set()
+    for prof in req.gathering_professions:
+        gatherable_names.update(GATHERABLE_MATERIALS.get(prof, []))
+
     recipes_data = json.load(open(recipes_path, encoding="utf-8"))
-    priced, missing = price_recipes_data(recipes_data, prices)
+    priced, missing = price_recipes_data(recipes_data, prices, gatherable_names=gatherable_names)
     recipes = build_recipe_costs_data(recipes_data, {"recipes": priced})
 
     total_net, total_gross, total_recovered, plan, gaps = optimize(recipes, req.start_skill, req.target_skill)
@@ -212,7 +234,7 @@ def compute_plan(req: PlanRequest):
             "ah_value_single_unit_copper": round(recipe["ah_value_single_unit"]),
             "ah_value_single_unit_display": copper_to_gsc(recipe["ah_value_single_unit"]) if recipe["ah_value_single_unit"] else None,
             "reagents": [
-                {"item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"]}
+                {"item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"], "gathered": g.get("gathered", False)}
                 for g in recipe["reagents"]
             ],
             "net_cost_copper": round(net_cost), "net_cost_display": copper_to_gsc(net_cost),
