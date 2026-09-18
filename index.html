@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>ReagentRoute</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<header>
+  <h1>ReagentRoute</h1>
+  <p class="tagline">Cheapest path to level a WoW Classic profession, priced against live Auction House data.</p>
+</header>
+
+<main>
+  <section class="panel" id="form-panel">
+    <form id="plan-form">
+      <div class="field">
+        <label for="game-version">Game version</label>
+        <select id="game-version"></select>
+        <span class="hint" id="version-hint"></span>
+      </div>
+
+      <div class="field">
+        <label for="profession">Profession</label>
+        <select id="profession"></select>
+      </div>
+
+      <div class="field-row">
+        <div class="field">
+          <label for="start-skill">Start skill</label>
+          <input type="number" id="start-skill" value="1" min="1" max="375" />
+        </div>
+        <div class="field">
+          <label for="target-skill">Target skill</label>
+          <input type="number" id="target-skill" value="300" min="1" max="375" />
+        </div>
+      </div>
+
+      <div id="pricing-fields">
+        <div class="field">
+          <label for="realm-slug">Realm
+            <span class="hint">e.g. <code>whitemane-horde</code> &mdash; find yours at
+              <a href="https://tradeskillmaster.com/public-data" target="_blank" rel="noopener">tradeskillmaster.com/public-data</a>
+            </span>
+          </label>
+          <input type="text" id="realm-slug" placeholder="whitemane-horde" />
+        </div>
+
+        <div class="field">
+          <label for="owned-materials">Materials you already own <span class="hint">(optional &mdash; one per line, "Item Name: quantity")</span></label>
+          <textarea id="owned-materials" rows="5" placeholder="Rough Stone: 20&#10;Copper Bar: 40"></textarea>
+        </div>
+      </div>
+
+      <button id="compute-btn" type="submit">Compute plan</button>
+      <p id="error" class="error hidden"></p>
+    </form>
+  </section>
+
+  <section class="panel hidden" id="results-panel">
+    <div id="loading" class="hidden">
+      <span class="spinner"></span>
+      Fetching live prices and computing the plan&hellip;
+    </div>
+
+    <div id="results" class="hidden">
+      <div class="summary">
+        <div class="stat">
+          <span class="stat-label">Gross reagent cost</span>
+          <span class="stat-value" id="gross-cost"></span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Recovered (vendor)</span>
+          <span class="stat-value stat-value-good" id="recovered-cost"></span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Net cost</span>
+          <span class="stat-value" id="net-cost"></span>
+        </div>
+        <div class="stat" id="owned-stat">
+          <span class="stat-label">Cost to you</span>
+          <span class="stat-value" id="cost-to-you"></span>
+        </div>
+        <div class="stat">
+          <span class="stat-label">Recipes priced</span>
+          <span class="stat-value" id="recipes-priced"></span>
+        </div>
+      </div>
+
+      <p class="hint ah-note">
+        "Recovered" only counts guaranteed vendor sell price (unlimited demand, fixed price).
+        Items are linked to Wowhead &mdash; some crafted items also carry a current AH price for a single unit,
+        shown next to their name; that's not counted in the total since you can't sell dozens of duplicates at today's listed price.
+      </p>
+
+      <p id="leftover" class="hint hidden"></p>
+      <p id="gaps" class="hint hidden"></p>
+
+      <div class="table-scroll">
+        <table id="plan-table">
+          <thead>
+            <tr><th>Skill range</th><th>Craft</th><th>Reagents</th><th>Net cost</th><th>Running total</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div id="browse-results" class="hidden">
+      <p class="hint ah-note" id="browse-note"></p>
+      <div class="table-scroll">
+        <table id="browse-table">
+          <thead>
+            <tr><th>Skill req.</th><th>Craft</th><th>Reagents</th><th>Acquisition</th></tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+</main>
+
+<script src="app.js"></script>
+</body>
+</html>
