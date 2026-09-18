@@ -118,6 +118,23 @@ examples (see git history / commit messages for the full story):
   -- the same before/after methodology a third-party site,
   [foreverdiff.com](https://foreverdiff.com), independently uses on this
   identical build (their newest indexed build is also `1.60.1.69913`).
+- **Forever data, take three -- cross-profession bleed.** After the SoD
+  fix shipped, the exact same SoD item (238292) was still showing up --
+  now filed under *Alchemy* instead of Blacksmithing, with a completely
+  different (nonsensical) reagent list attached. Root cause: recipe
+  discovery resolves a recipe item's teach-spell through however many
+  `LEARN_SPELL` hops it takes to reach a `CREATE_ITEM` effect, but never
+  checked that the resolved spell actually belongs to the profession
+  being extracted. Verified directly against `SkillLineAbility.csv`:
+  spell 1224636 is registered under Blacksmithing (164) only, not
+  Alchemy (171) -- some Alchemy-classed recipe item's chain happened to
+  terminate at a Blacksmithing spell (beta data noise), and it was
+  accepted anyway. Fixed by requiring the resolved craft spell to be
+  registered under the current profession's own skill line before
+  accepting it at all, which also means every recipe that survives now
+  has real Orange/Yellow/Green/Grey thresholds -- previously a handful
+  per profession had none, for the same underlying reason. Net effect on
+  top of the SoD fix: 948 -> 916 recipes.
 
 ## Project structure
 
@@ -201,7 +218,7 @@ python scripts/extract_profession_forever.py "First Aid" 129 7
 ```
 
 Current dataset: **1,218 Classic Era recipes** + **1,904 TBC Anniversary
-recipes** across 8-9 professions each, plus **948 genuinely Forever-
+recipes** across 8-9 professions each, plus **916 genuinely Forever-
 specific recipes** across all 8 professions this build has (no
 Jewelcrafting) -- see [How the numbers are verified](#how-the-numbers-are-verified)
 for why this is roughly half of what a naive extraction finds.
@@ -275,7 +292,12 @@ it at tradeskillmaster.com and copying it from the address bar.
   server source code (`src/game/Entities/Player.cpp`).
 - **Auction House pricing**: [TradeSkillMaster](https://tradeskillmaster.com/public-data)
   public data feed.
-- **Item/recipe lookup links**: [Wowhead](https://www.wowhead.com).
+- **Item/recipe lookup links**: [Wowhead](https://www.wowhead.com) --
+  note Forever items often don't resolve on Wowhead's regular
+  `/classic/item=` pages; Wowhead has a separate
+  [Forever database](https://www.wowhead.com/forever/database) that's
+  more likely to have them, worth using when chasing down remaining
+  `Unknown Item` names.
 
 ### License
 
