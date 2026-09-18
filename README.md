@@ -35,7 +35,10 @@ and (where available) its realm list.
    Orange/Yellow/Green/Grey skill-up probabilities (not the "flat 100%
    until grey" approximation most calculators use).
 4. **Net cost, not gross** -- nets out guaranteed vendor resale value of
-   what you craft along the way.
+   what you craft along the way, plus an *optional* capped Auction House
+   hedge (off by default) for byproducts worth more there -- see
+   [How the numbers are verified](#how-the-numbers-are-verified) for why
+   it's capped instead of assuming unlimited demand.
 5. **Personalization** -- give it a list of materials you already own and
    it recomputes what the path actually costs *you*.
 
@@ -55,14 +58,33 @@ examples (see git history / commit messages for the full story):
   pulled from the [cmangos](https://github.com/cmangos) emulator
   projects' production server code, which has been continuously refined
   against real client behavior for 15+ years.
-- **Auction House hedging**: crafted items get vendor-sold back, but only
-  vendor price is used in the cost model. An earlier version also
-  subtracted Auction House price and produced "expect to profit 50,000g
-  leveling this profession" -- obvious nonsense. The bug: applying a
-  single live AH listing's price as if you could sell unlimited
-  duplicates at it, when in reality flooding the market crashes the
-  price. AH value is now surfaced per-item as an FYI, never multiplied
-  into the total.
+- **Auction House hedging**: crafted items get vendor-sold back by
+  default, and only vendor price is used in the *baseline* cost model. An
+  earlier version also subtracted Auction House price unconditionally and
+  produced "expect to profit 50,000g leveling this profession" -- obvious
+  nonsense. The bug: applying a single live AH listing's price as if you
+  could sell unlimited duplicates at it, when in reality flooding the
+  market crashes the price -- and TSM's free public feed doesn't include
+  any quantity/sale-velocity data (verified: its CSV has exactly
+  `itemId, name, marketValue, minBuyout, recent, historical, updatedAt`,
+  nothing about depth), so there's no honest way to know how many units a
+  given price would actually hold. AH value is surfaced per-item as an
+  FYI by default, never multiplied into the total.
+
+  There's now an *opt-in* "hedge against AH resale" toggle with a
+  user-set cap (default 5) on how many units of each crafted item, summed
+  across the whole plan, get valued at AH price -- everything beyond the
+  cap still falls back to the safe, unlimited-depth vendor price. This is
+  structurally incapable of repeating the "50,000g profit" bug, since the
+  AH-priced quantity is always bounded by construction rather than
+  assumed unlimited. It only uses `minBuyout` (a real, live listing), not
+  `marketValue` -- confirmed empirically that `marketValue` can be a
+  non-zero, fabricated-looking number even when `minBuyout` is 0 (no real
+  listings exist at all), so it's not trustworthy as a pricing basis.
+  Assumed AH sales are also discounted 5% for Blizzard's cut on a
+  successful faction Auction House sale (verified real, fixed mechanic --
+  not modeled: the separate deposit-loss risk on an unsold listing, since
+  that depends on sale probability data this feed doesn't provide).
 - **TBC data**: `tbc-db`'s own `item_template.spellid_1` field turned out
   to be broken (the same placeholder value on every single row, verified
   across dozens of items) -- replaced with the correct `ItemEffect` DB2

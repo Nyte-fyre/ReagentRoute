@@ -303,6 +303,14 @@ table a:hover, .hint a:hover {
   font-weight: 400;
 }
 
+.ah-cap-row {
+  margin-top: 8px;
+}
+
+.ah-cap-field {
+  max-width: 160px;
+}
+
 footer {
   max-width: 640px;
   margin: 24px auto 0;
