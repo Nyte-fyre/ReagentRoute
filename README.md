@@ -96,6 +96,28 @@ examples (see git history / commit messages for the full story):
   would otherwise silently mislabel high-tier recipes as available at
   skill 1. Falls back to the recipe's own verified Orange/Yellow/Green/Grey
   threshold (`TrivialSkillLineRankLow`) instead of trusting a missing field.
+- **Forever data, take two -- Season of Discovery contamination**: a
+  first pass extracted every recipe present in the `wow_classic_beta`
+  build and labeled all of it "Forever". That build is a whole future
+  game state, not a delta from Classic Era, so it necessarily carries
+  forward everything currently live -- including Season of Discovery
+  (SoD) content, which ships within the `classic_era` client lineage
+  rather than a genuinely separate branch. Confirmed empirically: item
+  238292 "Scarlet Soldier's Grips" (added in SoD Phase 8, per Wowhead)
+  exists byte-identical in the live `wow_classic_era` build's own `Item`
+  table, and its recipe spell (1224636) is in
+  `data/SkillLineAbility_classic1x.csv`, the same file already used for
+  Classic Era's skill-up thresholds. SoD is a genuinely separate branch
+  from the Classic-to-Forever progression this tool tracks and doesn't
+  belong mixed into either -- across the 8 extracted professions, 52% of
+  what the naive extraction found (1,057 of 2,005 recipes) turned out to
+  already exist in live Classic Era and got excluded. Fixed by diffing
+  every Forever recipe's spell ID against Classic Era's own live recipe
+  list and keeping only what's absent there (see
+  `scripts/extract_profession_forever.py`'s `load_classic_era_baseline_spells()`)
+  -- the same before/after methodology a third-party site,
+  [foreverdiff.com](https://foreverdiff.com), independently uses on this
+  identical build (their newest indexed build is also `1.60.1.69913`).
 
 ## Project structure
 
@@ -179,8 +201,10 @@ python scripts/extract_profession_forever.py "First Aid" 129 7
 ```
 
 Current dataset: **1,218 Classic Era recipes** + **1,904 TBC Anniversary
-recipes** across 8-9 professions each, plus **2,005 WoW Forever recipes**
-across all 8 professions this build has (no Jewelcrafting).
+recipes** across 8-9 professions each, plus **948 genuinely Forever-
+specific recipes** across all 8 professions this build has (no
+Jewelcrafting) -- see [How the numbers are verified](#how-the-numbers-are-verified)
+for why this is roughly half of what a naive extraction finds.
 
 ### Realm pricing
 
@@ -228,7 +252,11 @@ it at tradeskillmaster.com and copying it from the address bar.
   (3) beta item IDs and stats can change before Forever's full release,
   so re-extract periodically rather than treating this as stable; (4) no
   Jewelcrafting item subclass exists in this build, matching community
-  guides that don't list it among Forever's professions.
+  guides that don't list it among Forever's professions; (5) ~12% of
+  reagent/crafted items are still missing a name (`Unknown Item {id}`,
+  correctly falling back rather than guessing) because they're genuinely
+  absent from this snapshot's `ItemSparse` table, a beta data gap rather
+  than a bug in the lookup.
 
 ## Data sources & attribution
 

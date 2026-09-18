@@ -19,6 +19,20 @@ That means:
   - Beta data can change before Forever's full release. Re-run
     scripts/fetch_data_forever.py periodically and re-extract.
 
+METHODOLOGY NOTE: the wow_classic_beta build is a whole future game
+state, not a delta -- it carries forward all currently-live content
+(including Season of Discovery, which ships within the classic_era
+client lineage rather than a separate branch) as a baseline, plus
+whatever is genuinely new to Forever on top. A first pass of this script
+extracted everything present in the beta build, which meant carried-
+forward SoD content (e.g. "Scarlet Soldier's Grips", an SoD Phase 8
+item) showed up mislabeled as Forever content. Fixed by diffing every
+recipe's spell ID against the live Classic Era client's own recipe list
+(see load_classic_era_baseline_spells()) and keeping only what's absent
+there -- the same before/after approach a third-party site,
+foreverdiff.com, independently uses on this identical build (confirmed:
+their newest indexed build is also 1.60.1.69913).
+
 Requires raw_data/forever/*.csv -- run `python scripts/fetch_data_forever.py`
 first if they're missing.
 
@@ -69,6 +83,30 @@ def load_csv(name):
         print(f"Missing {path} -- run `python scripts/fetch_data_forever.py` first.")
         sys.exit(1)
     return list(csv.DictReader(open(path, encoding="utf-8")))
+
+
+def load_classic_era_baseline_spells(skill_line_id):
+    """Recipe spell IDs already present in the LIVE Classic Era client
+    (wago.tools wow_classic_era build 1.15.9.69722 -- data/SkillLineAbility_
+    classic1x.csv, same wago.tools pipeline as this Forever pull, not the
+    older cmangos classic-db dump the rest of Classic Era's own extraction
+    uses) for this skill line.
+
+    Why this matters: a beta client build represents the game's whole
+    future state, not a delta -- it necessarily carries forward all
+    currently-live content as a baseline, including Season of Discovery
+    (which ships WITHIN the classic_era client lineage, not a separate
+    branch -- confirmed empirically: item 238292 "Scarlet Soldier's
+    Grips", added in SoD patch 1.15.7, exists byte-identical in the live
+    1.15.9 classic_era build's own Item table, and its recipe spell
+    1224636 is in this exact file). Diffing against this baseline is what
+    separates genuinely Forever-exclusive content from SoD/vanilla
+    content that merely happens to also be present in the beta build --
+    matching the same before/after methodology a third-party site
+    (foreverdiff.com) independently uses on this identical build."""
+    path = os.path.join(ROOT, "data", "SkillLineAbility_classic1x.csv")
+    rows = csv.DictReader(open(path, encoding="utf-8"))
+    return {int(r["Spell"]) for r in rows if r["SkillLine"] == str(skill_line_id)}
 
 
 def load_spell_reagents(rows):
@@ -218,13 +256,26 @@ def run(profession_name, skill_line_id, item_subclass):
     print(f"  Matched {matched}/{len(recipes)} recipes with real thresholds.")
     print(f"  {unreliable_skill_count} recipes had no item-level skill requirement -- used trivial_low or defaulted to 1 instead.")
 
+    print("Filtering out recipes already present in the live Classic Era client "
+          "(carried-forward/Season of Discovery content, not Forever-specific)...")
+    baseline_spells = load_classic_era_baseline_spells(skill_line_id)
+    carried_forward = {k: v for k, v in recipes.items() if k in baseline_spells}
+    recipes = {k: v for k, v in recipes.items() if k not in baseline_spells}
+    print(f"  {len(carried_forward)} recipes excluded as already present in Classic Era.")
+    print(f"  {len(recipes)} recipes remain as genuinely Forever-specific.")
+
     out = {
         "profession": profession_name, "skill_line_id": skill_line_id,
         "game_version": "forever-beta",
         "recipe_count": len(recipes), "recipes": list(recipes.values()),
         "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for "
                              "Forever) -- pure trainer-only recipes with no representative item are "
-                             "missing from this dataset. Acquisition is unresolved for everything.",
+                             "missing from this dataset. Acquisition is unresolved for everything. "
+                             "Recipes already present in the live Classic Era client (e.g. Season of "
+                             "Discovery content, which ships within the classic_era client lineage, not "
+                             "a separate branch) are excluded -- this file is genuinely Forever-specific "
+                             "content only, diffed against Classic Era the same way foreverdiff.com does "
+                             "on this identical build.",
     }
     out_path = os.path.join(ROOT, "data", f"{profession_name.lower().replace(' ', '_')}_forever_recipes.json")
     with open(out_path, "w", encoding="utf-8") as f:

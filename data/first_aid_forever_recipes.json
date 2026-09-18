@@ -2,36 +2,8 @@
   "profession": "First Aid",
   "skill_line_id": 129,
   "game_version": "forever-beta",
-  "recipe_count": 18,
+  "recipe_count": 12,
   "recipes": [
-    {
-      "spell_id": 7935,
-      "craft_spell_id": 7935,
-      "crafted_item_id": 6453,
-      "crafted_item_name": "Strong Anti-Venom",
-      "required_skill_value": 130,
-      "skill_tier": "Journeyman",
-      "reagents": [
-        {
-          "item_id": 1288,
-          "item_name": "Large Venom Sac",
-          "count": 1
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 6454,
-        "item_name": "Manual: Strong Anti-Venom"
-      },
-      "vendor_sell_price": 62,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 130,
-      "trivial_high": 200
-    },
     {
       "spell_id": 10844,
       "craft_spell_id": 10844,
@@ -59,152 +31,6 @@
       "confidence": "verified-reagents-unverified-acquisition",
       "trivial_low": null,
       "trivial_high": null
-    },
-    {
-      "spell_id": 23787,
-      "craft_spell_id": 23787,
-      "crafted_item_id": 19440,
-      "crafted_item_name": "Powerful Anti-Venom",
-      "required_skill_value": 300,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 19441,
-          "item_name": "Huge Venom Sac",
-          "count": 1
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 19442,
-        "item_name": "Formula: Powerful Anti-Venom"
-      },
-      "vendor_sell_price": 500,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 300,
-      "trivial_high": 360
-    },
-    {
-      "spell_id": 7929,
-      "craft_spell_id": 7929,
-      "crafted_item_id": 6451,
-      "crafted_item_name": "Heavy Silk Bandage",
-      "required_skill_value": 180,
-      "skill_tier": "Expert",
-      "reagents": [
-        {
-          "item_id": 4306,
-          "item_name": "Silk Cloth",
-          "count": 2
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 16112,
-        "item_name": "Manual: Heavy Silk Bandage"
-      },
-      "vendor_sell_price": 400,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 180,
-      "trivial_high": 240
-    },
-    {
-      "spell_id": 10840,
-      "craft_spell_id": 10840,
-      "crafted_item_id": 8544,
-      "crafted_item_name": "Mageweave Bandage",
-      "required_skill_value": 210,
-      "skill_tier": "Expert",
-      "reagents": [
-        {
-          "item_id": 4338,
-          "item_name": "Mageweave Cloth",
-          "count": 1
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 16113,
-        "item_name": "Manual: Mageweave Bandage"
-      },
-      "vendor_sell_price": 400,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 210,
-      "trivial_high": 270
-    },
-    {
-      "spell_id": 30021,
-      "craft_spell_id": 30021,
-      "crafted_item_id": 23684,
-      "crafted_item_name": "Crystal Infused Bandage",
-      "required_skill_value": 300,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 23567,
-          "item_name": "[PH] Silithus PvP Dust [DEP]",
-          "count": 1
-        },
-        {
-          "item_id": 14047,
-          "item_name": "Runecloth",
-          "count": 10
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 23689,
-        "item_name": "Unknown Item 23689"
-      },
-      "vendor_sell_price": 1500,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 300,
-      "trivial_high": 360,
-      "skill_value_source": "trivial_low_fallback"
-    },
-    {
-      "spell_id": 470349,
-      "craft_spell_id": 470349,
-      "crafted_item_id": 232433,
-      "crafted_item_name": "Dense Runecloth Bandage",
-      "required_skill_value": 300,
-      "skill_tier": "Artisan",
-      "reagents": [
-        {
-          "item_id": 14530,
-          "item_name": "Heavy Runecloth Bandage",
-          "count": 2
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 232434,
-        "item_name": "Manual: Dense Runecloth Bandage"
-      },
-      "vendor_sell_price": 2000,
-      "acquisition": "unknown",
-      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
-      "source": "wago-tools-db2-forever-beta",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "trivial_low": 315,
-      "trivial_high": 340
     },
     {
       "spell_id": 1244434,
@@ -610,5 +436,5 @@
       "trivial_high": 300
     }
   ],
-  "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for Forever) -- pure trainer-only recipes with no representative item are missing from this dataset. Acquisition is unresolved for everything."
+  "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for Forever) -- pure trainer-only recipes with no representative item are missing from this dataset. Acquisition is unresolved for everything. Recipes already present in the live Classic Era client (e.g. Season of Discovery content, which ships within the classic_era client lineage, not a separate branch) are excluded -- this file is genuinely Forever-specific content only, diffed against Classic Era the same way foreverdiff.com does on this identical build."
 }
