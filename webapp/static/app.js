@@ -63,11 +63,16 @@ function truncateNoteLists(text, maxItems = 5) {
 
 function wowheadLink(itemId, spellId, label) {
   const safeLabel = escapeHtml(label);
+  // Forever items/spells routinely don't resolve under Wowhead's regular
+  // /classic/ section (verified: e.g. item 250620 only exists in Wowhead's
+  // separate /forever/ database) -- use that section for the Forever game
+  // version, /classic/ for everything else (TBC resolves fine there too).
+  const section = gameVersionSelect.value === "forever" ? "forever" : "classic";
   if (itemId) {
-    return `<a href="https://www.wowhead.com/classic/item=${itemId}" target="_blank" rel="noopener">${safeLabel}</a>`;
+    return `<a href="https://www.wowhead.com/${section}/item=${itemId}" target="_blank" rel="noopener">${safeLabel}</a>`;
   }
   if (spellId) {
-    return `<a href="https://www.wowhead.com/classic/spell=${spellId}" target="_blank" rel="noopener">${safeLabel}</a>`;
+    return `<a href="https://www.wowhead.com/${section}/spell=${spellId}" target="_blank" rel="noopener">${safeLabel}</a>`;
   }
   return safeLabel;
 }
