@@ -1,0 +1,3537 @@
+{
+  "profession": "Cooking",
+  "skill_line_id": 185,
+  "game_version": "tbc-anniversary",
+  "recipe_count": 112,
+  "recipes": [
+    {
+      "spell_id": 2559,
+      "craft_spell_id": 2539,
+      "crafted_item_id": 2680,
+      "crafted_item_name": "Spiced Wolf Meat",
+      "required_skill_value": 10,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2672,
+          "item_name": "Stringy Wolf Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 50,
+      "trivial_high": 90
+    },
+    {
+      "spell_id": 2561,
+      "craft_spell_id": 2541,
+      "crafted_item_id": 2684,
+      "crafted_item_name": "Coyote Steak",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2673,
+          "item_name": "Coyote Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 20,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 2562,
+      "craft_spell_id": 2544,
+      "crafted_item_id": 2683,
+      "crafted_item_name": "Crab Cake",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2674,
+          "item_name": "Crawler Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 115,
+      "trivial_high": 155
+    },
+    {
+      "spell_id": 2563,
+      "craft_spell_id": 2546,
+      "crafted_item_id": 2687,
+      "crafted_item_name": "Dry Pork Ribs",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2677,
+          "item_name": "Boar Ribs",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 6502,
+      "craft_spell_id": 6499,
+      "crafted_item_id": 5525,
+      "crafted_item_name": "Boiled Clams",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5503,
+          "item_name": "Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 20,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6503,
+      "craft_spell_id": 6500,
+      "crafted_item_id": 5527,
+      "crafted_item_name": "Goblin Deviled Clams",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5504,
+          "item_name": "Tangy Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 95,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 165,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 21176,
+      "craft_spell_id": 21175,
+      "crafted_item_id": 17222,
+      "crafted_item_name": "Spider Sausage",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12205,
+          "item_name": "White Spider Meat",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 225,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 4094,
+      "craft_spell_id": 4094,
+      "crafted_item_id": 4457,
+      "crafted_item_name": "Barbecued Buzzard Wing",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3404,
+          "item_name": "Buzzard Wing",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 13029,
+      "craft_spell_id": 13028,
+      "crafted_item_id": 10841,
+      "crafted_item_name": "Goldthorn Tea",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 85,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 175,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 2795,
+      "craft_spell_id": 2795,
+      "crafted_item_id": 2888,
+      "crafted_item_name": "Beer Basted Boar Ribs",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2886,
+          "item_name": "Crag Boar Rib",
+          "count": 1
+        },
+        {
+          "item_id": 2894,
+          "item_name": "Rhapsody Malt",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 60,
+      "trivial_high": 100
+    },
+    {
+      "spell_id": 2549,
+      "craft_spell_id": 2549,
+      "crafted_item_id": 1017,
+      "crafted_item_name": "Seasoned Wolf Kabob",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1015,
+          "item_name": "Lean Wolf Flank",
+          "count": 2
+        },
+        {
+          "item_id": 2665,
+          "item_name": "Stormwind Seasoning Herbs",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 100,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 15853,
+      "craft_spell_id": 15853,
+      "crafted_item_id": 12209,
+      "crafted_item_name": "Lean Wolf Steak",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1015,
+          "item_name": "Lean Wolf Flank",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 95,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 165,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 15856,
+      "craft_spell_id": 15856,
+      "crafted_item_id": 13851,
+      "crafted_item_name": "Hot Wolf Ribs",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12203,
+          "item_name": "Red Wolf Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 312,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 22480,
+      "craft_spell_id": 22480,
+      "crafted_item_id": 18045,
+      "crafted_item_name": "Tender Wolf Steak",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12208,
+          "item_name": "Tender Wolf Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 42296,
+      "craft_spell_id": 42296,
+      "crafted_item_id": 33048,
+      "crafted_item_name": "Stewed Trout",
+      "required_skill_value": 320,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27422,
+          "item_name": "Barbed Gill Trout",
+          "count": 1
+        },
+        {
+          "item_id": 2593,
+          "item_name": "Flask of Port",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 200,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 335,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 42302,
+      "craft_spell_id": 42302,
+      "crafted_item_id": 33052,
+      "crafted_item_name": "Fisherman's Feast",
+      "required_skill_value": 350,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27515,
+          "item_name": "Huge Spotted Feltail",
+          "count": 1
+        },
+        {
+          "item_id": 4539,
+          "item_name": "Goldenbark Apple",
+          "count": 5
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 5
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 200,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 375,
+      "trivial_high": 385
+    },
+    {
+      "spell_id": 42305,
+      "craft_spell_id": 42305,
+      "crafted_item_id": 33053,
+      "crafted_item_name": "Hot Buttered Trout",
+      "required_skill_value": 350,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27516,
+          "item_name": "Enormous Barbed Gill Trout",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "vendor_sell_price": 200,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "trainer",
+      "trivial_low": 375,
+      "trivial_high": 385
+    },
+    {
+      "spell_id": 2543,
+      "craft_spell_id": 2543,
+      "crafted_item_id": 733,
+      "crafted_item_name": "Westfall Stew",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 729,
+          "item_name": "Stringy Vulture Meat",
+          "count": 1
+        },
+        {
+          "item_id": 730,
+          "item_name": "Murloc Eye",
+          "count": 1
+        },
+        {
+          "item_id": 731,
+          "item_name": "Goretusk Snout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 728,
+        "item_name": "Recipe: Westfall Stew"
+      },
+      "vendor_sell_price": 100,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Westfall Stew' (38)",
+      "trivial_low": 115,
+      "trivial_high": 155
+    },
+    {
+      "spell_id": 2542,
+      "craft_spell_id": 2542,
+      "crafted_item_id": 724,
+      "crafted_item_name": "Goretusk Liver Pie",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 723,
+          "item_name": "Goretusk Liver",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2697,
+        "item_name": "Recipe: Goretusk Liver Pie"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Goretusk Liver Pie' (22)",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 2545,
+      "craft_spell_id": 2545,
+      "crafted_item_id": 2682,
+      "crafted_item_name": "Cooked Crab Claw",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2675,
+          "item_name": "Crawler Claw",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2698,
+        "item_name": "Recipe: Cooked Crab Claw"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; dropped by: ['Young Goretusk', 'Sand Crawler', 'Sea Crawler', 'Dust Devil', 'Shore Crawler', 'Moonstalker Runt', 'Moonstalker Matriarch', 'Thistle Bear', 'Grizzled Thistle Bear', 'Reef Frenzy', 'Coastal Frenzy', 'Darkshore Thresher', 'Elder Darkshore Thresher', 'Pygmy Tide Crawler', 'Tide Crawler', 'Encrusted Tide Crawler', 'Young Reef Crawler', 'Reef Crawler', 'Moonstalker Sire', 'Foreststrider Fledgling', 'Foreststrider', 'Giant Foreststrider', 'Defias Raider', 'Thistle Cub', 'Anaya Dawnrunner', 'Delmanis the Hated', 'Ghost Saber', 'Raging Moonkin', 'Twilight Thug', 'Blackwood Windtalker', 'Raging Reef Crawler', \"Deth'ryll Satyr\", 'Greymist Tidehunter', 'Greymist Oracle', 'Greymist Hunter', 'Greymist Warrior', 'Greymist Netter', 'Greymist Seer', 'Greymist Coastrunner', 'Greymist Raider', 'Firecaller Radison', 'Licillin', 'Wild Grell', 'Stormscale Warrior', 'Stormscale Sorceress', 'Stormscale Siren', 'Stormscale Wave Rider', 'Wailing Highborne', 'Writhing Highborne', 'Cursed Highborne', 'Blackwood Shaman', 'Blackwood Ursa', 'Blackwood Totemic', 'Blackwood Warrior', 'Blackwood Pathfinder', 'Rabid Thistle Bear', 'Gravelflint Bonesnapper', 'Gravelflint Scout', 'Stone Behemoth', 'Cracked Golem', 'Riverpaw Miner', 'Kobold Digger', 'Fleshripper', 'Rotten Ghoul', 'Coyote', 'Coyote Packleader', 'Defias Looter', 'Defias Pillager', 'Defias Messenger', 'Murloc Oracle', 'Murloc Raider', 'Murloc Netter', 'Defias Trapper', 'Benny Blaanco', 'Riverpaw Herbalist', 'Riverpaw Scout', 'Defias Footpad', 'Rusty Harvest Golem', 'Murloc Hunter', 'Murloc Minor Oracle', 'Riverpaw Mystic', 'Riverpaw Bandit', 'Defias Knuckleduster', 'Old Murk-Eye', 'Young Fleshripper', 'Murloc Warrior', 'Goretusk', 'Murloc Tidehunter', 'Murloc Coastrunner', 'Riverpaw Brute', 'Riverpaw Mongrel', 'Defias Highwayman', 'Defias Pathstalker', 'Riverpaw Gnoll', 'Harvest Reaper', 'Harvest Watcher', 'Riverpaw Taskmaster', 'Defias Smuggler', 'Shade of Elura', 'Twilight Disciple', 'Vile Sprite', 'Harvest Golem', 'Lord Sinslayer', 'Dark Strand Fanatic', 'Stormscale Myrmidon', 'Moonstalker', 'Greater Fleshripper', 'Moonkin Oracle', 'Moonkin', 'Young Moonkin', 'Murkdeep', 'Xabraxxis', 'Lunaclaw']",
+      "trivial_low": 125,
+      "trivial_high": 165
+    },
+    {
+      "spell_id": 2547,
+      "craft_spell_id": 2547,
+      "crafted_item_id": 1082,
+      "crafted_item_name": "Redridge Goulash",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1081,
+          "item_name": "Crisp Spider Meat",
+          "count": 1
+        },
+        {
+          "item_id": 1080,
+          "item_name": "Tough Condor Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2699,
+        "item_name": "Recipe: Redridge Goulash"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Redridge Goulash' (92)",
+      "trivial_low": 135,
+      "trivial_high": 175
+    },
+    {
+      "spell_id": 2548,
+      "craft_spell_id": 2548,
+      "crafted_item_id": 2685,
+      "crafted_item_name": "Succulent Pork Ribs",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2677,
+          "item_name": "Boar Ribs",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2700,
+        "item_name": "Recipe: Succulent Pork Ribs"
+      },
+      "vendor_sell_price": 75,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; dropped by: ['Bellygrub', 'Black Dragon Whelp', 'Cliff Lurker', 'Wood Lurker', 'Elder Black Bear', 'Grizzled Black Bear', 'Black Bear Patriarch', 'Mountain Boar', 'Mangy Mountain Boar', 'Elder Mountain Boar', 'Loch Frenzy', 'Mountain Buzzard', 'Forest Lurker', \"Ol' Sooty\", 'Loch Crocolisk', 'Gradok', 'Blackrock Summoner', 'Blackrock Hunter', 'Blackrock Sentry', 'Blackrock Scout', 'Thragomm', 'Large Loch Crocolisk', 'Dark Iron Raider', 'Dark Iron Ambusher', 'Berserk Trogg', 'Dark Iron Sapper', \"Chok'sul\", 'Gnasher', 'Tunnel Rat Kobold', 'Stonesplinter Shaman', \"Mo'grosh Mystic\", \"Mo'grosh Brute\", \"Mo'grosh Ogre\", 'Tunnel Rat Surveyor', 'Tunnel Rat Forager', 'Tunnel Rat Digger', 'Tunnel Rat Geomancer', 'Tunnel Rat Scout', 'Tunnel Rat Vermin', 'Dark Iron Insurgent', 'Stonesplinter Digger', 'Stonesplinter Seer', 'Stonesplinter Geomancer', 'Stonesplinter Skullthumper', 'Stonesplinter Scout', 'Stonesplinter Trogg', 'Murloc Shorestriker', 'Servant of Ilgalar', 'Redridge Thrasher', 'Lieutenant Fangore', 'Blackrock Tracker', 'Redridge Drudger', 'Murloc Scout', 'Shadowhide Warrior', 'Murloc Minor Tidecaller', 'Great Goretusk', 'Murloc Tidecaller', 'Murloc Nightcrawler', 'Yowler', 'Greater Tarantula', \"Tharil'zun\", 'Blackrock Outrunner', 'Redridge Basher', 'Tarantula', 'Blackrock Grunt', 'Blackrock Renegade', 'Blackrock Shadowcaster', 'Blackrock Champion', 'Rabid Shadowhide Gnoll', 'Shadowhide Gnoll', 'Shadowhide Brute', 'Redridge Mystic', 'Shadowhide Darkweaver', 'Dire Condor', 'Redridge Brute', 'Redridge Poacher', 'Redridge Mongrel', 'Murloc Flesheater', 'Singe', \"Gath'Ilzogg\", 'Blackrock Gladiator', 'Saean', \"Mo'grosh Shaman\", \"Mo'grosh Enforcer\", 'Stonesplinter Bonesnapper', 'Shanda the Spinner', 'Emogg the Crusher', 'Lord Condar', 'Seeker Aqualon', 'Ribchaser', 'Snarlflare']",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 3370,
+      "craft_spell_id": 3370,
+      "crafted_item_id": 3662,
+      "crafted_item_name": "Crocolisk Steak",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2924,
+          "item_name": "Crocolisk Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3678,
+        "item_name": "Recipe: Crocolisk Steak"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Crocolisk Hunting' (385)",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 3371,
+      "craft_spell_id": 3371,
+      "crafted_item_id": 3220,
+      "crafted_item_name": "Blood Sausage",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3173,
+          "item_name": "Bear Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3172,
+          "item_name": "Boar Intestines",
+          "count": 1
+        },
+        {
+          "item_id": 3174,
+          "item_name": "Spider Ichor",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3679,
+        "item_name": "Recipe: Blood Sausage"
+      },
+      "vendor_sell_price": 40,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Thelsamar Blood Sausages' (418)",
+      "trivial_low": 100,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 3372,
+      "craft_spell_id": 3372,
+      "crafted_item_id": 3663,
+      "crafted_item_name": "Murloc Fin Soup",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1468,
+          "item_name": "Murloc Fin",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3680,
+        "item_name": "Recipe: Murloc Fin Soup"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Selling Fish' (127)",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 3373,
+      "craft_spell_id": 3373,
+      "crafted_item_id": 3664,
+      "crafted_item_name": "Crocolisk Gumbo",
+      "required_skill_value": 120,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3667,
+          "item_name": "Tender Crocolisk Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3681,
+        "item_name": "Recipe: Crocolisk Gumbo"
+      },
+      "vendor_sell_price": 100,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Apprentice's Duties' (471)",
+      "trivial_low": 160,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 3376,
+      "craft_spell_id": 3376,
+      "crafted_item_id": 3665,
+      "crafted_item_name": "Curiously Tasty Omelet",
+      "required_skill_value": 130,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3685,
+          "item_name": "Raptor Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3682,
+        "item_name": "Recipe: Curiously Tasty Omelet"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka', 'Nerrist', 'Keena']; quest reward: 'Ormer's Revenge' (296)",
+      "trivial_low": 170,
+      "trivial_high": 210
+    },
+    {
+      "spell_id": 3377,
+      "craft_spell_id": 3377,
+      "crafted_item_id": 3666,
+      "crafted_item_name": "Gooey Spider Cake",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2251,
+          "item_name": "Gooey Spider Leg",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3683,
+        "item_name": "Recipe: Gooey Spider Cake"
+      },
+      "vendor_sell_price": 100,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Kendor Kabonka']; quest reward: 'Dusky Crab Cakes' (93)",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 3397,
+      "craft_spell_id": 3397,
+      "crafted_item_id": 3726,
+      "crafted_item_name": "Big Bear Steak",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3730,
+          "item_name": "Big Bear Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3734,
+        "item_name": "Recipe: Big Bear Steak"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Ulthaan', 'Super-Seller 680']; quest reward: 'The Rescue' (498)",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 3398,
+      "craft_spell_id": 3398,
+      "crafted_item_id": 3727,
+      "crafted_item_name": "Hot Lion Chops",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3731,
+          "item_name": "Lion Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3735,
+        "item_name": "Recipe: Hot Lion Chops"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Zargh', 'Vendor-Tron 1000']; quest reward: 'Elixir of Pain' (501)",
+      "trivial_low": 175,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 3399,
+      "craft_spell_id": 3399,
+      "crafted_item_id": 3728,
+      "crafted_item_name": "Tasty Lion Steak",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3731,
+          "item_name": "Lion Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3736,
+        "item_name": "Recipe: Tasty Lion Steak"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Costly Menace' (564)",
+      "trivial_low": 190,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 3400,
+      "craft_spell_id": 3400,
+      "crafted_item_id": 3729,
+      "crafted_item_name": "Soothing Turtle Bisque",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3712,
+          "item_name": "Turtle Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3737,
+        "item_name": "Recipe: Soothing Turtle Bisque"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Soothing Turtle Bisque' (555); quest reward: 'Soothing Turtle Bisque' (7321)",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 6412,
+      "craft_spell_id": 6412,
+      "crafted_item_id": 5472,
+      "crafted_item_name": "Kaldorei Spider Kabob",
+      "required_skill_value": 10,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5465,
+          "item_name": "Small Spider Leg",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5482,
+        "item_name": "Recipe: Kaldorei Spider Kabob"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Recipe of the Kaldorei' (4161)",
+      "trivial_low": 50,
+      "trivial_high": 90
+    },
+    {
+      "spell_id": 6413,
+      "craft_spell_id": 6413,
+      "crafted_item_id": 5473,
+      "crafted_item_name": "Scorpid Surprise",
+      "required_skill_value": 20,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5466,
+          "item_name": "Scorpid Stinger",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5483,
+        "item_name": "Recipe: Scorpid Surprise"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Grimtak']",
+      "trivial_low": 60,
+      "trivial_high": 100
+    },
+    {
+      "spell_id": 6414,
+      "craft_spell_id": 6414,
+      "crafted_item_id": 5474,
+      "crafted_item_name": "Roasted Kodo Meat",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5467,
+          "item_name": "Kodo Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5484,
+        "item_name": "Recipe: Roasted Kodo Meat"
+      },
+      "vendor_sell_price": 9,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Wunna Darkmane']",
+      "trivial_low": 75,
+      "trivial_high": 115
+    },
+    {
+      "spell_id": 6415,
+      "craft_spell_id": 6415,
+      "crafted_item_id": 5476,
+      "crafted_item_name": "Fillet of Frenzy",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5468,
+          "item_name": "Soft Frenzy Flesh",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5485,
+        "item_name": "Recipe: Fillet of Frenzy"
+      },
+      "vendor_sell_price": 3,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Laird']",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6416,
+      "craft_spell_id": 6416,
+      "crafted_item_id": 5477,
+      "crafted_item_name": "Strider Stew",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5469,
+          "item_name": "Strider Meat",
+          "count": 1
+        },
+        {
+          "item_id": 4536,
+          "item_name": "Shiny Red Apple",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5486,
+        "item_name": "Recipe: Strider Stew"
+      },
+      "vendor_sell_price": 18,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): [\"Tari'qa\"]; quest reward: 'Easy Strider Living' (2178)",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6417,
+      "craft_spell_id": 6417,
+      "crafted_item_id": 5478,
+      "crafted_item_name": "Dig Rat Stew",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5051,
+          "item_name": "Dig Rat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5487,
+        "item_name": "Recipe: Dig Rat Stew"
+      },
+      "vendor_sell_price": 70,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Dig Rat Stew' (862)",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 6418,
+      "craft_spell_id": 6418,
+      "crafted_item_id": 5479,
+      "crafted_item_name": "Crispy Lizard Tail",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5470,
+          "item_name": "Thunder Lizard Tail",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5488,
+        "item_name": "Recipe: Crispy Lizard Tail"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): [\"Tari'qa\"]",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 6419,
+      "craft_spell_id": 6419,
+      "crafted_item_id": 5480,
+      "crafted_item_name": "Lean Venison",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5471,
+          "item_name": "Stag Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5489,
+        "item_name": "Recipe: Lean Venison"
+      },
+      "vendor_sell_price": 95,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Ulthaan', 'Vendor-Tron 1000']",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 6501,
+      "craft_spell_id": 6501,
+      "crafted_item_id": 5526,
+      "crafted_item_name": "Clam Chowder",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5503,
+          "item_name": "Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5528,
+        "item_name": "Recipe: Clam Chowder"
+      },
+      "vendor_sell_price": 75,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Kriggon Talsone', 'Heldan Galesong']",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 7213,
+      "craft_spell_id": 7213,
+      "crafted_item_id": 6038,
+      "crafted_item_name": "Giant Clam Scorcho",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4655,
+          "item_name": "Giant Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6039,
+        "item_name": "Recipe: Giant Clam Scorcho"
+      },
+      "vendor_sell_price": 312,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Kelsey Yance']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 7751,
+      "craft_spell_id": 7751,
+      "crafted_item_id": 6290,
+      "crafted_item_name": "Brilliant Smallfish",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6291,
+          "item_name": "Raw Brilliant Smallfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6325,
+        "item_name": "Recipe: Brilliant Smallfish"
+      },
+      "vendor_sell_price": 1,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Khara Deepwater', 'Sewa Mistrunner', 'Martine Tramblay', 'Nyoma', 'Lizbeth Cromwell', 'Catherine Leland', 'Harn Longcast', 'Gretta Ganter', 'Tharynn Bouden']",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 7752,
+      "craft_spell_id": 7752,
+      "crafted_item_id": 787,
+      "crafted_item_name": "Slitherskin Mackerel",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6303,
+          "item_name": "Raw Slitherskin Mackerel",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6326,
+        "item_name": "Recipe: Slitherskin Mackerel"
+      },
+      "vendor_sell_price": 1,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Martine Tramblay', 'Kriggon Talsone', 'Tansy Puddlefizz', 'Zansoa', 'Nessa Shadowsong']",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 7753,
+      "craft_spell_id": 7753,
+      "crafted_item_id": 4592,
+      "crafted_item_name": "Longjaw Mud Snapper",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6289,
+          "item_name": "Raw Longjaw Mud Snapper",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6328,
+        "item_name": "Recipe: Longjaw Mud Snapper"
+      },
+      "vendor_sell_price": 1,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Khara Deepwater', 'Naal Mistrunner', 'Nyoma', 'Lizbeth Cromwell', 'Tansy Puddlefizz', 'Killian Sanatha', 'Harn Longcast', 'Tharynn Bouden']",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7754,
+      "craft_spell_id": 7754,
+      "crafted_item_id": 6316,
+      "crafted_item_name": "Loch Frenzy Delight",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6317,
+          "item_name": "Raw Loch Frenzy",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6329,
+        "item_name": "Recipe: Loch Frenzy Delight"
+      },
+      "vendor_sell_price": 3,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Khara Deepwater']",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7755,
+      "craft_spell_id": 7755,
+      "crafted_item_id": 4593,
+      "crafted_item_name": "Bristle Whisker Catfish",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6308,
+          "item_name": "Raw Bristle Whisker Catfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6330,
+        "item_name": "Recipe: Bristle Whisker Catfish"
+      },
+      "vendor_sell_price": 4,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Lindea Rabonne', 'Derak Nightfall', 'Naal Mistrunner', 'Sewa Mistrunner', 'Kilxx', 'Ronald Burch', 'Catherine Leland']",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 7827,
+      "craft_spell_id": 7827,
+      "crafted_item_id": 5095,
+      "crafted_item_name": "Rainbow Fin Albacore",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6361,
+          "item_name": "Raw Rainbow Fin Albacore",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6368,
+        "item_name": "Recipe: Rainbow Fin Albacore"
+      },
+      "vendor_sell_price": 3,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Stuart Fleming', 'Shankys', 'Kilxx', 'Kriggon Talsone', 'Heldan Galesong', 'Ronald Burch', 'Catherine Leland', 'Killian Sanatha', 'Nessa Shadowsong', 'Zansoa']",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7828,
+      "craft_spell_id": 7828,
+      "crafted_item_id": 4594,
+      "crafted_item_name": "Rockscale Cod",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 6362,
+          "item_name": "Raw Rockscale Cod",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6369,
+        "item_name": "Recipe: Rockscale Cod"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Lindea Rabonne', 'Kelsey Yance', 'Stuart Fleming', 'Shankys', 'Heldan Galesong', 'Lizbeth Cromwell', 'Tansy Puddlefizz', 'Wulan', \"Wik'Tar\"]",
+      "trivial_low": 190,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 8238,
+      "craft_spell_id": 8238,
+      "crafted_item_id": 6657,
+      "crafted_item_name": "Savory Deviate Delight",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6522,
+          "item_name": "Deviate Fish",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6661,
+        "item_name": "Recipe: Savory Deviate Delight"
+      },
+      "vendor_sell_price": 5,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "drop",
+      "acquisition_note": "dropped by: ['Kolkar Invader', 'Kolkar Stormseer', 'Faltering Silithid Flayer', \"Lakota'mani\", 'Lost Barrens Kodo', 'Greater Barrens Kodo', 'Barrens Kodo', 'Wooly Kodo', 'Stormhide', 'Thunderhead', 'Stormsnout', 'Savannah Patriarch', 'Zhevra Runner', 'Savannah Highmane', 'Greater Plainstrider', 'Ornery Plainstrider', 'Fleeting Plainstrider', 'Thunderhawk Hatchling', 'Barrens Giraffe', 'Greater Thunderhawk', 'Silithid Creeper', 'Silithid Grub', 'Silithid Swarmer', 'Sunscale Lashtail', 'Sunscale Screecher', 'Sunscale Scytheclaw', 'Ishamuhale', 'Stonearm', 'Savannah Huntress', 'Savannah Matriarch', 'Thunderhawk Cloudscraper', 'Savannah Prowler', 'Zhevra Charger', 'Wandering Barrens Giraffe', 'Zhevra Courser', 'Owatanka', 'Silithid Protector', 'General Twinbraid', 'Sister Rathtalon', \"Geopriest Gukk'rok\", 'Razorfen Servitor', 'Slimeshell Makrura', 'Dishu', 'Rocklance', 'Foreman Grills', 'Thunderstomp', 'Marcus Bel', 'Hannah Bladeleaf', 'Thora Feathermoon', 'Aean Swiftriver', 'Hecklefang Hyena', 'Hecklefang Stalker', 'Engineer Whirleygig', 'Kolkar Packhound', 'Hecklefang Snarler', 'Muck Frenzy', 'Tinkerer Sniggles', 'Rathorian', 'Baron Longshore', 'Razormane Seer', 'Razormane Stalker', 'Razormane Pathfinder', 'Cannoneer Smythe', 'Supervisor Lugwizzle', 'Kreenig Snarlsnout', 'Kuz', 'Nak', 'Kolkar Bloodcharger', 'Hezrul Bloodmark', 'Verog the Dervish', 'Prospector Khazgorm', 'Theramore Marine', 'Southsea Privateer', 'Southsea Cutthroat', 'Southsea Brigand', 'Burning Blade Acolyte', 'Burning Blade Bruiser', \"Bael'dun Rifleman\", 'Venture Co. Peon', 'Venture Co. Drudger', 'Venture Co. Enforcer', 'Venture Co. Mercenary', 'Witchwing Windcaller', 'Witchwing Ambusher', 'Witchwing Slayer', 'Witchwing Roguefeather', 'Witchwing Harpy', 'Kolkar Marauder', 'Kolkar Pack Runner', 'Kolkar Stormer', 'Kolkar Wrangler', 'Elder Mystic Razorsnout', 'Razormane Geomancer', 'Razormane Thornweaver', 'Razormane Water Seeker', 'Razormane Defender', 'Razormane Hunter', 'Bristleback Geomancer', 'Bristleback Water Seeker', 'Swinegart Spearhide', 'Overseer Glibby', 'Cannoneer Whessan', 'Boss Copperplug', 'Washte Pawne', 'Tazan', 'Heggin Stonewhisker', 'Snort the Heckler', 'Isha Awak', 'Oasis Snapjaw', 'Razormane Warfrenzy', 'Barak Kodobane', 'Captain Fairmount', 'Theramore Preserver', 'Southsea Cannoneer', \"Bael'dun Officer\", \"Bael'dun Soldier\", \"Bael'dun Foreman\", \"Bael'dun Excavator\", 'Venture Co. Overseer', 'Razormane Mystic', 'Bristleback Thornweaver', 'Bristleback Hunter', 'Brontus']",
+      "trivial_low": 125,
+      "trivial_high": 165
+    },
+    {
+      "spell_id": 8604,
+      "craft_spell_id": 8604,
+      "crafted_item_id": 6888,
+      "crafted_item_name": "Herb Baked Egg",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6891,
+        "item_name": "Recipe: Herb Baked Egg"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 8607,
+      "craft_spell_id": 8607,
+      "crafted_item_id": 6890,
+      "crafted_item_name": "Smoked Bear Meat",
+      "required_skill_value": 40,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3173,
+          "item_name": "Bear Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6892,
+        "item_name": "Recipe: Smoked Bear Meat"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Drac Roughcut', 'Andrew Hilbert']",
+      "trivial_low": 80,
+      "trivial_high": 120
+    },
+    {
+      "spell_id": 9513,
+      "craft_spell_id": 9513,
+      "crafted_item_id": 7676,
+      "crafted_item_name": "Thistle Tea",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 7678,
+        "item_name": "Recipe: Thistle Tea"
+      },
+      "vendor_sell_price": 30,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 100,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 15935,
+      "craft_spell_id": 15935,
+      "crafted_item_id": 12224,
+      "crafted_item_name": "Crispy Bat Wing",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12223,
+          "item_name": "Meaty Bat Wing",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12226,
+        "item_name": "Recipe: Crispy Bat Wing"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Abigail Shiel']",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 15855,
+      "craft_spell_id": 15855,
+      "crafted_item_id": 12210,
+      "crafted_item_name": "Roast Raptor",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12228,
+        "item_name": "Recipe: Roast Raptor"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Corporal Bluth', 'Nerrist', 'Hammon Karwn', 'Keena', \"Ogg'marr\", 'Helenia Olden', 'Vendor-Tron 1000']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15861,
+      "craft_spell_id": 15861,
+      "crafted_item_id": 12212,
+      "crafted_item_name": "Jungle Stew",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12202,
+          "item_name": "Tiger Meat",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        },
+        {
+          "item_id": 4536,
+          "item_name": "Shiny Red Apple",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12231,
+        "item_name": "Recipe: Jungle Stew"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Corporal Bluth', 'Nerrist', 'Vendor-Tron 1000']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15863,
+      "craft_spell_id": 15863,
+      "crafted_item_id": 12213,
+      "crafted_item_name": "Carrion Surprise",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12232,
+        "item_name": "Recipe: Carrion Surprise"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Banalash', \"Ogg'marr\", 'Kireena', 'Vendor-Tron 1000']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15865,
+      "craft_spell_id": 15865,
+      "crafted_item_id": 12214,
+      "crafted_item_name": "Mystery Stew",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2596,
+          "item_name": "Skin of Dwarven Stout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12233,
+        "item_name": "Recipe: Mystery Stew"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Helenia Olden', 'Janet Hommers', 'Super-Seller 680']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15906,
+      "craft_spell_id": 15906,
+      "crafted_item_id": 12217,
+      "crafted_item_name": "Dragonbreath Chili",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 4402,
+          "item_name": "Small Flame Sac",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12239,
+        "item_name": "Recipe: Dragonbreath Chili"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): [\"Ogg'marr\", 'Helenia Olden', 'Super-Seller 680']",
+      "trivial_low": 225,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 15910,
+      "craft_spell_id": 15910,
+      "crafted_item_id": 12215,
+      "crafted_item_name": "Heavy Kodo Stew",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12204,
+          "item_name": "Heavy Kodo Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12240,
+        "item_name": "Recipe: Heavy Kodo Stew"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Janet Hommers', 'Kireena', 'Vendor-Tron 1000']",
+      "trivial_low": 225,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 18238,
+      "craft_spell_id": 18238,
+      "crafted_item_id": 6887,
+      "crafted_item_name": "Spotted Yellowtail",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4603,
+          "item_name": "Raw Spotted Yellowtail",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13939,
+        "item_name": "Recipe: Spotted Yellowtail"
+      },
+      "vendor_sell_price": 5,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Gikkix']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 18239,
+      "craft_spell_id": 18239,
+      "crafted_item_id": 13927,
+      "crafted_item_name": "Cooked Glossy Mightfish",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 13754,
+          "item_name": "Raw Glossy Mightfish",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13940,
+        "item_name": "Recipe: Cooked Glossy Mightfish"
+      },
+      "vendor_sell_price": 8,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Kelsey Yance']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 18241,
+      "craft_spell_id": 18241,
+      "crafted_item_id": 13930,
+      "crafted_item_name": "Filet of Redgill",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 13758,
+          "item_name": "Raw Redgill",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13941,
+        "item_name": "Recipe: Filet of Redgill"
+      },
+      "vendor_sell_price": 5,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Kelsey Yance']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 18240,
+      "craft_spell_id": 18240,
+      "crafted_item_id": 13928,
+      "crafted_item_name": "Grilled Squid",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13755,
+          "item_name": "Winter Squid",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13942,
+        "item_name": "Recipe: Grilled Squid"
+      },
+      "vendor_sell_price": 8,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Gikkix']",
+      "trivial_low": 265,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 18242,
+      "craft_spell_id": 18242,
+      "crafted_item_id": 13929,
+      "crafted_item_name": "Hot Smoked Bass",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13756,
+          "item_name": "Raw Summer Bass",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13943,
+        "item_name": "Recipe: Hot Smoked Bass"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Kelsey Yance']",
+      "trivial_low": 265,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 18243,
+      "craft_spell_id": 18243,
+      "crafted_item_id": 13931,
+      "crafted_item_name": "Nightfin Soup",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13759,
+          "item_name": "Raw Nightfin Snapper",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13945,
+        "item_name": "Recipe: Nightfin Soup"
+      },
+      "vendor_sell_price": 12,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Gikkix']",
+      "trivial_low": 275,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 18244,
+      "craft_spell_id": 18244,
+      "crafted_item_id": 13932,
+      "crafted_item_name": "Poached Sunscale Salmon",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13760,
+          "item_name": "Raw Sunscale Salmon",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13946,
+        "item_name": "Recipe: Poached Sunscale Salmon"
+      },
+      "vendor_sell_price": 12,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Gikkix']",
+      "trivial_low": 275,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 18245,
+      "craft_spell_id": 18245,
+      "crafted_item_id": 13933,
+      "crafted_item_name": "Lobster Stew",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13888,
+          "item_name": "Darkclaw Lobster",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13947,
+        "item_name": "Recipe: Lobster Stew"
+      },
+      "vendor_sell_price": 14,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Vivianna', 'Sheendra Tallgrass']",
+      "trivial_low": 300,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 18246,
+      "craft_spell_id": 18246,
+      "crafted_item_id": 13934,
+      "crafted_item_name": "Mightfish Steak",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13893,
+          "item_name": "Large Raw Mightfish",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13948,
+        "item_name": "Recipe: Mightfish Steak"
+      },
+      "vendor_sell_price": 18,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Vivianna', 'Sheendra Tallgrass']",
+      "trivial_low": 300,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 18247,
+      "craft_spell_id": 18247,
+      "crafted_item_id": 13935,
+      "crafted_item_name": "Baked Salmon",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13889,
+          "item_name": "Raw Whitescale Salmon",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13949,
+        "item_name": "Recipe: Baked Salmon"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Vivianna', 'Sheendra Tallgrass']",
+      "trivial_low": 300,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 15933,
+      "craft_spell_id": 15933,
+      "crafted_item_id": 12218,
+      "crafted_item_name": "Monster Omelet",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16110,
+        "item_name": "Recipe: Monster Omelet"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Malygen', 'Bale', 'Himmik']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 15915,
+      "craft_spell_id": 15915,
+      "crafted_item_id": 12216,
+      "crafted_item_name": "Spiced Chili Crab",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12206,
+          "item_name": "Tender Crab Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16111,
+        "item_name": "Recipe: Spiced Chili Crab"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Banalash', 'Uthok', 'Kriggon Talsone']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 20626,
+      "craft_spell_id": 20626,
+      "crafted_item_id": 16766,
+      "crafted_item_name": "Undermine Clam Chowder",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 7974,
+          "item_name": "Zesty Clam Meat",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16767,
+        "item_name": "Recipe: Undermine Clam Chowder"
+      },
+      "vendor_sell_price": 100,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Jabbey']",
+      "trivial_low": 250,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 20916,
+      "craft_spell_id": 20916,
+      "crafted_item_id": 8364,
+      "crafted_item_name": "Mithril Head Trout",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8365,
+          "item_name": "Raw Mithril Head Trout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17062,
+        "item_name": "Recipe: Mithril Head Trout"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Lindea Rabonne', 'Kelsey Yance', 'Stuart Fleming', 'Shankys', 'Heldan Galesong', 'Lizbeth Cromwell', 'Tansy Puddlefizz', 'Wulan', \"Wik'Tar\"]",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 21143,
+      "craft_spell_id": 21143,
+      "crafted_item_id": 17197,
+      "crafted_item_name": "Gingerbread Cookie",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 17194,
+          "item_name": "Holiday Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17200,
+        "item_name": "Recipe: Gingerbread Cookie"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Penney Copperpinch', 'Nardstrum Copperpinch', 'Seersa Copperpinch', 'Wulmort Jinglepocket', 'Khole Jinglepocket']",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 21144,
+      "craft_spell_id": 21144,
+      "crafted_item_id": 17198,
+      "crafted_item_name": "Egg Nog",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 17196,
+          "item_name": "Holiday Spirits",
+          "count": 1
+        },
+        {
+          "item_id": 17194,
+          "item_name": "Holiday Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17201,
+        "item_name": "Recipe: Egg Nog"
+      },
+      "vendor_sell_price": 9,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Penney Copperpinch', 'Nardstrum Copperpinch', 'Seersa Copperpinch', 'Wulmort Jinglepocket', 'Khole Jinglepocket']",
+      "trivial_low": 75,
+      "trivial_high": 115
+    },
+    {
+      "spell_id": 22761,
+      "craft_spell_id": 22761,
+      "crafted_item_id": 18254,
+      "crafted_item_name": "Runn Tum Tuber Surprise",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 18255,
+          "item_name": "Runn Tum Tuber",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 18267,
+        "item_name": "Recipe: Runn Tum Tuber Surprise"
+      },
+      "vendor_sell_price": 18,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "drop",
+      "acquisition_note": "dropped by: ['Pusillin']",
+      "trivial_low": 300,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 24418,
+      "craft_spell_id": 24418,
+      "crafted_item_id": 20074,
+      "crafted_item_name": "Heavy Crocolisk Stew",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3667,
+          "item_name": "Tender Crocolisk Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20075,
+        "item_name": "Recipe: Heavy Crocolisk Stew"
+      },
+      "vendor_sell_price": 300,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): [\"Ogg'marr\"]",
+      "trivial_low": 160,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 25659,
+      "craft_spell_id": 25659,
+      "crafted_item_id": 21023,
+      "crafted_item_name": "Dirge's Kickin' Chimaerok Chops",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 9061,
+          "item_name": "Goblin Rocket Fuel",
+          "count": 1
+        },
+        {
+          "item_id": 8150,
+          "item_name": "Deeprock Salt",
+          "count": 1
+        },
+        {
+          "item_id": 21024,
+          "item_name": "Chimaerok Tenderloin",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21025,
+        "item_name": "Recipe: Dirge's Kickin' Chimaerok Chops"
+      },
+      "vendor_sell_price": 250,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Dirge's Kickin' Chimaerok Chops' (8586)",
+      "trivial_low": 325,
+      "trivial_high": 350
+    },
+    {
+      "spell_id": 25704,
+      "craft_spell_id": 25704,
+      "crafted_item_id": 21072,
+      "crafted_item_name": "Smoked Sagefish",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 21071,
+          "item_name": "Raw Sagefish",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21099,
+        "item_name": "Recipe: Smoked Sagefish"
+      },
+      "vendor_sell_price": 40,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Micha Yance', 'Derak Nightfall', 'Kelsey Yance', 'Naal Mistrunner', 'Gloria Femmel', \"Xen'to\", 'Fyldan', 'Nyoma', 'Ronald Burch', 'Emrul Riknussun', 'Erika Tate', 'Tarban Hearthgrain', 'Wulan', \"Otho Moji'ko\", 'Master Chef Mouldier']",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 25954,
+      "craft_spell_id": 25954,
+      "crafted_item_id": 21217,
+      "crafted_item_name": "Sagefish Delight",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 21153,
+          "item_name": "Raw Greater Sagefish",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21219,
+        "item_name": "Recipe: Sagefish Delight"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Micha Yance', 'Derak Nightfall', 'Kelsey Yance', 'Naal Mistrunner', 'Gloria Femmel', \"Xen'to\", 'Fyldan', 'Nyoma', 'Ronald Burch', 'Emrul Riknussun', 'Erika Tate', 'Tarban Hearthgrain', 'Wulan', \"Otho Moji'ko\", 'Master Chef Mouldier']",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 28267,
+      "craft_spell_id": 28267,
+      "crafted_item_id": 22645,
+      "crafted_item_name": "Crunchy Spider Surprise",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 22644,
+          "item_name": "Crunchy Spider Leg",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 22647,
+        "item_name": "Recipe: Crunchy Spider Surprise"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Fazu', 'Master Chef Mouldier']; quest reward: 'Culinary Crunch' (9171)",
+      "trivial_low": 100,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 33279,
+      "craft_spell_id": 33279,
+      "crafted_item_id": 27651,
+      "crafted_item_name": "Buzzard Bites",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27671,
+          "item_name": "Buzzard Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27684,
+        "item_name": "Recipe: Buzzard Bites"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'Smooth as Butter' (9356)",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 33276,
+      "craft_spell_id": 33276,
+      "crafted_item_id": 27635,
+      "crafted_item_name": "Lynx Steak",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 27668,
+          "item_name": "Lynx Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27685,
+        "item_name": "Recipe: Lynx Steak"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Landraelanis']",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 33277,
+      "craft_spell_id": 33277,
+      "crafted_item_id": 24105,
+      "crafted_item_name": "Roasted Moongraze Tenderloin",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 23676,
+          "item_name": "Moongraze Stag Tenderloin",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27686,
+        "item_name": "Recipe: Roasted Moongraze Tenderloin"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "quest reward: 'The Great Moongraze Hunt' (9454)",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 33278,
+      "craft_spell_id": 33278,
+      "crafted_item_id": 27636,
+      "crafted_item_name": "Bat Bites",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 27669,
+          "item_name": "Bat Flesh",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27687,
+        "item_name": "Recipe: Bat Bites"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Master Chef Mouldier']",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 33284,
+      "craft_spell_id": 33284,
+      "crafted_item_id": 27655,
+      "crafted_item_name": "Ravager Dog",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27674,
+          "item_name": "Ravager Flesh",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27688,
+        "item_name": "Recipe: Ravager Dog"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Cookie One-Eye', 'Sid Limbardi']",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 33285,
+      "craft_spell_id": 33285,
+      "crafted_item_id": 27656,
+      "crafted_item_name": "Sporeling Snack",
+      "required_skill_value": 310,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27676,
+          "item_name": "Strange Spores",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27689,
+        "item_name": "Recipe: Sporeling Snack"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Mycah']",
+      "trivial_low": 330,
+      "trivial_high": 350
+    },
+    {
+      "spell_id": 33286,
+      "craft_spell_id": 33286,
+      "crafted_item_id": 27657,
+      "crafted_item_name": "Blackened Basilisk",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27677,
+          "item_name": "Chunk o' Basilisk",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27690,
+        "item_name": "Recipe: Blackened Basilisk"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Supply Officer Mills', 'Innkeeper Grilka']",
+      "trivial_low": 335,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 33287,
+      "craft_spell_id": 33287,
+      "crafted_item_id": 27658,
+      "crafted_item_name": "Roasted Clefthoof",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27678,
+          "item_name": "Clefthoof Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27691,
+        "item_name": "Recipe: Roasted Clefthoof"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 345,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 33288,
+      "craft_spell_id": 33288,
+      "crafted_item_id": 27659,
+      "crafted_item_name": "Warp Burger",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27681,
+          "item_name": "Warped Flesh",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27692,
+        "item_name": "Recipe: Warp Burger"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Supply Officer Mills', 'Innkeeper Grilka']",
+      "trivial_low": 345,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 33289,
+      "craft_spell_id": 33289,
+      "crafted_item_id": 27660,
+      "crafted_item_name": "Talbuk Steak",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27682,
+          "item_name": "Talbuk Venison",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27693,
+        "item_name": "Recipe: Talbuk Steak"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 345,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 33290,
+      "craft_spell_id": 33290,
+      "crafted_item_id": 27661,
+      "crafted_item_name": "Blackened Trout",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27422,
+          "item_name": "Barbed Gill Trout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27694,
+        "item_name": "Recipe: Blackened Trout"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Doba', 'Gambarinka']",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 33291,
+      "craft_spell_id": 33291,
+      "crafted_item_id": 27662,
+      "crafted_item_name": "Feltail Delight",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27425,
+          "item_name": "Spotted Feltail",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27695,
+        "item_name": "Recipe: Feltail Delight"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Doba', 'Zurai']",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 33292,
+      "craft_spell_id": 33292,
+      "crafted_item_id": 27663,
+      "crafted_item_name": "Blackened Sporefish",
+      "required_skill_value": 310,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27429,
+          "item_name": "Zangarian Sporefish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27696,
+        "item_name": "Recipe: Blackened Sporefish"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Juno Dufrain']",
+      "trivial_low": 330,
+      "trivial_high": 350
+    },
+    {
+      "spell_id": 33293,
+      "craft_spell_id": 33293,
+      "crafted_item_id": 27664,
+      "crafted_item_name": "Grilled Mudfish",
+      "required_skill_value": 320,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27435,
+          "item_name": "Figluster's Mudfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27697,
+        "item_name": "Recipe: Grilled Mudfish"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 340,
+      "trivial_high": 360
+    },
+    {
+      "spell_id": 33294,
+      "craft_spell_id": 33294,
+      "crafted_item_id": 27665,
+      "crafted_item_name": "Poached Bluefish",
+      "required_skill_value": 320,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27437,
+          "item_name": "Icefin Bluefish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27698,
+        "item_name": "Recipe: Poached Bluefish"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 340,
+      "trivial_high": 360
+    },
+    {
+      "spell_id": 33295,
+      "craft_spell_id": 33295,
+      "crafted_item_id": 27666,
+      "crafted_item_name": "Golden Fish Sticks",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27438,
+          "item_name": "Golden Darter",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27699,
+        "item_name": "Recipe: Golden Fish Sticks"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Rungor', 'Innkeeper Biribi']",
+      "trivial_low": 345,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 33296,
+      "craft_spell_id": 33296,
+      "crafted_item_id": 27667,
+      "crafted_item_name": "Spicy Crawdad",
+      "required_skill_value": 350,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27439,
+          "item_name": "Furious Crawdad",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 27700,
+        "item_name": "Recipe: Spicy Crawdad"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Rungor', 'Innkeeper Biribi']",
+      "trivial_low": 370,
+      "trivial_high": 390
+    },
+    {
+      "spell_id": 36210,
+      "craft_spell_id": 36210,
+      "crafted_item_id": 30155,
+      "crafted_item_name": "Clam Bar",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 24477,
+          "item_name": "Jaggal Clam Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 30156,
+        "item_name": "Recipe: Clam Bar"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Mycah']",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 38868,
+      "craft_spell_id": 38868,
+      "crafted_item_id": 31673,
+      "crafted_item_name": "Crunchy Serpent",
+      "required_skill_value": 335,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 31671,
+          "item_name": "Serpent Flesh",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 31674,
+        "item_name": "Recipe: Crunchy Serpent"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Xerintha Ravenoak', 'Sassa Weldwell']; quest reward: 'Mok'Nathal Treats' (10860)",
+      "trivial_low": 355,
+      "trivial_high": 375
+    },
+    {
+      "spell_id": 38867,
+      "craft_spell_id": 38867,
+      "crafted_item_id": 31672,
+      "crafted_item_name": "Mok'Nathal Shortribs",
+      "required_skill_value": 335,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 31670,
+          "item_name": "Raptor Ribs",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 31675,
+        "item_name": "Recipe: Mok'Nathal Shortribs"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "sold by vendor(s): ['Sassa Weldwell', 'Xerintha Ravenoak']; quest reward: 'Mok'Nathal Treats' (10860)",
+      "trivial_low": 355,
+      "trivial_high": 375
+    },
+    {
+      "spell_id": 43765,
+      "craft_spell_id": 43765,
+      "crafted_item_id": 33872,
+      "crafted_item_name": "Spicy Hot Talbuk",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 27682,
+          "item_name": "Talbuk Venison",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33873,
+        "item_name": "Recipe: Spicy Hot Talbuk"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33857 <- quest reward: 'Revenge is Tasty' (11377); inside container 33857 <- quest reward: 'Super Hot Stew' (11379); inside container 33857 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 335,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 43761,
+      "craft_spell_id": 43761,
+      "crafted_item_id": 33867,
+      "crafted_item_name": "Broiled Bloodfin",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 33823,
+          "item_name": "Bloodfin Catfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33869,
+        "item_name": "Recipe: Broiled Bloodfin"
+      },
+      "vendor_sell_price": 8,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33844 <- quest reward: 'Revenge is Tasty' (11377); inside container 33844 <- quest reward: 'Super Hot Stew' (11379); inside container 33844 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 43758,
+      "craft_spell_id": 43758,
+      "crafted_item_id": 33866,
+      "crafted_item_name": "Stormchops",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27678,
+          "item_name": "Clefthoof Meat",
+          "count": 1
+        },
+        {
+          "item_id": 13757,
+          "item_name": "Lightning Eel",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33871,
+        "item_name": "Recipe: Stormchops"
+      },
+      "vendor_sell_price": 550,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33857 <- quest reward: 'Revenge is Tasty' (11377); inside container 33857 <- quest reward: 'Super Hot Stew' (11379); inside container 33857 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 320,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 43707,
+      "craft_spell_id": 43707,
+      "crafted_item_id": 33825,
+      "crafted_item_name": "Skullfish Soup",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 33824,
+          "item_name": "Crescent-Tail Skullfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33870,
+        "item_name": "Recipe: Skullfish Soup"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33844 <- quest reward: 'Revenge is Tasty' (11377); inside container 33844 <- quest reward: 'Super Hot Stew' (11379); inside container 33844 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 335,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 43772,
+      "craft_spell_id": 43772,
+      "crafted_item_id": 33874,
+      "crafted_item_name": "Kibler's Bits",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 27671,
+          "item_name": "Buzzard Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33875,
+        "item_name": "Recipe: Kibler's Bits"
+      },
+      "vendor_sell_price": 150,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33857 <- quest reward: 'Revenge is Tasty' (11377); inside container 33857 <- quest reward: 'Super Hot Stew' (11379); inside container 33857 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 345,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 45022,
+      "craft_spell_id": 45022,
+      "crafted_item_id": 34411,
+      "crafted_item_name": "Hot Apple Cider",
+      "required_skill_value": 325,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 34412,
+          "item_name": "Sparkling Apple Cider",
+          "count": 1
+        },
+        {
+          "item_id": 17196,
+          "item_name": "Holiday Spirits",
+          "count": 1
+        },
+        {
+          "item_id": 17194,
+          "item_name": "Holiday Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 34413,
+        "item_name": "Recipe: Hot Apple Cider"
+      },
+      "vendor_sell_price": 160,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Penney Copperpinch', 'Wulmort Jinglepocket']",
+      "trivial_low": 325,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 43779,
+      "craft_spell_id": 43779,
+      "crafted_item_id": 33924,
+      "crafted_item_name": "Delicious Chocolate Cake",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 30817,
+          "item_name": "Simple Flour",
+          "count": 8
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 4
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 4
+        },
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 8
+        },
+        {
+          "item_id": 2593,
+          "item_name": "Flask of Port",
+          "count": 1
+        },
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 33925,
+        "item_name": "Recipe: Delicious Chocolate Cake"
+      },
+      "vendor_sell_price": 125,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "quest",
+      "acquisition_note": "inside container 33857 <- quest reward: 'Revenge is Tasty' (11377); inside container 33857 <- quest reward: 'Super Hot Stew' (11379); inside container 33857 <- quest reward: 'Manalicious' (11380)",
+      "trivial_low": 50,
+      "trivial_high": 75
+    },
+    {
+      "spell_id": 45695,
+      "craft_spell_id": 45695,
+      "crafted_item_id": 34832,
+      "crafted_item_name": "Captain Rumsey's Lager",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2596,
+          "item_name": "Skin of Dwarven Stout",
+          "count": 1
+        },
+        {
+          "item_id": 2594,
+          "item_name": "Flagon of Mead",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 34834,
+        "item_name": "Recipe: Captain Rumsey's Lager"
+      },
+      "vendor_sell_price": 50,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "multiple",
+      "acquisition_note": "shared loot pool #10000: []; inside container 33844 <- quest reward: 'Revenge is Tasty' (11377); inside container 33844 <- quest reward: 'Super Hot Stew' (11379)",
+      "trivial_low": 100,
+      "trivial_high": 110
+    },
+    {
+      "spell_id": 46684,
+      "craft_spell_id": 46684,
+      "crafted_item_id": 35563,
+      "crafted_item_name": "Charred Bear Kabobs",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 35562,
+          "item_name": "Bear Flank",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 35564,
+        "item_name": "Recipe: Charred Bear Kabobs"
+      },
+      "vendor_sell_price": 12,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Bale', 'Malygen']",
+      "trivial_low": 275,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 46688,
+      "craft_spell_id": 46688,
+      "crafted_item_id": 35565,
+      "crafted_item_name": "Juicy Bear Burger",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 35562,
+          "item_name": "Bear Flank",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 35566,
+        "item_name": "Recipe: Juicy Bear Burger"
+      },
+      "vendor_sell_price": 12,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Bale', 'Malygen']",
+      "trivial_low": 275,
+      "trivial_high": 295
+    }
+  ]
+}

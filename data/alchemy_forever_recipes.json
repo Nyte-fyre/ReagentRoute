@@ -1,0 +1,6068 @@
+{
+  "profession": "Alchemy",
+  "skill_line_id": 171,
+  "game_version": "forever-beta",
+  "recipe_count": 161,
+  "recipes": [
+    {
+      "spell_id": 3230,
+      "craft_spell_id": 3230,
+      "crafted_item_id": 2457,
+      "crafted_item_name": "Elixir of Minor Agility",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2553,
+        "item_name": "Recipe: Elixir of Minor Agility"
+      },
+      "vendor_sell_price": 15,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 80,
+      "trivial_high": 120
+    },
+    {
+      "spell_id": 2334,
+      "craft_spell_id": 2334,
+      "crafted_item_id": 2458,
+      "crafted_item_name": "Elixir of Minor Fortitude",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 2
+        },
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2554,
+        "item_name": "Deprecated Recipe: Elixir of Fortitude"
+      },
+      "vendor_sell_price": 15,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 80,
+      "trivial_high": 120
+    },
+    {
+      "spell_id": 2365,
+      "craft_spell_id": 2365,
+      "crafted_item_id": 2460,
+      "crafted_item_name": "Unknown Item 2460",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 2
+        },
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 2
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2556,
+        "item_name": "Unknown Item 2556"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 100,
+      "trivial_high": 140,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1263005,
+      "craft_spell_id": 1263005,
+      "crafted_item_id": 279970,
+      "crafted_item_name": "Fermenter",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        },
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273085,
+        "item_name": "Blueprint: Fermenter"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1293559,
+      "craft_spell_id": 1293559,
+      "crafted_item_id": 274273,
+      "crafted_item_name": "Flask of Natural Accuracy",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 248822,
+          "item_name": "Death Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 248821,
+          "item_name": "Demonsage",
+          "count": 12
+        },
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 9
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274277,
+        "item_name": "Recipe: Flask of Natural Accuracy"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 320,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 2335,
+      "craft_spell_id": 2335,
+      "crafted_item_id": 2459,
+      "crafted_item_name": "Swiftness Potion",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 2450,
+          "item_name": "Briarthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2555,
+        "item_name": "Recipe: Swiftness Potion"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 3453,
+      "craft_spell_id": 3453,
+      "crafted_item_id": 3828,
+      "crafted_item_name": "Draught of Detect Lesser Invisibility",
+      "required_skill_value": 195,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 1
+        },
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3832,
+        "item_name": "Recipe: Elixir of Detect Lesser Invisibility"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 4508,
+      "craft_spell_id": 4508,
+      "crafted_item_id": 4596,
+      "crafted_item_name": "Minor Discolored Healing Potion",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        },
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 1
+        },
+        {
+          "item_id": 730,
+          "item_name": "Murloc Eye",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 4597,
+        "item_name": "Recipe: Minor Discolored Healing Potion"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 55,
+      "trivial_high": 95
+    },
+    {
+      "spell_id": 8240,
+      "craft_spell_id": 8240,
+      "crafted_item_id": 6662,
+      "crafted_item_name": "Elixir of Giant Growth",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6522,
+          "item_name": "Deviate Fish",
+          "count": 1
+        },
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6663,
+        "item_name": "Recipe: Elixir of Giant Growth"
+      },
+      "vendor_sell_price": 95,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 11453,
+      "craft_spell_id": 11453,
+      "crafted_item_id": 9036,
+      "crafted_item_name": "Magic Resistance Potion",
+      "required_skill_value": 210,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 1
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9293,
+        "item_name": "Recipe: Magic Resistance Potion"
+      },
+      "vendor_sell_price": 20,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 265
+    },
+    {
+      "spell_id": 11458,
+      "craft_spell_id": 11458,
+      "crafted_item_id": 9144,
+      "crafted_item_name": "Wildvine Potion",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8153,
+          "item_name": "Wildvine",
+          "count": 1
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9294,
+        "item_name": "Recipe: Wildvine Potion"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 11464,
+      "craft_spell_id": 11464,
+      "crafted_item_id": 9172,
+      "crafted_item_name": "Invisibility Potion",
+      "required_skill_value": 235,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 1
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9295,
+        "item_name": "Recipe: Invisibility Potion"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 250,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 11468,
+      "craft_spell_id": 11468,
+      "crafted_item_id": 9197,
+      "crafted_item_name": "Draught of Dream Vision",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 3
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9297,
+        "item_name": "Recipe: Draught of Dream Vision"
+      },
+      "vendor_sell_price": 600,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 255,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 11472,
+      "craft_spell_id": 11472,
+      "crafted_item_id": 9206,
+      "crafted_item_name": "Elixir of Greater Strength",
+      "required_skill_value": 245,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 1
+        },
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9298,
+        "item_name": "Recipe: Elixir of Giants"
+      },
+      "vendor_sell_price": 700,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 11476,
+      "craft_spell_id": 11476,
+      "crafted_item_id": 9264,
+      "crafted_item_name": "Elixir of Shadow Power",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 3
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9301,
+        "item_name": "Recipe: Elixir of Shadow Power"
+      },
+      "vendor_sell_price": 35,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 17552,
+      "craft_spell_id": 17552,
+      "crafted_item_id": 13442,
+      "crafted_item_name": "Mighty Rage Potion",
+      "required_skill_value": 255,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 3
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13476,
+        "item_name": "Recipe: Mighty Rage Potion"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 270,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 17555,
+      "craft_spell_id": 17555,
+      "crafted_item_id": 13447,
+      "crafted_item_name": "Elixir of the Sages",
+      "required_skill_value": 270,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13479,
+        "item_name": "Recipe: Elixir of the Sages"
+      },
+      "vendor_sell_price": 1250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 325
+    },
+    {
+      "spell_id": 17557,
+      "craft_spell_id": 17557,
+      "crafted_item_id": 13453,
+      "crafted_item_name": "Elixir of Brute Force",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 2
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13481,
+        "item_name": "Recipe: Elixir of Brute Force"
+      },
+      "vendor_sell_price": 1250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 17559,
+      "craft_spell_id": 17559,
+      "crafted_item_id": 7078,
+      "crafted_item_name": "Essence of Fire",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7082,
+          "item_name": "Essence of Air",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13482,
+        "item_name": "Recipe: Transmute Air to Fire"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17560,
+      "craft_spell_id": 17560,
+      "crafted_item_id": 7076,
+      "crafted_item_name": "Essence of Earth",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7078,
+          "item_name": "Essence of Fire",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13483,
+        "item_name": "Recipe: Transmute Fire to Earth"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17561,
+      "craft_spell_id": 17561,
+      "crafted_item_id": 7080,
+      "crafted_item_name": "Essence of Water",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7076,
+          "item_name": "Essence of Earth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13484,
+        "item_name": "Recipe: Transmute Earth to Water"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17562,
+      "craft_spell_id": 17562,
+      "crafted_item_id": 7082,
+      "crafted_item_name": "Essence of Air",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7080,
+          "item_name": "Essence of Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13485,
+        "item_name": "Recipe: Transmute Water to Air"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17563,
+      "craft_spell_id": 17563,
+      "crafted_item_id": 7080,
+      "crafted_item_name": "Essence of Water",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12808,
+          "item_name": "Essence of Undeath",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13486,
+        "item_name": "Recipe: Transmute Undeath to Water"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17564,
+      "craft_spell_id": 17564,
+      "crafted_item_id": 12808,
+      "crafted_item_name": "Essence of Undeath",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7080,
+          "item_name": "Essence of Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13487,
+        "item_name": "Recipe: Transmute Water to Undeath"
+      },
+      "vendor_sell_price": 1000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17565,
+      "craft_spell_id": 17565,
+      "crafted_item_id": 7076,
+      "crafted_item_name": "Essence of Earth",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12803,
+          "item_name": "Living Essence",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13488,
+        "item_name": "Recipe: Transmute Life to Earth"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17566,
+      "craft_spell_id": 17566,
+      "crafted_item_id": 12803,
+      "crafted_item_name": "Living Essence",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7076,
+          "item_name": "Essence of Earth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13489,
+        "item_name": "Recipe: Transmute Earth to Life"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17570,
+      "craft_spell_id": 17570,
+      "crafted_item_id": 13455,
+      "crafted_item_name": "Greater Stoneshield Potion",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13423,
+          "item_name": "Stonescale Oil",
+          "count": 3
+        },
+        {
+          "item_id": 10620,
+          "item_name": "Thorium Ore",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13490,
+        "item_name": "Recipe: Greater Stoneshield Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 295,
+      "trivial_high": 335
+    },
+    {
+      "spell_id": 17571,
+      "craft_spell_id": 17571,
+      "crafted_item_id": 13452,
+      "crafted_item_name": "Elixir of the Mongoose",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13491,
+        "item_name": "Recipe: Elixir of the Mongoose"
+      },
+      "vendor_sell_price": 1250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 295,
+      "trivial_high": 335
+    },
+    {
+      "spell_id": 17572,
+      "craft_spell_id": 17572,
+      "crafted_item_id": 13462,
+      "crafted_item_name": "Purification Potion",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 2
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13492,
+        "item_name": "Recipe: Purification Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 17573,
+      "craft_spell_id": 17573,
+      "crafted_item_id": 13454,
+      "crafted_item_name": "Greater Arcane Elixir",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 3
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13493,
+        "item_name": "Recipe: Greater Arcane Elixir"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 17574,
+      "craft_spell_id": 17574,
+      "crafted_item_id": 13457,
+      "crafted_item_name": "Greater Fire Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7068,
+          "item_name": "Elemental Fire",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13494,
+        "item_name": "Recipe: Greater Fire Protection Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17575,
+      "craft_spell_id": 17575,
+      "crafted_item_id": 13456,
+      "crafted_item_name": "Greater Frost Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7070,
+          "item_name": "Elemental Water",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13495,
+        "item_name": "Recipe: Greater Frost Protection Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17576,
+      "craft_spell_id": 17576,
+      "crafted_item_id": 13458,
+      "crafted_item_name": "Greater Nature Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7067,
+          "item_name": "Elemental Earth",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13496,
+        "item_name": "Recipe: Greater Nature Protection Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17577,
+      "craft_spell_id": 17577,
+      "crafted_item_id": 13461,
+      "crafted_item_name": "Greater Arcane Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 11176,
+          "item_name": "Dream Dust",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13497,
+        "item_name": "Recipe: Greater Arcane Protection Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17578,
+      "craft_spell_id": 17578,
+      "crafted_item_id": 13459,
+      "crafted_item_name": "Greater Shadow Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3824,
+          "item_name": "Shadow Oil",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13499,
+        "item_name": "Recipe: Greater Shadow Protection Potion"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17579,
+      "craft_spell_id": 17579,
+      "crafted_item_id": 13460,
+      "crafted_item_name": "Greater Holy Protection Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7069,
+          "item_name": "Elemental Air",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13500,
+        "item_name": "Recipe: Greater Holy Protection Potion"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 17580,
+      "craft_spell_id": 17580,
+      "crafted_item_id": 13444,
+      "crafted_item_name": "Major Mana Potion",
+      "required_skill_value": 295,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 3
+        },
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13501,
+        "item_name": "Recipe: Major Mana Potion"
+      },
+      "vendor_sell_price": 1500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 310,
+      "trivial_high": 350
+    },
+    {
+      "spell_id": 17634,
+      "craft_spell_id": 17634,
+      "crafted_item_id": 13506,
+      "crafted_item_name": "Flask of Petrification",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13423,
+          "item_name": "Stonescale Oil",
+          "count": 30
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 10
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13518,
+        "item_name": "Recipe: Flask of Petrification"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 17635,
+      "craft_spell_id": 17635,
+      "crafted_item_id": 13510,
+      "crafted_item_name": "Flask of the Titans",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 30
+        },
+        {
+          "item_id": 13423,
+          "item_name": "Stonescale Oil",
+          "count": 10
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13519,
+        "item_name": "Recipe: Flask of the Titans"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 17636,
+      "craft_spell_id": 17636,
+      "crafted_item_id": 13511,
+      "crafted_item_name": "Flask of Distilled Wisdom",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 30
+        },
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 10
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13520,
+        "item_name": "Recipe: Flask of Distilled Wisdom"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 17637,
+      "craft_spell_id": 17637,
+      "crafted_item_id": 13512,
+      "crafted_item_name": "Flask of Supreme Power",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 30
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 10
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13521,
+        "item_name": "Recipe: Flask of Supreme Power"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 17638,
+      "craft_spell_id": 17638,
+      "crafted_item_id": 13513,
+      "crafted_item_name": "Flask of Chromatic Resistance",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 30
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 10
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13522,
+        "item_name": "Recipe: Flask of Chromatic Resistance"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 3454,
+      "craft_spell_id": 3454,
+      "crafted_item_id": 3829,
+      "crafted_item_name": "Frost Oil",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 4
+        },
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 14634,
+        "item_name": "Recipe: Frost Oil"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 220,
+      "trivial_high": 260
+    },
+    {
+      "spell_id": 26277,
+      "craft_spell_id": 26277,
+      "crafted_item_id": 21546,
+      "crafted_item_name": "Elixir of Holy Power",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 6371,
+          "item_name": "Fire Oil",
+          "count": 3
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 3
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21547,
+        "item_name": "Recipe: Elixir of Greater Firepower"
+      },
+      "vendor_sell_price": 35,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 426607,
+      "craft_spell_id": 426607,
+      "crafted_item_id": 210708,
+      "crafted_item_name": "Elixir of Coalesced Regret",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3820,
+          "item_name": "Stranglekelp",
+          "count": 5
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        },
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 5
+        },
+        {
+          "item_id": 11083,
+          "item_name": "Soul Dust",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 210709,
+        "item_name": "Recipe: Elixir of Coalesced Regret"
+      },
+      "vendor_sell_price": 40,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 110
+    },
+    {
+      "spell_id": 439960,
+      "craft_spell_id": 439960,
+      "crafted_item_id": 217398,
+      "crafted_item_name": "Lesser Arcane Elixir",
+      "required_skill_value": 190,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 217399,
+        "item_name": "Recipe: Lesser Arcane Elixir"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 210,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 1213544,
+      "craft_spell_id": 1213544,
+      "crafted_item_id": 233966,
+      "crafted_item_name": "Unknown Item 233966",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 16203,
+          "item_name": "Greater Eternal Essence",
+          "count": 1
+        },
+        {
+          "item_id": 234012,
+          "item_name": "Hive Thistle",
+          "count": 1
+        },
+        {
+          "item_id": 13511,
+          "item_name": "Flask of Distilled Wisdom",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234252,
+        "item_name": "Unknown Item 234252"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213546,
+      "craft_spell_id": 1213546,
+      "crafted_item_id": 233964,
+      "crafted_item_name": "Unknown Item 233964",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 16203,
+          "item_name": "Greater Eternal Essence",
+          "count": 1
+        },
+        {
+          "item_id": 234011,
+          "item_name": "Unknown Item 234011",
+          "count": 1
+        },
+        {
+          "item_id": 13512,
+          "item_name": "Flask of Supreme Power",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234253,
+        "item_name": "Unknown Item 234253"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213548,
+      "craft_spell_id": 1213548,
+      "crafted_item_id": 233965,
+      "crafted_item_name": "Unknown Item 233965",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 16203,
+          "item_name": "Greater Eternal Essence",
+          "count": 1
+        },
+        {
+          "item_id": 234006,
+          "item_name": "Unknown Item 234006",
+          "count": 1
+        },
+        {
+          "item_id": 13510,
+          "item_name": "Flask of the Titans",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234255,
+        "item_name": "Unknown Item 234255"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213552,
+      "craft_spell_id": 1213552,
+      "crafted_item_id": 233962,
+      "crafted_item_name": "Unknown Item 233962",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 16203,
+          "item_name": "Greater Eternal Essence",
+          "count": 1
+        },
+        {
+          "item_id": 234010,
+          "item_name": "Unknown Item 234010",
+          "count": 1
+        },
+        {
+          "item_id": 13513,
+          "item_name": "Flask of Chromatic Resistance",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234256,
+        "item_name": "Unknown Item 234256"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213559,
+      "craft_spell_id": 1213559,
+      "crafted_item_id": 233967,
+      "crafted_item_name": "Unknown Item 233967",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        },
+        {
+          "item_id": 234012,
+          "item_name": "Hive Thistle",
+          "count": 2
+        },
+        {
+          "item_id": 234011,
+          "item_name": "Unknown Item 234011",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234257,
+        "item_name": "Unknown Item 234257"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213563,
+      "craft_spell_id": 1213563,
+      "crafted_item_id": 233968,
+      "crafted_item_name": "Unknown Item 233968",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 234012,
+          "item_name": "Hive Thistle",
+          "count": 2
+        },
+        {
+          "item_id": 234011,
+          "item_name": "Unknown Item 234011",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234258,
+        "item_name": "Unknown Item 234258"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213565,
+      "craft_spell_id": 1213565,
+      "crafted_item_id": 233969,
+      "crafted_item_name": "Unknown Item 233969",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 2
+        },
+        {
+          "item_id": 234012,
+          "item_name": "Hive Thistle",
+          "count": 2
+        },
+        {
+          "item_id": 234011,
+          "item_name": "Unknown Item 234011",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234259,
+        "item_name": "Unknown Item 234259"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1213571,
+      "craft_spell_id": 1213571,
+      "crafted_item_id": 233977,
+      "crafted_item_name": "Unknown Item 233977",
+      "required_skill_value": 315,
+      "skill_tier": "Master",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 2
+        },
+        {
+          "item_id": 234012,
+          "item_name": "Hive Thistle",
+          "count": 2
+        },
+        {
+          "item_id": 234011,
+          "item_name": "Unknown Item 234011",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 234260,
+        "item_name": "Unknown Item 234260"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1244421,
+      "craft_spell_id": 1244421,
+      "crafted_item_id": 246948,
+      "crafted_item_name": "Distilled Firewater",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 4
+        },
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 236754,
+        "item_name": "Recipe: Distilled Firewater"
+      },
+      "vendor_sell_price": 200,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 270
+    },
+    {
+      "spell_id": 1231583,
+      "craft_spell_id": 1231583,
+      "crafted_item_id": 241650,
+      "crafted_item_name": "Major Discolored Healing Potion",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 1
+        },
+        {
+          "item_id": 730,
+          "item_name": "Murloc Eye",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 241651,
+        "item_name": "Recipe: Major Discolored Healing Potion"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 11466,
+      "craft_spell_id": 11466,
+      "crafted_item_id": 9088,
+      "crafted_item_name": "Gift of Arthas",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 1
+        },
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9296,
+        "item_name": "Recipe: Gift of Arthas"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 255,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 11473,
+      "craft_spell_id": 11473,
+      "crafted_item_id": 9210,
+      "crafted_item_name": "Ghost Dye",
+      "required_skill_value": 245,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 2
+        },
+        {
+          "item_id": 4342,
+          "item_name": "Purple Dye",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9302,
+        "item_name": "Recipe: Ghost Dye"
+      },
+      "vendor_sell_price": 750,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 22732,
+      "craft_spell_id": 22732,
+      "crafted_item_id": 18253,
+      "crafted_item_name": "Major Rejuvenation Potion",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 10286,
+          "item_name": "Heart of the Wild",
+          "count": 1
+        },
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 4
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 4
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 18257,
+        "item_name": "Recipe: Major Rejuvenation Potion"
+      },
+      "vendor_sell_price": 15,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 310,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 3172,
+      "craft_spell_id": 3172,
+      "crafted_item_id": 3384,
+      "crafted_item_name": "Minor Magic Resistance Potion",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 3
+        },
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3393,
+        "item_name": "Recipe: Minor Magic Resistance Potion"
+      },
+      "vendor_sell_price": 20,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 135,
+      "trivial_high": 175
+    },
+    {
+      "spell_id": 3174,
+      "craft_spell_id": 3174,
+      "crafted_item_id": 3386,
+      "crafted_item_name": "Potion of Poison Cleansing",
+      "required_skill_value": 120,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1288,
+          "item_name": "Large Venom Sac",
+          "count": 1
+        },
+        {
+          "item_id": 2453,
+          "item_name": "Bruiseweed",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3394,
+        "item_name": "Recipe: Potion of Poison Cleansing"
+      },
+      "vendor_sell_price": 35,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 145,
+      "trivial_high": 185
+    },
+    {
+      "spell_id": 3175,
+      "craft_spell_id": 3175,
+      "crafted_item_id": 3387,
+      "crafted_item_name": "Limited Invulnerability Potion",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 2
+        },
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3395,
+        "item_name": "Recipe: Limited Invulnerability Potion"
+      },
+      "vendor_sell_price": 30,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 315
+    },
+    {
+      "spell_id": 2333,
+      "craft_spell_id": 2333,
+      "crafted_item_id": 3390,
+      "crafted_item_name": "Elixir of Lesser Agility",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 1
+        },
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3396,
+        "item_name": "Recipe: Elixir of Lesser Agility"
+      },
+      "vendor_sell_price": 35,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 165,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 3450,
+      "craft_spell_id": 3450,
+      "crafted_item_id": 3825,
+      "crafted_item_name": "Elixir of Lesser Fortitude",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 1
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3830,
+        "item_name": "Recipe: Elixir of Lesser Fortitude"
+      },
+      "vendor_sell_price": 110,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 195,
+      "trivial_high": 235
+    },
+    {
+      "spell_id": 3451,
+      "craft_spell_id": 3451,
+      "crafted_item_id": 3826,
+      "crafted_item_name": "Troll's Blood Elixir",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 1
+        },
+        {
+          "item_id": 2453,
+          "item_name": "Bruiseweed",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3831,
+        "item_name": "Recipe: Troll's Blood Elixir"
+      },
+      "vendor_sell_price": 105,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 240
+    },
+    {
+      "spell_id": 4942,
+      "craft_spell_id": 4942,
+      "crafted_item_id": 4623,
+      "crafted_item_name": "Lesser Stoneshield Potion",
+      "required_skill_value": 215,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3858,
+          "item_name": "Mithril Ore",
+          "count": 1
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 4624,
+        "item_name": "Recipe: Lesser Stoneshield Potion"
+      },
+      "vendor_sell_price": 375,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 230,
+      "trivial_high": 270
+    },
+    {
+      "spell_id": 6617,
+      "craft_spell_id": 6617,
+      "crafted_item_id": 5631,
+      "crafted_item_name": "Rage Potion",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5635,
+          "item_name": "Sharp Claw",
+          "count": 1
+        },
+        {
+          "item_id": 2450,
+          "item_name": "Briarthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5640,
+        "item_name": "Recipe: Rage Potion"
+      },
+      "vendor_sell_price": 30,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6624,
+      "craft_spell_id": 6624,
+      "crafted_item_id": 5634,
+      "crafted_item_name": "Free Action Potion",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6370,
+          "item_name": "Blackmouth Oil",
+          "count": 2
+        },
+        {
+          "item_id": 3820,
+          "item_name": "Stranglekelp",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5642,
+        "item_name": "Recipe: Free Action Potion"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 175,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 6618,
+      "craft_spell_id": 6618,
+      "crafted_item_id": 5633,
+      "crafted_item_name": "Great Rage Potion",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 5637,
+          "item_name": "Large Fang",
+          "count": 1
+        },
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5643,
+        "item_name": "Recipe: Great Rage Potion"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 195,
+      "trivial_high": 235
+    },
+    {
+      "spell_id": 7255,
+      "craft_spell_id": 7255,
+      "crafted_item_id": 6051,
+      "crafted_item_name": "Holy Protection Potion",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2453,
+          "item_name": "Bruiseweed",
+          "count": 1
+        },
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6053,
+        "item_name": "Recipe: Holy Protection Potion"
+      },
+      "vendor_sell_price": 62,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 7256,
+      "craft_spell_id": 7256,
+      "crafted_item_id": 6048,
+      "crafted_item_name": "Shadow Protection Potion",
+      "required_skill_value": 135,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 1
+        },
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6054,
+        "item_name": "Recipe: Shadow Protection Potion"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 160,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 7257,
+      "craft_spell_id": 7257,
+      "crafted_item_id": 6049,
+      "crafted_item_name": "Fire Protection Potion",
+      "required_skill_value": 165,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4402,
+          "item_name": "Small Flame Sac",
+          "count": 1
+        },
+        {
+          "item_id": 6371,
+          "item_name": "Fire Oil",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6055,
+        "item_name": "Recipe: Fire Protection Potion"
+      },
+      "vendor_sell_price": 170,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 210,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 7258,
+      "craft_spell_id": 7258,
+      "crafted_item_id": 6050,
+      "crafted_item_name": "Frost Protection Potion",
+      "required_skill_value": 190,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 1
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6056,
+        "item_name": "Recipe: Frost Protection Potion"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 205,
+      "trivial_high": 245
+    },
+    {
+      "spell_id": 7259,
+      "craft_spell_id": 7259,
+      "crafted_item_id": 6052,
+      "crafted_item_name": "Nature Protection Potion",
+      "required_skill_value": 190,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 1
+        },
+        {
+          "item_id": 3820,
+          "item_name": "Stranglekelp",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6057,
+        "item_name": "Recipe: Nature Protection Potion"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 210,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 3449,
+      "craft_spell_id": 3449,
+      "crafted_item_id": 3824,
+      "crafted_item_name": "Shadow Oil",
+      "required_skill_value": 165,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 4
+        },
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 4
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6068,
+        "item_name": "Recipe: Shadow Oil"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 190,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 3188,
+      "craft_spell_id": 3188,
+      "crafted_item_id": 3391,
+      "crafted_item_name": "Elixir of Ogre Strength",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 1
+        },
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6211,
+        "item_name": "Recipe: Elixir of Ogre's Strength"
+      },
+      "vendor_sell_price": 20,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 175,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 11477,
+      "craft_spell_id": 11477,
+      "crafted_item_id": 9224,
+      "crafted_item_name": "Potion of Demonslaying",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 1
+        },
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9300,
+        "item_name": "Recipe: Potion of Demonslaying"
+      },
+      "vendor_sell_price": 700,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 11459,
+      "craft_spell_id": 11459,
+      "crafted_item_id": 9149,
+      "crafted_item_name": "Philosopher's Stone",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3575,
+          "item_name": "Iron Bar",
+          "count": 4
+        },
+        {
+          "item_id": 9262,
+          "item_name": "Black Vitriol",
+          "count": 1
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 4
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9303,
+        "item_name": "Recipe: Philosopher's Stone"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 11479,
+      "craft_spell_id": 11479,
+      "crafted_item_id": 3577,
+      "crafted_item_name": "Gold Bar",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3575,
+          "item_name": "Iron Bar",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9304,
+        "item_name": "Recipe: Transmute Iron to Gold"
+      },
+      "vendor_sell_price": 600,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 11480,
+      "craft_spell_id": 11480,
+      "crafted_item_id": 6037,
+      "crafted_item_name": "Truesilver Bar",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3860,
+          "item_name": "Mithril Bar",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 9305,
+        "item_name": "Recipe: Transmute Mithril to Truesilver"
+      },
+      "vendor_sell_price": 1250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 11456,
+      "craft_spell_id": 11456,
+      "crafted_item_id": 9061,
+      "crafted_item_name": "Goblin Rocket Fuel",
+      "required_skill_value": 210,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 1
+        },
+        {
+          "item_id": 9260,
+          "item_name": "Volatile Rum",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 10644,
+        "item_name": "Recipe: Goblin Rocket Fuel"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 265
+    },
+    {
+      "spell_id": 17187,
+      "craft_spell_id": 17187,
+      "crafted_item_id": 12360,
+      "crafted_item_name": "Arcanite Bar",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12359,
+          "item_name": "Thorium Bar",
+          "count": 1
+        },
+        {
+          "item_id": 12363,
+          "item_name": "Arcane Crystal",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12958,
+        "item_name": "Recipe: Transmute Arcanite"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 17553,
+      "craft_spell_id": 17553,
+      "crafted_item_id": 13443,
+      "crafted_item_name": "Superior Mana Potion",
+      "required_skill_value": 260,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 2
+        },
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13477,
+        "item_name": "Recipe: Superior Mana Potion"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 315
+    },
+    {
+      "spell_id": 17554,
+      "craft_spell_id": 17554,
+      "crafted_item_id": 13445,
+      "crafted_item_name": "Elixir of Greater Defense",
+      "required_skill_value": 265,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13423,
+          "item_name": "Stonescale Oil",
+          "count": 2
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13478,
+        "item_name": "Recipe: Elixir of Superior Defense"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 320
+    },
+    {
+      "spell_id": 17632,
+      "craft_spell_id": 17632,
+      "crafted_item_id": 13503,
+      "crafted_item_name": "Alchemists' Stone",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7078,
+          "item_name": "Essence of Fire",
+          "count": 8
+        },
+        {
+          "item_id": 7076,
+          "item_name": "Essence of Earth",
+          "count": 8
+        },
+        {
+          "item_id": 7082,
+          "item_name": "Essence of Air",
+          "count": 8
+        },
+        {
+          "item_id": 7080,
+          "item_name": "Essence of Water",
+          "count": 8
+        },
+        {
+          "item_id": 12803,
+          "item_name": "Living Essence",
+          "count": 8
+        },
+        {
+          "item_id": 9262,
+          "item_name": "Black Vitriol",
+          "count": 2
+        },
+        {
+          "item_id": 13468,
+          "item_name": "Black Lotus",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13517,
+        "item_name": "Recipe: Alchemists' Stone"
+      },
+      "vendor_sell_price": 25000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 21923,
+      "craft_spell_id": 21923,
+      "crafted_item_id": 17708,
+      "crafted_item_name": "Elixir of Frost Power",
+      "required_skill_value": 190,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17709,
+        "item_name": "Recipe: Elixir of Frost Power"
+      },
+      "vendor_sell_price": 35,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 210,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 24365,
+      "craft_spell_id": 24365,
+      "crafted_item_id": 20007,
+      "crafted_item_name": "Mageblood Elixir",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 1
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20011,
+        "item_name": "Recipe: Mageblood Elixir"
+      },
+      "vendor_sell_price": 1000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 24366,
+      "craft_spell_id": 24366,
+      "crafted_item_id": 20002,
+      "crafted_item_name": "Greater Dreamless Sleep Potion",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 2
+        },
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20012,
+        "item_name": "Recipe: Greater Dreamless Sleep"
+      },
+      "vendor_sell_price": 1000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 24367,
+      "craft_spell_id": 24367,
+      "crafted_item_id": 20008,
+      "crafted_item_name": "Living Action Potion",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 2
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        },
+        {
+          "item_id": 10286,
+          "item_name": "Heart of the Wild",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20013,
+        "item_name": "Recipe: Living Action Potion"
+      },
+      "vendor_sell_price": 600,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 24368,
+      "craft_spell_id": 24368,
+      "crafted_item_id": 20004,
+      "crafted_item_name": "Major Troll's Blood Elixir",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 1
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20014,
+        "item_name": "Recipe: Major Troll's Blood Elixir"
+      },
+      "vendor_sell_price": 1000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 345
+    },
+    {
+      "spell_id": 25146,
+      "craft_spell_id": 25146,
+      "crafted_item_id": 7068,
+      "crafted_item_name": "Elemental Fire",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7077,
+          "item_name": "Heart of Fire",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20761,
+        "item_name": "Recipe: Transmute Elemental Fire"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 301,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 435971,
+      "craft_spell_id": 435971,
+      "crafted_item_id": 215162,
+      "crafted_item_name": "Unknown Item 215162",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 213371,
+          "item_name": "Crate of Tainted Gniodine Solution",
+          "count": 1
+        },
+        {
+          "item_id": 2456,
+          "item_name": "Minor Rejuvenation Potion",
+          "count": 1
+        },
+        {
+          "item_id": 215430,
+          "item_name": "Gnomeregan Fallout",
+          "count": 3
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 5
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 215163,
+        "item_name": "Recipe: Mildly-Irradiated Rejuvenation Potion"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 235
+    },
+    {
+      "spell_id": 435969,
+      "craft_spell_id": 435969,
+      "crafted_item_id": 213372,
+      "crafted_item_name": "Unknown Item 213372",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        },
+        {
+          "item_id": 213371,
+          "item_name": "Crate of Tainted Gniodine Solution",
+          "count": 5
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 215433,
+        "item_name": "Recipe: Insulating Gniodine"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 220
+    },
+    {
+      "spell_id": 1250775,
+      "craft_spell_id": 1250775,
+      "crafted_item_id": 250326,
+      "crafted_item_name": "Unknown Item 250326",
+      "required_skill_value": 205,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 3
+        },
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250362,
+        "item_name": "Unknown Item 250362"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 205,
+      "trivial_high": 210,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1250776,
+      "craft_spell_id": 1250776,
+      "crafted_item_id": 250327,
+      "crafted_item_name": "Draught of Predatory Senses",
+      "required_skill_value": 195,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 2
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250363,
+        "item_name": "Recipe: Draught of Predatory Senses"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 1250777,
+      "craft_spell_id": 1250777,
+      "crafted_item_id": 250328,
+      "crafted_item_name": "Elixir of Cunning",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 3
+        },
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250364,
+        "item_name": "Recipe: Elixir of Cunning"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1250778,
+      "craft_spell_id": 1250778,
+      "crafted_item_id": 250329,
+      "crafted_item_name": "Elixir of the Phalanx",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 2
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 4
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250365,
+        "item_name": "Recipe: Elixir of the Phalanx"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 255,
+      "trivial_high": 260
+    },
+    {
+      "spell_id": 1250779,
+      "craft_spell_id": 1250779,
+      "crafted_item_id": 250330,
+      "crafted_item_name": "Minor Cleric's Elixir",
+      "required_skill_value": 45,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 2
+        },
+        {
+          "item_id": 2453,
+          "item_name": "Bruiseweed",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250366,
+        "item_name": "Recipe: Minor Cleric's Elixir"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 50,
+      "trivial_high": 55
+    },
+    {
+      "spell_id": 1250780,
+      "craft_spell_id": 1250780,
+      "crafted_item_id": 250331,
+      "crafted_item_name": "Lesser Cleric's Elixir",
+      "required_skill_value": 95,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 2
+        },
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250367,
+        "item_name": "Recipe: Lesser Cleric's Elixir"
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 100,
+      "trivial_high": 105
+    },
+    {
+      "spell_id": 1250781,
+      "craft_spell_id": 1250781,
+      "crafted_item_id": 250332,
+      "crafted_item_name": "Cleric's Elixir",
+      "required_skill_value": 145,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250368,
+        "item_name": "Recipe: Cleric's Elixir"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 150,
+      "trivial_high": 155
+    },
+    {
+      "spell_id": 1250782,
+      "craft_spell_id": 1250782,
+      "crafted_item_id": 250333,
+      "crafted_item_name": "Greater Cleric's Elixir",
+      "required_skill_value": 195,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 3
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250369,
+        "item_name": "Recipe: Greater Cleric's Elixir"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 1250783,
+      "craft_spell_id": 1250783,
+      "crafted_item_id": 250334,
+      "crafted_item_name": "Elixir of Fortitude",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 4
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250370,
+        "item_name": "Recipe: Elixir of Fortitude"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 155,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 1250784,
+      "craft_spell_id": 1250784,
+      "crafted_item_id": 250335,
+      "crafted_item_name": "Elixir of Greater Fortitude",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 4
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250371,
+        "item_name": "Recipe: Elixir of Greater Fortitude"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 205,
+      "trivial_high": 210
+    },
+    {
+      "spell_id": 1250785,
+      "craft_spell_id": 1250785,
+      "crafted_item_id": 250336,
+      "crafted_item_name": "Elixir of Wicked Regeneration",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 3
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250372,
+        "item_name": "Recipe: Elixir of Wicked Regeneration"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 1250786,
+      "craft_spell_id": 1250786,
+      "crafted_item_id": 250337,
+      "crafted_item_name": "Elixir of the Owl",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 4
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250373,
+        "item_name": "Recipe: Elixir of the Owl"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1250787,
+      "craft_spell_id": 1250787,
+      "crafted_item_id": 250338,
+      "crafted_item_name": "Elixir of Sages",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 4
+        },
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 2
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250374,
+        "item_name": "Recipe: Elixir of Sages"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1250788,
+      "craft_spell_id": 1250788,
+      "crafted_item_id": 250339,
+      "crafted_item_name": "Minor Mageblood Elixir",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 2
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250375,
+        "item_name": "Recipe: Minor Mageblood Elixir"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 30,
+      "trivial_high": 35
+    },
+    {
+      "spell_id": 1250789,
+      "craft_spell_id": 1250789,
+      "crafted_item_id": 250340,
+      "crafted_item_name": "Lesser Mageblood Elixir",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 3
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250376,
+        "item_name": "Recipe: Lesser Mageblood Elixir"
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 80,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 1250790,
+      "craft_spell_id": 1250790,
+      "crafted_item_id": 250341,
+      "crafted_item_name": "Greater Mageblood Elixir",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 3
+        },
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250377,
+        "item_name": "Recipe: Greater Mageblood Elixir"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 180,
+      "trivial_high": 185
+    },
+    {
+      "spell_id": 1250791,
+      "craft_spell_id": 1250791,
+      "crafted_item_id": 250342,
+      "crafted_item_name": "Lesser Arcane Elixir",
+      "required_skill_value": 120,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 4
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250378,
+        "item_name": "Recipe: Lesser Arcane Elixir"
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 125,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 1250792,
+      "craft_spell_id": 1250792,
+      "crafted_item_id": 250343,
+      "crafted_item_name": "Elixir of Nature Power",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 4
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250379,
+        "item_name": "Recipe: Elixir of Nature Power"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 1250793,
+      "craft_spell_id": 1250793,
+      "crafted_item_id": 250344,
+      "crafted_item_name": "Elixir of Minor Spirit",
+      "required_skill_value": 15,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 2
+        },
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250380,
+        "item_name": "Recipe: Elixir of Minor Spirit"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 20,
+      "trivial_high": 25
+    },
+    {
+      "spell_id": 1250794,
+      "craft_spell_id": 1250794,
+      "crafted_item_id": 250345,
+      "crafted_item_name": "Elixir of Lesser Spirit",
+      "required_skill_value": 65,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 2
+        },
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250381,
+        "item_name": "Recipe: Elixir of Lesser Spirit"
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 70,
+      "trivial_high": 75
+    },
+    {
+      "spell_id": 1250795,
+      "craft_spell_id": 1250795,
+      "crafted_item_id": 250346,
+      "crafted_item_name": "Elixir of Spirit",
+      "required_skill_value": 115,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 3
+        },
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250382,
+        "item_name": "Recipe: Elixir of Spirit"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 120,
+      "trivial_high": 125
+    },
+    {
+      "spell_id": 1250796,
+      "craft_spell_id": 1250796,
+      "crafted_item_id": 250347,
+      "crafted_item_name": "Elixir of Greater Spirit",
+      "required_skill_value": 165,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 3
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250383,
+        "item_name": "Recipe: Elixir of Greater Spirit"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 170,
+      "trivial_high": 175
+    },
+    {
+      "spell_id": 1250797,
+      "craft_spell_id": 1250797,
+      "crafted_item_id": 250348,
+      "crafted_item_name": "Elixir of the Whale",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 3
+        },
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250384,
+        "item_name": "Recipe: Elixir of the Whale"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1250798,
+      "craft_spell_id": 1250798,
+      "crafted_item_id": 250349,
+      "crafted_item_name": "Elixir of Strength",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 3
+        },
+        {
+          "item_id": 3821,
+          "item_name": "Goldthorn",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250385,
+        "item_name": "Recipe: Elixir of Strength"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 155,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 1250799,
+      "craft_spell_id": 1250799,
+      "crafted_item_id": 250350,
+      "crafted_item_name": "Elixir of Ferocity",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 3
+        },
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250386,
+        "item_name": "Recipe: Elixir of Ferocity"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1250800,
+      "craft_spell_id": 1250800,
+      "crafted_item_id": 250351,
+      "crafted_item_name": "Elixir of the Grizzly",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 3
+        },
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250387,
+        "item_name": "Recipe: Elixir of the Grizzly"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 305,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 1250801,
+      "craft_spell_id": 1250801,
+      "crafted_item_id": 250353,
+      "crafted_item_name": "Elixir of Lesser Intellect",
+      "required_skill_value": 95,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 3
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250388,
+        "item_name": "Recipe: Elixir of Lesser Intellect"
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 100,
+      "trivial_high": 105
+    },
+    {
+      "spell_id": 1250802,
+      "craft_spell_id": 1250802,
+      "crafted_item_id": 250354,
+      "crafted_item_name": "Elixir of Intellect",
+      "required_skill_value": 135,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 3
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250389,
+        "item_name": "Recipe: Elixir of Intellect"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1224636,
+      "craft_spell_id": 1224636,
+      "crafted_item_id": 238292,
+      "crafted_item_name": "Unknown Item 238292",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12811,
+          "item_name": "Righteous Orb",
+          "count": 1
+        },
+        {
+          "item_id": 12359,
+          "item_name": "Thorium Bar",
+          "count": 20
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250390,
+        "item_name": "Unknown Item 250390"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1224637,
+      "craft_spell_id": 1224637,
+      "crafted_item_id": 238293,
+      "crafted_item_name": "Unknown Item 238293",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12811,
+          "item_name": "Righteous Orb",
+          "count": 1
+        },
+        {
+          "item_id": 12359,
+          "item_name": "Thorium Bar",
+          "count": 20
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250391,
+        "item_name": "Unknown Item 250391"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1224638,
+      "craft_spell_id": 1224638,
+      "crafted_item_id": 238294,
+      "crafted_item_name": "Unknown Item 238294",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12938,
+          "item_name": "Blood of Heroes",
+          "count": 1
+        },
+        {
+          "item_id": 12811,
+          "item_name": "Righteous Orb",
+          "count": 1
+        },
+        {
+          "item_id": 12359,
+          "item_name": "Thorium Bar",
+          "count": 20
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250392,
+        "item_name": "Unknown Item 250392"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1224639,
+      "craft_spell_id": 1224639,
+      "crafted_item_id": 238295,
+      "crafted_item_name": "Unknown Item 238295",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12811,
+          "item_name": "Righteous Orb",
+          "count": 1
+        },
+        {
+          "item_id": 12359,
+          "item_name": "Thorium Bar",
+          "count": 20
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250393,
+        "item_name": "Unknown Item 250393"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1225758,
+      "craft_spell_id": 1225758,
+      "crafted_item_id": 238637,
+      "crafted_item_name": "Prowler Steak",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12202,
+          "item_name": "Tiger Meat",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250394,
+        "item_name": "Unknown Item 250394"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1225759,
+      "craft_spell_id": 1225759,
+      "crafted_item_id": 238638,
+      "crafted_item_name": "Filet o' Flank",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12203,
+          "item_name": "Red Wolf Meat",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250395,
+        "item_name": "Unknown Item 250395"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1225760,
+      "craft_spell_id": 1225760,
+      "crafted_item_id": 238639,
+      "crafted_item_name": "Sunrise Omelette",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250396,
+        "item_name": "Unknown Item 250396"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1225762,
+      "craft_spell_id": 1225762,
+      "crafted_item_id": 238641,
+      "crafted_item_name": "Specklefin Feast",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 4603,
+          "item_name": "Raw Spotted Yellowtail",
+          "count": 12
+        },
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 4
+        },
+        {
+          "item_id": 6362,
+          "item_name": "Raw Rockscale Cod",
+          "count": 3
+        },
+        {
+          "item_id": 239017,
+          "item_name": "Exquisite Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250398,
+        "item_name": "Unknown Item 250398"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1225763,
+      "craft_spell_id": 1225763,
+      "crafted_item_id": 238642,
+      "crafted_item_name": "Grand Lobster Banquet",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 13888,
+          "item_name": "Darkclaw Lobster",
+          "count": 12
+        },
+        {
+          "item_id": 3712,
+          "item_name": "Turtle Meat",
+          "count": 4
+        },
+        {
+          "item_id": 3404,
+          "item_name": "Buzzard Wing",
+          "count": 3
+        },
+        {
+          "item_id": 239017,
+          "item_name": "Exquisite Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250399,
+        "item_name": "Unknown Item 250399"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1226206,
+      "craft_spell_id": 1226206,
+      "crafted_item_id": 238737,
+      "crafted_item_name": "Tinkerbox",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 10561,
+          "item_name": "Mithril Casing",
+          "count": 1
+        },
+        {
+          "item_id": 10558,
+          "item_name": "Gold Power Core",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250400,
+        "item_name": "Unknown Item 250400"
+      },
+      "vendor_sell_price": 3000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1226207,
+      "craft_spell_id": 1226207,
+      "crafted_item_id": 238734,
+      "crafted_item_name": "Tinkerbox: Teleport",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 238737,
+          "item_name": "Tinkerbox",
+          "count": 1
+        },
+        {
+          "item_id": 10560,
+          "item_name": "Unstable Trigger",
+          "count": 1
+        },
+        {
+          "item_id": 15994,
+          "item_name": "Thorium Widget",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250401,
+        "item_name": "Unknown Item 250401"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 1251729,
+      "craft_spell_id": 1251729,
+      "crafted_item_id": 250932,
+      "crafted_item_name": "Minor Spellblasting Potion",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 1
+        },
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250976,
+        "item_name": "Recipe: Minor Spellblasting Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 40,
+      "trivial_high": 45
+    },
+    {
+      "spell_id": 1251730,
+      "craft_spell_id": 1251730,
+      "crafted_item_id": 250933,
+      "crafted_item_name": "Lesser Spellblasting Potion",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 1
+        },
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 2
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250977,
+        "item_name": "Recipe: Lesser Spellblasting Potion"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 95
+    },
+    {
+      "spell_id": 1251731,
+      "craft_spell_id": 1251731,
+      "crafted_item_id": 250934,
+      "crafted_item_name": "Spellblasting Potion",
+      "required_skill_value": 135,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3355,
+          "item_name": "Wild Steelbloom",
+          "count": 1
+        },
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250978,
+        "item_name": "Recipe: Spellblasting Potion"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1251732,
+      "craft_spell_id": 1251732,
+      "crafted_item_id": 250935,
+      "crafted_item_name": "Greater Spellblasting Potion",
+      "required_skill_value": 185,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 2
+        },
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250979,
+        "item_name": "Recipe: Greater Spellblasting Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 190,
+      "trivial_high": 195
+    },
+    {
+      "spell_id": 1251733,
+      "craft_spell_id": 1251733,
+      "crafted_item_id": 250936,
+      "crafted_item_name": "Superior Spellblasting Potion",
+      "required_skill_value": 235,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 3358,
+          "item_name": "Khadgar's Whisker",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250980,
+        "item_name": "Recipe: Superior Spellblasting Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 245
+    },
+    {
+      "spell_id": 1251734,
+      "craft_spell_id": 1251734,
+      "crafted_item_id": 250937,
+      "crafted_item_name": "Major Spellblasting Potion",
+      "required_skill_value": 285,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 2
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 1
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250981,
+        "item_name": "Recipe: Major Spellblasting Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 295
+    },
+    {
+      "spell_id": 1251735,
+      "craft_spell_id": 1251735,
+      "crafted_item_id": 250938,
+      "crafted_item_name": "Minor Frenzy Potion",
+      "required_skill_value": 40,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 1
+        },
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250982,
+        "item_name": "Recipe: Minor Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 50
+    },
+    {
+      "spell_id": 1251736,
+      "craft_spell_id": 1251736,
+      "crafted_item_id": 250939,
+      "crafted_item_name": "Lesser Frenzy Potion",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2450,
+          "item_name": "Briarthorn",
+          "count": 1
+        },
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 2
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250983,
+        "item_name": "Recipe: Lesser Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 95,
+      "trivial_high": 100
+    },
+    {
+      "spell_id": 1251737,
+      "craft_spell_id": 1251737,
+      "crafted_item_id": 250940,
+      "crafted_item_name": "Frenzy Potion",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 2
+        },
+        {
+          "item_id": 2450,
+          "item_name": "Briarthorn",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250984,
+        "item_name": "Recipe: Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 145,
+      "trivial_high": 150
+    },
+    {
+      "spell_id": 1251738,
+      "craft_spell_id": 1251738,
+      "crafted_item_id": 250941,
+      "crafted_item_name": "Greater Frenzy Potion",
+      "required_skill_value": 190,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 3
+        },
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250985,
+        "item_name": "Recipe: Greater Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 195,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 1251739,
+      "craft_spell_id": 1251739,
+      "crafted_item_id": 250942,
+      "crafted_item_name": "Superior Frenzy Potion",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 3
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250986,
+        "item_name": "Recipe: Superior Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 245,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 1251740,
+      "craft_spell_id": 1251740,
+      "crafted_item_id": 250943,
+      "crafted_item_name": "Major Frenzy Potion",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 3
+        },
+        {
+          "item_id": 8839,
+          "item_name": "Blindweed",
+          "count": 2
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250987,
+        "item_name": "Recipe: Major Frenzy Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 295,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 1251741,
+      "craft_spell_id": 1251741,
+      "crafted_item_id": 250944,
+      "crafted_item_name": "Minor Mender's Potion",
+      "required_skill_value": 30,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 2
+        },
+        {
+          "item_id": 2453,
+          "item_name": "Bruiseweed",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250988,
+        "item_name": "Recipe: Minor Mender's Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 35,
+      "trivial_high": 40
+    },
+    {
+      "spell_id": 1251742,
+      "craft_spell_id": 1251742,
+      "crafted_item_id": 250945,
+      "crafted_item_name": "Lesser Mender's Potion",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3356,
+          "item_name": "Kingsblood",
+          "count": 2
+        },
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250989,
+        "item_name": "Recipe: Lesser Mender's Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 85,
+      "trivial_high": 90
+    },
+    {
+      "spell_id": 1251743,
+      "craft_spell_id": 1251743,
+      "crafted_item_id": 250946,
+      "crafted_item_name": "Mender's Potion",
+      "required_skill_value": 130,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 2
+        },
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250990,
+        "item_name": "Recipe: Mender's Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 135,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 1251744,
+      "craft_spell_id": 1251744,
+      "crafted_item_id": 250947,
+      "crafted_item_name": "Greater Mender's Potion",
+      "required_skill_value": 185,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 2
+        },
+        {
+          "item_id": 8831,
+          "item_name": "Purple Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250991,
+        "item_name": "Unknown Item 250991"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 185,
+      "trivial_high": 190,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1251745,
+      "craft_spell_id": 1251745,
+      "crafted_item_id": 250948,
+      "crafted_item_name": "Superior Mender's Potion",
+      "required_skill_value": 230,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 2
+        },
+        {
+          "item_id": 8836,
+          "item_name": "Arthas' Tears",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250992,
+        "item_name": "Recipe: Superior Mender's Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 235,
+      "trivial_high": 240
+    },
+    {
+      "spell_id": 1251747,
+      "craft_spell_id": 1251747,
+      "crafted_item_id": 250949,
+      "crafted_item_name": "Major Mender's Potion",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 3
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 1
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250993,
+        "item_name": "Recipe: Major Mender's Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1251748,
+      "craft_spell_id": 1251748,
+      "crafted_item_id": 250950,
+      "crafted_item_name": "Potion of Venomous Blood",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 3
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250994,
+        "item_name": "Recipe: Potion of Venomous Blood"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1251749,
+      "craft_spell_id": 1251749,
+      "crafted_item_id": 250951,
+      "crafted_item_name": "Caustic Smog Potion",
+      "required_skill_value": 265,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 2
+        },
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250995,
+        "item_name": "Recipe: Caustic Smog Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 270,
+      "trivial_high": 275
+    },
+    {
+      "spell_id": 1251750,
+      "craft_spell_id": 1251750,
+      "crafted_item_id": 250952,
+      "crafted_item_name": "Disorienting Smog Potion",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8845,
+          "item_name": "Ghost Mushroom",
+          "count": 3
+        },
+        {
+          "item_id": 3369,
+          "item_name": "Grave Moss",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250996,
+        "item_name": "Recipe: Disorienting Smog Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 185,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 1251751,
+      "craft_spell_id": 1251751,
+      "crafted_item_id": 250953,
+      "crafted_item_name": "Dragonfire Potion",
+      "required_skill_value": 245,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        },
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250997,
+        "item_name": "Recipe: Dragonfire Potion"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 250,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 1251752,
+      "craft_spell_id": 1251752,
+      "crafted_item_id": 250954,
+      "crafted_item_name": "Potion of Elemental Siphoning",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 4625,
+          "item_name": "Firebloom",
+          "count": 2
+        },
+        {
+          "item_id": 3819,
+          "item_name": "Wintersbite",
+          "count": 2
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250998,
+        "item_name": "Recipe: Potion of Elemental Siphoning"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1251753,
+      "craft_spell_id": 1251753,
+      "crafted_item_id": 250955,
+      "crafted_item_name": "Potion of Beast Culling",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8846,
+          "item_name": "Gromsblood",
+          "count": 2
+        },
+        {
+          "item_id": 13466,
+          "item_name": "Plaguebloom",
+          "count": 2
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250999,
+        "item_name": "Recipe: Potion of Beast Culling"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1317279,
+      "craft_spell_id": 1317279,
+      "crafted_item_id": 251290,
+      "crafted_item_name": "Legionite Bar",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 251291,
+          "item_name": "Heavy Thorium Bar",
+          "count": 1
+        },
+        {
+          "item_id": 248819,
+          "item_name": "Fel Crystal",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 284871,
+        "item_name": "Recipe: Transmute Legionite"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1263078,
+      "craft_spell_id": 1263078,
+      "crafted_item_id": 279990,
+      "crafted_item_name": "Alchemy Laboratory",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 273125,
+          "item_name": "Lich's Index Finger",
+          "count": 1
+        },
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273112,
+        "item_name": "Blueprint: Alchemy Laboratory"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 1293560,
+      "craft_spell_id": 1293560,
+      "crafted_item_id": 274274,
+      "crafted_item_name": "Flask of Natural Aggression",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 248822,
+          "item_name": "Death Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 248821,
+          "item_name": "Demonsage",
+          "count": 18
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 6
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274278,
+        "item_name": "Recipe: Flask of Natural Aggression"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 320,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 1293561,
+      "craft_spell_id": 1293561,
+      "crafted_item_id": 274275,
+      "crafted_item_name": "Flask of Natural Precision",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 248822,
+          "item_name": "Death Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 248823,
+          "item_name": "Marefoil",
+          "count": 12
+        },
+        {
+          "item_id": 13463,
+          "item_name": "Dreamfoil",
+          "count": 9
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274279,
+        "item_name": "Recipe: Flask of Natural Precision"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 320,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 1293562,
+      "craft_spell_id": 1293562,
+      "crafted_item_id": 274276,
+      "crafted_item_name": "Flask of Natural Swiftness",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 248822,
+          "item_name": "Death Lotus",
+          "count": 1
+        },
+        {
+          "item_id": 248823,
+          "item_name": "Marefoil",
+          "count": 18
+        },
+        {
+          "item_id": 13467,
+          "item_name": "Icecap",
+          "count": 6
+        },
+        {
+          "item_id": 18256,
+          "item_name": "Imbued Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274280,
+        "item_name": "Recipe: Flask of Natural Swiftness"
+      },
+      "vendor_sell_price": 5000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 320,
+      "trivial_high": 330
+    }
+  ],
+  "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for Forever) -- pure trainer-only recipes with no representative item are missing from this dataset. Acquisition is unresolved for everything."
+}

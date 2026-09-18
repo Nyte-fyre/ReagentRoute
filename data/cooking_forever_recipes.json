@@ -1,0 +1,3978 @@
+{
+  "profession": "Cooking",
+  "skill_line_id": 185,
+  "game_version": "forever-beta",
+  "recipe_count": 119,
+  "recipes": [
+    {
+      "spell_id": 2543,
+      "craft_spell_id": 2543,
+      "crafted_item_id": 733,
+      "crafted_item_name": "Westfall Stew",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 729,
+          "item_name": "Stringy Vulture Meat",
+          "count": 1
+        },
+        {
+          "item_id": 730,
+          "item_name": "Murloc Eye",
+          "count": 1
+        },
+        {
+          "item_id": 731,
+          "item_name": "Goretusk Snout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 728,
+        "item_name": "Recipe: Westfall Stew"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 115,
+      "trivial_high": 155
+    },
+    {
+      "spell_id": 2795,
+      "craft_spell_id": 2795,
+      "crafted_item_id": 2888,
+      "crafted_item_name": "Beer Basted Boar Ribs",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2886,
+          "item_name": "Crag Boar Rib",
+          "count": 1
+        },
+        {
+          "item_id": 2894,
+          "item_name": "Rhapsody Malt",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2889,
+        "item_name": "Recipe: Beer Basted Boar Ribs"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 60,
+      "trivial_high": 100
+    },
+    {
+      "spell_id": 25659,
+      "craft_spell_id": 25659,
+      "crafted_item_id": 21023,
+      "crafted_item_name": "Dirge's Kickin' Chimaerok Chops",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 9061,
+          "item_name": "Goblin Rocket Fuel",
+          "count": 1
+        },
+        {
+          "item_id": 8150,
+          "item_name": "Deeprock Salt",
+          "count": 1
+        },
+        {
+          "item_id": 21024,
+          "item_name": "Chimaerok Tenderloin",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21025,
+        "item_name": "Recipe: Dirge's Kickin' Chimaerok Chops"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 325,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 1283400,
+      "craft_spell_id": 1283400,
+      "crafted_item_id": 279961,
+      "crafted_item_name": "Journeyman Campfire Kit",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 11291,
+          "item_name": "Star Wood",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273087,
+        "item_name": "Blueprint: Journeyman Campfire"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 2542,
+      "craft_spell_id": 2542,
+      "crafted_item_id": 724,
+      "crafted_item_name": "Goretusk Liver Pie",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 723,
+          "item_name": "Goretusk Liver",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2697,
+        "item_name": "Recipe: Goretusk Liver Pie"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 2545,
+      "craft_spell_id": 2545,
+      "crafted_item_id": 2682,
+      "crafted_item_name": "Cooked Crab Claw",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2675,
+          "item_name": "Crawler Claw",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2698,
+        "item_name": "Recipe: Cooked Crab Claw"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 125,
+      "trivial_high": 165
+    },
+    {
+      "spell_id": 2547,
+      "craft_spell_id": 2547,
+      "crafted_item_id": 1082,
+      "crafted_item_name": "Redridge Goulash",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1081,
+          "item_name": "Crisp Spider Meat",
+          "count": 1
+        },
+        {
+          "item_id": 1080,
+          "item_name": "Tough Condor Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2699,
+        "item_name": "Recipe: Redridge Goulash"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 135,
+      "trivial_high": 175
+    },
+    {
+      "spell_id": 2548,
+      "craft_spell_id": 2548,
+      "crafted_item_id": 2685,
+      "crafted_item_name": "Succulent Pork Ribs",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2677,
+          "item_name": "Boar Ribs",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2700,
+        "item_name": "Recipe: Succulent Pork Ribs"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 2549,
+      "craft_spell_id": 2549,
+      "crafted_item_id": 1017,
+      "crafted_item_name": "Seasoned Wolf Kabob",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1015,
+          "item_name": "Lean Wolf Flank",
+          "count": 2
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 2701,
+        "item_name": "Recipe: Seasoned Wolf Kabob"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 3370,
+      "craft_spell_id": 3370,
+      "crafted_item_id": 3662,
+      "crafted_item_name": "Crocolisk Steak",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2924,
+          "item_name": "Crocolisk Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3678,
+        "item_name": "Recipe: Crocolisk Steak"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 3371,
+      "craft_spell_id": 3371,
+      "crafted_item_id": 3220,
+      "crafted_item_name": "Blood Sausage",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3173,
+          "item_name": "Bear Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3172,
+          "item_name": "Boar Intestines",
+          "count": 1
+        },
+        {
+          "item_id": 3174,
+          "item_name": "Spider Ichor",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3679,
+        "item_name": "Recipe: Blood Sausage"
+      },
+      "vendor_sell_price": 40,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 100,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 3372,
+      "craft_spell_id": 3372,
+      "crafted_item_id": 3663,
+      "crafted_item_name": "Murloc Fin Soup",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1468,
+          "item_name": "Murloc Fin",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3680,
+        "item_name": "Recipe: Murloc Fin Soup"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 3373,
+      "craft_spell_id": 3373,
+      "crafted_item_id": 3664,
+      "crafted_item_name": "Crocolisk Gumbo",
+      "required_skill_value": 120,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3667,
+          "item_name": "Tender Crocolisk Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3681,
+        "item_name": "Recipe: Crocolisk Gumbo"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 160,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 3376,
+      "craft_spell_id": 3376,
+      "crafted_item_id": 3665,
+      "crafted_item_name": "Curiously Tasty Omelet",
+      "required_skill_value": 130,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3685,
+          "item_name": "Raptor Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3682,
+        "item_name": "Recipe: Curiously Tasty Omelet"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 170,
+      "trivial_high": 210
+    },
+    {
+      "spell_id": 3377,
+      "craft_spell_id": 3377,
+      "crafted_item_id": 3666,
+      "crafted_item_name": "Gooey Spider Cake",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2251,
+          "item_name": "Gooey Spider Leg",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3683,
+        "item_name": "Recipe: Gooey Spider Cake"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 3397,
+      "craft_spell_id": 3397,
+      "crafted_item_id": 3726,
+      "crafted_item_name": "Big Bear Steak",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3730,
+          "item_name": "Big Bear Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3734,
+        "item_name": "Recipe: Big Bear Steak"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 3398,
+      "craft_spell_id": 3398,
+      "crafted_item_id": 3727,
+      "crafted_item_name": "Hot Lion Chops",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3731,
+          "item_name": "Lion Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3735,
+        "item_name": "Recipe: Hot Lion Chops"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 175,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 3399,
+      "craft_spell_id": 3399,
+      "crafted_item_id": 3728,
+      "crafted_item_name": "Tasty Lion Steak",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3731,
+          "item_name": "Lion Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3736,
+        "item_name": "Recipe: Tasty Lion Steak"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 190,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 3400,
+      "craft_spell_id": 3400,
+      "crafted_item_id": 3729,
+      "crafted_item_name": "Soothing Turtle Bisque",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3712,
+          "item_name": "Turtle Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 3737,
+        "item_name": "Recipe: Soothing Turtle Bisque"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 6415,
+      "craft_spell_id": 6415,
+      "crafted_item_id": 5476,
+      "crafted_item_name": "Fillet of Frenzy",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5468,
+          "item_name": "Soft Frenzy Flesh",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5485,
+        "item_name": "Recipe: Fillet of Frenzy"
+      },
+      "vendor_sell_price": 3,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6416,
+      "craft_spell_id": 6416,
+      "crafted_item_id": 5477,
+      "crafted_item_name": "Strider Stew",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5469,
+          "item_name": "Strider Meat",
+          "count": 1
+        },
+        {
+          "item_id": 4536,
+          "item_name": "Shiny Red Apple",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5486,
+        "item_name": "Recipe: Strider Stew"
+      },
+      "vendor_sell_price": 18,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 6417,
+      "craft_spell_id": 6417,
+      "crafted_item_id": 5478,
+      "crafted_item_name": "Dig Rat Stew",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5051,
+          "item_name": "Dig Rat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5487,
+        "item_name": "Recipe: Dig Rat Stew"
+      },
+      "vendor_sell_price": 70,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 6418,
+      "craft_spell_id": 6418,
+      "crafted_item_id": 5479,
+      "crafted_item_name": "Crispy Lizard Tail",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5470,
+          "item_name": "Thunder Lizard Tail",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5488,
+        "item_name": "Recipe: Crispy Lizard Tail"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 6419,
+      "craft_spell_id": 6419,
+      "crafted_item_id": 5480,
+      "crafted_item_name": "Lean Venison",
+      "required_skill_value": 110,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5471,
+          "item_name": "Stag Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5489,
+        "item_name": "Recipe: Lean Venison"
+      },
+      "vendor_sell_price": 95,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 150,
+      "trivial_high": 190
+    },
+    {
+      "spell_id": 6501,
+      "craft_spell_id": 6501,
+      "crafted_item_id": 5526,
+      "crafted_item_name": "Clam Chowder",
+      "required_skill_value": 90,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 5503,
+          "item_name": "Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5528,
+        "item_name": "Recipe: Clam Chowder"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 170
+    },
+    {
+      "spell_id": 7753,
+      "craft_spell_id": 7753,
+      "crafted_item_id": 4592,
+      "crafted_item_name": "Longjaw Mud Snapper",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6289,
+          "item_name": "Raw Longjaw Mud Snapper",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6328,
+        "item_name": "Recipe: Longjaw Mud Snapper"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7754,
+      "craft_spell_id": 7754,
+      "crafted_item_id": 6316,
+      "crafted_item_name": "Loch Frenzy Delight",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6317,
+          "item_name": "Raw Loch Frenzy",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6329,
+        "item_name": "Recipe: Loch Frenzy Delight"
+      },
+      "vendor_sell_price": 3,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7755,
+      "craft_spell_id": 7755,
+      "crafted_item_id": 4593,
+      "crafted_item_name": "Bristle Whisker Catfish",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6308,
+          "item_name": "Raw Bristle Whisker Catfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6330,
+        "item_name": "Recipe: Bristle Whisker Catfish"
+      },
+      "vendor_sell_price": 4,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 180
+    },
+    {
+      "spell_id": 7827,
+      "craft_spell_id": 7827,
+      "crafted_item_id": 5095,
+      "crafted_item_name": "Rainbow Fin Albacore",
+      "required_skill_value": 50,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6361,
+          "item_name": "Raw Rainbow Fin Albacore",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6368,
+        "item_name": "Recipe: Rainbow Fin Albacore"
+      },
+      "vendor_sell_price": 3,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 90,
+      "trivial_high": 130
+    },
+    {
+      "spell_id": 7828,
+      "craft_spell_id": 7828,
+      "crafted_item_id": 4594,
+      "crafted_item_name": "Rockscale Cod",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 6362,
+          "item_name": "Raw Rockscale Cod",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6369,
+        "item_name": "Recipe: Rockscale Cod"
+      },
+      "vendor_sell_price": 6,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 190,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 8238,
+      "craft_spell_id": 8238,
+      "crafted_item_id": 6657,
+      "crafted_item_name": "Savory Deviate Delight",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6522,
+          "item_name": "Deviate Fish",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6661,
+        "item_name": "Recipe: Savory Deviate Delight"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 125,
+      "trivial_high": 165
+    },
+    {
+      "spell_id": 8607,
+      "craft_spell_id": 8607,
+      "crafted_item_id": 6890,
+      "crafted_item_name": "Smoked Bear Meat",
+      "required_skill_value": 40,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3173,
+          "item_name": "Bear Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6892,
+        "item_name": "Recipe: Smoked Bear Meat"
+      },
+      "vendor_sell_price": 6,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 80,
+      "trivial_high": 120
+    },
+    {
+      "spell_id": 9513,
+      "craft_spell_id": 9513,
+      "crafted_item_id": 7676,
+      "crafted_item_name": "Thistle Tea",
+      "required_skill_value": 60,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2452,
+          "item_name": "Swiftthistle",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 7678,
+        "item_name": "Recipe: Thistle Tea"
+      },
+      "vendor_sell_price": 30,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 100,
+      "trivial_high": 140
+    },
+    {
+      "spell_id": 15853,
+      "craft_spell_id": 15853,
+      "crafted_item_id": 12209,
+      "crafted_item_name": "Lean Wolf Steak",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1015,
+          "item_name": "Lean Wolf Flank",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12227,
+        "item_name": "Recipe: Lean Wolf Steak"
+      },
+      "vendor_sell_price": 95,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 165,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 20626,
+      "craft_spell_id": 20626,
+      "crafted_item_id": 16766,
+      "crafted_item_name": "Undermine Clam Chowder",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 7974,
+          "item_name": "Zesty Clam Meat",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16767,
+        "item_name": "Recipe: Undermine Clam Chowder"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 20916,
+      "craft_spell_id": 20916,
+      "crafted_item_id": 8364,
+      "crafted_item_name": "Mithril Head Trout",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8365,
+          "item_name": "Raw Mithril Head Trout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17062,
+        "item_name": "Recipe: Mithril Head Trout"
+      },
+      "vendor_sell_price": 6,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 24418,
+      "craft_spell_id": 24418,
+      "crafted_item_id": 20074,
+      "crafted_item_name": "Heavy Crocolisk Stew",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 3667,
+          "item_name": "Tender Crocolisk Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 20075,
+        "item_name": "Recipe: Heavy Crocolisk Stew"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 160,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 25704,
+      "craft_spell_id": 25704,
+      "crafted_item_id": 21072,
+      "crafted_item_name": "Smoked Sagefish",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 21071,
+          "item_name": "Raw Sagefish",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21099,
+        "item_name": "Recipe: Smoked Sagefish"
+      },
+      "vendor_sell_price": 40,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 120,
+      "trivial_high": 160
+    },
+    {
+      "spell_id": 1252566,
+      "craft_spell_id": 1252566,
+      "crafted_item_id": 251525,
+      "crafted_item_name": "Savory Whimsyfin Delight",
+      "required_skill_value": 85,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 251524,
+          "item_name": "Whimsyfin",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 251526,
+        "item_name": "Recipe: Savory Whimsyfin Delight"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 125,
+      "trivial_high": 165
+    },
+    {
+      "spell_id": 1270632,
+      "craft_spell_id": 1270632,
+      "crafted_item_id": 263507,
+      "crafted_item_name": "Unknown Item 263507",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 10284,
+          "item_name": "Simple Flour",
+          "count": 5
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 263505,
+        "item_name": "Unknown Item 263505"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 80,
+      "trivial_high": 85,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 1270633,
+      "craft_spell_id": 1270633,
+      "crafted_item_id": 263509,
+      "crafted_item_name": "Skywall Souffle",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 2
+        },
+        {
+          "item_id": 10284,
+          "item_name": "Simple Flour",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 263511,
+        "item_name": "Recipe: Skywall Souffle"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 20,
+      "trivial_high": 45
+    },
+    {
+      "spell_id": 1270635,
+      "craft_spell_id": 1270635,
+      "crafted_item_id": 263512,
+      "crafted_item_name": "Pincer Bites",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2675,
+          "item_name": "Crawler Claw",
+          "count": 1
+        },
+        {
+          "item_id": 10284,
+          "item_name": "Simple Flour",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 263513,
+        "item_name": "Recipe: Pincer Bites"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 30,
+      "trivial_high": 55
+    },
+    {
+      "spell_id": 1295834,
+      "craft_spell_id": 1295834,
+      "crafted_item_id": 274976,
+      "crafted_item_name": "Plain Ol' Paletusk",
+      "required_skill_value": 185,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 769,
+          "item_name": "Chunk of Boar Meat",
+          "count": 2
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274977,
+        "item_name": "Recipe: Plain Ol' Paletusk"
+      },
+      "vendor_sell_price": 75,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 230
+    },
+    {
+      "spell_id": 4094,
+      "craft_spell_id": 4094,
+      "crafted_item_id": 4457,
+      "crafted_item_name": "Barbecued Buzzard Wing",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3404,
+          "item_name": "Buzzard Wing",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 4609,
+        "item_name": "Recipe: Barbecued Buzzard Wing"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 6412,
+      "craft_spell_id": 6412,
+      "crafted_item_id": 5472,
+      "crafted_item_name": "Kaldorei Spider Kabob",
+      "required_skill_value": 10,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5465,
+          "item_name": "Small Spider Leg",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5482,
+        "item_name": "Recipe: Kaldorei Spider Kabob"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 50,
+      "trivial_high": 90
+    },
+    {
+      "spell_id": 6413,
+      "craft_spell_id": 6413,
+      "crafted_item_id": 5473,
+      "crafted_item_name": "Scorpid Surprise",
+      "required_skill_value": 20,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5466,
+          "item_name": "Scorpid Stinger",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5483,
+        "item_name": "Recipe: Scorpid Surprise"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 60,
+      "trivial_high": 100
+    },
+    {
+      "spell_id": 6414,
+      "craft_spell_id": 6414,
+      "crafted_item_id": 5474,
+      "crafted_item_name": "Roasted Kodo Meat",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 5467,
+          "item_name": "Kodo Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 5484,
+        "item_name": "Recipe: Roasted Kodo Meat"
+      },
+      "vendor_sell_price": 9,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 75,
+      "trivial_high": 115
+    },
+    {
+      "spell_id": 7213,
+      "craft_spell_id": 7213,
+      "crafted_item_id": 6038,
+      "crafted_item_name": "Giant Clam Scorcho",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4655,
+          "item_name": "Giant Clam Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6039,
+        "item_name": "Recipe: Giant Clam Scorcho"
+      },
+      "vendor_sell_price": 312,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 7751,
+      "craft_spell_id": 7751,
+      "crafted_item_id": 6290,
+      "crafted_item_name": "Brilliant Smallfish",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6291,
+          "item_name": "Raw Brilliant Smallfish",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6325,
+        "item_name": "Recipe: Brilliant Smallfish"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 7752,
+      "craft_spell_id": 7752,
+      "crafted_item_id": 787,
+      "crafted_item_name": "Slitherskin Mackerel",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6303,
+          "item_name": "Raw Slitherskin Mackerel",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6326,
+        "item_name": "Recipe: Slitherskin Mackerel"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 8604,
+      "craft_spell_id": 8604,
+      "crafted_item_id": 6888,
+      "crafted_item_name": "Herb Baked Egg",
+      "required_skill_value": 45,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6891,
+        "item_name": "Unknown Item 6891"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 85,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 15935,
+      "craft_spell_id": 15935,
+      "crafted_item_id": 12224,
+      "crafted_item_name": "Crispy Bat Wing",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12223,
+          "item_name": "Meaty Bat Wing",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12226,
+        "item_name": "Recipe: Crispy Bat Wing"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 15855,
+      "craft_spell_id": 15855,
+      "crafted_item_id": 12210,
+      "crafted_item_name": "Roast Raptor",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12228,
+        "item_name": "Recipe: Roast Raptor"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15856,
+      "craft_spell_id": 15856,
+      "crafted_item_id": 13851,
+      "crafted_item_name": "Hot Wolf Ribs",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12203,
+          "item_name": "Red Wolf Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12229,
+        "item_name": "Recipe: Hot Wolf Ribs"
+      },
+      "vendor_sell_price": 312,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15861,
+      "craft_spell_id": 15861,
+      "crafted_item_id": 12212,
+      "crafted_item_name": "Jungle Stew",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12202,
+          "item_name": "Tiger Meat",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        },
+        {
+          "item_id": 4536,
+          "item_name": "Shiny Red Apple",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12231,
+        "item_name": "Recipe: Jungle Stew"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15863,
+      "craft_spell_id": 15863,
+      "crafted_item_id": 12213,
+      "crafted_item_name": "Carrion Surprise",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12232,
+        "item_name": "Recipe: Carrion Surprise"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15865,
+      "craft_spell_id": 15865,
+      "crafted_item_id": 12214,
+      "crafted_item_name": "Mystery Stew",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2596,
+          "item_name": "Skin of Dwarven Stout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12233,
+        "item_name": "Recipe: Mystery Stew"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 15906,
+      "craft_spell_id": 15906,
+      "crafted_item_id": 12217,
+      "crafted_item_name": "Dragonbreath Chili",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 1
+        },
+        {
+          "item_id": 4402,
+          "item_name": "Small Flame Sac",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12239,
+        "item_name": "Recipe: Dragonbreath Chili"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 15910,
+      "craft_spell_id": 15910,
+      "crafted_item_id": 12215,
+      "crafted_item_name": "Heavy Kodo Stew",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12204,
+          "item_name": "Heavy Kodo Meat",
+          "count": 2
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 12240,
+        "item_name": "Recipe: Heavy Kodo Stew"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 18238,
+      "craft_spell_id": 18238,
+      "crafted_item_id": 6887,
+      "crafted_item_name": "Spotted Yellowtail",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4603,
+          "item_name": "Raw Spotted Yellowtail",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13939,
+        "item_name": "Recipe: Spotted Yellowtail"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 18239,
+      "craft_spell_id": 18239,
+      "crafted_item_id": 13927,
+      "crafted_item_name": "Cooked Glossy Mightfish",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 13754,
+          "item_name": "Raw Glossy Mightfish",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13940,
+        "item_name": "Recipe: Cooked Glossy Mightfish"
+      },
+      "vendor_sell_price": 8,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 18241,
+      "craft_spell_id": 18241,
+      "crafted_item_id": 13930,
+      "crafted_item_name": "Filet of Redgill",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 13758,
+          "item_name": "Raw Redgill",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13941,
+        "item_name": "Recipe: Filet of Redgill"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 18240,
+      "craft_spell_id": 18240,
+      "crafted_item_id": 13928,
+      "crafted_item_name": "Grilled Squid",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13755,
+          "item_name": "Raw Winter Squid",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13942,
+        "item_name": "Recipe: Grilled Squid"
+      },
+      "vendor_sell_price": 8,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 320
+    },
+    {
+      "spell_id": 18242,
+      "craft_spell_id": 18242,
+      "crafted_item_id": 13929,
+      "crafted_item_name": "Hot Smoked Bass",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13756,
+          "item_name": "Raw Summer Bass",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13943,
+        "item_name": "Recipe: Hot Smoked Bass"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 320
+    },
+    {
+      "spell_id": 18243,
+      "craft_spell_id": 18243,
+      "crafted_item_id": 13931,
+      "crafted_item_name": "Nightfin Soup",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13759,
+          "item_name": "Raw Nightfin Snapper",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13945,
+        "item_name": "Recipe: Nightfin Soup"
+      },
+      "vendor_sell_price": 12,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 18244,
+      "craft_spell_id": 18244,
+      "crafted_item_id": 13932,
+      "crafted_item_name": "Poached Sunscale Salmon",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13760,
+          "item_name": "Raw Sunscale Salmon",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13946,
+        "item_name": "Recipe: Poached Sunscale Salmon"
+      },
+      "vendor_sell_price": 12,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 18245,
+      "craft_spell_id": 18245,
+      "crafted_item_id": 13933,
+      "crafted_item_name": "Lobster Stew",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13888,
+          "item_name": "Darkclaw Lobster",
+          "count": 1
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13947,
+        "item_name": "Recipe: Lobster Stew"
+      },
+      "vendor_sell_price": 14,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 18246,
+      "craft_spell_id": 18246,
+      "crafted_item_id": 13934,
+      "crafted_item_name": "Mightfish Steak",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13893,
+          "item_name": "Large Raw Mightfish",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13948,
+        "item_name": "Recipe: Mightfish Steak"
+      },
+      "vendor_sell_price": 18,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 18247,
+      "craft_spell_id": 18247,
+      "crafted_item_id": 13935,
+      "crafted_item_name": "Baked Salmon",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13889,
+          "item_name": "Raw Whitescale Salmon",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 13949,
+        "item_name": "Recipe: Baked Salmon"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 15933,
+      "craft_spell_id": 15933,
+      "crafted_item_id": 12218,
+      "crafted_item_name": "Monster Omelet",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16110,
+        "item_name": "Recipe: Monster Omelet"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 15915,
+      "craft_spell_id": 15915,
+      "crafted_item_id": 12216,
+      "crafted_item_name": "Spiced Chili Crab",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12206,
+          "item_name": "Tender Crab Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16111,
+        "item_name": "Recipe: Spiced Chili Crab"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 21143,
+      "craft_spell_id": 21143,
+      "crafted_item_id": 17197,
+      "crafted_item_name": "Gingerbread Cookie",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 17194,
+          "item_name": "Holiday Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17200,
+        "item_name": "Recipe: Gingerbread Cookie"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 21144,
+      "craft_spell_id": 21144,
+      "crafted_item_id": 17198,
+      "crafted_item_name": "Egg Nog",
+      "required_skill_value": 35,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 17196,
+          "item_name": "Holiday Spirits",
+          "count": 1
+        },
+        {
+          "item_id": 17194,
+          "item_name": "Holiday Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 17201,
+        "item_name": "Recipe: Egg Nog"
+      },
+      "vendor_sell_price": 9,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 75,
+      "trivial_high": 115
+    },
+    {
+      "spell_id": 22480,
+      "craft_spell_id": 22480,
+      "crafted_item_id": 18045,
+      "crafted_item_name": "Tender Wolf Steak",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12208,
+          "item_name": "Tender Wolf Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 18046,
+        "item_name": "Recipe: Tender Wolf Steak"
+      },
+      "vendor_sell_price": 300,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 265,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 22761,
+      "craft_spell_id": 22761,
+      "crafted_item_id": 18254,
+      "crafted_item_name": "Runn Tum Tuber Surprise",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 18255,
+          "item_name": "Runn Tum Tuber",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 18267,
+        "item_name": "Recipe: Runn Tum Tuber Surprise"
+      },
+      "vendor_sell_price": 18,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 25954,
+      "craft_spell_id": 25954,
+      "crafted_item_id": 21217,
+      "crafted_item_name": "Sagefish Delight",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 21153,
+          "item_name": "Raw Greater Sagefish",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 21219,
+        "item_name": "Recipe: Sagefish Delight"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 470359,
+      "craft_spell_id": 470359,
+      "crafted_item_id": 232436,
+      "crafted_item_name": "Darkclaw Bisque",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13888,
+          "item_name": "Darkclaw Lobster",
+          "count": 1
+        },
+        {
+          "item_id": 227813,
+          "item_name": "Unknown Item 227813",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 232437,
+        "item_name": "Recipe: Darkclaw Bisque"
+      },
+      "vendor_sell_price": 100,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 325,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 470370,
+      "craft_spell_id": 470370,
+      "crafted_item_id": 232438,
+      "crafted_item_name": "Smoked Redgill",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13758,
+          "item_name": "Raw Redgill",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 232443,
+        "item_name": "Recipe: Smoked Redgill"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 325,
+      "trivial_high": 365
+    },
+    {
+      "spell_id": 1225758,
+      "craft_spell_id": 1225758,
+      "crafted_item_id": 238637,
+      "crafted_item_name": "Prowler Steak",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12202,
+          "item_name": "Tiger Meat",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 238645,
+        "item_name": "Recipe: Prowler Steak"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 1225759,
+      "craft_spell_id": 1225759,
+      "crafted_item_id": 238638,
+      "crafted_item_name": "Filet o' Flank",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12203,
+          "item_name": "Red Wolf Meat",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 238646,
+        "item_name": "Recipe: Filet o' Flank"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 1225760,
+      "craft_spell_id": 1225760,
+      "crafted_item_id": 238639,
+      "crafted_item_name": "Sunrise Omelette",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 2
+        },
+        {
+          "item_id": 239016,
+          "item_name": "Holy Salts",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 238647,
+        "item_name": "Recipe: Sunrise Omelette"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 1225762,
+      "craft_spell_id": 1225762,
+      "crafted_item_id": 238641,
+      "crafted_item_name": "Specklefin Feast",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 4603,
+          "item_name": "Raw Spotted Yellowtail",
+          "count": 12
+        },
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 4
+        },
+        {
+          "item_id": 6362,
+          "item_name": "Raw Rockscale Cod",
+          "count": 3
+        },
+        {
+          "item_id": 239017,
+          "item_name": "Exquisite Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 238649,
+        "item_name": "Recipe: Specklefin Feast"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 1225763,
+      "craft_spell_id": 1225763,
+      "crafted_item_id": 238642,
+      "crafted_item_name": "Grand Lobster Banquet",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 13888,
+          "item_name": "Darkclaw Lobster",
+          "count": 12
+        },
+        {
+          "item_id": 3712,
+          "item_name": "Turtle Meat",
+          "count": 4
+        },
+        {
+          "item_id": 3404,
+          "item_name": "Buzzard Wing",
+          "count": 3
+        },
+        {
+          "item_id": 239017,
+          "item_name": "Exquisite Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 238650,
+        "item_name": "Recipe: Grand Lobster Banquet"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 1249957,
+      "craft_spell_id": 1249957,
+      "crafted_item_id": 249865,
+      "crafted_item_name": "Peace Tea",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        },
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249879,
+        "item_name": "Recipe: Peace Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 25,
+      "trivial_high": 65
+    },
+    {
+      "spell_id": 1249958,
+      "craft_spell_id": 1249958,
+      "crafted_item_id": 249866,
+      "crafted_item_name": "Royal Tea",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 785,
+          "item_name": "Mageroyal",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249880,
+        "item_name": "Recipe: Royal Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 85,
+      "trivial_high": 125
+    },
+    {
+      "spell_id": 1249959,
+      "craft_spell_id": 1249959,
+      "crafted_item_id": 249867,
+      "crafted_item_name": "Root Tea",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1205,
+          "item_name": "Melon Juice",
+          "count": 1
+        },
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249881,
+        "item_name": "Recipe: Root Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 155,
+      "trivial_high": 185
+    },
+    {
+      "spell_id": 1249960,
+      "craft_spell_id": 1249960,
+      "crafted_item_id": 249868,
+      "crafted_item_name": "Triage Tea",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 1708,
+          "item_name": "Sweet Nectar",
+          "count": 1
+        },
+        {
+          "item_id": 3818,
+          "item_name": "Fadeleaf",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249882,
+        "item_name": "Recipe: Triage Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 195,
+      "trivial_high": 235
+    },
+    {
+      "spell_id": 1249961,
+      "craft_spell_id": 1249961,
+      "crafted_item_id": 249869,
+      "crafted_item_name": "Sunny Tea",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 1645,
+          "item_name": "Moonberry Juice",
+          "count": 1
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249883,
+        "item_name": "Recipe: Sunny Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 220,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 1249962,
+      "craft_spell_id": 1249962,
+      "crafted_item_id": 249870,
+      "crafted_item_name": "Sage's Tea",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8766,
+          "item_name": "Morning Glory Dew",
+          "count": 1
+        },
+        {
+          "item_id": 13465,
+          "item_name": "Mountain Silversage",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249884,
+        "item_name": "Recipe: Sage's Tea"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1249963,
+      "craft_spell_id": 1249963,
+      "crafted_item_id": 249871,
+      "crafted_item_name": "Venomous Smoothie",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        },
+        {
+          "item_id": 1475,
+          "item_name": "Small Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249885,
+        "item_name": "Recipe: Venomous Smoothie"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 5,
+      "trivial_high": 15
+    },
+    {
+      "spell_id": 1249964,
+      "craft_spell_id": 1249964,
+      "crafted_item_id": 249872,
+      "crafted_item_name": "Slimy Smoothie",
+      "required_skill_value": 100,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1179,
+          "item_name": "Ice Cold Milk",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 2
+        },
+        {
+          "item_id": 3174,
+          "item_name": "Spider Ichor",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249886,
+        "item_name": "Recipe: Slimy Smoothie"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 85,
+      "trivial_high": 95
+    },
+    {
+      "spell_id": 1249965,
+      "craft_spell_id": 1249965,
+      "crafted_item_id": 249873,
+      "crafted_item_name": "Mrrggl Smrrthle",
+      "required_skill_value": 125,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1205,
+          "item_name": "Melon Juice",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 2
+        },
+        {
+          "item_id": 1468,
+          "item_name": "Murloc Fin",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249887,
+        "item_name": "Recipe: Mrrggl Smrrthle"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 135,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1249966,
+      "craft_spell_id": 1249966,
+      "crafted_item_id": 249874,
+      "crafted_item_name": "Calcified Smoothie",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 1708,
+          "item_name": "Sweet Nectar",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 3
+        },
+        {
+          "item_id": 5637,
+          "item_name": "Large Fang",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249888,
+        "item_name": "Recipe: Calcified Smoothie"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 185,
+      "trivial_high": 195
+    },
+    {
+      "spell_id": 1249967,
+      "craft_spell_id": 1249967,
+      "crafted_item_id": 249875,
+      "crafted_item_name": "Spicy Smoothie",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 1645,
+          "item_name": "Moonberry Juice",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        },
+        {
+          "item_id": 4402,
+          "item_name": "Small Flame Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249889,
+        "item_name": "Recipe: Spicy Smoothie"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 215,
+      "trivial_high": 225
+    },
+    {
+      "spell_id": 1249968,
+      "craft_spell_id": 1249968,
+      "crafted_item_id": 249876,
+      "crafted_item_name": "Wicked Smoothie",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8766,
+          "item_name": "Morning Glory Dew",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 4
+        },
+        {
+          "item_id": 8146,
+          "item_name": "Wicked Claw",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 249890,
+        "item_name": "Recipe: Wicked Smoothie"
+      },
+      "vendor_sell_price": 1,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 240,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 1250142,
+      "craft_spell_id": 1250142,
+      "crafted_item_id": 250065,
+      "crafted_item_name": "Savory Stag Sliders",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 5471,
+          "item_name": "Stag Meat",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250173,
+        "item_name": "Recipe: Savory Stag Sliders"
+      },
+      "vendor_sell_price": 150,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 1250143,
+      "craft_spell_id": 1250143,
+      "crafted_item_id": 250066,
+      "crafted_item_name": "Soaring Pamplona",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3404,
+          "item_name": "Buzzard Wing",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250174,
+        "item_name": "Recipe: Soaring Pamplona"
+      },
+      "vendor_sell_price": 5,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 1250144,
+      "craft_spell_id": 1250144,
+      "crafted_item_id": 250067,
+      "crafted_item_name": "Bat Hachee",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12223,
+          "item_name": "Meaty Bat Wing",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250175,
+        "item_name": "Recipe: Bat Hachee"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 310
+    },
+    {
+      "spell_id": 1250145,
+      "craft_spell_id": 1250145,
+      "crafted_item_id": 250068,
+      "crafted_item_name": "Savory Turtle Stew",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3712,
+          "item_name": "Turtle Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250176,
+        "item_name": "Recipe: Savory Turtle Stew"
+      },
+      "vendor_sell_price": 6,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 1250146,
+      "craft_spell_id": 1250146,
+      "crafted_item_id": 250069,
+      "crafted_item_name": "Flank au Poivre",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12203,
+          "item_name": "Red Wolf Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250177,
+        "item_name": "Recipe: Flank au Poivre"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 285,
+      "trivial_high": 315
+    },
+    {
+      "spell_id": 1250147,
+      "craft_spell_id": 1250147,
+      "crafted_item_id": 250070,
+      "crafted_item_name": "Bear Bruscitti",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 3730,
+          "item_name": "Big Bear Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250178,
+        "item_name": "Recipe: Bear Bruscitti"
+      },
+      "vendor_sell_price": 25,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 275,
+      "trivial_high": 305
+    },
+    {
+      "spell_id": 1250148,
+      "craft_spell_id": 1250148,
+      "crafted_item_id": 250071,
+      "crafted_item_name": "Steaming Stag Steak",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 5471,
+          "item_name": "Stag Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250179,
+        "item_name": "Recipe: Steaming Stag Steak"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 1250149,
+      "craft_spell_id": 1250149,
+      "crafted_item_id": 250072,
+      "crafted_item_name": "Swiftstrike Steak",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12202,
+          "item_name": "Tiger Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250180,
+        "item_name": "Recipe: Swiftstrike Steak"
+      },
+      "vendor_sell_price": 40,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 175,
+      "trivial_high": 205
+    },
+    {
+      "spell_id": 1250150,
+      "craft_spell_id": 1250150,
+      "crafted_item_id": 250073,
+      "crafted_item_name": "Raging Raptor Ribs",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250181,
+        "item_name": "Recipe: Raging Raptor Ribs"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 185,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 1250151,
+      "craft_spell_id": 1250151,
+      "crafted_item_id": 250074,
+      "crafted_item_name": "Bear Brisket",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3730,
+          "item_name": "Big Bear Meat",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 3
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250182,
+        "item_name": "Recipe: Bear Brisket"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 220
+    },
+    {
+      "spell_id": 1250152,
+      "craft_spell_id": 1250152,
+      "crafted_item_id": 250075,
+      "crafted_item_name": "Prehistoric Pulled Raptor",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250183,
+        "item_name": "Recipe: Prehistoric Pulled Raptor"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 260,
+      "trivial_high": 300
+    },
+    {
+      "spell_id": 1250153,
+      "craft_spell_id": 1250153,
+      "crafted_item_id": 250076,
+      "crafted_item_name": "Raptor Rouladen",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250184,
+        "item_name": "Recipe: Raptor Rouladen"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 250
+    },
+    {
+      "spell_id": 1250154,
+      "craft_spell_id": 1250154,
+      "crafted_item_id": 250077,
+      "crafted_item_name": "Twice-Spiced Raptor Slice",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 12184,
+          "item_name": "Raptor Flesh",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250185,
+        "item_name": "Recipe: Twice-Spiced Raptor Slice"
+      },
+      "vendor_sell_price": 9,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 115,
+      "trivial_high": 150
+    },
+    {
+      "spell_id": 1250155,
+      "craft_spell_id": 1250155,
+      "crafted_item_id": 250078,
+      "crafted_item_name": "Giant Scrambled Eggs",
+      "required_skill_value": 175,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 2
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250186,
+        "item_name": "Recipe: Giant Scrambled Eggs"
+      },
+      "vendor_sell_price": 18,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 195,
+      "trivial_high": 220
+    },
+    {
+      "spell_id": 1250156,
+      "craft_spell_id": 1250156,
+      "crafted_item_id": 250079,
+      "crafted_item_name": "Tasty Raptor Bites",
+      "required_skill_value": 25,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 3685,
+          "item_name": "Raptor Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250187,
+        "item_name": "Recipe: Tasty Raptor Bites"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 35,
+      "trivial_high": 75
+    },
+    {
+      "spell_id": 1250157,
+      "craft_spell_id": 1250157,
+      "crafted_item_id": 250080,
+      "crafted_item_name": "Breakfast Omelette",
+      "required_skill_value": 75,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250188,
+        "item_name": "Recipe: Breakfast Omelette"
+      },
+      "vendor_sell_price": 6,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 75,
+      "trivial_high": 110
+    },
+    {
+      "spell_id": 1250158,
+      "craft_spell_id": 1250158,
+      "crafted_item_id": 250081,
+      "crafted_item_name": "Clam Linguine",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7974,
+          "item_name": "Zesty Clam Meat",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 250189,
+        "item_name": "Recipe: Clam Linguine"
+      },
+      "vendor_sell_price": 10,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 240
+    },
+    {
+      "spell_id": 1255241,
+      "craft_spell_id": 1255241,
+      "crafted_item_id": 252683,
+      "crafted_item_name": "Unknown Item 252683",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 252948,
+          "item_name": "Unknown Item 252948",
+          "count": 1
+        },
+        {
+          "item_id": 5471,
+          "item_name": "Stag Meat",
+          "count": 1
+        },
+        {
+          "item_id": 12207,
+          "item_name": "Giant Egg",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 252949,
+        "item_name": "Unknown Item 252949"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 0,
+      "trivial_high": 0
+    },
+    {
+      "spell_id": 1294014,
+      "craft_spell_id": 1294014,
+      "crafted_item_id": 267341,
+      "crafted_item_name": "Sweetpaw Jam",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 249796,
+          "item_name": "Hyjal Berries",
+          "count": 3
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274415,
+        "item_name": "Recipe: Sweetpaw Jam"
+      },
+      "vendor_sell_price": 200,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1295805,
+      "craft_spell_id": 1295805,
+      "crafted_item_id": 274971,
+      "crafted_item_name": "Briny Seafood Stew",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 730,
+          "item_name": "Murloc Eye",
+          "count": 2
+        },
+        {
+          "item_id": 12206,
+          "item_name": "Tender Crab Meat",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 274972,
+        "item_name": "Recipe: Briny Seafood Stew"
+      },
+      "vendor_sell_price": 12,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 220,
+      "trivial_high": 240
+    },
+    {
+      "spell_id": 1319313,
+      "craft_spell_id": 1319313,
+      "crafted_item_id": 286152,
+      "crafted_item_name": "Plated Armorfish",
+      "required_skill_value": 225,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 13890,
+          "item_name": "Raw Plated Armorfish",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 286153,
+        "item_name": "Recipe: Plated Armorfish"
+      },
+      "vendor_sell_price": 8,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 245,
+      "trivial_high": 255
+    },
+    {
+      "spell_id": 1291341,
+      "craft_spell_id": 1291341,
+      "crafted_item_id": 279974,
+      "crafted_item_name": "Expert Campfire Kit",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 272941,
+          "item_name": "Thick Logs",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273101,
+        "item_name": "Blueprint: Expert Campfire"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 200,
+      "trivial_high": 225
+    },
+    {
+      "spell_id": 1262978,
+      "craft_spell_id": 1262978,
+      "crafted_item_id": 279957,
+      "crafted_item_name": "Cookie's Feast",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 12037,
+          "item_name": "Mystery Meat",
+          "count": 2
+        },
+        {
+          "item_id": 12204,
+          "item_name": "Heavy Kodo Meat",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273102,
+        "item_name": "Blueprint: Cookie's Feast"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1263067,
+      "craft_spell_id": 1263067,
+      "crafted_item_id": 279982,
+      "crafted_item_name": "Iron Oven",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 10284,
+          "item_name": "Simple Flour",
+          "count": 10
+        },
+        {
+          "item_id": 159,
+          "item_name": "Refreshing Spring Water",
+          "count": 5
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273115,
+        "item_name": "Blueprint: Baker's Oven"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 300
+    }
+  ],
+  "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for Forever) -- pure trainer-only recipes with no representative item are missing from this dataset. Acquisition is unresolved for everything."
+}
