@@ -28,9 +28,22 @@ app = FastAPI(title="ReagentRoute API")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
 GAME_VERSIONS = {
-    "classic": {"suffix": "_recipes.json", "label": "Classic Era", "pricing_available": True, "tsm_game_type": "classic"},
-    "tbc": {"suffix": "_tbc_recipes.json", "label": "TBC Anniversary", "pricing_available": False, "tsm_game_type": None},
-    "forever": {"suffix": "_forever_recipes.json", "label": "WoW Forever (beta)", "pricing_available": False, "tsm_game_type": None},
+    "classic": {
+        "suffix": "_recipes.json", "label": "Classic Era", "pricing_available": True, "tsm_game_type": "classic",
+        "max_skill": 300, "max_skill_confirmed": True,
+    },
+    "tbc": {
+        "suffix": "_tbc_recipes.json", "label": "TBC Anniversary", "pricing_available": False, "tsm_game_type": None,
+        "max_skill": 375, "max_skill_confirmed": True,
+    },
+    "forever": {
+        # No official cap announced yet -- this is the highest required_skill_value actually
+        # present in our extracted data (see scripts/extract_profession_forever.py), not a
+        # confirmed final number. Recipe discovery is incomplete for this version (see
+        # Known limitations in README), so this ceiling will likely rise as more data surfaces.
+        "suffix": "_forever_recipes.json", "label": "WoW Forever (beta)", "pricing_available": False, "tsm_game_type": None,
+        "max_skill": 325, "max_skill_confirmed": False,
+    },
 }
 
 # Realms verified to actually return data from TSM's public pricing feed
@@ -88,7 +101,13 @@ class PlanRequest(BaseModel):
 
 @app.get("/api/game-versions")
 def list_game_versions():
-    return [{"id": k, "label": v["label"], "pricing_available": v["pricing_available"]} for k, v in GAME_VERSIONS.items()]
+    return [
+        {
+            "id": k, "label": v["label"], "pricing_available": v["pricing_available"],
+            "max_skill": v["max_skill"], "max_skill_confirmed": v["max_skill_confirmed"],
+        }
+        for k, v in GAME_VERSIONS.items()
+    ]
 
 
 @app.get("/api/professions")

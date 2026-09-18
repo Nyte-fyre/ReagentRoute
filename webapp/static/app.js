@@ -4,6 +4,7 @@ const versionHint = document.getElementById("version-hint");
 const professionSelect = document.getElementById("profession");
 const startSkillInput = document.getElementById("start-skill");
 const targetSkillInput = document.getElementById("target-skill");
+const skillCapHint = document.getElementById("skill-cap-hint");
 const pricingFields = document.getElementById("pricing-fields");
 const realmSelect = document.getElementById("realm-select");
 const factionSelect = document.getElementById("faction-select");
@@ -72,7 +73,7 @@ function parseOwnedMaterials(text) {
 }
 
 function currentVersion() {
-  return gameVersions[gameVersionSelect.value] || { pricing_available: true, label: "" };
+  return gameVersions[gameVersionSelect.value] || { pricing_available: true, label: "", max_skill: 300, max_skill_confirmed: true };
 }
 
 async function loadGameVersions() {
@@ -90,6 +91,15 @@ function onVersionChange() {
   versionHint.textContent = v.pricing_available
     ? ""
     : "No live Auction House pricing source exists yet for this version -- showing known recipes and reagents only.";
+
+  startSkillInput.max = v.max_skill;
+  targetSkillInput.max = v.max_skill;
+  startSkillInput.value = 1;
+  targetSkillInput.value = v.max_skill;
+  skillCapHint.textContent = v.max_skill_confirmed
+    ? `${v.label} profession skill cap: ${v.max_skill}.`
+    : `${v.label} profession skill cap: ${v.max_skill} (highest seen in current beta data, not an official/final number -- may rise as more recipes surface).`;
+
   loadProfessions();
   if (v.pricing_available) loadRealms();
 }
