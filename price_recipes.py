@@ -38,7 +38,7 @@ def fetch_realm_prices(game_type, region_slug, realm_slug):
     return prices
 
 
-def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=None):
+def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=None, vendor_prices=None):
     """Price every recipe's reagents (buy side, via minBuyout) and hedge
     against what crafting it back out recovers. `data` is an already-loaded
     recipes dict (i.e. json.load()'d from a *_recipes.json file).
@@ -52,6 +52,16 @@ def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=N
     specific item shouldn't block the recipe from the cost model. Reagents
     priced from real AH data always use that price even if also gatherable
     -- this only fills gaps, it never overrides a real listing.
+
+    `vendor_prices`, if given, is a {item_name: copper} map of reagents
+    confirmed sold by an ordinary, always-available vendor (see
+    data/vendor_prices.json / scripts/build_vendor_prices.py) -- unlimited
+    stock, no reputation/quest gate, sold by many NPCs, not a rare/special
+    vendor. Same gap-filling role as gatherable_names: only used when a
+    reagent has no AH price. Glass Vials are the clearest case -- Alchemy
+    potions need one, but nobody lists a 20-copper vial on the Auction
+    House when every reagent vendor sells it, so it was showing up as a
+    missing price and blocking otherwise-priceable recipes.
 
     Net cost only ever subtracts the VENDOR sell price. Vendor sale has
     genuinely unlimited depth at a fixed price, so it's safe to apply to
@@ -68,6 +78,7 @@ def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=N
     byproducts on the AH is a real, valid way to offset cost -- it just
     isn't safe to bake into the per-craft math the way vendor price is."""
     gatherable_names = gatherable_names or set()
+    vendor_prices = vendor_prices or {}
     priced = []
     missing_price_items = set()
     for r in data["recipes"]:
@@ -77,8 +88,14 @@ def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=N
         for g in r["reagents"]:
             p = prices.get(g["item_id"])
             gathered = False
+            vendor_bought = False
             if p is None or p[price_field] == 0:
-                if g["item_name"] in gatherable_names:
+                vendor_price = vendor_prices.get(g["item_name"])
+                if vendor_price is not None:
+                    vendor_bought = True
+                    unit_cost = vendor_price
+                    total += unit_cost * g["count"]
+                elif g["item_name"] in gatherable_names:
                     gathered = True
                     unit_cost = 0
                 else:
@@ -88,7 +105,9 @@ def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=N
             else:
                 unit_cost = p[price_field]
                 total += unit_cost * g["count"]
-            reagent_costs.append({**g, "unit_cost_copper": unit_cost, "gathered": gathered})
+            reagent_costs.append({
+                **g, "unit_cost_copper": unit_cost, "gathered": gathered, "vendor_bought": vendor_bought,
+            })
 
         crafted_item_id = r.get("crafted_item_id")
         vendor_sell = r.get("vendor_sell_price") or 0
