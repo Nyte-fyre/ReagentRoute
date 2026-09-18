@@ -11,6 +11,9 @@ const factionSelect = document.getElementById("faction-select");
 const realmHint = document.getElementById("realm-hint");
 const ownedTextarea = document.getElementById("owned-materials");
 const gatheringCheckboxes = document.getElementById("gathering-checkboxes");
+const hedgeAhCheckbox = document.getElementById("hedge-ah-checkbox");
+const ahCapRow = document.getElementById("ah-cap-row");
+const ahCapInput = document.getElementById("ah-cap-input");
 const computeBtn = document.getElementById("compute-btn");
 const errorEl = document.getElementById("error");
 const resultsPanel = document.getElementById("results-panel");
@@ -214,6 +217,8 @@ async function computePlan(event) {
         realm: `${realmSelect.value}-${factionSelect.value}`,
         owned_materials: parseOwnedMaterials(ownedTextarea.value),
         gathering_professions: selectedGatheringProfessions(),
+        hedge_ah: hedgeAhCheckbox.checked,
+        ah_hedge_cap: parseInt(ahCapInput.value, 10) || 0,
       };
       const res = await fetch("/api/plan", {
         method: "POST",
@@ -256,9 +261,18 @@ function renderResults(data) {
   const coverage = data.recipes_priced / data.recipes_total;
   pricedEl.classList.toggle("stat-value-warn", coverage < 0.7);
 
+  const ahHedgeStat = document.getElementById("ah-hedge-stat");
+  const ahHedgeCostEl = document.getElementById("ah-hedge-cost");
+  if (data.ah_hedge_recovered_copper > 0) {
+    ahHedgeStat.classList.remove("hidden");
+    ahHedgeCostEl.textContent = "-" + data.ah_hedge_recovered_display;
+  } else {
+    ahHedgeStat.classList.add("hidden");
+  }
+
   const ownedStat = document.getElementById("owned-stat");
   const costToYouEl = document.getElementById("cost-to-you");
-  if (data.value_saved_from_owned_copper > 0) {
+  if (data.value_saved_from_owned_copper > 0 || data.ah_hedge_recovered_copper > 0) {
     ownedStat.classList.remove("hidden");
     costToYouEl.textContent = data.cost_to_you_display;
   } else {
@@ -306,9 +320,13 @@ function renderResults(data) {
               row.acquisition_note ? ` &mdash; ${escapeHtml(truncateNoteLists(row.acquisition_note))}` : ""
             }</div>`
           : "";
+      const ahHedgeNote =
+        row.ah_hedge_units > 0
+          ? `<div class="gathered-tag">${row.ah_hedge_units} sold to AH for ${row.ah_hedge_value_display} (after 5% cut) -- included in "cost to you" above, not this row's net cost</div>`
+          : "";
       return `<tr>
         <td>${range}</td>
-        <td>${craftLink}${ahNote}${acqNote}</td>
+        <td>${craftLink}${ahNote}${acqNote}${ahHedgeNote}</td>
         <td class="reagents-cell">${reagentLinks}</td>
         <td>${row.net_cost_display}</td>
         <td>${row.running_total_display}</td>
@@ -353,5 +371,6 @@ function renderBrowseResults(data, startSkill, targetSkill) {
 planForm.addEventListener("submit", computePlan);
 gameVersionSelect.addEventListener("change", onVersionChange);
 realmSelect.addEventListener("change", () => realmSelect.classList.remove("input-error"));
+hedgeAhCheckbox.addEventListener("change", () => ahCapRow.classList.toggle("hidden", !hedgeAhCheckbox.checked));
 loadGameVersions();
 loadGatheringProfessions();

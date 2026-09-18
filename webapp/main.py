@@ -22,7 +22,7 @@ os.chdir(ROOT)  # so relative "data/..." paths in imported modules resolve
 
 from price_recipes import fetch_realm_prices, price_recipes_data, copper_to_gsc  # noqa: E402
 from optimize_leveling import (  # noqa: E402
-    build_recipe_costs_data, optimize, apply_owned_materials, summarize_plan,
+    build_recipe_costs_data, optimize, apply_owned_materials, apply_ah_hedge, summarize_plan,
 )
 
 app = FastAPI(title="ReagentRoute API")
@@ -117,6 +117,8 @@ class PlanRequest(BaseModel):
     realm: str
     owned_materials: dict[str, float] = {}
     gathering_professions: list[str] = []
+    hedge_ah: bool = False
+    ah_hedge_cap: int = 5
 
 
 @app.get("/api/game-versions")
@@ -231,7 +233,14 @@ def compute_plan(req: PlanRequest):
     cost_to_you = total_net
     if req.owned_materials:
         saved, remaining_stock = apply_owned_materials(plan, req.owned_materials)
-        cost_to_you = total_net - saved
+        cost_to_you -= saved
+
+    ah_hedge_cap = max(0, min(req.ah_hedge_cap, 50))  # sanity bound -- see apply_ah_hedge() docstring
+    ah_recovered = 0.0
+    ah_detail = {}
+    if req.hedge_ah and ah_hedge_cap:
+        ah_recovered, ah_detail = apply_ah_hedge(plan, ah_hedge_cap)
+        cost_to_you -= ah_recovered
 
     plan_summary = [
         {
@@ -253,8 +262,11 @@ def compute_plan(req: PlanRequest):
             "net_cost_copper": round(net_cost), "net_cost_display": copper_to_gsc(net_cost),
             "gross_cost_copper": round(gross_cost), "gross_cost_display": copper_to_gsc(gross_cost),
             "running_total_copper": round(running), "running_total_display": copper_to_gsc(running),
+            "ah_hedge_units": round(ah_units, 2) if ah_units else 0,
+            "ah_hedge_value_copper": round(ah_value) if ah_value else 0,
+            "ah_hedge_value_display": copper_to_gsc(ah_value) if ah_value else None,
         }
-        for lo, hi, recipe, net_cost, gross_cost, running in summarize_plan(plan)
+        for lo, hi, recipe, net_cost, gross_cost, running, ah_units, ah_value in summarize_plan(plan, ah_detail)
     ]
 
     return {
@@ -271,6 +283,9 @@ def compute_plan(req: PlanRequest):
         "net_market_cost_display": copper_to_gsc(total_net),
         "value_saved_from_owned_copper": round(saved),
         "value_saved_from_owned_display": copper_to_gsc(saved) if saved else None,
+        "ah_hedge_recovered_copper": round(ah_recovered),
+        "ah_hedge_recovered_display": copper_to_gsc(ah_recovered) if ah_recovered else None,
+        "ah_hedge_cap": ah_hedge_cap,
         "cost_to_you_copper": round(cost_to_you),
         "cost_to_you_display": copper_to_gsc(cost_to_you),
         "leftover_owned_materials": {k: v for k, v in remaining_stock.items() if v > 0.01},

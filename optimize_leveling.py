@@ -166,31 +166,86 @@ def apply_owned_materials(plan, owned_items):
     return total_saved, stock
 
 
-def summarize_plan(plan):
+AH_CUT_RATE = 0.05  # Blizzard's cut on a successful faction Auction House sale (verified: standard across Classic/TBC)
+
+
+def apply_ah_hedge(plan, cap):
+    """Walk the finalized plan (already chosen using vendor-only net cost
+    in optimize() -- this never influences WHICH recipe gets picked, only
+    how much extra value gets recovered from what's already being
+    crafted) and assume up to `cap` total units of each distinct crafted
+    item, summed across the WHOLE plan (not per skill range, not per
+    craft), sell on the Auction House at its current minBuyout price
+    minus Blizzard's 5% cut. Units beyond the cap get zero additional AH
+    recovery -- whatever vendor recovery already applies (if any) is
+    already included in net cost and is unaffected.
+
+    This is intentionally bounded: it can never assume unlimited demand
+    at one live listing's price, which is exactly what an earlier version
+    of this cost model got wrong (produced a nonsensical multi-thousand-
+    gold "profit" by naively multiplying a single AH listing's price
+    across every expected craft -- see price_recipes.py's docstring).
+
+    Returns (total_ah_recovered_copper, per_skill_detail) where
+    per_skill_detail maps skill_point -> (units_sold_on_ah, value_copper),
+    for summarize_plan() to fold into the collapsed per-row display."""
+    sold_so_far = {}
+    total_ah_recovered = 0.0
+    per_skill_detail = {}
+    for skill, recipe, expected_crafts, net_ev, gross_ev in plan:
+        ah_price = recipe.get("ah_value_single_unit") or 0
+        if ah_price <= 0 or cap <= 0:
+            continue
+        name = recipe["name"]
+        already = sold_so_far.get(name, 0)
+        remaining_cap = max(0, cap - already)
+        if remaining_cap <= 0:
+            continue
+        units = min(expected_crafts, remaining_cap)
+        value = units * ah_price * (1 - AH_CUT_RATE)
+        total_ah_recovered += value
+        sold_so_far[name] = already + units
+        per_skill_detail[skill] = (units, value)
+    return total_ah_recovered, per_skill_detail
+
+
+def summarize_plan(plan, ah_detail=None):
     """Collapse consecutive identical recipe choices into ranges, with a
-    running tally of net cost for display."""
+    running tally of net cost for display. If `ah_detail` (from
+    apply_ah_hedge()) is given, also sums assumed AH-sold units/value per
+    collapsed row for display transparency."""
     if not plan:
         return []
+    ah_detail = ah_detail or {}
+
+    def ah_for(skill):
+        return ah_detail.get(skill, (0, 0.0))
+
     ranges = []
     start_skill, recipe, _, net_ev, gross_ev = plan[0]
     run_net, run_gross = net_ev, gross_ev
+    run_ah_units, run_ah_value = ah_for(start_skill)
     prev_skill = start_skill
     for skill, recipe2, _, net_ev, gross_ev in plan[1:]:
+        ah_units, ah_value = ah_for(skill)
         if recipe2["name"] == recipe["name"] and skill == prev_skill + 1:
             run_net += net_ev
             run_gross += gross_ev
+            run_ah_units += ah_units
+            run_ah_value += ah_value
             prev_skill = skill
             continue
-        ranges.append((start_skill, prev_skill, recipe, run_net, run_gross))
+        ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_ah_units, run_ah_value))
         start_skill, recipe, run_net, run_gross = skill, recipe2, net_ev, gross_ev
+        run_ah_units, run_ah_value = ah_units, ah_value
         prev_skill = skill
-    ranges.append((start_skill, prev_skill, recipe, run_net, run_gross))
+    ranges.append((start_skill, prev_skill, recipe, run_net, run_gross, run_ah_units, run_ah_value))
 
     running_total = 0.0
     out = []
-    for lo, hi, recipe, net_cost, gross_cost in ranges:
+    for lo, hi, recipe, net_cost, gross_cost, ah_units, ah_value in ranges:
         running_total += net_cost
-        out.append((lo, hi, recipe, net_cost, gross_cost, running_total))
+        out.append((lo, hi, recipe, net_cost, gross_cost, running_total, ah_units, ah_value))
     return out
 
 
@@ -220,7 +275,7 @@ if __name__ == "__main__":
     print()
 
     print("Plan (skill range -> recipe -> net cost -> running total):")
-    for lo, hi, recipe, net_cost, gross_cost, running in summarize_plan(plan):
+    for lo, hi, recipe, net_cost, gross_cost, running, ah_units, ah_value in summarize_plan(plan):
         rng = f"{lo}" if lo == hi else f"{lo}-{hi}"
         print(f"  [{rng:>9}] {recipe['name']:<35} {copper_to_gsc(net_cost):>12}   running: {copper_to_gsc(running)}")
 
