@@ -287,7 +287,7 @@ def run(profession_name, skill_line_id, item_subclass):
         "profession": profession_name, "skill_line_id": skill_line_id,
         "recipe_count": len(recipes), "recipes": list(recipes.values()),
     }
-    out_path = os.path.join(ROOT, "data", f"{profession_name.lower()}_recipes.json")
+    out_path = os.path.join(ROOT, "data", f"{profession_name.lower().replace(' ', '_')}_recipes.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(out, f, indent=2)
     print(f"\nWrote {out_path} ({len(recipes)} recipes)")

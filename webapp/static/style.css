@@ -204,6 +204,14 @@ table a:hover, .hint a:hover {
   white-space: nowrap;
 }
 
+.acquisition-note {
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  font-weight: 400;
+  margin-top: 2px;
+  white-space: normal;
+}
+
 .stat-value-good {
   color: #7fbf7f !important;
 }

@@ -1,0 +1,391 @@
+{
+  "profession": "First Aid",
+  "skill_line_id": 129,
+  "recipe_count": 14,
+  "recipes": [
+    {
+      "spell_id": 3281,
+      "craft_spell_id": 3276,
+      "spell_name": "Heavy Linen Bandage",
+      "crafted_item_id": 2581,
+      "crafted_item_name": "Heavy Linen Bandage",
+      "required_skill_value": 40,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 50,
+      "trivial_high": 100,
+      "vendor_sell_price": 20
+    },
+    {
+      "spell_id": 3282,
+      "craft_spell_id": 3277,
+      "spell_name": "Wool Bandage",
+      "crafted_item_id": 3530,
+      "crafted_item_name": "Wool Bandage",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2592,
+          "item_name": "Wool Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 80,
+      "trivial_high": 150,
+      "vendor_sell_price": 28
+    },
+    {
+      "spell_id": 3283,
+      "craft_spell_id": 3278,
+      "spell_name": "Heavy Wool Bandage",
+      "crafted_item_id": 3531,
+      "crafted_item_name": "Heavy Wool Bandage",
+      "required_skill_value": 115,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 2592,
+          "item_name": "Wool Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 115,
+      "trivial_high": 185,
+      "vendor_sell_price": 57
+    },
+    {
+      "spell_id": 7930,
+      "craft_spell_id": 7928,
+      "spell_name": "Silk Bandage",
+      "crafted_item_id": 6450,
+      "crafted_item_name": "Silk Bandage",
+      "required_skill_value": 150,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 4306,
+          "item_name": "Silk Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 150,
+      "trivial_high": 210,
+      "vendor_sell_price": 200
+    },
+    {
+      "spell_id": 7936,
+      "craft_spell_id": 7934,
+      "spell_name": "Anti-Venom",
+      "crafted_item_id": 6452,
+      "crafted_item_name": "Anti-Venom",
+      "required_skill_value": 80,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1475,
+          "item_name": "Small Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 80,
+      "trivial_high": 150,
+      "vendor_sell_price": 28
+    },
+    {
+      "spell_id": 10843,
+      "craft_spell_id": 10841,
+      "spell_name": "Heavy Mageweave Bandage",
+      "crafted_item_id": 8545,
+      "crafted_item_name": "Heavy Mageweave Bandage",
+      "required_skill_value": 240,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 4338,
+          "item_name": "Mageweave Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 240,
+      "trivial_high": 300,
+      "vendor_sell_price": 600
+    },
+    {
+      "spell_id": 18631,
+      "craft_spell_id": 18629,
+      "spell_name": "Runecloth Bandage",
+      "crafted_item_id": 14529,
+      "crafted_item_name": "Runecloth Bandage",
+      "required_skill_value": 260,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 14047,
+          "item_name": "Runecloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 260,
+      "trivial_high": 320,
+      "vendor_sell_price": 500
+    },
+    {
+      "spell_id": 18632,
+      "craft_spell_id": 18630,
+      "spell_name": "Heavy Runecloth Bandage",
+      "crafted_item_id": 14530,
+      "crafted_item_name": "Heavy Runecloth Bandage",
+      "required_skill_value": 290,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 14047,
+          "item_name": "Runecloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "trainer"
+      },
+      "acquisition": "trainer",
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "trivial_low": 290,
+      "trivial_high": 350,
+      "vendor_sell_price": 1000
+    },
+    {
+      "spell_id": 7937,
+      "craft_spell_id": 7935,
+      "spell_name": "Formula: Strong Anti-Venom",
+      "crafted_item_id": 6453,
+      "crafted_item_name": "Strong Anti-Venom",
+      "required_skill_value": 130,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1288,
+          "item_name": "Large Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6454,
+        "item_name": "Manual: Strong Anti-Venom"
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "acquisition": "drop",
+      "acquisition_note": "dropped by: ['Stranglethorn Tiger', 'Young Panther', 'Crystal Spine Basilisk', 'Carrion Recluse', 'Highland Lashtail', 'Highland Scytheclaw', 'Mottled Raptor', 'Mottled Screecher', 'Mottled Scytheclaw', 'Mottled Razormaw', 'Red Whelp', 'Lost Whelp', 'Flamesnorting Whelp', 'Crimson Whelp', 'Snapjaw Crocolisk', 'Sarltooth', 'Wetlands Crocolisk', 'Young Wetlands Crocolisk', 'Lake Thresher', 'Lorgus Jett', 'Silverwing Warrior', 'Ashenvale Outrunner', 'Horde Shaman', 'Horde Peon', 'Drysnap Pincer', 'Grimtotem Reaver', 'Grimtotem Stomper', 'Grimtotem Bandit', 'Elder Moss Creeper', 'Giant Moss Creeper', 'Forest Moss Creeper', 'Gray Bear', 'Vicious Gray Bear', 'Elder Gray Bear', 'Starving Mountain Lion', 'Feral Mountain Lion', 'Mountain Lion', 'Hulking Mountain Lion', 'Snapjaw', 'Highland Strider', 'Highland Thrasher', 'Plains Creeper', 'Broken Tooth', 'Stormhide', 'Thunderhead', 'Greater Thunderhawk', 'Rynthariel the Keymaster', 'Razorfen Thornweaver', 'Razorfen Battleguard', \"Death's Head Cultist\", 'Leprous Assistant', 'Zhevra Courser', 'Withered Spearhide', 'Withered Quilguard', 'Withered Reaver', 'Withered Warrior', 'Stonevault Ambusher', 'Ashenvale Bear', 'Elder Ashenvale Bear', 'Wildthorn Venomspitter', 'Ghostpaw Howler', 'Ghostpaw Alpha', 'Cleft Scorpid', 'Vile Bat', 'Klaven Mortwake', 'Befouled Water Elemental', 'Rotting Slime', 'Antlered Courser', 'Scarlet Trainee', 'Dark Iron Rifleman', 'Haunting Phantasm', 'Anguished Dead', 'Rogue Flame Spirit', 'Burning Destroyer', 'Scorched Basilisk', 'Irradiated Pillager', 'Mechanized Guardian', 'Mechanized Sentry', 'Mechano-Frostwalker', 'Mechano-Flamewalker', 'Mechano-Tank', 'Leprous Machinesmith', 'Twilight Runner', 'Leprous Defender', 'Leprous Technician', 'Addled Leper', 'Corrosive Lurker', 'Irradiated Slime', 'Dark Iron Agent', 'Caverndeep Reaver', 'Caverndeep Pillager', 'Caverndeep Ambusher', 'Caverndeep Burrower', 'Cloud Serpent', 'Elder Cloud Serpent', 'Needles Cougar', 'Crag Stalker', 'Hecklefang Stalker', 'Scorpid Reaver', 'Sparkleshell Tortoise', 'Sparkleshell Snapper', 'Saltstone Basilisk', 'Saltstone Gazer', 'Salt Flats Scavenger', 'Pesterhide Hyena', 'Pesterhide Snarler', 'Razorfen Servitor', 'Felguard', 'Scarlet Tracking Hound', 'Bloodfen Raptor', 'Deviate Venomwing', \"Rok'Alim the Pounder\", \"Agam'ar\", \"Rotting Agam'ar\", \"Raging Agam'ar\", \"Arugal's Voidwalker\", 'Shadowforge Digger', 'Dread Swoop', 'Scorpashi Snapper', 'Shadowforge Surveyor', 'Barbed Crustacean', 'Skittering Crustacean', 'Blindlight Oracle', 'Blindlight Murloc', 'Murkshallow Snapclaw', 'Twilight Elementalist', 'Twilight Shadowmage', 'Twilight Loreseeker', 'Twilight Aquamancer', 'Twilight Acolyte', 'Blackfathom Myrmidon', 'Blackfathom Sea Witch', 'Blackfathom Oracle', 'Blackfathom Tide Priestess', 'Fallenroot Hellcaller', 'Fallenroot Shadowstalker', 'Fallenroot Rogue', 'Fallenroot Satyr', 'Slitherblade Oracle', 'Slitherblade Sorceress', 'Hatefury Hellcaller', \"Aku'mai Snapjaw\", 'Hatefury Felsworn', 'Hatefury Rogue', 'Burning Blade Felsworn', 'Burning Blade Reaver', 'Burning Blade Augur', 'Gelkis Earthcaller', 'Gelkis Scout', \"Aku'mai Servant\", 'Magram Outrunner', 'Kolkar Destroyer', 'Kolkar Windchaser', 'Kolkar Centaur', 'Quilguard Champion', 'Scarlet Monk', 'Kraul Bat', 'Razorfen Beastmaster', 'Razorfen Beast Trainer', 'Razorfen Handler', 'Razorfen Earthbreaker', 'Razorfen Groundshaker', 'Razorfen Dustweaver', 'Razorfen Geomancer', \"Death's Head Seer\", \"Death's Head Sage\", \"Death's Head Adept\", \"Death's Head Acolyte\", 'Blackrock Summoner', 'Blackrock Hunter', 'Razorfen Defender', 'Razorfen Totemic', 'Razorfen Spearhide', 'Razorfen Warden', 'Razorfen Quilguard', 'Razorfen Warrior', 'Unfettered Spirit', 'Scarlet Torturer', 'Scarlet Chaplain', 'Scarlet Conjuror', 'Scarlet Adept', 'Scarlet Scryer', 'Scarlet Diviner', 'Scarlet Beastmaster', 'Scarlet Gallant', 'Scarlet Soldier', 'Scarlet Disciple', 'Scarlet Augur', 'Scarlet Sentry', 'Scarlet Magician', 'Scarlet Scout', 'Scarlet Preserver', 'Silithid Invader', 'Gravelsnout Forager', 'Highperch Consort', 'Highperch Wyvern', 'Screeching Windcaller', 'Screeching Roguefeather', 'Screeching Harpy', 'Galak Marauder', 'Galak Stormer', 'Galak Mauler', 'Galak Scout', 'Galak Wrangler', 'Blackrock Sentry', 'Blackrock Scout', 'Dark Iron Bombardier', 'Mirkfallon Dryad', 'Mirkfallon Keeper', 'Cenarion Druid', 'Cenarion Caretaker', 'Cave Stalker', 'Burning Ravager', 'Charred Ancient', 'Bloodfury Storm Witch', 'Bloodfury Windcaller', 'Bloodfury Ambusher', 'Bloodfury Slayer', 'Bloodfury Roguefeather', 'Bloodfury Harpy', 'Sap Beast', 'Pridewing Consort', 'Windshear Geomancer', 'Windshear Digger', 'Bloodtooth Guard', 'Thistlefur Avenger', 'Thistlefur Shaman', 'Thistlefur Den Watcher', 'Thistlefur Ursa', 'Wailing Guardsman', 'Haunted Servitor', 'Tormented Officer', 'Lupine Horror', 'Shadowfang Ragetooth', 'Shadowfang Glutton', 'Shadowfang Darksoul', 'Druid of the Fang', 'Caverndeep Invader', 'Caverndeep Looter', 'Cenarion Vindicator', 'Forsaken Dark Stalker', 'Forsaken Assassin', 'Irradiated Invader', 'Chomper', 'Forsaken Infiltrator', 'Forsaken Intruder', 'Irradiated Horror', 'Severed Keeper', 'Severed Sleeper', 'Terrowulf Shadow Weaver', 'Terrowulf Fleshripper', 'Shadethicket Bark Ripper', 'Shadethicket Stone Mover', 'Lesser Felguard', 'Bleakheart Hellcaller', 'Bleakheart Shadowstalker', 'Bleakheart Trickster', 'Bleakheart Satyr', 'Felmusk Shadowstalker', 'Felmusk Felsworn', 'Felmusk Rogue', 'Felmusk Satyr', 'Xavian Hellcaller', 'Xavian Felsworn', 'Xavian Rogue', 'Foulweald Pathfinder', 'Foulweald Warrior', 'Saltspittle Muckdweller', 'Wrathtail Sea Witch', 'Razormane Warfrenzy', 'Razormane Seer', 'Razormane Pathfinder', 'Kuz', 'Lok Orcbane', \"Bael'dun Officer\", \"Bael'dun Rifleman\", \"Bael'dun Soldier\", \"Bael'dun Excavator\", 'Crag Coyote', 'Withered Battle Boar', 'Tomb Fiend', 'Hammerfall Grunt', 'Syndicate Conjuror', 'Syndicate Mercenary', 'Syndicate Highwayman', 'Dabyrie Laborer', 'Dabyrie Militia', 'Drywhisker Kobold', 'Boulderfist Enforcer', 'Witherbark Shadow Hunter', 'Witherbark Headhunter', 'Witherbark Witch Doctor', 'Witherbark Axe Thrower', 'Son of Arugal', 'Hillsbrad Foreman', 'Farmer Kalaba', 'Torn Fin Tidehunter', 'Torn Fin Oracle', 'Torn Fin Coastrunner', 'Mudsnout Shaman', 'Mudsnout Gnoll', 'Daggerspine Siren', 'Daggerspine Screamer', 'Daggerspine Shorehunter', 'Hillsbrad Farmhand', 'Dun Garok Rifleman', 'Dun Garok Mountaineer', 'Foreman Bonds', 'Dalaran Theurgist', 'Dalaran Shield Guard', 'Hillsbrad Miner', 'Hillsbrad Footman', 'Hillsbrad Peasant', 'Hillsbrad Farmer', 'Hillsbrad Apprentice Blacksmith', 'Syndicate Watchman', 'Syndicate Rogue', 'Crushridge Brute', 'Crushridge Ogre', 'Giant Yeti', 'Mountain Yeti', 'Ferocious Yeti', 'Cave Yeti', 'Syndicate Shadow Mage', 'Syndicate Thief', 'Syndicate Footpad', 'Giant Wetlands Crocolisk', 'Ravenclaw Guardian', 'Swirling Vortex', 'Hamhock', 'Bazil Thredd', 'Defias Insurgent', 'Defias Convict', 'Defias Inmate', 'Defias Captive', 'Defias Prisoner', 'Targorr the Dread', 'Kam Deepfury', 'Bluegill Raider', 'Balgaras the Foul', 'Fetid Corpse', 'Black Ravager Mastiff', 'Splinter Fist Firemonger', 'Captain Halyndor', 'Cursed Marine', 'Cursed Sailor', 'Leech Stalker', 'Skeletal Raider', 'Venture Co. Geologist', 'Dragonmaw Bonewarder', 'Dark Iron Demolitionist', 'Dark Iron Tunneler', 'Dark Iron Saboteur', 'Dark Iron Dwarf', 'Fen Creeper', 'Dragonmaw Raider', 'Monstrous Ooze', 'Crimson Ooze', 'Bluegill Muckdweller', 'Bluegill Warrior', 'Bluegill Puddlejumper', 'Bluegill Murloc', 'Highland Razormaw', 'Highland Raptor', 'Mosshide Trapper', 'Mosshide Mongrel', 'Mosshide Gnoll', 'Scalding Elemental', 'Boiling Elemental', 'Grimtotem Geomancer', 'Rotted One', 'Kurzen Headshrinker', 'Kurzen Medicine Man', 'Kurzen Commando', 'Black Widow Hatchling', 'Young Black Ravager', 'Nightbane Tainted One', 'Defias Enchanter', 'Defias Night Blade', 'Nightbane Worgen', 'Splinter Fist Taskmaster', 'Saltscale Warrior', 'Skeletal Healer', 'Adolescent Whelp', 'Panther', 'Bloodscalp Scavenger', 'Bloodscalp Mystic', 'Bloodscalp Axe Thrower', 'Young Stranglethorn Tiger', 'Blackrock Tracker', 'Plague Spreader', 'Bloodscalp Scout', 'Bloodscalp Warrior', 'Redridge Drudger', 'Brain Eater', 'Green Recluse', 'Shadowhide Warrior', 'Nightbane Shadow Weaver', 'Skeletal Fiend', 'Tideress', 'Blackrock Outrunner', 'Blackrock Renegade', 'Blackrock Shadowcaster', 'Blackrock Champion', 'Rabid Shadowhide Gnoll', 'Shadowhide Brute', 'Shadowhide Darkweaver', \"Gath'Ilzogg\", 'Farmer Ray', 'Defias Night Runner', 'Splinter Fist Warrior', 'Bone Chewer', 'Nightbane Vile Fang', 'Nightbane Dark Runner', 'Skeletal Mage', 'Skeletal Horror', 'Skeletal Warrior', 'Flesh Eater']; shared loot pool #50526: ['Techbot']; inside container 4633 <- dropped by: ['Young Panther', 'Young Stranglethorn Raptor', 'Carrion Recluse', 'Highland Scytheclaw', 'Mottled Scytheclaw', 'Mottled Razormaw', 'Flamesnorting Whelp', 'Crimson Whelp', 'River Crocolisk', 'Sarltooth', 'Garneg Charskull', 'Chief Murgut', 'Lorgus Jett', 'Bloodfury Ripper', 'Mannoroc Lasher', 'Warsong Shredder', 'Horde Shaman', 'Horde Grunt', 'Horde Deforester', 'Horde Peon', 'Arnak Grimtotem', 'Grimtotem Reaver', 'Grimtotem Stomper', 'Grimtotem Bandit', 'Galak Assassin', 'Galak Messenger', 'Elder Moss Creeper', 'Elder Gray Bear', 'Feral Mountain Lion', 'Snapjaw', 'Highland Strider', 'Wooly Kodo', 'Rynthariel the Keymaster', 'Leprous Assistant', 'Galak Flame Guard', 'Vengeful Ancient', 'Elder Ashenvale Bear', 'Giant Ashenvale Bear', 'Blink Dragon', 'Elder Shadowhorn Stag', 'Wildthorn Lurker', 'Ghostpaw Alpha', 'Cursed Paladin', 'Condemned Acolyte', 'Wily Fey Dragon', 'Scarlet Trainee', 'Dark Iron Rifleman', 'Holdout Technician', 'Holdout Medic', 'Holdout Warrior', 'Fledgling Chimaera', 'Furious Stone Spirit', 'Burning Destroyer', 'Scorched Basilisk', 'Irradiated Pillager', 'Mechanized Sentry', 'Techbot', 'Peacekeeper Security Suit', 'Mechano-Flamewalker', 'Mechano-Tank', 'Leprous Machinesmith', \"Nal'taszar\", 'Leprous Defender', 'Leprous Technician', 'Corrosive Lurker', 'Irradiated Slime', 'Caverndeep Reaver', 'Caverndeep Ambusher', 'Caverndeep Burrower', 'Highperch Patriarch', 'Cloud Serpent', 'Venomous Cloud Serpent', 'Elder Cloud Serpent', 'Thundering Boulderkin', 'Needles Cougar', 'Crag Stalker', 'Sparkleshell Tortoise', 'Saltstone Basilisk', 'Salt Flats Scavenger', 'Pesterhide Hyena', 'Pesterhide Snarler', 'Roogug', 'Naraxis', 'Felguard', 'Razorfen Stalker', 'Sister Riven', 'Sentinel Amarassan', 'Hagg Taurenbane', 'Captain Gerogg Hammertoe', \"Rok'Alim the Pounder\", \"Rotting Agam'ar\", \"Raging Agam'ar\", 'Steelsnap', 'Old Town Thug', 'Starving Bonepaw', 'Scorpashi Snapper', 'Barbed Crustacean', 'Twilight Elementalist', 'Twilight Shadowmage', 'Twilight Aquamancer', 'Twilight Reaver', \"Aku'mai Snapjaw\", 'Burning Blade Reaver', 'Burning Blade Augur', \"Aku'mai Servant\", 'Kolkar Scout', 'Kolkar Centaur', 'Quilguard Champion', 'Blood of Agamaggan', 'Kraul Bat', 'Razorfen Beastmaster', 'Razorfen Beast Trainer', 'Razorfen Handler', 'Razorfen Earthbreaker', 'Razorfen Groundshaker', 'Razorfen Dustweaver', 'Razorfen Geomancer', \"Death's Head Seer\", \"Death's Head Sage\", \"Death's Head Priest\", \"Death's Head Adept\", \"Death's Head Acolyte\", 'Razorfen Defender', 'Razorfen Totemic', 'Razorfen Spearhide', 'Razorfen Warden', 'Razorfen Quilguard', 'Scarlet Torturer', 'Scarlet Scryer', 'Scarlet Disciple', 'Scarlet Augur', 'Scarlet Sentry', 'Scarlet Magician', 'Scarlet Scout', 'Scarlet Preserver', 'Keeper Ordanus', 'Gerenzo Wrenchwhistle', 'Gravelsnout Surveyor', 'Gravelsnout Forager', 'Gravelsnout Digger', 'Gravelsnout Vermin', 'Gravelsnout Kobold', 'Highperch Consort', 'Highperch Wyvern', 'Screeching Windcaller', 'Screeching Roguefeather', 'Screeching Harpy', 'Galak Marauder', 'Galak Stormer', 'Galak Mauler', 'Galak Wrangler', 'Sorrow Wing', 'Dark Iron Bombardier', 'Mirkfallon Dryad', 'Mirkfallon Keeper', 'Cenarion Druid', 'Cenarion Caretaker', 'Singed Basilisk', 'Blackened Ancient', 'Charred Ancient', 'Bloodfury Storm Witch', 'Bloodfury Slayer', 'Legion Hound', 'Searing Infernal', 'Bloodfury Roguefeather', 'Bloodtooth Guard', 'Shadethicket Oracle', 'Chimaera Matriarch', 'Withered Ancient', 'Caverndeep Invader', 'Caverndeep Looter', 'Crazed Ancient', 'Cenarion Vindicator', 'Forsaken Dark Stalker', 'Forsaken Assassin', 'Irradiated Invader', 'Chomper', 'Forsaken Infiltrator', 'Forsaken Intruder', 'Irradiated Horror', 'Severed Keeper', 'Severed Dreamer', 'Severed Sleeper', 'Severed Druid', 'Cenarion Protector', 'Terrowulf Shadow Weaver', 'Terrowulf Fleshripper', 'Shadethicket Bark Ripper', 'Shadethicket Stone Mover', 'Bleakheart Hellcaller', 'Bleakheart Shadowstalker', 'Bleakheart Trickster', 'Bleakheart Satyr', 'Felmusk Shadowstalker', 'Mekgineer Thermaplugg', 'Felmusk Felsworn', 'Felmusk Rogue', 'Felmusk Satyr', 'Xavian Hellcaller', 'Xavian Felsworn', 'Xavian Betrayer', 'Xavian Rogue', 'Ran Bloodtooth', 'Isha Awak', 'General Twinbraid', 'Prospector Khazgorm', \"Bael'dun Officer\", 'Viscous Fallout', 'Grubbis', 'Syndicate Highwayman', 'Dabyrie Laborer', 'Witherbark Troll', 'Crowd Pummeler 9-60', 'Dark Iron Ambassador', 'Hillsbrad Foreman', 'Miner Hackett', 'Clerk Horrace Whitesteed', 'Blacksmith Verringtan', 'Hillsbrad Councilman', 'Torn Fin Oracle', 'Torn Fin Coastrunner', 'Torn Fin Muckdweller', 'Mudsnout Shaman', 'Mudsnout Gnoll', 'Daggerspine Screamer', 'Daggerspine Shorehunter', 'Daggerspine Shorestalker', 'Dun Garok Priest', 'Dun Garok Rifleman', 'Dun Garok Mountaineer', 'Dark Strand Voidcaller', 'Magistrate Burnside', 'Foreman Bonds', 'Hillsbrad Sentry', 'Hillsbrad Miner', 'Hillsbrad Footman', \"Eck'alom\", 'Cave Yeti', \"Ro'Bark\", 'Giant Wetlands Crocolisk', 'Marzon the Silent Blade', 'Hamhock', 'Bazil Thredd', 'Defias Insurgent', 'Kam Deepfury', 'Dextren Ward', 'Splinter Fist Enslaver', 'Bluegill Raider', 'Fetid Corpse', 'Black Ravager Mastiff', 'Splinter Fist Firemonger', 'Captain Halyndor', 'First Mate Snellig', 'Cursed Marine', 'Cursed Sailor', 'Skeletal Raider', 'Dragonmaw Bonewarder', 'Dark Iron Demolitionist', 'Dark Iron Tunneler', 'Dark Iron Saboteur', 'Dark Iron Dwarf', 'Fen Lord', 'Dragonmaw Shadowwarder', 'Dragonmaw Centurion', 'Dragonmaw Swamprunner', 'Dragonmaw Raider', 'Monstrous Ooze', 'Bluegill Oracle', 'Elder Razormaw', 'Highland Razormaw', 'Mosshide Alpha', 'Mosshide Mystic', 'Scalding Elemental', 'Boiling Elemental', 'Grimtotem Geomancer', 'Rotted One', 'Arikara', 'Enraged Panther', 'Nightbane Tainted One', 'Defias Enchanter', 'Defias Night Blade', 'Nightbane Worgen', 'Splinter Fist Taskmaster', 'Splinter Fist Fire Weaver', 'Splinter Fist Ogre', 'Skeletal Healer', 'Skeletal Warder', 'Lieutenant Fangore', 'Young Stranglethorn Tiger', 'Horde Scout', 'Big Samras', 'Plague Spreader', 'Brain Eater', 'Nightbane Shadow Weaver', 'Enraged Reef Crawler', 'Insane Ghoul', 'Shadumbra', 'Tideress', 'Baron Aquanis', 'Shadowhide Slayer', 'Shadowhide Darkweaver', 'Morganth', \"Gath'Ilzogg\", \"Zzarc' Vul\", 'Splinter Fist Warrior', 'Bone Chewer', 'Nightbane Vile Fang', 'Nightbane Dark Runner', 'Electrocutioner 6000', 'Gibblesnik']",
+      "trivial_low": 130,
+      "trivial_high": 200,
+      "vendor_sell_price": 62
+    },
+    {
+      "spell_id": 7931,
+      "craft_spell_id": 7929,
+      "spell_name": "Heavy Silk Bandage",
+      "crafted_item_id": 6451,
+      "crafted_item_name": "Heavy Silk Bandage",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4306,
+          "item_name": "Silk Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16112,
+        "item_name": "Manual: Heavy Silk Bandage"
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Deneb Walker', \"Balai Lok'Wein\"]",
+      "trivial_low": 180,
+      "trivial_high": 240,
+      "vendor_sell_price": 400
+    },
+    {
+      "spell_id": 10842,
+      "craft_spell_id": 10840,
+      "spell_name": "Mageweave Bandage",
+      "crafted_item_id": 8544,
+      "crafted_item_name": "Mageweave Bandage",
+      "required_skill_value": 210,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 4338,
+          "item_name": "Mageweave Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16113,
+        "item_name": "Manual: Mageweave Bandage"
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified",
+      "acquisition": "vendor",
+      "acquisition_note": "sold by vendor(s): ['Deneb Walker', \"Balai Lok'Wein\"]",
+      "trivial_low": 210,
+      "trivial_high": 270,
+      "vendor_sell_price": 400
+    },
+    {
+      "spell_id": 23788,
+      "craft_spell_id": 23787,
+      "spell_name": "Formula: Powerful Anti-Venom",
+      "crafted_item_id": 19440,
+      "crafted_item_name": "Powerful Anti-Venom",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 19441,
+          "item_name": "Huge Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 19442,
+        "item_name": "Formula: Powerful Anti-Venom"
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 300,
+      "trivial_high": 360,
+      "vendor_sell_price": 500
+    },
+    {
+      "spell_id": 10845,
+      "craft_spell_id": 10844,
+      "spell_name": "Powerful Smelling Salts",
+      "crafted_item_id": 8546,
+      "crafted_item_name": "Powerful Smelling Salts",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8150,
+          "item_name": "Deeprock Salt",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 8547,
+        "item_name": "Formula: Powerful Smelling Salts "
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": null,
+      "trivial_high": null,
+      "vendor_sell_price": 50
+    },
+    {
+      "spell_id": 30046,
+      "craft_spell_id": 30021,
+      "spell_name": "Crystal Infused Bandage",
+      "crafted_item_id": 23684,
+      "crafted_item_name": "Crystal Infused Bandage",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 23567,
+          "item_name": "[PH] Silithus PvP Dust [DEP]",
+          "count": 1
+        },
+        {
+          "item_id": 14047,
+          "item_name": "Runecloth",
+          "count": 10
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 23689,
+        "item_name": "Manual: Crystal Infused Bandage"
+      },
+      "source": "cmangos-classic-db",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "acquisition": "unresearched",
+      "trivial_low": 300,
+      "trivial_high": 360,
+      "vendor_sell_price": 1500
+    }
+  ]
+}

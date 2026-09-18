@@ -90,7 +90,7 @@ async function loadGatheringProfessions() {
   const professions = await res.json();
   gatheringCheckboxes.innerHTML = professions
     .map(
-      (p) => `<label><input type="checkbox" name="gathering" value="${p.id}" /> I have ${p.label}</label>`
+      (p) => `<label><input type="checkbox" name="gathering" value="${p.id}" /> ${p.label}</label>`
     )
     .join("");
 }
@@ -102,7 +102,7 @@ function selectedGatheringProfessions() {
 function onVersionChange() {
   const v = currentVersion();
   pricingFields.classList.toggle("hidden", !v.pricing_available);
-  computeBtn.textContent = v.pricing_available ? "Compute plan" : "Browse recipes";
+  computeBtn.textContent = v.pricing_available ? "Craft Route" : "Browse recipes";
   versionHint.textContent = v.pricing_available
     ? ""
     : "No live Auction House pricing source exists yet for this version -- showing known recipes and reagents only.";
@@ -224,7 +224,7 @@ async function computePlan(event) {
   } finally {
     loadingEl.classList.add("hidden");
     computeBtn.disabled = false;
-    computeBtn.textContent = version.pricing_available ? "Compute plan" : "Browse recipes";
+    computeBtn.textContent = version.pricing_available ? "Craft Route" : "Browse recipes";
   }
 }
 
@@ -282,9 +282,15 @@ function renderResults(data) {
           return `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}${tag}`;
         })
         .join(", ");
+      const acqNote =
+        row.acquisition && row.acquisition !== "trainer"
+          ? `<div class="acquisition-note">Learned from: ${escapeHtml(row.acquisition)}${
+              row.acquisition_note ? ` &mdash; ${escapeHtml(row.acquisition_note)}` : ""
+            }</div>`
+          : "";
       return `<tr>
         <td>${range}</td>
-        <td>${craftLink}${ahNote}</td>
+        <td>${craftLink}${ahNote}${acqNote}</td>
         <td class="reagents-cell">${reagentLinks}</td>
         <td>${row.net_cost_display}</td>
         <td>${row.running_total_display}</td>

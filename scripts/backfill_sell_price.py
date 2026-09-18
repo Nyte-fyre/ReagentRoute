@@ -1,8 +1,13 @@
 """Backfill vendor_sell_price (item_template.SellPrice) onto the crafted
-item of every recipe, across all Classic Era profession datasets. (TBC
-profession datasets already get this from extract_profession_tbc.py
-directly, using tbc-db's item_template -- skipped here on purpose, since
-classic-db's prices would be wrong/missing for TBC-only items.)
+item of every recipe, across all Classic Era profession datasets. TBC and
+WoW Forever profession datasets are skipped on purpose: TBC already gets
+this from extract_profession_tbc.py directly using tbc-db's item_template,
+and Forever's item IDs come from an entirely different beta client build
+with no relationship to classic-db's IDs at all -- cross-referencing them
+against classic-db doesn't just miss data, it actively assigns the WRONG
+item's sell price (confirmed: id collisions produced nonsense values like
+a Recipe scroll "selling" for 25c). Forever's own vendor_sell_price is set
+correctly by extract_profession_forever.py from its own ItemSparse.csv.
 
 Requires raw_data/classic/ClassicDB.sql -- run `python scripts/fetch_data.py`
 first if it's missing.
@@ -31,7 +36,7 @@ item_tuples = parse_tuples(extract_table_sql(full_text, "item_template"))
 sell_price_by_item = {to_int(t[0]): to_int(t[9]) for t in item_tuples}
 
 for path in glob.glob(os.path.join(ROOT, "data", "*_recipes.json")):
-    if path.endswith("_tbc_recipes.json"):
+    if path.endswith("_tbc_recipes.json") or path.endswith("_forever_recipes.json"):
         continue
     data = json.load(open(path, encoding="utf-8"))
     updated = 0
