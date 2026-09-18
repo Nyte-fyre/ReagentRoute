@@ -303,12 +303,88 @@ table a:hover, .hint a:hover {
   font-weight: 400;
 }
 
-.ah-cap-row {
-  margin-top: 8px;
+.toggle-card {
+  background: #0f1115;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+  margin-bottom: 16px;
 }
 
-.ah-cap-field {
-  max-width: 160px;
+.toggle-label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.toggle-checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.toggle-switch {
+  position: relative;
+  width: 42px;
+  height: 24px;
+  flex-shrink: 0;
+  background: var(--border);
+  border-radius: 999px;
+  transition: background 0.15s ease;
+}
+
+.toggle-switch::before {
+  content: "";
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 18px;
+  height: 18px;
+  background: var(--text);
+  border-radius: 50%;
+  transition: transform 0.15s ease;
+}
+
+.toggle-checkbox:checked + .toggle-switch {
+  background: var(--accent);
+}
+
+.toggle-checkbox:checked + .toggle-switch::before {
+  transform: translateX(18px);
+  background: #14161c;
+}
+
+.toggle-checkbox:focus-visible + .toggle-switch {
+  outline: 2px solid var(--accent-dim);
+  outline-offset: 2px;
+}
+
+.ah-cap-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid var(--border);
+}
+
+.ah-cap-row label {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  white-space: nowrap;
+}
+
+.ah-cap-row input {
+  width: 80px;
+}
+
+.toggle-card .hint {
+  margin-top: 10px;
 }
 
 footer {
