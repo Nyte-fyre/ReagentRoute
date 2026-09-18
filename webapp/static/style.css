@@ -289,6 +289,12 @@ table a:hover, .hint a:hover {
   font-weight: 400;
 }
 
+.vendor-tag {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 400;
+}
+
 footer {
   max-width: 640px;
   margin: 24px auto 0;

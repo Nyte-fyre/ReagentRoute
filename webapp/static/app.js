@@ -276,7 +276,9 @@ function renderResults(data) {
         : "";
       const reagentLinks = row.reagents
         .map((g) => {
-          const tag = g.gathered ? ` <span class="gathered-tag">(gather)</span>` : "";
+          let tag = "";
+          if (g.gathered) tag = ` <span class="gathered-tag">(gather)</span>`;
+          else if (g.vendor_bought) tag = ` <span class="vendor-tag">(vendor)</span>`;
           return `${wowheadLink(g.item_id, null, g.item_name)} &times;${g.count}${tag}`;
         })
         .join(", ");

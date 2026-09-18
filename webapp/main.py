@@ -75,6 +75,12 @@ FACTIONS = [{"id": "horde", "label": "Horde"}, {"id": "alliance", "label": "Alli
 # our own recipes so crafted intermediates like Cured Hides or bars don't
 # get miscounted as raw gathers).
 GATHERABLE_MATERIALS = json.load(open(os.path.join(ROOT, "data", "gatherable_materials.json"), encoding="utf-8"))
+
+# Reagents confirmed sold by an ordinary, always-available vendor (see
+# scripts/build_vendor_prices.py) -- applied unconditionally to every plan,
+# no opt-in checkbox needed, since "this NPC sells it" is a verified fact
+# about the game, not a personalization choice like gathering professions.
+VENDOR_PRICES = json.load(open(os.path.join(ROOT, "data", "vendor_prices.json"), encoding="utf-8"))
 GATHERING_PROFESSIONS = [
     {"id": "herbalism", "label": "Herbalism"},
     {"id": "mining", "label": "Mining"},
@@ -213,7 +219,9 @@ def compute_plan(req: PlanRequest):
         gatherable_names.update(GATHERABLE_MATERIALS.get(prof, []))
 
     recipes_data = json.load(open(recipes_path, encoding="utf-8"))
-    priced, missing = price_recipes_data(recipes_data, prices, gatherable_names=gatherable_names)
+    priced, missing = price_recipes_data(
+        recipes_data, prices, gatherable_names=gatherable_names, vendor_prices=VENDOR_PRICES
+    )
     recipes = build_recipe_costs_data(recipes_data, {"recipes": priced})
 
     total_net, total_gross, total_recovered, plan, gaps = optimize(recipes, req.start_skill, req.target_skill)
@@ -234,7 +242,10 @@ def compute_plan(req: PlanRequest):
             "ah_value_single_unit_copper": round(recipe["ah_value_single_unit"]),
             "ah_value_single_unit_display": copper_to_gsc(recipe["ah_value_single_unit"]) if recipe["ah_value_single_unit"] else None,
             "reagents": [
-                {"item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"], "gathered": g.get("gathered", False)}
+                {
+                    "item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"],
+                    "gathered": g.get("gathered", False), "vendor_bought": g.get("vendor_bought", False),
+                }
                 for g in recipe["reagents"]
             ],
             "net_cost_copper": round(net_cost), "net_cost_display": copper_to_gsc(net_cost),
