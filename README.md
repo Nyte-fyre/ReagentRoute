@@ -221,8 +221,13 @@ it at tradeskillmaster.com and copying it from the address bar.
 
 ### License
 
-No license has been chosen for this project's own code yet. Note that
-the extracted data in `data/*.json` is *derived from* cmangos'
-GPL-3.0-licensed content databases -- if you redistribute those files (or
-a tool built on them), check GPL-3.0's terms before assuming you can
-relicense them freely.
+All rights reserved. No license is granted -- viewing the source on
+GitHub doesn't give permission to copy, modify, distribute, or reuse
+this code. Contact the repo owner for permission.
+
+One caveat regardless of that: the extracted data in `data/*.json` is
+*derived from* cmangos' GPL-3.0-licensed content databases. GPL-3.0 is a
+copyleft license -- it governs redistribution of works derived from it
+independently of whatever license this repo's own code carries, so
+redistributing those specific files (or a tool built on them) still
+needs to account for GPL-3.0's terms.
