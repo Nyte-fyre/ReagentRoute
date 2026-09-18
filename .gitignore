@@ -1,0 +1,15 @@
+.env
+__pycache__/
+*.pyc
+.venv/
+
+# Raw SQL dumps / DB2 CSVs -- large and regenerable via scripts/fetch_data.py.
+# The derived output (data/*.json) is the actual deliverable and IS committed.
+raw_data/
+
+# Unrelated project sharing this directory -- not part of ReagentRoute.
+sound-garden/
+
+# Claude Code's own local tooling config (machine-specific paths).
+.claude/
+

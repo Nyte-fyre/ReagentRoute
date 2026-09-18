@@ -1,0 +1,614 @@
+{
+  "profession": "First Aid",
+  "skill_line_id": 129,
+  "game_version": "forever-beta",
+  "recipe_count": 18,
+  "recipes": [
+    {
+      "spell_id": 7935,
+      "craft_spell_id": 7935,
+      "crafted_item_id": 6453,
+      "crafted_item_name": "Strong Anti-Venom",
+      "required_skill_value": 130,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1288,
+          "item_name": "Large Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 6454,
+        "item_name": "Manual: Strong Anti-Venom"
+      },
+      "vendor_sell_price": 62,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 130,
+      "trivial_high": 200
+    },
+    {
+      "spell_id": 10844,
+      "craft_spell_id": 10844,
+      "crafted_item_id": 8546,
+      "crafted_item_name": "Powerful Smelling Salts",
+      "required_skill_value": 250,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8150,
+          "item_name": "Deeprock Salt",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 8547,
+        "item_name": "Formula: Powerful Smelling Salts "
+      },
+      "vendor_sell_price": 50,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": null,
+      "trivial_high": null
+    },
+    {
+      "spell_id": 23787,
+      "craft_spell_id": 23787,
+      "crafted_item_id": 19440,
+      "crafted_item_name": "Powerful Anti-Venom",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 19441,
+          "item_name": "Huge Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 19442,
+        "item_name": "Formula: Powerful Anti-Venom"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 360
+    },
+    {
+      "spell_id": 7929,
+      "craft_spell_id": 7929,
+      "crafted_item_id": 6451,
+      "crafted_item_name": "Heavy Silk Bandage",
+      "required_skill_value": 180,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4306,
+          "item_name": "Silk Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16112,
+        "item_name": "Manual: Heavy Silk Bandage"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 180,
+      "trivial_high": 240
+    },
+    {
+      "spell_id": 10840,
+      "craft_spell_id": 10840,
+      "crafted_item_id": 8544,
+      "crafted_item_name": "Mageweave Bandage",
+      "required_skill_value": 210,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4338,
+          "item_name": "Mageweave Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 16113,
+        "item_name": "Manual: Mageweave Bandage"
+      },
+      "vendor_sell_price": 400,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 210,
+      "trivial_high": 270
+    },
+    {
+      "spell_id": 30021,
+      "craft_spell_id": 30021,
+      "crafted_item_id": 23684,
+      "crafted_item_name": "Crystal Infused Bandage",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 23567,
+          "item_name": "[PH] Silithus PvP Dust [DEP]",
+          "count": 1
+        },
+        {
+          "item_id": 14047,
+          "item_name": "Runecloth",
+          "count": 10
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 23689,
+        "item_name": "Unknown Item 23689"
+      },
+      "vendor_sell_price": 1500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 360,
+      "skill_value_source": "trivial_low_fallback"
+    },
+    {
+      "spell_id": 470349,
+      "craft_spell_id": 470349,
+      "crafted_item_id": 232433,
+      "crafted_item_name": "Dense Runecloth Bandage",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 14530,
+          "item_name": "Heavy Runecloth Bandage",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 232434,
+        "item_name": "Manual: Dense Runecloth Bandage"
+      },
+      "vendor_sell_price": 2000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 315,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 1244434,
+      "craft_spell_id": 1244434,
+      "crafted_item_id": 1710,
+      "crafted_item_name": "Greater Healing Potion",
+      "required_skill_value": 155,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 3372,
+          "item_name": "Leaded Vial",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 3
+        },
+        {
+          "item_id": 3357,
+          "item_name": "Liferoot",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255723,
+        "item_name": "Manual: Greater Healing Potion"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 175,
+      "trivial_high": 215
+    },
+    {
+      "spell_id": 1259343,
+      "craft_spell_id": 1259343,
+      "crafted_item_id": 255717,
+      "crafted_item_name": "Clever Poultice",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 1468,
+          "item_name": "Murloc Fin",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        },
+        {
+          "item_id": 2686,
+          "item_name": "Thunder Ale",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255724,
+        "item_name": "Manual: Clever Poultice"
+      },
+      "vendor_sell_price": 62,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 160,
+      "trivial_high": 220
+    },
+    {
+      "spell_id": 1244435,
+      "craft_spell_id": 1244435,
+      "crafted_item_id": 3928,
+      "crafted_item_name": "Superior Healing Potion",
+      "required_skill_value": 215,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 1
+        },
+        {
+          "item_id": 8838,
+          "item_name": "Sungrass",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255725,
+        "item_name": "Manual: Superior Healing Potion"
+      },
+      "vendor_sell_price": 250,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 230,
+      "trivial_high": 270
+    },
+    {
+      "spell_id": 1259348,
+      "craft_spell_id": 1259348,
+      "crafted_item_id": 255721,
+      "crafted_item_name": "Leather Tourniquet",
+      "required_skill_value": 200,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 4304,
+          "item_name": "Thick Leather",
+          "count": 2
+        },
+        {
+          "item_id": 4291,
+          "item_name": "Silken Thread",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255726,
+        "item_name": "Manual: Leather Tourniquet"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 220,
+      "trivial_high": 280
+    },
+    {
+      "spell_id": 1259344,
+      "craft_spell_id": 1259344,
+      "crafted_item_id": 255718,
+      "crafted_item_name": "Superior Poultice",
+      "required_skill_value": 210,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 7070,
+          "item_name": "Elemental Water",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 2596,
+          "item_name": "Skin of Dwarven Stout",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255727,
+        "item_name": "Manual: Superior Poultice"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 225,
+      "trivial_high": 285
+    },
+    {
+      "spell_id": 1259341,
+      "craft_spell_id": 1259341,
+      "crafted_item_id": 255715,
+      "crafted_item_name": "Potent Anti-Venom",
+      "required_skill_value": 215,
+      "skill_tier": "Expert",
+      "reagents": [
+        {
+          "item_id": 255645,
+          "item_name": "Swolen Venom Sac",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255728,
+        "item_name": "Manual: Potent Anti-Venom"
+      },
+      "vendor_sell_price": 125,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 230,
+      "trivial_high": 290
+    },
+    {
+      "spell_id": 1244436,
+      "craft_spell_id": 1244436,
+      "crafted_item_id": 13446,
+      "crafted_item_name": "Major Healing Potion",
+      "required_skill_value": 275,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8925,
+          "item_name": "Crystal Vial",
+          "count": 1
+        },
+        {
+          "item_id": 3713,
+          "item_name": "Soothing Spices",
+          "count": 3
+        },
+        {
+          "item_id": 13464,
+          "item_name": "Golden Sansam",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255729,
+        "item_name": "Manual: Major Healing Potion"
+      },
+      "vendor_sell_price": 1000,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 290,
+      "trivial_high": 330
+    },
+    {
+      "spell_id": 1259349,
+      "craft_spell_id": 1259349,
+      "crafted_item_id": 255722,
+      "crafted_item_name": "Surgical Tourniquet",
+      "required_skill_value": 265,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 8170,
+          "item_name": "Rugged Leather",
+          "count": 2
+        },
+        {
+          "item_id": 14047,
+          "item_name": "Runecloth",
+          "count": 2
+        },
+        {
+          "item_id": 8343,
+          "item_name": "Heavy Silken Thread",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255730,
+        "item_name": "Manual: Surgical Tourniquet"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 280,
+      "trivial_high": 340
+    },
+    {
+      "spell_id": 1259345,
+      "craft_spell_id": 1259345,
+      "crafted_item_id": 255719,
+      "crafted_item_name": "Powerful Poultice",
+      "required_skill_value": 280,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 7080,
+          "item_name": "Essence of Water",
+          "count": 1
+        },
+        {
+          "item_id": 2692,
+          "item_name": "Hot Spices",
+          "count": 1
+        },
+        {
+          "item_id": 2594,
+          "item_name": "Flagon of Dwarven Honeymead",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 255731,
+        "item_name": "Manual: Powerful Poultice"
+      },
+      "vendor_sell_price": 500,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 295,
+      "trivial_high": 355
+    },
+    {
+      "spell_id": 1262996,
+      "craft_spell_id": 1262996,
+      "crafted_item_id": 279940,
+      "crafted_item_name": "Toxin Study",
+      "required_skill_value": 140,
+      "skill_tier": "Journeyman",
+      "reagents": [
+        {
+          "item_id": 6452,
+          "item_name": "Anti-Venom",
+          "count": 1
+        },
+        {
+          "item_id": 8544,
+          "item_name": "Mageweave Bandage",
+          "count": 2
+        },
+        {
+          "item_id": 4470,
+          "item_name": "Simple Wood",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273105,
+        "item_name": "Blueprint: Toxin Study"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 140,
+      "trivial_high": 145
+    },
+    {
+      "spell_id": 1263001,
+      "craft_spell_id": 1263001,
+      "crafted_item_id": 279951,
+      "crafted_item_name": "Plague Doctor's Laboratory",
+      "required_skill_value": 300,
+      "skill_tier": "Artisan",
+      "reagents": [
+        {
+          "item_id": 4470,
+          "item_name": "Simple Wood",
+          "count": 2
+        },
+        {
+          "item_id": 6453,
+          "item_name": "Strong Anti-Venom",
+          "count": 2
+        },
+        {
+          "item_id": 14530,
+          "item_name": "Heavy Runecloth Bandage",
+          "count": 5
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "schematic_item",
+        "item_id": 273118,
+        "item_name": "Blueprint: Plague Doctor's Laboratory"
+      },
+      "vendor_sell_price": 0,
+      "acquisition": "unknown",
+      "acquisition_note": "No community emulator database exists yet for WoW Forever (beta) -- acquisition (trainer/vendor/drop/quest) is unresolved.",
+      "source": "wago-tools-db2-forever-beta",
+      "confidence": "verified-reagents-unverified-acquisition",
+      "trivial_low": 300,
+      "trivial_high": 300
+    }
+  ],
+  "known_limitation": "Recipe discovery is item-based only (no trainer table exists yet for Forever) -- pure trainer-only recipes with no representative item are missing from this dataset. Acquisition is unresolved for everything."
+}
