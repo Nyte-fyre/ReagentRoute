@@ -1,0 +1,8 @@
+# ads.txt placeholder for ReagentRoute (https://reagentroute.onrender.com)
+#
+# No ad network is active yet. This file exists so the domain has a
+# reachable /ads.txt before applying to an ad network -- once an
+# account (e.g. Google AdSense) is approved, replace the line below
+# with the real entry it provides, typically in the form:
+#
+# google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0

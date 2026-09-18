@@ -12,6 +12,7 @@ import sys
 
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import FileResponse
 from fastapi.staticfiles import StaticFiles
 from pydantic import BaseModel
 
@@ -243,4 +244,12 @@ def compute_plan(req: PlanRequest):
     }
 
 
-app.mount("/", StaticFiles(directory=os.path.join(os.path.dirname(__file__), "static"), html=True), name="static")
+STATIC_DIR = os.path.join(os.path.dirname(__file__), "static")
+
+
+@app.get("/privacy")
+def privacy_page():
+    return FileResponse(os.path.join(STATIC_DIR, "privacy.html"))
+
+
+app.mount("/", StaticFiles(directory=STATIC_DIR, html=True), name="static")
