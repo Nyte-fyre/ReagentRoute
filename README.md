@@ -15,9 +15,15 @@ an early **WoW Forever (beta)** scaffold. The web app's game-version
 selector switches between them, showing only that version's professions
 and (where available) its realm list.
 
-1. **Recipe data** -- every recipe for 7 professions (8 in TBC, adding
+1. **Recipe data** -- every recipe for 8 professions (9 in TBC, adding
    Jewelcrafting), with verified reagent lists, real skill-up thresholds,
    and how each one is actually acquired (trainer, vendor, drop, quest).
+   First Aid is included as a secondary profession alongside the primary
+   crafting ones -- a couple of its higher-tier bandages are taught by a
+   purchasable Manual rather than a trainer directly (verified: sold by
+   Deneb Walker in Arathi Highlands and Balai Lok'Wein in Dustwallow
+   Marsh), which the app surfaces right in the priced plan, not just the
+   recipe browser.
    WoW Forever has its own extraction pipeline covering all 8 professions
    it currently has (no Jewelcrafting in this build) -- see
    [Known limitations](#known-limitations) for what's still missing
@@ -122,6 +128,7 @@ python scripts/extract_profession.py Leatherworking 165 1
 python scripts/extract_profession.py Tailoring 197 2
 python scripts/extract_profession.py Cooking 185 5
 python scripts/extract_profession.py Enchanting 333 8
+python scripts/extract_profession.py "First Aid" 129 7
 python scripts/backfill_sell_price.py   # adds vendor sell price to all of the above
 
 # TBC Anniversary (adds Jewelcrafting; skill line ids are the same for carried-over professions)
@@ -132,6 +139,7 @@ python scripts/extract_profession_tbc.py Leatherworking 165 1
 python scripts/extract_profession_tbc.py Tailoring 197 2
 python scripts/extract_profession_tbc.py Cooking 185 5
 python scripts/extract_profession_tbc.py Enchanting 333 8
+python scripts/extract_profession_tbc.py "First Aid" 129 7
 python scripts/extract_profession_tbc.py Jewelcrafting 755 10
 
 # WoW Forever (beta) -- no trainer table exists yet (see Known limitations),
@@ -148,8 +156,8 @@ python scripts/extract_profession_forever.py Enchanting 333 8
 python scripts/extract_profession_forever.py "First Aid" 129 7
 ```
 
-Current dataset: **1,204 Classic Era recipes** + **1,888 TBC Anniversary
-recipes** across 7-8 professions each, plus **2,005 WoW Forever recipes**
+Current dataset: **1,218 Classic Era recipes** + **1,904 TBC Anniversary
+recipes** across 8-9 professions each, plus **2,005 WoW Forever recipes**
 across all 8 professions this build has (no Jewelcrafting).
 
 ### Realm pricing

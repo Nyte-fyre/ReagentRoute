@@ -241,6 +241,8 @@ def compute_plan(req: PlanRequest):
             "craft_spell_id": recipe["craft_spell_id"],
             "ah_value_single_unit_copper": round(recipe["ah_value_single_unit"]),
             "ah_value_single_unit_display": copper_to_gsc(recipe["ah_value_single_unit"]) if recipe["ah_value_single_unit"] else None,
+            "acquisition": recipe.get("acquisition", "trainer"),
+            "acquisition_note": recipe.get("acquisition_note"),
             "reagents": [
                 {
                     "item_id": g["item_id"], "item_name": g["item_name"], "count": g["count"],

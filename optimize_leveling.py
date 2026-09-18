@@ -95,6 +95,8 @@ def build_recipe_costs_data(recipes_data, priced_data):
             "ah_value_single_unit": p.get("ah_value_single_unit_copper", 0),
             "net_cost_per_craft": gross_cost - recovered,
             "reagents": p["reagent_costs"],  # [{item_id, item_name, count, unit_cost_copper}, ...]
+            "acquisition": r.get("acquisition", "trainer"),
+            "acquisition_note": r.get("acquisition_note"),
         })
     return out
 
