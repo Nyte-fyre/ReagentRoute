@@ -261,3 +261,58 @@ table a:hover, .hint a:hover {
 @media (max-width: 480px) {
   .field-row { flex-direction: column; gap: 0; }
 }
+
+footer {
+  max-width: 640px;
+  margin: 24px auto 0;
+  padding: 16px 16px 32px;
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+footer a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+footer .footer-links {
+  margin-bottom: 8px;
+}
+
+.legal-page {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+.legal-page h2 {
+  color: var(--accent);
+  font-size: 1.15rem;
+  margin: 28px 0 8px;
+}
+
+.legal-page h2:first-child {
+  margin-top: 0;
+}
+
+.legal-page p, .legal-page li {
+  color: var(--text-dim);
+  line-height: 1.6;
+  font-size: 0.92rem;
+}
+
+.legal-page a {
+  color: var(--accent);
+}
+
+.legal-page .updated {
+  color: var(--text-dim);
+  font-size: 0.8rem;
+  margin-bottom: 24px;
+}
