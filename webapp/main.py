@@ -29,6 +29,23 @@ from optimize_leveling import (  # noqa: E402
 app = FastAPI(title="ReagentRoute API")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 
+
+@app.middleware("http")
+async def no_cache_static_assets(request, call_next):
+    """StaticFiles sets ETag/Last-Modified but no Cache-Control, so
+    browsers apply their own heuristic freshness and can serve a stale
+    index.html/app.js/style.css after a deploy without even asking the
+    server -- confirmed empirically during this project's own testing
+    (repeatedly had to force-refresh / open fresh tabs to see just-
+    deployed changes) and then, worse, by a real user seeing a fix that
+    was already live on the server. `no-cache` (not `no-store`) forces a
+    conditional revalidation on every load -- the browser still gets a
+    fast 304 when nothing changed, but can never silently skip asking."""
+    response = await call_next(request)
+    if request.url.path == "/" or request.url.path.endswith((".html", ".js", ".css")):
+        response.headers["Cache-Control"] = "no-cache"
+    return response
+
 GAME_VERSIONS = {
     "classic": {
         "suffix": "_recipes.json", "label": "Classic Era", "pricing_available": True, "tsm_game_type": "classic",
