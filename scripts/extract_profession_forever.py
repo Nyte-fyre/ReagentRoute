@@ -170,10 +170,21 @@ def run(profession_name, skill_line_id, item_subclass):
     spell_effect_rows = load_csv("SpellEffect")
     skill_line_ability_rows = load_csv("SkillLineAbility")
 
+    spell_name_rows = load_csv("SpellName")
+
     item_class_by_id = {int(r["ID"]): (int(r["ClassID"]), int(r["SubclassID"].split()[0])) for r in item_rows}
     item_names = {int(r["ID"]): r["Display_lang"] for r in item_sparse_rows if r.get("Display_lang")}
     sell_price_by_item = {int(r["ID"]): int(r["SellPrice"] or 0) for r in item_sparse_rows}
     required_skill_rank = {int(r["ID"]): int(r["RequiredSkillRank"] or 0) for r in item_sparse_rows}
+    # ENCHANT_ITEM_PERMANENT/TEMPORARY recipes (rings/weapon enchants etc.)
+    # don't create an item -- CREATE_ITEM's EffectItemType is 0 for them, so
+    # there's no item to name. The craft itself has its own name (e.g.
+    # "Enchant Bracer - Minor Intellect"), which lives in the SpellName DB2
+    # table (verified: build 1.60.1.69913's SpellName.csv row for spell
+    # 1248458 is exactly "Enchant Bracer - Minor Intellect", matching
+    # https://www.wowhead.com/forever/spell=1248458's page title). Previously
+    # these fell back to a raw "spell:1248458" placeholder.
+    spell_names = {int(r["ID"]): r["Name_lang"] for r in spell_name_rows if r.get("Name_lang")}
 
     spell_reagents = load_spell_reagents(spell_reagent_rows)
     spell_effects = load_spell_effects(spell_effect_rows)
@@ -187,7 +198,10 @@ def run(profession_name, skill_line_id, item_subclass):
 
     def build_recipe(teach_spell_id, craft_spell_id, effect_code, item_type, req_skill_value, item_id, item_name):
         crafted_item_id = item_type if effect_code == SPELL_EFFECT_CREATE_ITEM else None
-        crafted_item_name = item_names.get(crafted_item_id, f"Unknown Item {crafted_item_id}") if crafted_item_id else f"spell:{craft_spell_id}"
+        if crafted_item_id:
+            crafted_item_name = item_names.get(crafted_item_id, f"Unknown Item {crafted_item_id}")
+        else:
+            crafted_item_name = spell_names.get(craft_spell_id, f"Unknown Spell {craft_spell_id}")
         return {
             "spell_id": teach_spell_id, "craft_spell_id": craft_spell_id,
             "crafted_item_id": crafted_item_id, "crafted_item_name": crafted_item_name,

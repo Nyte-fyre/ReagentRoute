@@ -8,7 +8,7 @@
       "spell_id": 7420,
       "craft_spell_id": 7420,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7420",
+      "crafted_item_name": "Enchant Chest - Minor Health",
       "required_skill_value": 15,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -33,7 +33,7 @@
       "spell_id": 7454,
       "craft_spell_id": 7454,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7454",
+      "crafted_item_name": "Enchant Cloak - Minor Resistance",
       "required_skill_value": 45,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -63,7 +63,7 @@
       "spell_id": 7457,
       "craft_spell_id": 7457,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7457",
+      "crafted_item_name": "Enchant Bracer - Minor Stamina",
       "required_skill_value": 50,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -88,7 +88,7 @@
       "spell_id": 7771,
       "craft_spell_id": 7771,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7771",
+      "crafted_item_name": "Enchant Cloak - Minor Protection",
       "required_skill_value": 70,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -118,7 +118,7 @@
       "spell_id": 7745,
       "craft_spell_id": 7745,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7745",
+      "crafted_item_name": "Enchant 2H Weapon - Minor Impact",
       "required_skill_value": 100,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -148,7 +148,7 @@
       "spell_id": 7748,
       "craft_spell_id": 7748,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7748",
+      "crafted_item_name": "Enchant Chest - Lesser Health",
       "required_skill_value": 60,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -178,7 +178,7 @@
       "spell_id": 7788,
       "craft_spell_id": 7788,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7788",
+      "crafted_item_name": "Enchant Weapon - Minor Striking",
       "required_skill_value": 90,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -213,7 +213,7 @@
       "spell_id": 7779,
       "craft_spell_id": 7779,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7779",
+      "crafted_item_name": "Enchant Bracer - Minor Agility",
       "required_skill_value": 80,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -283,7 +283,7 @@
       "spell_id": 7857,
       "craft_spell_id": 7857,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7857",
+      "crafted_item_name": "Enchant Chest - Health",
       "required_skill_value": 120,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -313,7 +313,7 @@
       "spell_id": 7861,
       "craft_spell_id": 7861,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7861",
+      "crafted_item_name": "Enchant Cloak - Lesser Fire Resistance",
       "required_skill_value": 125,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -343,7 +343,7 @@
       "spell_id": 7426,
       "craft_spell_id": 7426,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7426",
+      "crafted_item_name": "Enchant Chest - Minor Absorption",
       "required_skill_value": 40,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -373,7 +373,7 @@
       "spell_id": 7863,
       "craft_spell_id": 7863,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7863",
+      "crafted_item_name": "Enchant Boots - Minor Stamina",
       "required_skill_value": 125,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -398,7 +398,7 @@
       "spell_id": 13378,
       "craft_spell_id": 13378,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13378",
+      "crafted_item_name": "Enchant Shield - Minor Stamina",
       "required_skill_value": 105,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -428,7 +428,7 @@
       "spell_id": 13421,
       "craft_spell_id": 13421,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13421",
+      "crafted_item_name": "Enchant Cloak - Lesser Protection",
       "required_skill_value": 115,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -458,7 +458,7 @@
       "spell_id": 13485,
       "craft_spell_id": 13485,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13485",
+      "crafted_item_name": "Enchant Shield - Lesser Spirit",
       "required_skill_value": 130,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -488,7 +488,7 @@
       "spell_id": 13501,
       "craft_spell_id": 13501,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13501",
+      "crafted_item_name": "Enchant Bracer - Lesser Stamina",
       "required_skill_value": 130,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -513,7 +513,7 @@
       "spell_id": 13503,
       "craft_spell_id": 13503,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13503",
+      "crafted_item_name": "Enchant Weapon - Lesser Striking",
       "required_skill_value": 140,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -543,7 +543,7 @@
       "spell_id": 13529,
       "craft_spell_id": 13529,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13529",
+      "crafted_item_name": "Enchant 2H Weapon - Lesser Impact",
       "required_skill_value": 145,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -573,7 +573,7 @@
       "spell_id": 13538,
       "craft_spell_id": 13538,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13538",
+      "crafted_item_name": "Enchant Chest - Lesser Absorption",
       "required_skill_value": 140,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -608,7 +608,7 @@
       "spell_id": 13607,
       "craft_spell_id": 13607,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13607",
+      "crafted_item_name": "Enchant Chest - Mana",
       "required_skill_value": 145,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -638,7 +638,7 @@
       "spell_id": 13622,
       "craft_spell_id": 13622,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13622",
+      "crafted_item_name": "Enchant Bracer - Lesser Intellect",
       "required_skill_value": 150,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -663,7 +663,7 @@
       "spell_id": 13626,
       "craft_spell_id": 13626,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13626",
+      "crafted_item_name": "Enchant Chest - Minor Stats",
       "required_skill_value": 150,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -803,7 +803,7 @@
       "spell_id": 7429,
       "craft_spell_id": 7428,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7428",
+      "crafted_item_name": "Enchant Bracer - Minor Deflection",
       "required_skill_value": 20,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -833,7 +833,7 @@
       "spell_id": 13631,
       "craft_spell_id": 13631,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13631",
+      "crafted_item_name": "Enchant Shield - Lesser Stamina",
       "required_skill_value": 155,
       "skill_tier": "Expert",
       "reagents": [
@@ -863,7 +863,7 @@
       "spell_id": 13635,
       "craft_spell_id": 13635,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13635",
+      "crafted_item_name": "Enchant Cloak - Defense",
       "required_skill_value": 155,
       "skill_tier": "Expert",
       "reagents": [
@@ -893,7 +893,7 @@
       "spell_id": 13637,
       "craft_spell_id": 13637,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13637",
+      "crafted_item_name": "Enchant Boots - Lesser Agility",
       "required_skill_value": 160,
       "skill_tier": "Expert",
       "reagents": [
@@ -923,7 +923,7 @@
       "spell_id": 13640,
       "craft_spell_id": 13640,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13640",
+      "crafted_item_name": "Enchant Chest - Greater Health",
       "required_skill_value": 160,
       "skill_tier": "Expert",
       "reagents": [
@@ -948,7 +948,7 @@
       "spell_id": 13642,
       "craft_spell_id": 13642,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13642",
+      "crafted_item_name": "Enchant Bracer - Spirit",
       "required_skill_value": 165,
       "skill_tier": "Expert",
       "reagents": [
@@ -973,7 +973,7 @@
       "spell_id": 13644,
       "craft_spell_id": 13644,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13644",
+      "crafted_item_name": "Enchant Boots - Lesser Stamina",
       "required_skill_value": 170,
       "skill_tier": "Expert",
       "reagents": [
@@ -998,7 +998,7 @@
       "spell_id": 13648,
       "craft_spell_id": 13648,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13648",
+      "crafted_item_name": "Enchant Bracer - Stamina",
       "required_skill_value": 170,
       "skill_tier": "Expert",
       "reagents": [
@@ -1023,7 +1023,7 @@
       "spell_id": 13657,
       "craft_spell_id": 13657,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13657",
+      "crafted_item_name": "Enchant Cloak - Fire Resistance",
       "required_skill_value": 175,
       "skill_tier": "Expert",
       "reagents": [
@@ -1053,7 +1053,7 @@
       "spell_id": 13659,
       "craft_spell_id": 13659,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13659",
+      "crafted_item_name": "Enchant Shield - Spirit",
       "required_skill_value": 180,
       "skill_tier": "Expert",
       "reagents": [
@@ -1083,7 +1083,7 @@
       "spell_id": 13661,
       "craft_spell_id": 13661,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13661",
+      "crafted_item_name": "Enchant Bracer - Strength",
       "required_skill_value": 180,
       "skill_tier": "Expert",
       "reagents": [
@@ -1108,7 +1108,7 @@
       "spell_id": 13663,
       "craft_spell_id": 13663,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13663",
+      "crafted_item_name": "Enchant Chest - Greater Mana",
       "required_skill_value": 185,
       "skill_tier": "Expert",
       "reagents": [
@@ -1133,7 +1133,7 @@
       "spell_id": 13693,
       "craft_spell_id": 13693,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13693",
+      "crafted_item_name": "Enchant Weapon - Striking",
       "required_skill_value": 195,
       "skill_tier": "Expert",
       "reagents": [
@@ -1163,7 +1163,7 @@
       "spell_id": 13695,
       "craft_spell_id": 13695,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13695",
+      "crafted_item_name": "Enchant 2H Weapon - Impact",
       "required_skill_value": 200,
       "skill_tier": "Expert",
       "reagents": [
@@ -1193,7 +1193,7 @@
       "spell_id": 13700,
       "craft_spell_id": 13700,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13700",
+      "crafted_item_name": "Enchant Chest - Lesser Stats",
       "required_skill_value": 200,
       "skill_tier": "Expert",
       "reagents": [
@@ -1273,7 +1273,7 @@
       "spell_id": 13746,
       "craft_spell_id": 13746,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13746",
+      "crafted_item_name": "Enchant Cloak - Greater Defense",
       "required_skill_value": 205,
       "skill_tier": "Expert",
       "reagents": [
@@ -1298,7 +1298,7 @@
       "spell_id": 13794,
       "craft_spell_id": 13794,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13794",
+      "crafted_item_name": "Enchant Cloak - Resistance",
       "required_skill_value": 205,
       "skill_tier": "Expert",
       "reagents": [
@@ -1323,7 +1323,7 @@
       "spell_id": 13815,
       "craft_spell_id": 13815,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13815",
+      "crafted_item_name": "Enchant Gloves - Agility",
       "required_skill_value": 210,
       "skill_tier": "Expert",
       "reagents": [
@@ -1353,7 +1353,7 @@
       "spell_id": 13822,
       "craft_spell_id": 13822,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13822",
+      "crafted_item_name": "Enchant Bracer - Intellect",
       "required_skill_value": 210,
       "skill_tier": "Expert",
       "reagents": [
@@ -1378,7 +1378,7 @@
       "spell_id": 13836,
       "craft_spell_id": 13836,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13836",
+      "crafted_item_name": "Enchant Boots - Stamina",
       "required_skill_value": 215,
       "skill_tier": "Expert",
       "reagents": [
@@ -1403,7 +1403,7 @@
       "spell_id": 13858,
       "craft_spell_id": 13858,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13858",
+      "crafted_item_name": "Enchant Chest - Superior Health",
       "required_skill_value": 220,
       "skill_tier": "Expert",
       "reagents": [
@@ -1428,7 +1428,7 @@
       "spell_id": 13887,
       "craft_spell_id": 13887,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13887",
+      "crafted_item_name": "Enchant Gloves - Strength",
       "required_skill_value": 225,
       "skill_tier": "Expert",
       "reagents": [
@@ -1458,7 +1458,7 @@
       "spell_id": 13890,
       "craft_spell_id": 13890,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13890",
+      "crafted_item_name": "Enchant Boots - Minor Speed",
       "required_skill_value": 225,
       "skill_tier": "Expert",
       "reagents": [
@@ -1563,7 +1563,7 @@
       "spell_id": 13905,
       "craft_spell_id": 13905,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13905",
+      "crafted_item_name": "Enchant Shield - Greater Spirit",
       "required_skill_value": 230,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1593,7 +1593,7 @@
       "spell_id": 13917,
       "craft_spell_id": 13917,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13917",
+      "crafted_item_name": "Enchant Chest - Superior Mana",
       "required_skill_value": 230,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1623,7 +1623,7 @@
       "spell_id": 13935,
       "craft_spell_id": 13935,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13935",
+      "crafted_item_name": "Enchant Boots - Agility",
       "required_skill_value": 235,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1648,7 +1648,7 @@
       "spell_id": 13937,
       "craft_spell_id": 13937,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13937",
+      "crafted_item_name": "Enchant 2H Weapon - Greater Impact",
       "required_skill_value": 240,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1678,7 +1678,7 @@
       "spell_id": 13939,
       "craft_spell_id": 13939,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13939",
+      "crafted_item_name": "Enchant Bracer - Greater Strength",
       "required_skill_value": 240,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1708,7 +1708,7 @@
       "spell_id": 13941,
       "craft_spell_id": 13941,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13941",
+      "crafted_item_name": "Enchant Chest - Stats",
       "required_skill_value": 245,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1743,7 +1743,7 @@
       "spell_id": 13943,
       "craft_spell_id": 13943,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13943",
+      "crafted_item_name": "Enchant Weapon - Greater Striking",
       "required_skill_value": 245,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1773,7 +1773,7 @@
       "spell_id": 13948,
       "craft_spell_id": 13948,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13948",
+      "crafted_item_name": "Enchant Gloves - Minor Haste",
       "required_skill_value": 250,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1863,7 +1863,7 @@
       "spell_id": 20023,
       "craft_spell_id": 20023,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20023",
+      "crafted_item_name": "Enchant Boots - Greater Agility",
       "required_skill_value": 295,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1888,7 +1888,7 @@
       "spell_id": 20013,
       "craft_spell_id": 20013,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20013",
+      "crafted_item_name": "Enchant Gloves - Greater Strength",
       "required_skill_value": 295,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1918,7 +1918,7 @@
       "spell_id": 20028,
       "craft_spell_id": 20028,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20028",
+      "crafted_item_name": "Enchant Chest - Major Mana",
       "required_skill_value": 290,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1948,7 +1948,7 @@
       "spell_id": 20016,
       "craft_spell_id": 20016,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20016",
+      "crafted_item_name": "Enchant Shield - Superior Spirit",
       "required_skill_value": 280,
       "skill_tier": "Artisan",
       "reagents": [
@@ -1978,7 +1978,7 @@
       "spell_id": 20012,
       "craft_spell_id": 20012,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20012",
+      "crafted_item_name": "Enchant Gloves - Greater Agility",
       "required_skill_value": 270,
       "skill_tier": "Artisan",
       "reagents": [
@@ -2008,7 +2008,7 @@
       "spell_id": 20014,
       "craft_spell_id": 20014,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20014",
+      "crafted_item_name": "Enchant Cloak - Greater Resistance",
       "required_skill_value": 265,
       "skill_tier": "Artisan",
       "reagents": [
@@ -2058,7 +2058,7 @@
       "spell_id": 20008,
       "craft_spell_id": 20008,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20008",
+      "crafted_item_name": "Enchant Bracer - Greater Intellect",
       "required_skill_value": 255,
       "skill_tier": "Artisan",
       "reagents": [
@@ -2083,7 +2083,7 @@
       "spell_id": 7443,
       "craft_spell_id": 7443,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7443",
+      "crafted_item_name": "Enchant Chest - Minor Mana",
       "required_skill_value": 20,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -2111,7 +2111,7 @@
       "spell_id": 7766,
       "craft_spell_id": 7766,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7766",
+      "crafted_item_name": "Enchant Bracer - Minor Spirit",
       "required_skill_value": 60,
       "skill_tier": "Apprentice",
       "reagents": [
@@ -2139,7 +2139,7 @@
       "spell_id": 7776,
       "craft_spell_id": 7776,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7776",
+      "crafted_item_name": "Enchant Chest - Lesser Mana",
       "required_skill_value": 80,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2172,7 +2172,7 @@
       "spell_id": 7782,
       "craft_spell_id": 7782,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7782",
+      "crafted_item_name": "Enchant Bracer - Minor Strength",
       "required_skill_value": 80,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2200,7 +2200,7 @@
       "spell_id": 7786,
       "craft_spell_id": 7786,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7786",
+      "crafted_item_name": "Enchant Weapon - Minor Beastslayer",
       "required_skill_value": 90,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2233,7 +2233,7 @@
       "spell_id": 7793,
       "craft_spell_id": 7793,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7793",
+      "crafted_item_name": "Enchant 2H Weapon - Lesser Intellect",
       "required_skill_value": 100,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2261,7 +2261,7 @@
       "spell_id": 7859,
       "craft_spell_id": 7859,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7859",
+      "crafted_item_name": "Enchant Bracer - Lesser Spirit",
       "required_skill_value": 120,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2289,7 +2289,7 @@
       "spell_id": 7867,
       "craft_spell_id": 7867,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:7867",
+      "crafted_item_name": "Enchant Boots - Minor Agility",
       "required_skill_value": 125,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2322,7 +2322,7 @@
       "spell_id": 13380,
       "craft_spell_id": 13380,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13380",
+      "crafted_item_name": "Enchant 2H Weapon - Lesser Spirit",
       "required_skill_value": 110,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2355,7 +2355,7 @@
       "spell_id": 13419,
       "craft_spell_id": 13419,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13419",
+      "crafted_item_name": "Enchant Cloak - Minor Agility",
       "required_skill_value": 110,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2383,7 +2383,7 @@
       "spell_id": 13464,
       "craft_spell_id": 13464,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13464",
+      "crafted_item_name": "Enchant Shield - Lesser Protection",
       "required_skill_value": 115,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2421,7 +2421,7 @@
       "spell_id": 13522,
       "craft_spell_id": 13522,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13522",
+      "crafted_item_name": "Enchant Cloak - Lesser Shadow Resistance",
       "required_skill_value": 135,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2454,7 +2454,7 @@
       "spell_id": 13536,
       "craft_spell_id": 13536,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13536",
+      "crafted_item_name": "Enchant Bracer - Lesser Strength",
       "required_skill_value": 140,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2482,7 +2482,7 @@
       "spell_id": 13612,
       "craft_spell_id": 13612,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13612",
+      "crafted_item_name": "Enchant Gloves - Mining",
       "required_skill_value": 145,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2515,7 +2515,7 @@
       "spell_id": 13617,
       "craft_spell_id": 13617,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13617",
+      "crafted_item_name": "Enchant Gloves - Herbalism",
       "required_skill_value": 145,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2548,7 +2548,7 @@
       "spell_id": 13620,
       "craft_spell_id": 13620,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13620",
+      "crafted_item_name": "Enchant Gloves - Fishing",
       "required_skill_value": 145,
       "skill_tier": "Journeyman",
       "reagents": [
@@ -2581,7 +2581,7 @@
       "spell_id": 13646,
       "craft_spell_id": 13646,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13646",
+      "crafted_item_name": "Enchant Bracer - Lesser Deflection",
       "required_skill_value": 170,
       "skill_tier": "Expert",
       "reagents": [
@@ -2614,7 +2614,7 @@
       "spell_id": 13653,
       "craft_spell_id": 13653,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13653",
+      "crafted_item_name": "Enchant Weapon - Lesser Beastslayer",
       "required_skill_value": 175,
       "skill_tier": "Expert",
       "reagents": [
@@ -2652,7 +2652,7 @@
       "spell_id": 13655,
       "craft_spell_id": 13655,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13655",
+      "crafted_item_name": "Enchant Weapon - Lesser Elemental Slayer",
       "required_skill_value": 175,
       "skill_tier": "Expert",
       "reagents": [
@@ -2690,7 +2690,7 @@
       "spell_id": 13698,
       "craft_spell_id": 13698,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13698",
+      "crafted_item_name": "Enchant Gloves - Skinning",
       "required_skill_value": 200,
       "skill_tier": "Expert",
       "reagents": [
@@ -2723,7 +2723,7 @@
       "spell_id": 13687,
       "craft_spell_id": 13687,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13687",
+      "crafted_item_name": "Enchant Boots - Lesser Spirit",
       "required_skill_value": 190,
       "skill_tier": "Expert",
       "reagents": [
@@ -2756,7 +2756,7 @@
       "spell_id": 13689,
       "craft_spell_id": 13689,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13689",
+      "crafted_item_name": "Enchant Shield - Lesser Block",
       "required_skill_value": 195,
       "skill_tier": "Expert",
       "reagents": [
@@ -2794,7 +2794,7 @@
       "spell_id": 13817,
       "craft_spell_id": 13817,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13817",
+      "crafted_item_name": "Enchant Shield - Stamina",
       "required_skill_value": 210,
       "skill_tier": "Expert",
       "reagents": [
@@ -2822,7 +2822,7 @@
       "spell_id": 13841,
       "craft_spell_id": 13841,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13841",
+      "crafted_item_name": "Enchant Gloves - Advanced Mining",
       "required_skill_value": 215,
       "skill_tier": "Expert",
       "reagents": [
@@ -2855,7 +2855,7 @@
       "spell_id": 13846,
       "craft_spell_id": 13846,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13846",
+      "crafted_item_name": "Enchant Bracer - Greater Spirit",
       "required_skill_value": 220,
       "skill_tier": "Expert",
       "reagents": [
@@ -2888,7 +2888,7 @@
       "spell_id": 13868,
       "craft_spell_id": 13868,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13868",
+      "crafted_item_name": "Enchant Gloves - Advanced Herbalism",
       "required_skill_value": 225,
       "skill_tier": "Expert",
       "reagents": [
@@ -2921,7 +2921,7 @@
       "spell_id": 13882,
       "craft_spell_id": 13882,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13882",
+      "crafted_item_name": "Enchant Cloak - Lesser Agility",
       "required_skill_value": 225,
       "skill_tier": "Expert",
       "reagents": [
@@ -2949,7 +2949,7 @@
       "spell_id": 13898,
       "craft_spell_id": 13898,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13898",
+      "crafted_item_name": "Enchant Weapon - Fiery Weapon",
       "required_skill_value": 265,
       "skill_tier": "Artisan",
       "reagents": [
@@ -2982,7 +2982,7 @@
       "spell_id": 13915,
       "craft_spell_id": 13915,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13915",
+      "crafted_item_name": "Enchant Weapon - Demonslaying",
       "required_skill_value": 230,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3020,7 +3020,7 @@
       "spell_id": 13931,
       "craft_spell_id": 13931,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13931",
+      "crafted_item_name": "Enchant Bracer - Deflection",
       "required_skill_value": 235,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3053,7 +3053,7 @@
       "spell_id": 13933,
       "craft_spell_id": 13933,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13933",
+      "crafted_item_name": "Enchant Shield - Frost Resistance",
       "required_skill_value": 235,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3086,7 +3086,7 @@
       "spell_id": 13945,
       "craft_spell_id": 13945,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13945",
+      "crafted_item_name": "Enchant Bracer - Greater Stamina",
       "required_skill_value": 245,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3114,7 +3114,7 @@
       "spell_id": 13947,
       "craft_spell_id": 13947,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:13947",
+      "crafted_item_name": "Enchant Gloves - Riding Skill",
       "required_skill_value": 250,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3185,7 +3185,7 @@
       "spell_id": 20020,
       "craft_spell_id": 20020,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20020",
+      "crafted_item_name": "Enchant Boots - Greater Stamina",
       "required_skill_value": 260,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3213,7 +3213,7 @@
       "spell_id": 20017,
       "craft_spell_id": 20017,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20017",
+      "crafted_item_name": "Enchant Shield - Greater Stamina",
       "required_skill_value": 265,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3241,7 +3241,7 @@
       "spell_id": 20009,
       "craft_spell_id": 20009,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20009",
+      "crafted_item_name": "Enchant Bracer - Superior Spirit",
       "required_skill_value": 270,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3274,7 +3274,7 @@
       "spell_id": 20024,
       "craft_spell_id": 20024,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20024",
+      "crafted_item_name": "Enchant Boots - Spirit",
       "required_skill_value": 275,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3307,7 +3307,7 @@
       "spell_id": 20026,
       "craft_spell_id": 20026,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20026",
+      "crafted_item_name": "Enchant Chest - Major Health",
       "required_skill_value": 275,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3340,7 +3340,7 @@
       "spell_id": 20029,
       "craft_spell_id": 20029,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20029",
+      "crafted_item_name": "Enchant Weapon - Icy Chill",
       "required_skill_value": 285,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3383,7 +3383,7 @@
       "spell_id": 20015,
       "craft_spell_id": 20015,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20015",
+      "crafted_item_name": "Enchant Cloak - Superior Defense",
       "required_skill_value": 285,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3464,7 +3464,7 @@
       "spell_id": 20010,
       "craft_spell_id": 20010,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20010",
+      "crafted_item_name": "Enchant Bracer - Superior Strength",
       "required_skill_value": 295,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3497,7 +3497,7 @@
       "spell_id": 20030,
       "craft_spell_id": 20030,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20030",
+      "crafted_item_name": "Enchant 2H Weapon - Superior Impact",
       "required_skill_value": 295,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3530,7 +3530,7 @@
       "spell_id": 20033,
       "craft_spell_id": 20033,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20033",
+      "crafted_item_name": "Enchant Weapon - Unholy Weapon",
       "required_skill_value": 295,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3563,7 +3563,7 @@
       "spell_id": 20036,
       "craft_spell_id": 20036,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20036",
+      "crafted_item_name": "Enchant 2H Weapon - Major Intellect",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3596,7 +3596,7 @@
       "spell_id": 20031,
       "craft_spell_id": 20031,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20031",
+      "crafted_item_name": "Enchant Weapon - Superior Striking",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3629,7 +3629,7 @@
       "spell_id": 20011,
       "craft_spell_id": 20011,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20011",
+      "crafted_item_name": "Enchant Bracer - Superior Stamina",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3657,7 +3657,7 @@
       "spell_id": 20034,
       "craft_spell_id": 20034,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20034",
+      "crafted_item_name": "Enchant Weapon - Crusader",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3690,7 +3690,7 @@
       "spell_id": 20025,
       "craft_spell_id": 20025,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20025",
+      "crafted_item_name": "Enchant Chest - Greater Stats",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3728,7 +3728,7 @@
       "spell_id": 20032,
       "craft_spell_id": 20032,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20032",
+      "crafted_item_name": "Enchant Weapon - Lifestealing",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3766,7 +3766,7 @@
       "spell_id": 20035,
       "craft_spell_id": 20035,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:20035",
+      "crafted_item_name": "Enchant 2H Weapon - Major Spirit",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3799,7 +3799,7 @@
       "spell_id": 21931,
       "craft_spell_id": 21931,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:21931",
+      "crafted_item_name": "Enchant Weapon - Winter's Might",
       "required_skill_value": 190,
       "skill_tier": "Expert",
       "reagents": [
@@ -3842,7 +3842,7 @@
       "spell_id": 22749,
       "craft_spell_id": 22749,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:22749",
+      "crafted_item_name": "Enchant Weapon - Spell Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3895,7 +3895,7 @@
       "spell_id": 22750,
       "craft_spell_id": 22750,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:22750",
+      "crafted_item_name": "Enchant Weapon - Healing Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3943,7 +3943,7 @@
       "spell_id": 23799,
       "craft_spell_id": 23799,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23799",
+      "crafted_item_name": "Enchant Weapon - Strength",
       "required_skill_value": 290,
       "skill_tier": "Artisan",
       "reagents": [
@@ -3986,7 +3986,7 @@
       "spell_id": 23800,
       "craft_spell_id": 23800,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23800",
+      "crafted_item_name": "Enchant Weapon - Agility",
       "required_skill_value": 290,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4029,7 +4029,7 @@
       "spell_id": 23801,
       "craft_spell_id": 23801,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23801",
+      "crafted_item_name": "Enchant Bracer - Mana Regeneration",
       "required_skill_value": 290,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4066,7 +4066,7 @@
       "spell_id": 23802,
       "craft_spell_id": 23802,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23802",
+      "crafted_item_name": "Enchant Bracer - Healing Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4108,7 +4108,7 @@
       "spell_id": 23803,
       "craft_spell_id": 23803,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23803",
+      "crafted_item_name": "Enchant Weapon - Mighty Spirit",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4146,7 +4146,7 @@
       "spell_id": 23804,
       "craft_spell_id": 23804,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:23804",
+      "crafted_item_name": "Enchant Weapon - Mighty Intellect",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4184,7 +4184,7 @@
       "spell_id": 25072,
       "craft_spell_id": 25072,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25072",
+      "crafted_item_name": "Enchant Gloves - Threat",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4222,7 +4222,7 @@
       "spell_id": 25073,
       "craft_spell_id": 25073,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25073",
+      "crafted_item_name": "Enchant Gloves - Shadow Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4260,7 +4260,7 @@
       "spell_id": 25074,
       "craft_spell_id": 25074,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25074",
+      "crafted_item_name": "Enchant Gloves - Frost Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4298,7 +4298,7 @@
       "spell_id": 25078,
       "craft_spell_id": 25078,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25078",
+      "crafted_item_name": "Enchant Gloves - Fire Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4336,7 +4336,7 @@
       "spell_id": 25079,
       "craft_spell_id": 25079,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25079",
+      "crafted_item_name": "Enchant Gloves - Healing Power",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4374,7 +4374,7 @@
       "spell_id": 25080,
       "craft_spell_id": 25080,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25080",
+      "crafted_item_name": "Enchant Gloves - Superior Agility",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4412,7 +4412,7 @@
       "spell_id": 25081,
       "craft_spell_id": 25081,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25081",
+      "crafted_item_name": "Enchant Cloak - Greater Fire Resistance",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4450,7 +4450,7 @@
       "spell_id": 25082,
       "craft_spell_id": 25082,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25082",
+      "crafted_item_name": "Enchant Cloak - Greater Nature Resistance",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4488,7 +4488,7 @@
       "spell_id": 25083,
       "craft_spell_id": 25083,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25083",
+      "crafted_item_name": "Enchant Cloak - Stealth",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4526,7 +4526,7 @@
       "spell_id": 25084,
       "craft_spell_id": 25084,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25084",
+      "crafted_item_name": "Enchant Cloak - Subtlety",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4564,7 +4564,7 @@
       "spell_id": 25086,
       "craft_spell_id": 25086,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:25086",
+      "crafted_item_name": "Enchant Cloak - Dodge",
       "required_skill_value": 300,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4865,7 +4865,7 @@
       "spell_id": 27837,
       "craft_spell_id": 27837,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27837",
+      "crafted_item_name": "Enchant 2H Weapon - Agility",
       "required_skill_value": 290,
       "skill_tier": "Artisan",
       "reagents": [
@@ -4908,7 +4908,7 @@
       "spell_id": 27906,
       "craft_spell_id": 27906,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27906",
+      "crafted_item_name": "Enchant Bracer - Major Defense",
       "required_skill_value": 320,
       "skill_tier": "Master",
       "reagents": [
@@ -4941,7 +4941,7 @@
       "spell_id": 27911,
       "craft_spell_id": 27911,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27911",
+      "crafted_item_name": "Enchant Bracer - Superior Healing",
       "required_skill_value": 325,
       "skill_tier": "Master",
       "reagents": [
@@ -4974,7 +4974,7 @@
       "spell_id": 27913,
       "craft_spell_id": 27913,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27913",
+      "crafted_item_name": "Enchant Bracer - Restore Mana Prime",
       "required_skill_value": 335,
       "skill_tier": "Master",
       "reagents": [
@@ -5002,7 +5002,7 @@
       "spell_id": 27914,
       "craft_spell_id": 27914,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27914",
+      "crafted_item_name": "Enchant Bracer - Fortitude",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -5040,7 +5040,7 @@
       "spell_id": 27917,
       "craft_spell_id": 27917,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27917",
+      "crafted_item_name": "Enchant Bracer - Spellpower",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5078,7 +5078,7 @@
       "spell_id": 27920,
       "craft_spell_id": 27920,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27920",
+      "crafted_item_name": "Enchant Ring - Striking",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5111,7 +5111,7 @@
       "spell_id": 27924,
       "craft_spell_id": 27924,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27924",
+      "crafted_item_name": "Enchant Ring - Spellpower",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5144,7 +5144,7 @@
       "spell_id": 27926,
       "craft_spell_id": 27926,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27926",
+      "crafted_item_name": "Enchant Ring - Healing Power",
       "required_skill_value": 370,
       "skill_tier": "Master",
       "reagents": [
@@ -5182,7 +5182,7 @@
       "spell_id": 27927,
       "craft_spell_id": 27927,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27927",
+      "crafted_item_name": "Enchant Ring - Stats",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -5215,7 +5215,7 @@
       "spell_id": 27945,
       "craft_spell_id": 27945,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27945",
+      "crafted_item_name": "Enchant Shield - Intellect",
       "required_skill_value": 325,
       "skill_tier": "Master",
       "reagents": [
@@ -5243,7 +5243,7 @@
       "spell_id": 27946,
       "craft_spell_id": 27946,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27946",
+      "crafted_item_name": "Enchant Shield - Shield Block",
       "required_skill_value": 340,
       "skill_tier": "Master",
       "reagents": [
@@ -5281,7 +5281,7 @@
       "spell_id": 27947,
       "craft_spell_id": 27947,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27947",
+      "crafted_item_name": "Enchant Shield - Resistance",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5329,7 +5329,7 @@
       "spell_id": 27948,
       "craft_spell_id": 27948,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27948",
+      "crafted_item_name": "Enchant Boots - Vitality",
       "required_skill_value": 305,
       "skill_tier": "Master",
       "reagents": [
@@ -5367,7 +5367,7 @@
       "spell_id": 27950,
       "craft_spell_id": 27950,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27950",
+      "crafted_item_name": "Enchant Boots - Fortitude",
       "required_skill_value": 320,
       "skill_tier": "Master",
       "reagents": [
@@ -5395,7 +5395,7 @@
       "spell_id": 27951,
       "craft_spell_id": 27951,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27951",
+      "crafted_item_name": "Enchant Boots - Dexterity",
       "required_skill_value": 340,
       "skill_tier": "Master",
       "reagents": [
@@ -5428,7 +5428,7 @@
       "spell_id": 27954,
       "craft_spell_id": 27954,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27954",
+      "crafted_item_name": "Enchant Boots - Surefooted",
       "required_skill_value": 370,
       "skill_tier": "Master",
       "reagents": [
@@ -5466,7 +5466,7 @@
       "spell_id": 27960,
       "craft_spell_id": 27960,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27960",
+      "crafted_item_name": "Enchant Chest - Exceptional Stats",
       "required_skill_value": 345,
       "skill_tier": "Master",
       "reagents": [
@@ -5504,7 +5504,7 @@
       "spell_id": 27962,
       "craft_spell_id": 27962,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27962",
+      "crafted_item_name": "Enchant Cloak - Major Resistance",
       "required_skill_value": 330,
       "skill_tier": "Master",
       "reagents": [
@@ -5552,7 +5552,7 @@
       "spell_id": 27968,
       "craft_spell_id": 27968,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27968",
+      "crafted_item_name": "Enchant Weapon - Major Intellect",
       "required_skill_value": 340,
       "skill_tier": "Master",
       "reagents": [
@@ -5585,7 +5585,7 @@
       "spell_id": 27967,
       "craft_spell_id": 27967,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27967",
+      "crafted_item_name": "Enchant Weapon - Major Striking",
       "required_skill_value": 340,
       "skill_tier": "Master",
       "reagents": [
@@ -5622,7 +5622,7 @@
       "spell_id": 27972,
       "craft_spell_id": 27972,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27972",
+      "crafted_item_name": "Enchant Weapon - Potency",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -5660,7 +5660,7 @@
       "spell_id": 27971,
       "craft_spell_id": 27971,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27971",
+      "crafted_item_name": "Enchant 2H Weapon - Savagery",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -5693,7 +5693,7 @@
       "spell_id": 27975,
       "craft_spell_id": 27975,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27975",
+      "crafted_item_name": "Enchant Weapon - Major Spellpower",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -5726,7 +5726,7 @@
       "spell_id": 27977,
       "craft_spell_id": 27977,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27977",
+      "crafted_item_name": "Enchant 2H Weapon - Major Agility",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5764,7 +5764,7 @@
       "spell_id": 28004,
       "craft_spell_id": 28004,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:28004",
+      "crafted_item_name": "Enchant Weapon - Battlemaster",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5802,7 +5802,7 @@
       "spell_id": 28003,
       "craft_spell_id": 28003,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:28003",
+      "crafted_item_name": "Enchant Weapon - Spellsurge",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -5840,7 +5840,7 @@
       "spell_id": 27984,
       "craft_spell_id": 27984,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27984",
+      "crafted_item_name": "Enchant Weapon - Mongoose",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -5883,7 +5883,7 @@
       "spell_id": 27981,
       "craft_spell_id": 27981,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27981",
+      "crafted_item_name": "Enchant Weapon - Sunfire",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -5931,7 +5931,7 @@
       "spell_id": 27982,
       "craft_spell_id": 27982,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27982",
+      "crafted_item_name": "Enchant Weapon - Soulfrost",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -6179,7 +6179,7 @@
       "spell_id": 33992,
       "craft_spell_id": 33992,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:33992",
+      "crafted_item_name": "Enchant Chest - Major Resilience",
       "required_skill_value": 345,
       "skill_tier": "Master",
       "reagents": [
@@ -6212,7 +6212,7 @@
       "spell_id": 33994,
       "craft_spell_id": 33994,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:33994",
+      "crafted_item_name": "Enchant Gloves - Spell Strike",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -6250,7 +6250,7 @@
       "spell_id": 33997,
       "craft_spell_id": 33997,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:33997",
+      "crafted_item_name": "Enchant Gloves - Major Spellpower",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -6288,7 +6288,7 @@
       "spell_id": 33999,
       "craft_spell_id": 33999,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:33999",
+      "crafted_item_name": "Enchant Gloves - Major Healing",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6326,7 +6326,7 @@
       "spell_id": 34003,
       "craft_spell_id": 34003,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34003",
+      "crafted_item_name": "Enchant Cloak - Spell Penetration",
       "required_skill_value": 325,
       "skill_tier": "Master",
       "reagents": [
@@ -6363,7 +6363,7 @@
       "spell_id": 34005,
       "craft_spell_id": 34005,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34005",
+      "crafted_item_name": "Enchant Cloak - Greater Arcane Resistance",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6396,7 +6396,7 @@
       "spell_id": 34006,
       "craft_spell_id": 34006,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34006",
+      "crafted_item_name": "Enchant Cloak - Greater Shadow Resistance",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6429,7 +6429,7 @@
       "spell_id": 34007,
       "craft_spell_id": 34007,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34007",
+      "crafted_item_name": "Enchant Boots - Cat's Swiftness",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -6462,7 +6462,7 @@
       "spell_id": 34008,
       "craft_spell_id": 34008,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34008",
+      "crafted_item_name": "Enchant Boots - Boar's Speed",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -6495,7 +6495,7 @@
       "spell_id": 34010,
       "craft_spell_id": 34010,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34010",
+      "crafted_item_name": "Enchant Weapon - Major Healing",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6533,7 +6533,7 @@
       "spell_id": 34009,
       "craft_spell_id": 34009,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:34009",
+      "crafted_item_name": "Enchant Shield - Major Stamina",
       "required_skill_value": 325,
       "skill_tier": "Master",
       "reagents": [
@@ -6561,7 +6561,7 @@
       "spell_id": 42620,
       "craft_spell_id": 42620,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:42620",
+      "crafted_item_name": "Enchant Weapon - Greater Agility",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6604,7 +6604,7 @@
       "spell_id": 42974,
       "craft_spell_id": 42974,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:42974",
+      "crafted_item_name": "Enchant Weapon - Executioner",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -6680,7 +6680,7 @@
       "spell_id": 46594,
       "craft_spell_id": 46594,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:46594",
+      "crafted_item_name": "Enchant Chest - Defense",
       "required_skill_value": 360,
       "skill_tier": "Master",
       "reagents": [
@@ -6718,7 +6718,7 @@
       "spell_id": 47051,
       "craft_spell_id": 47051,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:47051",
+      "crafted_item_name": "Enchant Cloak - Steelweave",
       "required_skill_value": 375,
       "skill_tier": "Master",
       "reagents": [
@@ -6751,7 +6751,7 @@
       "spell_id": 46578,
       "craft_spell_id": 46578,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:46578",
+      "crafted_item_name": "Enchant Weapon - Deathfrost",
       "required_skill_value": 350,
       "skill_tier": "Master",
       "reagents": [
@@ -6783,7 +6783,7 @@
       "spell_id": 27958,
       "craft_spell_id": 27958,
       "crafted_item_id": null,
-      "crafted_item_name": "spell:27958",
+      "crafted_item_name": "Enchant Chest - Exceptional Mana",
       "required_skill_value": 325,
       "skill_tier": "Master",
       "reagents": [

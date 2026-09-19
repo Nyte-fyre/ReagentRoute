@@ -46,7 +46,7 @@ main {
   gap: 20px;
 }
 
-main:has(#results-panel:not(.hidden)) {
+main:has(#results:not(.hidden)) {
   max-width: 900px;
 }
 
