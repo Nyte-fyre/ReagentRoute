@@ -22,7 +22,7 @@ RAW_DATA = os.path.join(ROOT, "raw_data", "forever")
 BUILD_FOREVER = "1.60.1.69913"  # wow_classic_beta branch -- bump as newer builds appear
 
 TABLES = ["SpellReagents", "SpellEffect", "ItemEffect", "ItemXItemEffect",
-          "SkillLineAbility", "Item", "ItemSparse"]
+          "SkillLineAbility", "Item", "ItemSparse", "SpellName"]
 
 
 def download(url, dest_path, headers=None):

@@ -52,6 +52,7 @@ ITEM_EFFECT_TRIGGER_LEARN = 6  # verified empirically: item_template.spellid_1 i
 # the real teach link (verified: item 4408 "Schematic: Mechanical Squirrel"
 # -> spell 3928 -> CREATE_ITEM 4401 "Mechanical Squirrel Box", exact match).
 SKILL_LINE_ABILITY_CSV = os.path.join(ROOT, "data", "SkillLineAbility_tbc.csv")
+SPELL_NAME_CSV = os.path.join(ROOT, "raw_data", "tbc", "SpellName.csv")
 
 SPELL_EFFECT_CREATE_ITEM = 24
 SPELL_EFFECT_LEARN_SPELL = 36
@@ -106,6 +107,17 @@ def load_item_teach_spells(path):
         if int(row["TriggerType"]) == ITEM_EFFECT_TRIGGER_LEARN:
             out[int(row["ParentItemID"])] = int(row["SpellID"])
     return out
+
+
+def load_spell_names(path):
+    """spell_id -> real craft/enchant name (e.g. "Enchant Cloak - Minor
+    Resistance"), from wago.tools' SpellName DB2 table (build
+    2.5.6.69795). Enchant-type recipes (ENCHANT_ITEM_PERMANENT/TEMPORARY)
+    don't create an item, so there's no item name to fall back on --
+    previously these showed as a raw "spell:7420" placeholder. Verified:
+    row for spell 7420 is exactly "Enchant Chest - Minor Health", matching
+    https://www.wowhead.com/classic/spell=7420's page title."""
+    return {int(r["ID"]): r["Name_lang"] for r in csv.DictReader(open(path, encoding="utf-8")) if r.get("Name_lang")}
 
 
 def load_spell_effects(path):
@@ -167,7 +179,7 @@ def find_craft_effect(spell_id, spell_effects, classic_hops=None):
 
 
 def run(profession_name, skill_line_id, item_subclass):
-    for required in [SQL_DUMP, CLASSIC_SQL_DUMP, SPELL_REAGENTS_CSV, SPELL_EFFECT_CSV, ITEM_EFFECT_CSV]:
+    for required in [SQL_DUMP, CLASSIC_SQL_DUMP, SPELL_REAGENTS_CSV, SPELL_EFFECT_CSV, ITEM_EFFECT_CSV, SPELL_NAME_CSV]:
         if not os.path.exists(required):
             print(f"Missing {required} -- run `python scripts/fetch_data.py --tbc` first.")
             sys.exit(1)
@@ -207,6 +219,7 @@ def run(profession_name, skill_line_id, item_subclass):
     spell_reagents = load_spell_reagents(SPELL_REAGENTS_CSV)
     spell_effects = load_spell_effects(SPELL_EFFECT_CSV)
     item_teach_spells = load_item_teach_spells(ITEM_EFFECT_CSV)
+    spell_names = load_spell_names(SPELL_NAME_CSV)
     print("Loading classic-db LEARN_SPELL hop bridge for pruned legacy wrapper spells...")
     classic_hops = load_classic_learn_spell_hops()
 
@@ -223,7 +236,10 @@ def run(profession_name, skill_line_id, item_subclass):
 
     def build_recipe(teach_spell_id, craft_spell_id, effect_code, item_type, req_skill_value, learned_from):
         crafted_item_id = item_type if effect_code == SPELL_EFFECT_CREATE_ITEM else None
-        crafted_item_name = item_names.get(crafted_item_id, f"Unknown Item {crafted_item_id}") if crafted_item_id else f"spell:{craft_spell_id}"
+        if crafted_item_id:
+            crafted_item_name = item_names.get(crafted_item_id, f"Unknown Item {crafted_item_id}")
+        else:
+            crafted_item_name = spell_names.get(craft_spell_id, f"Unknown Spell {craft_spell_id}")
         return {
             "spell_id": teach_spell_id, "craft_spell_id": craft_spell_id,
             "crafted_item_id": crafted_item_id, "crafted_item_name": crafted_item_name,

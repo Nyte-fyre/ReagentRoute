@@ -78,12 +78,13 @@ def fetch_tbc():
     download(TBC_DB_URL, gz_path)
     gunzip(gz_path, sql_path)
 
-    print(f"\nFetching SpellReagents / SpellEffect / ItemEffect / SkillLineAbility (build {BUILD_TBC_ANNIVERSARY})...")
+    print(f"\nFetching SpellReagents / SpellEffect / ItemEffect / SkillLineAbility / SpellName (build {BUILD_TBC_ANNIVERSARY})...")
     for table, dest in [
         ("SpellReagents", os.path.join(RAW_DATA, "tbc", "SpellReagents.csv")),
         ("SpellEffect", os.path.join(RAW_DATA, "tbc", "SpellEffect.csv")),
         ("ItemEffect", os.path.join(RAW_DATA, "tbc", "ItemEffect.csv")),
         ("SkillLineAbility", os.path.join(DATA, "SkillLineAbility_tbc.csv")),
+        ("SpellName", os.path.join(RAW_DATA, "tbc", "SpellName.csv")),
     ]:
         download(wago_csv_url(table, BUILD_TBC_ANNIVERSARY), dest, headers={"User-Agent": "Mozilla/5.0"})
 
