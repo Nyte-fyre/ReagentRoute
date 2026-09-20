@@ -39,16 +39,12 @@ h1 {
 }
 
 main {
-  max-width: 640px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 16px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-}
-
-main:has(#results:not(.hidden)) {
-  max-width: 900px;
 }
 
 .panel {
