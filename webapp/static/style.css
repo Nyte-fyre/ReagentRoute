@@ -179,9 +179,19 @@ th {
   white-space: nowrap;
 }
 
-td:nth-child(1) { color: var(--text-dim); white-space: nowrap; }
-td:nth-child(4), td:nth-child(5) { text-align: right; white-space: nowrap; }
-td:nth-child(5) { color: var(--text-dim); }
+/* These were written as bare td:nth-child(...) selectors, which meant
+   any table on the page with a differently-shaped row silently inherited
+   styling meant for #plan-table's 5 columns. Confirmed real bug: browse
+   mode's #browse-table also has 4 columns, so its 4th column
+   ("Acquisition", a long sentence) was getting nowrap + right-align
+   meant for #plan-table's "Net cost" -- forcing that whole sentence onto
+   one unbreakable line and blowing the table out to ~1460px wide,
+   requiring horizontal scroll just to see the Craft/Reagents columns.
+   Scoped per table instead. */
+#plan-table td:nth-child(1), #browse-table td:nth-child(1) { color: var(--text-dim); white-space: nowrap; }
+#plan-table td:nth-child(4), #plan-table td:nth-child(5) { text-align: right; white-space: nowrap; }
+#plan-table td:nth-child(5) { color: var(--text-dim); }
+#shopping-list-table td:nth-child(4) { text-align: right; white-space: nowrap; color: var(--text-dim); }
 
 .reagents-cell {
   color: var(--text-dim);
