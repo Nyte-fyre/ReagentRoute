@@ -4,19 +4,29 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>ReagentRoute</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+<link rel="apple-touch-icon" href="apple-touch-icon.png" />
 <meta name="description" content="Cheapest path to level a WoW Classic profession, priced against live Auction House data." />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://reagentroute.onrender.com/" />
 <meta property="og:title" content="ReagentRoute" />
 <meta property="og:description" content="Cheapest path to level a WoW Classic profession, priced against live Auction House data." />
-<meta name="twitter:card" content="summary" />
+<meta property="og:image" content="https://reagentroute.onrender.com/og-banner.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="ReagentRoute" />
 <meta name="twitter:description" content="Cheapest path to level a WoW Classic profession, priced against live Auction House data." />
+<meta name="twitter:image" content="https://reagentroute.onrender.com/og-banner.png" />
 <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 <header>
-  <h1>ReagentRoute</h1>
+  <div class="brand">
+    <img src="logo.svg" alt="" class="brand-logo" width="48" height="48" />
+    <h1>ReagentRoute</h1>
+  </div>
   <p class="tagline">Cheapest path to level a WoW Classic profession, priced against live Auction House data.</p>
 </header>
 
@@ -31,7 +41,10 @@
 
       <div class="field">
         <label for="profession">Profession</label>
-        <select id="profession"></select>
+        <div class="profession-row">
+          <span id="profession-icon" class="profession-icon hidden" aria-hidden="true"></span>
+          <select id="profession"></select>
+        </div>
       </div>
 
       <div class="field-row">
@@ -198,6 +211,12 @@
     and/or other countries. Recipe and item data referenced on this site is
     derived from publicly available game client data and community-maintained
     resources, not from Blizzard's official API.
+  </p>
+  <p>
+    Profession icons by <a href="https://lorcblog.blogspot.com" target="_blank" rel="noopener">Lorc</a>
+    and <a href="https://delapouite.com" target="_blank" rel="noopener">Delapouite</a>
+    via <a href="https://game-icons.net" target="_blank" rel="noopener">game-icons.net</a>,
+    licensed under <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="noopener">CC BY 3.0</a>.
   </p>
 </footer>
 

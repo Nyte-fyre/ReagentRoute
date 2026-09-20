@@ -25,8 +25,21 @@ header {
   text-align: center;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.brand-logo {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
 h1 {
-  margin: 0 0 4px;
+  margin: 0;
   font-size: 2rem;
   color: var(--accent);
   letter-spacing: 0.02em;
@@ -57,6 +70,25 @@ main {
 .field { margin-bottom: 16px; }
 .field-row { display: flex; gap: 16px; }
 .field-row .field { flex: 1; }
+
+.profession-row { display: flex; align-items: center; gap: 10px; }
+.profession-row select { flex: 1; }
+
+.profession-icon {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  flex-shrink: 0;
+  background-color: var(--accent);
+  -webkit-mask-image: var(--icon-url);
+  mask-image: var(--icon-url);
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+}
 
 label {
   display: block;
