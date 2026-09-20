@@ -1,12 +1,13 @@
 :root {
-  --bg: #0f1115;
-  --panel: #171a21;
-  --border: #2a2e38;
-  --text: #e6e8eb;
-  --text-dim: #9aa0ab;
-  --accent: #d4a24c;
-  --accent-dim: #8a6a2f;
-  --error: #e0645a;
+  --bg: #0c0a0b;
+  --panel: #181415;
+  --border: #332829;
+  --text: #ece8e7;
+  --text-dim: #a79d9e;
+  --accent: #b3363a;
+  --accent-dim: #7a2426;
+  --error: #ff6b5e;
+  --good: #7bbf8a;
 }
 
 * { box-sizing: border-box; }
@@ -80,7 +81,7 @@ label {
 
 input, select, textarea {
   width: 100%;
-  background: #0f1115;
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 6px;
   color: var(--text);
@@ -100,7 +101,7 @@ button {
   width: 100%;
   padding: 12px;
   background: var(--accent);
-  color: #14161c;
+  color: var(--text);
   border: none;
   border-radius: 6px;
   font-weight: 700;
@@ -129,7 +130,7 @@ button:disabled { opacity: 0.6; cursor: default; }
 .stat {
   flex: 1;
   min-width: 140px;
-  background: #0f1115;
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 12px 16px;
@@ -213,7 +214,7 @@ table a:hover, .hint a:hover {
 }
 
 .stat-value-good {
-  color: #7fbf7f !important;
+  color: var(--good) !important;
 }
 
 .ah-note {
@@ -292,7 +293,7 @@ table a:hover, .hint a:hover {
 }
 
 .gathered-tag {
-  color: #7fbf7f;
+  color: var(--good);
   font-size: 0.78rem;
   font-weight: 400;
 }
@@ -316,7 +317,7 @@ table a:hover, .hint a:hover {
 }
 
 .toggle-card {
-  background: #0f1115;
+  background: var(--bg);
   border: 1px solid var(--border);
   border-radius: 8px;
   padding: 14px 16px;
@@ -368,7 +369,6 @@ table a:hover, .hint a:hover {
 
 .toggle-checkbox:checked + .toggle-switch::before {
   transform: translateX(18px);
-  background: #14161c;
 }
 
 .toggle-checkbox:focus-visible + .toggle-switch {
