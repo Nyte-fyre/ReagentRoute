@@ -1,0 +1,29 @@
+<svg viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="glow" cx="50%" cy="38%" r="60%">
+      <stop offset="0%" stop-color="#2a1113" stop-opacity="1"/>
+      <stop offset="100%" stop-color="#0c0a0b" stop-opacity="1"/>
+    </radialGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#glow)"/>
+  <rect x="0" y="0" width="1200" height="630" fill="none" stroke="#332829" stroke-width="6"/>
+
+  <!-- route line across the whole card -->
+  <path d="M90,470 Q400,410 600,440 T1110,470" stroke="#7a2426" stroke-width="3" stroke-dasharray="4,7" stroke-linecap="round" fill="none"/>
+  <circle cx="100" cy="468" r="5" fill="#7a2426"/>
+  <circle cx="420" cy="424" r="5" fill="#7a2426"/>
+  <circle cx="760" cy="446" r="5" fill="#7a2426"/>
+  <circle cx="1100" cy="468" r="7" fill="#ece8e7"/>
+
+  <!-- flask emblem -->
+  <g transform="translate(600,210)">
+    <rect x="-16" y="-88" width="32" height="16" rx="3" fill="#a79d9e"/>
+    <rect x="-11" y="-74" width="22" height="42" rx="3" fill="#b3363a"/>
+    <path d="M-11,-34 C-42,-24 -66,8 -56,40 C-46,72 -18,88 0,88 C18,88 46,72 56,40 C66,8 42,-24 11,-34 Z" fill="#b3363a"/>
+    <ellipse cx="-24" cy="18" rx="12" ry="22" fill="#ece8e7" opacity="0.22"/>
+  </g>
+
+  <text x="600" y="340" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="700" fill="#ece8e7" letter-spacing="2">ReagentRoute</text>
+  <text x="600" y="385" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="#a79d9e">Cheapest path to level a WoW Classic profession</text>
+  <text x="600" y="416" text-anchor="middle" font-family="-apple-system, 'Segoe UI', Roboto, sans-serif" font-size="24" fill="#a79d9e">priced against live Auction House data</text>
+</svg>

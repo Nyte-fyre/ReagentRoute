@@ -33,6 +33,31 @@ const PROFESSION_ICONS = {
   Tailoring: "🧵",
 };
 
+// Only the 8 professions with a hand-picked game-icons.net glyph in
+// webapp/static/icons/ -- Jewelcrafting (TBC-only) has no icon yet, so it
+// falls back to hiding the badge rather than a missing-image glyph.
+const PROFESSION_ICON_SLUGS = {
+  Alchemy: "alchemy",
+  Blacksmithing: "blacksmithing",
+  Cooking: "cooking",
+  Enchanting: "enchanting",
+  Engineering: "engineering",
+  "First Aid": "first_aid",
+  Leatherworking: "leatherworking",
+  Tailoring: "tailoring",
+};
+const professionIconEl = document.getElementById("profession-icon");
+
+function updateProfessionIcon() {
+  const slug = PROFESSION_ICON_SLUGS[professionSelect.value];
+  if (!slug) {
+    professionIconEl.classList.add("hidden");
+    return;
+  }
+  professionIconEl.style.setProperty("--icon-url", `url(icons/${slug}.svg)`);
+  professionIconEl.classList.remove("hidden");
+}
+
 let gameVersions = {}; // id -> {label, pricing_available}
 
 function escapeHtml(str) {
@@ -174,6 +199,7 @@ async function loadProfessions() {
       return `<option value="${p.profession}">${icon} ${p.profession} (${p.recipe_count} recipes)</option>`;
     })
     .join("");
+  updateProfessionIcon();
 }
 
 function showError(message) {
@@ -403,6 +429,7 @@ function renderBrowseResults(data, startSkill, targetSkill) {
 
 planForm.addEventListener("submit", computePlan);
 gameVersionSelect.addEventListener("change", onVersionChange);
+professionSelect.addEventListener("change", updateProfessionIcon);
 realmSelect.addEventListener("change", () => realmSelect.classList.remove("input-error"));
 hedgeAhCheckbox.addEventListener("change", () => ahCapRow.classList.toggle("hidden", !hedgeAhCheckbox.checked));
 loadGameVersions();
