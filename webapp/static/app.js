@@ -60,9 +60,18 @@ function updateProfessionIcon() {
 
 let gameVersions = {}; // id -> {label, pricing_available}
 
-const ACQUISITION_LABELS = { automatic: "automatic (no trainer/item needed)" };
-function acquisitionLabel(value) {
-  return ACQUISITION_LABELS[value] || value;
+// "automatic" recipes need no note -- the label alone says everything
+// (the full acquisition_note in the data is redundant with it, kept there
+// for API consumers but not worth repeating in the UI).
+function acquisitionSentence(acquisition, note) {
+  if (acquisition === "automatic") return "Learned automatically";
+  return `Learned from: ${acquisitionShort(acquisition, note)}`;
+}
+
+function acquisitionShort(acquisition, note) {
+  if (acquisition === "automatic") return "automatically";
+  const label = escapeHtml(acquisition);
+  return note ? `${label} &mdash; ${escapeHtml(truncateNoteLists(note))}` : label;
 }
 
 function escapeHtml(str) {
@@ -357,9 +366,7 @@ function renderResults(data) {
         : "";
       const acqNote =
         row.acquisition && row.acquisition !== "trainer"
-          ? `<div class="acquisition-note">Learned from: ${escapeHtml(acquisitionLabel(row.acquisition))}${
-              row.acquisition_note ? ` &mdash; ${escapeHtml(truncateNoteLists(row.acquisition_note))}` : ""
-            }${learnLink}</div>`
+          ? `<div class="acquisition-note">${acquisitionSentence(row.acquisition, row.acquisition_note)}${learnLink}</div>`
           : "";
       const ahHedgeNote =
         row.ah_hedge_units > 0
@@ -417,10 +424,7 @@ function renderBrowseResults(data, startSkill, targetSkill) {
       const learnLink = r.learn_item_id
         ? ` &mdash; ${wowheadLink(r.learn_item_id, null, r.learn_item_name || "teaching item")}`
         : "";
-      const acqLabel = acquisitionLabel(r.acquisition);
-      const acq =
-        (r.acquisition_note ? `${acqLabel} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : acqLabel) +
-        learnLink;
+      const acq = acquisitionShort(r.acquisition, r.acquisition_note) + learnLink;
       return `<tr>
         <td>${skill}</td>
         <td>${craftLink}</td>
