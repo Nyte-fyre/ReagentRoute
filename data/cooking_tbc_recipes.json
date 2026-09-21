@@ -2,7 +2,7 @@
   "profession": "Cooking",
   "skill_line_id": 185,
   "game_version": "tbc-anniversary",
-  "recipe_count": 112,
+  "recipe_count": 114,
   "recipes": [
     {
       "spell_id": 2559,
@@ -513,6 +513,89 @@
       "acquisition": "trainer",
       "trivial_low": 375,
       "trivial_high": 385
+    },
+    {
+      "spell_id": 2538,
+      "craft_spell_id": 2538,
+      "crafted_item_id": 2679,
+      "crafted_item_name": "Charred Wolf Meat",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2672,
+          "item_name": "Stringy Wolf Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 5,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 2540,
+      "craft_spell_id": 2540,
+      "crafted_item_id": 2681,
+      "crafted_item_name": "Roasted Boar Meat",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 769,
+          "item_name": "Chunk of Boar Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 6,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 45,
+      "trivial_high": 85
+    },
+    {
+      "spell_id": 8604,
+      "craft_spell_id": 8604,
+      "crafted_item_id": 6888,
+      "crafted_item_name": "Herb Baked Egg",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6889,
+          "item_name": "Small Egg",
+          "count": 1
+        },
+        {
+          "item_id": 2678,
+          "item_name": "Mild Spices",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 10,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 45,
+      "trivial_high": 85
     },
     {
       "spell_id": 2543,
@@ -1572,38 +1655,6 @@
       "acquisition_note": "dropped by: ['Kolkar Invader', 'Kolkar Stormseer', 'Faltering Silithid Flayer', \"Lakota'mani\", 'Lost Barrens Kodo', 'Greater Barrens Kodo', 'Barrens Kodo', 'Wooly Kodo', 'Stormhide', 'Thunderhead', 'Stormsnout', 'Savannah Patriarch', 'Zhevra Runner', 'Savannah Highmane', 'Greater Plainstrider', 'Ornery Plainstrider', 'Fleeting Plainstrider', 'Thunderhawk Hatchling', 'Barrens Giraffe', 'Greater Thunderhawk', 'Silithid Creeper', 'Silithid Grub', 'Silithid Swarmer', 'Sunscale Lashtail', 'Sunscale Screecher', 'Sunscale Scytheclaw', 'Ishamuhale', 'Stonearm', 'Savannah Huntress', 'Savannah Matriarch', 'Thunderhawk Cloudscraper', 'Savannah Prowler', 'Zhevra Charger', 'Wandering Barrens Giraffe', 'Zhevra Courser', 'Owatanka', 'Silithid Protector', 'General Twinbraid', 'Sister Rathtalon', \"Geopriest Gukk'rok\", 'Razorfen Servitor', 'Slimeshell Makrura', 'Dishu', 'Rocklance', 'Foreman Grills', 'Thunderstomp', 'Marcus Bel', 'Hannah Bladeleaf', 'Thora Feathermoon', 'Aean Swiftriver', 'Hecklefang Hyena', 'Hecklefang Stalker', 'Engineer Whirleygig', 'Kolkar Packhound', 'Hecklefang Snarler', 'Muck Frenzy', 'Tinkerer Sniggles', 'Rathorian', 'Baron Longshore', 'Razormane Seer', 'Razormane Stalker', 'Razormane Pathfinder', 'Cannoneer Smythe', 'Supervisor Lugwizzle', 'Kreenig Snarlsnout', 'Kuz', 'Nak', 'Kolkar Bloodcharger', 'Hezrul Bloodmark', 'Verog the Dervish', 'Prospector Khazgorm', 'Theramore Marine', 'Southsea Privateer', 'Southsea Cutthroat', 'Southsea Brigand', 'Burning Blade Acolyte', 'Burning Blade Bruiser', \"Bael'dun Rifleman\", 'Venture Co. Peon', 'Venture Co. Drudger', 'Venture Co. Enforcer', 'Venture Co. Mercenary', 'Witchwing Windcaller', 'Witchwing Ambusher', 'Witchwing Slayer', 'Witchwing Roguefeather', 'Witchwing Harpy', 'Kolkar Marauder', 'Kolkar Pack Runner', 'Kolkar Stormer', 'Kolkar Wrangler', 'Elder Mystic Razorsnout', 'Razormane Geomancer', 'Razormane Thornweaver', 'Razormane Water Seeker', 'Razormane Defender', 'Razormane Hunter', 'Bristleback Geomancer', 'Bristleback Water Seeker', 'Swinegart Spearhide', 'Overseer Glibby', 'Cannoneer Whessan', 'Boss Copperplug', 'Washte Pawne', 'Tazan', 'Heggin Stonewhisker', 'Snort the Heckler', 'Isha Awak', 'Oasis Snapjaw', 'Razormane Warfrenzy', 'Barak Kodobane', 'Captain Fairmount', 'Theramore Preserver', 'Southsea Cannoneer', \"Bael'dun Officer\", \"Bael'dun Soldier\", \"Bael'dun Foreman\", \"Bael'dun Excavator\", 'Venture Co. Overseer', 'Razormane Mystic', 'Bristleback Thornweaver', 'Bristleback Hunter', 'Brontus']",
       "trivial_low": 125,
       "trivial_high": 165
-    },
-    {
-      "spell_id": 8604,
-      "craft_spell_id": 8604,
-      "crafted_item_id": 6888,
-      "crafted_item_name": "Herb Baked Egg",
-      "required_skill_value": 1,
-      "skill_tier": "Apprentice",
-      "reagents": [
-        {
-          "item_id": 6889,
-          "item_name": "Small Egg",
-          "count": 1
-        },
-        {
-          "item_id": 2678,
-          "item_name": "Mild Spices",
-          "count": 1
-        }
-      ],
-      "auto_granted": false,
-      "learned_from": {
-        "type": "schematic_item",
-        "item_id": 6891,
-        "item_name": "Recipe: Herb Baked Egg"
-      },
-      "vendor_sell_price": 10,
-      "source": "cmangos-tbc-db+wago-tools-db2",
-      "confidence": "verified-reagents-unverified-acquisition",
-      "acquisition": "unresearched",
-      "trivial_low": 45,
-      "trivial_high": 85
     },
     {
       "spell_id": 8607,

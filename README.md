@@ -85,6 +85,26 @@ examples (see git history / commit messages for the full story):
   successful faction Auction House sale (verified real, fixed mechanic --
   not modeled: the separate deposit-loss risk on an unsold listing, since
   that depends on sale probability data this feed doesn't provide).
+- **Auto-learned recipes (Classic Era + TBC)**: recipe discovery originally
+  only looked at `npc_trainer` rows and physical recipe items (Schematic/
+  Pattern/Formula), which silently missed every recipe a profession grants
+  automatically on reaching a skill threshold -- no trainer visit, no item,
+  nothing to scan. This included well-known "rank 1" recipes like Linen
+  Bandage (First Aid), Light Leather (Leatherworking), and Rough Copper
+  Vest (Blacksmithing). Fixed by reading `SkillLineAbility`'s own
+  `AcquireMethod` column (verified: Linen Bandage, spell 3275, is the only
+  First Aid row out of 19 with `AcquireMethod=1`, and its
+  `MinSkillLineRank=1` matches Wowhead's "Requires First Aid (1)" exactly)
+  and resolving those spells' reagents the same way trainer-taught recipes
+  already are. Added 22 recipes across the 8 Classic Era professions and
+  27 across TBC's 9 (both client builds expose the same column); the
+  handful of candidates that didn't resolve into a recipe (Cooking's
+  "Basic Campfire", Enchanting's "Disenchant") are correctly-excluded
+  utility abilities, not missed recipes. Also caught one existing
+  mislabel this way: TBC's Herb Baked Egg was attributed to a "Recipe:
+  Herb Baked Egg" item that doesn't actually teach it -- `AcquireMethod=1`
+  says it's free, so the item link was a false positive from the
+  schematic-item scan.
 - **TBC data**: `tbc-db`'s own `item_template.spellid_1` field turned out
   to be broken (the same placeholder value on every single row, verified
   across dozens of items) -- replaced with the correct `ItemEffect` DB2
@@ -217,7 +237,7 @@ python scripts/extract_profession_forever.py Enchanting 333 8
 python scripts/extract_profession_forever.py "First Aid" 129 7
 ```
 
-Current dataset: **1,218 Classic Era recipes** + **1,904 TBC Anniversary
+Current dataset: **1,240 Classic Era recipes** + **1,931 TBC Anniversary
 recipes** across 8-9 professions each, plus **916 genuinely Forever-
 specific recipes** across all 8 professions this build has (no
 Jewelcrafting) -- see [How the numbers are verified](#how-the-numbers-are-verified)

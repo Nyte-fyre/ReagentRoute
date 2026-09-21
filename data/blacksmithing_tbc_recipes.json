@@ -2,7 +2,7 @@
   "profession": "Blacksmithing",
   "skill_line_id": 164,
   "game_version": "tbc-anniversary",
-  "recipe_count": 324,
+  "recipe_count": 328,
   "recipes": [
     {
       "spell_id": 2743,
@@ -2593,6 +2593,115 @@
       "acquisition": "trainer",
       "trivial_low": 285,
       "trivial_high": 310
+    },
+    {
+      "spell_id": 2660,
+      "craft_spell_id": 2660,
+      "crafted_item_id": 2862,
+      "crafted_item_name": "Rough Sharpening Stone",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2835,
+          "item_name": "Rough Stone",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 3,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 15,
+      "trivial_high": 55
+    },
+    {
+      "spell_id": 2663,
+      "craft_spell_id": 2663,
+      "crafted_item_id": 2853,
+      "crafted_item_name": "Copper Bracers",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2840,
+          "item_name": "Copper Bar",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 17,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 20,
+      "trivial_high": 60
+    },
+    {
+      "spell_id": 3115,
+      "craft_spell_id": 3115,
+      "crafted_item_id": 3239,
+      "crafted_item_name": "Rough Weightstone",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2835,
+          "item_name": "Rough Stone",
+          "count": 1
+        },
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 3,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 15,
+      "trivial_high": 55
+    },
+    {
+      "spell_id": 12260,
+      "craft_spell_id": 12260,
+      "crafted_item_id": 10421,
+      "crafted_item_name": "Rough Copper Vest",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2840,
+          "item_name": "Copper Bar",
+          "count": 4
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 32,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 15,
+      "trivial_high": 55
     },
     {
       "spell_id": 2667,

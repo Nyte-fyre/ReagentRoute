@@ -1,7 +1,7 @@
 {
   "profession": "Cooking",
   "skill_line_id": 185,
-  "recipe_count": 79,
+  "recipe_count": 81,
   "recipes": [
     {
       "spell_id": 2559,
@@ -2638,6 +2638,60 @@
       "trivial_low": 325,
       "trivial_high": 365,
       "vendor_sell_price": 750
+    },
+    {
+      "spell_id": 2538,
+      "craft_spell_id": 2538,
+      "spell_name": "Charred Wolf Meat",
+      "crafted_item_id": 2679,
+      "crafted_item_name": "Charred Wolf Meat",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2672,
+          "item_name": "Stringy Wolf Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 45,
+      "trivial_high": 85,
+      "vendor_sell_price": 5
+    },
+    {
+      "spell_id": 2540,
+      "craft_spell_id": 2540,
+      "spell_name": "Roasted Boar Meat",
+      "crafted_item_id": 2681,
+      "crafted_item_name": "Roasted Boar Meat",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 769,
+          "item_name": "Chunk of Boar Meat",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 45,
+      "trivial_high": 85,
+      "vendor_sell_price": 6
     }
   ]
 }

@@ -2,7 +2,7 @@
   "profession": "Engineering",
   "skill_line_id": 202,
   "game_version": "tbc-anniversary",
-  "recipe_count": 200,
+  "recipe_count": 203,
   "recipes": [
     {
       "spell_id": 3990,
@@ -2758,6 +2758,94 @@
       "acquisition": "trainer",
       "trivial_low": 375,
       "trivial_high": 385
+    },
+    {
+      "spell_id": 3918,
+      "craft_spell_id": 3918,
+      "crafted_item_id": 4357,
+      "crafted_item_name": "Rough Blasting Powder",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2835,
+          "item_name": "Rough Stone",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 4,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 20,
+      "trivial_high": 40
+    },
+    {
+      "spell_id": 3919,
+      "craft_spell_id": 3919,
+      "crafted_item_id": 4358,
+      "crafted_item_name": "Rough Dynamite",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 4357,
+          "item_name": "Rough Blasting Powder",
+          "count": 2
+        },
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 30,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 60
+    },
+    {
+      "spell_id": 3920,
+      "craft_spell_id": 3920,
+      "crafted_item_id": 8067,
+      "crafted_item_name": "Crafted Light Shot",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 4357,
+          "item_name": "Rough Blasting Powder",
+          "count": 1
+        },
+        {
+          "item_id": 2840,
+          "item_name": "Copper Bar",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 0,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 60
     },
     {
       "spell_id": 3928,
