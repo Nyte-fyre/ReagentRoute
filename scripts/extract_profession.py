@@ -193,6 +193,52 @@ def run(profession_name, skill_line_id, item_subclass):
         new_count += 1
     print(f"  {new_count} additional recipes found via {len(recipe_items)} recipe items.")
 
+    # ---- 2.5. auto-learned recipes (no trainer visit, no item -- known
+    # automatically on reaching a skill threshold) ----
+    # Both prior passes only discover recipes reachable from npc_trainer rows
+    # or a physical recipe item -- but some recipes (verified: Linen Bandage,
+    # spell 3275, "Requires First Aid (1)" per Wowhead) are granted the
+    # moment you learn the profession or hit a skill threshold, with no
+    # trainer purchase and no schematic item at all. SkillLineAbility's own
+    # AcquireMethod column flags these directly (verified: spell 3275 is the
+    # ONLY First Aid row with AcquireMethod=1 out of 19 First Aid rows, and
+    # its MinSkillLineRank=1 matches "Requires First Aid (1)" exactly).
+    print("Resolving auto-learned recipes (AcquireMethod=1 in client data -- no trainer or item needed)...")
+    sla_rows = list(csv.DictReader(open(SKILL_LINE_ABILITY_CSV, encoding="utf-8")))
+    auto_learned_count = 0
+    for row in sla_rows:
+        if row["SkillLine"] != str(skill_line_id) or row["AcquireMethod"] != "1":
+            continue
+        spell_id = int(row["Spell"])
+        if spell_id in recipes:
+            continue
+        t = spells_by_id.get(spell_id)
+        if t is None:
+            continue
+        craft_t = find_craft_spell(t, spells_by_id)
+        if craft_t is None:
+            continue
+        craft_spell_id = to_int(craft_t[IDX_ID])
+        if craft_spell_id in recipes:
+            continue
+        crafted_item_id, crafted_item_name = product_name(craft_t, item_names)
+        req_skill = int(row["MinSkillLineRank"]) or 1
+        recipes[craft_spell_id] = {
+            "spell_id": spell_id, "craft_spell_id": craft_spell_id,
+            "spell_name": unquote(t[IDX_SPELL_NAME]),
+            "crafted_item_id": crafted_item_id,
+            "crafted_item_name": crafted_item_name,
+            "required_skill_value": req_skill, "skill_tier": tier_for_skill(req_skill),
+            "reagents": reagents_of(craft_t, item_names), "auto_granted": True,
+            "learned_from": {"type": "automatic"},
+            "acquisition": "automatic",
+            "acquisition_note": "Known automatically once you reach this skill level in the profession -- "
+                                 "no trainer purchase or recipe item needed.",
+            "source": "cmangos-classic-db+client-data-acquiremethod", "confidence": "verified",
+        }
+        auto_learned_count += 1
+    print(f"  {auto_learned_count} auto-learned recipes resolved via AcquireMethod=1.")
+
     # ---- 3. acquisition resolution for schematic-taught recipes ----
     print("Resolving acquisition (vendor/drop/quest/fishing/container/reference)...")
     vendor_by_item = {}
@@ -269,7 +315,6 @@ def run(profession_name, skill_line_id, item_subclass):
 
     # ---- 4. real skill-up thresholds ----
     print("Attaching Orange/Yellow/Green/Grey thresholds from client data...")
-    sla_rows = list(csv.DictReader(open(SKILL_LINE_ABILITY_CSV, encoding="utf-8")))
     by_spell = {int(r["Spell"]): r for r in sla_rows if r["SkillLine"] == str(skill_line_id)}
     matched = 0
     for rec in recipes.values():

@@ -2,7 +2,7 @@
   "profession": "First Aid",
   "skill_line_id": 129,
   "game_version": "tbc-anniversary",
-  "recipe_count": 16,
+  "recipe_count": 17,
   "recipes": [
     {
       "spell_id": 3281,
@@ -203,6 +203,32 @@
       "acquisition": "trainer",
       "trivial_low": 290,
       "trivial_high": 350
+    },
+    {
+      "spell_id": 3275,
+      "craft_spell_id": 3275,
+      "crafted_item_id": 1251,
+      "crafted_item_name": "Linen Bandage",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 8,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 60
     },
     {
       "spell_id": 7935,

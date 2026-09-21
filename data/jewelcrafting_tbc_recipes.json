@@ -2,7 +2,7 @@
   "profession": "Jewelcrafting",
   "skill_line_id": 755,
   "game_version": "tbc-anniversary",
-  "recipe_count": 252,
+  "recipe_count": 256,
   "recipes": [
     {
       "spell_id": 25284,
@@ -1658,6 +1658,115 @@
       "acquisition": "trainer",
       "trivial_low": 325,
       "trivial_high": 345
+    },
+    {
+      "spell_id": 25255,
+      "craft_spell_id": 25255,
+      "crafted_item_id": 20816,
+      "crafted_item_name": "Delicate Copper Wire",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2840,
+          "item_name": "Copper Bar",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 20,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 20,
+      "trivial_high": 50
+    },
+    {
+      "spell_id": 25493,
+      "craft_spell_id": 25493,
+      "crafted_item_id": 20906,
+      "crafted_item_name": "Braided Copper Ring",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 20816,
+          "item_name": "Delicate Copper Wire",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 250,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 60
+    },
+    {
+      "spell_id": 26925,
+      "craft_spell_id": 26925,
+      "crafted_item_id": 21931,
+      "crafted_item_name": "Woven Copper Ring",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 20816,
+          "item_name": "Delicate Copper Wire",
+          "count": 2
+        },
+        {
+          "item_id": 2840,
+          "item_name": "Copper Bar",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 250,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 60
+    },
+    {
+      "spell_id": 32259,
+      "craft_spell_id": 32259,
+      "crafted_item_id": 25498,
+      "crafted_item_name": "Rough Stone Statue",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2835,
+          "item_name": "Rough Stone",
+          "count": 8
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 25,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 30,
+      "trivial_high": 50
     },
     {
       "spell_id": 25339,

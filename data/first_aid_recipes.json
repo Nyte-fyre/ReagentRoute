@@ -1,7 +1,7 @@
 {
   "profession": "First Aid",
   "skill_line_id": 129,
-  "recipe_count": 14,
+  "recipe_count": 15,
   "recipes": [
     {
       "spell_id": 3281,
@@ -386,6 +386,33 @@
       "trivial_low": 300,
       "trivial_high": 360,
       "vendor_sell_price": 1500
+    },
+    {
+      "spell_id": 3275,
+      "craft_spell_id": 3275,
+      "spell_name": "Linen Bandage",
+      "crafted_item_id": 1251,
+      "crafted_item_name": "Linen Bandage",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 30,
+      "trivial_high": 60,
+      "vendor_sell_price": 10
     }
   ]
 }

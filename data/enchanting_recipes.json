@@ -1,7 +1,7 @@
 {
   "profession": "Enchanting",
   "skill_line_id": 333,
-  "recipe_count": 150,
+  "recipe_count": 152,
   "recipes": [
     {
       "spell_id": 7422,
@@ -5090,6 +5090,70 @@
       "trivial_low": null,
       "trivial_high": null,
       "vendor_sell_price": 0
+    },
+    {
+      "spell_id": 7418,
+      "craft_spell_id": 7418,
+      "spell_name": "Enchant Bracer - Minor Health",
+      "crafted_item_id": null,
+      "crafted_item_name": "Enchant Bracer - Minor Health",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 10940,
+          "item_name": "Strange Dust",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 70,
+      "trivial_high": 110,
+      "vendor_sell_price": 0
+    },
+    {
+      "spell_id": 7421,
+      "craft_spell_id": 7421,
+      "spell_name": "Runed Copper Rod",
+      "crafted_item_id": 6218,
+      "crafted_item_name": "Runed Copper Rod",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6217,
+          "item_name": "Copper Rod",
+          "count": 1
+        },
+        {
+          "item_id": 10940,
+          "item_name": "Strange Dust",
+          "count": 1
+        },
+        {
+          "item_id": 10938,
+          "item_name": "Lesser Magic Essence",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 5,
+      "trivial_high": 10,
+      "vendor_sell_price": 24
     }
   ]
 }

@@ -2,7 +2,7 @@
   "profession": "Enchanting",
   "skill_line_id": 333,
   "game_version": "tbc-anniversary",
-  "recipe_count": 202,
+  "recipe_count": 204,
   "recipes": [
     {
       "spell_id": 7420,
@@ -2078,6 +2078,68 @@
       "acquisition": "trainer",
       "trivial_low": 275,
       "trivial_high": 315
+    },
+    {
+      "spell_id": 7418,
+      "craft_spell_id": 7418,
+      "crafted_item_id": null,
+      "crafted_item_name": "Enchant Bracer - Minor Health",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 10940,
+          "item_name": "Strange Dust",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 0,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 70,
+      "trivial_high": 110
+    },
+    {
+      "spell_id": 7421,
+      "craft_spell_id": 7421,
+      "crafted_item_id": 6218,
+      "crafted_item_name": "Runed Copper Rod",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 6217,
+          "item_name": "Copper Rod",
+          "count": 1
+        },
+        {
+          "item_id": 10940,
+          "item_name": "Strange Dust",
+          "count": 1
+        },
+        {
+          "item_id": 10938,
+          "item_name": "Lesser Magic Essence",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 24,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 5,
+      "trivial_high": 10
     },
     {
       "spell_id": 7443,

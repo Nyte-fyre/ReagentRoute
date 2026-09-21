@@ -272,6 +272,35 @@ def run(profession_name, skill_line_id, item_subclass):
         )
     print(f"  {len(recipes)} trainer-taught recipes resolved.")
 
+    # ---- 1.5. auto-learned recipes (no trainer visit, no item -- known
+    # automatically on reaching a skill threshold) ----
+    # Same gap as Classic Era: trainer-table and recipe-item scans both miss
+    # recipes a profession grants automatically at a skill threshold.
+    # SkillLineAbility's own AcquireMethod column flags these directly.
+    print("Resolving auto-learned recipes (AcquireMethod=1 in client data -- no trainer or item needed)...")
+    sla_rows = list(csv.DictReader(open(SKILL_LINE_ABILITY_CSV, encoding="utf-8")))
+    auto_learned_count = 0
+    for row in sla_rows:
+        if row["SkillLine"] != str(skill_line_id) or row["AcquireMethod"] != "1":
+            continue
+        spell_id = int(row["Spell"])
+        if spell_id in recipes:
+            continue
+        found = find_craft_effect(spell_id, spell_effects, classic_hops)
+        if found is None:
+            continue
+        craft_spell_id, effect_code, item_type = found
+        if craft_spell_id in recipes:
+            continue
+        req_skill = int(row["MinSkillLineRank"]) or 1
+        rec = build_recipe(spell_id, craft_spell_id, effect_code, item_type, req_skill, {"type": "automatic"})
+        rec["acquisition"] = "automatic"
+        rec["acquisition_note"] = ("Known automatically once you reach this skill level in the profession -- "
+                                    "no trainer purchase or recipe item needed.")
+        recipes[craft_spell_id] = rec
+        auto_learned_count += 1
+    print(f"  {auto_learned_count} auto-learned recipes resolved via AcquireMethod=1.")
+
     # ---- 2. schematic/pattern/formula/design item-taught recipes ----
     print("Resolving recipe-item-taught recipes...")
     recipe_items = [
@@ -378,7 +407,6 @@ def run(profession_name, skill_line_id, item_subclass):
 
     # ---- 4. real skill-up thresholds ----
     print("Attaching Orange/Yellow/Green/Grey thresholds from client data...")
-    sla_rows = list(csv.DictReader(open(SKILL_LINE_ABILITY_CSV, encoding="utf-8")))
     by_spell = {int(r["Spell"]): r for r in sla_rows if r["SkillLine"] == str(skill_line_id)}
     matched = 0
     for rec in recipes.values():

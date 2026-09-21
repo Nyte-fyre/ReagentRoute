@@ -1,7 +1,7 @@
 {
   "profession": "Alchemy",
   "skill_line_id": 171,
-  "recipe_count": 110,
+  "recipe_count": 113,
   "recipes": [
     {
       "spell_id": 2339,
@@ -4082,6 +4082,112 @@
       "trivial_low": 100,
       "trivial_high": 140,
       "vendor_sell_price": 25
+    },
+    {
+      "spell_id": 2330,
+      "craft_spell_id": 2330,
+      "spell_name": "Minor Healing Potion",
+      "crafted_item_id": 118,
+      "crafted_item_name": "Minor Healing Potion",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2447,
+          "item_name": "Peacebloom",
+          "count": 1
+        },
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 55,
+      "trivial_high": 95,
+      "vendor_sell_price": 5
+    },
+    {
+      "spell_id": 2329,
+      "craft_spell_id": 2329,
+      "spell_name": "Elixir of Lion's Strength",
+      "crafted_item_id": 2454,
+      "crafted_item_name": "Elixir of Lion's Strength",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2449,
+          "item_name": "Earthroot",
+          "count": 1
+        },
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 1
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 55,
+      "trivial_high": 95,
+      "vendor_sell_price": 20
+    },
+    {
+      "spell_id": 7183,
+      "craft_spell_id": 7183,
+      "spell_name": "Elixir of Minor Defense",
+      "crafted_item_id": 5997,
+      "crafted_item_name": "Elixir of Minor Defense",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 765,
+          "item_name": "Silverleaf",
+          "count": 2
+        },
+        {
+          "item_id": 3371,
+          "item_name": "Empty Vial",
+          "count": 1
+        }
+      ],
+      "auto_granted": true,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "source": "cmangos-classic-db+client-data-acquiremethod",
+      "confidence": "verified",
+      "trivial_low": 55,
+      "trivial_high": 95,
+      "vendor_sell_price": 5
     }
   ]
 }

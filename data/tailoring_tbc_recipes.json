@@ -2,7 +2,7 @@
   "profession": "Tailoring",
   "skill_line_id": 197,
   "game_version": "tbc-anniversary",
-  "recipe_count": 321,
+  "recipe_count": 323,
   "recipes": [
     {
       "spell_id": 2414,
@@ -2688,6 +2688,63 @@
       "acquisition": "trainer",
       "trivial_low": 255,
       "trivial_high": 285
+    },
+    {
+      "spell_id": 2963,
+      "craft_spell_id": 2963,
+      "crafted_item_id": 2996,
+      "crafted_item_name": "Bolt of Linen Cloth",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2589,
+          "item_name": "Linen Cloth",
+          "count": 2
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 40,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 25,
+      "trivial_high": 50
+    },
+    {
+      "spell_id": 2387,
+      "craft_spell_id": 2387,
+      "crafted_item_id": 2570,
+      "crafted_item_name": "Linen Cloak",
+      "required_skill_value": 1,
+      "skill_tier": "Apprentice",
+      "reagents": [
+        {
+          "item_id": 2996,
+          "item_name": "Bolt of Linen Cloth",
+          "count": 1
+        },
+        {
+          "item_id": 2320,
+          "item_name": "Coarse Thread",
+          "count": 1
+        }
+      ],
+      "auto_granted": false,
+      "learned_from": {
+        "type": "automatic"
+      },
+      "vendor_sell_price": 11,
+      "source": "cmangos-tbc-db+wago-tools-db2",
+      "confidence": "verified",
+      "acquisition": "automatic",
+      "acquisition_note": "Known automatically once you reach this skill level in the profession -- no trainer purchase or recipe item needed.",
+      "trivial_low": 35,
+      "trivial_high": 60
     },
     {
       "spell_id": 2389,

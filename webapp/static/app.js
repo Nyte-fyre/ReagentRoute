@@ -60,6 +60,11 @@ function updateProfessionIcon() {
 
 let gameVersions = {}; // id -> {label, pricing_available}
 
+const ACQUISITION_LABELS = { automatic: "automatic (no trainer/item needed)" };
+function acquisitionLabel(value) {
+  return ACQUISITION_LABELS[value] || value;
+}
+
 function escapeHtml(str) {
   return String(str)
     .replace(/&/g, "&amp;")
@@ -352,7 +357,7 @@ function renderResults(data) {
         : "";
       const acqNote =
         row.acquisition && row.acquisition !== "trainer"
-          ? `<div class="acquisition-note">Learned from: ${escapeHtml(row.acquisition)}${
+          ? `<div class="acquisition-note">Learned from: ${escapeHtml(acquisitionLabel(row.acquisition))}${
               row.acquisition_note ? ` &mdash; ${escapeHtml(truncateNoteLists(row.acquisition_note))}` : ""
             }${learnLink}</div>`
           : "";
@@ -412,8 +417,9 @@ function renderBrowseResults(data, startSkill, targetSkill) {
       const learnLink = r.learn_item_id
         ? ` &mdash; ${wowheadLink(r.learn_item_id, null, r.learn_item_name || "teaching item")}`
         : "";
+      const acqLabel = acquisitionLabel(r.acquisition);
       const acq =
-        (r.acquisition_note ? `${r.acquisition} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : r.acquisition) +
+        (r.acquisition_note ? `${acqLabel} &mdash; ${escapeHtml(truncateNoteLists(r.acquisition_note))}` : acqLabel) +
         learnLink;
       return `<tr>
         <td>${skill}</td>
