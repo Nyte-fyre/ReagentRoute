@@ -1,7 +1,7 @@
 local ADDON_NAME, RR = ...
 
 local frame = CreateFrame("Frame", "ReagentRouteFrame", UIParent, "BasicFrameTemplateWithInset")
-frame:SetSize(420, 380)
+frame:SetSize(420, 410)
 frame:SetPoint("CENTER")
 frame:SetMovable(true)
 frame:EnableMouse(true)
@@ -20,7 +20,7 @@ local materialsLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
 materialsLabel:SetPoint("TOPLEFT", 16, -32)
 materialsLabel:SetWidth(388)
 materialsLabel:SetJustifyH("LEFT")
-materialsLabel:SetText("Owned materials -- click to select all, Ctrl+C, then paste into ReagentRoute's \"Materials you already own\" box:")
+materialsLabel:SetText("Owned materials -- Select All below, Ctrl+C, then paste into ReagentRoute's \"Materials you already own\" box:")
 
 local scrollFrame = CreateFrame("ScrollFrame", "ReagentRouteScrollFrame", frame, "UIPanelScrollFrameTemplate")
 scrollFrame:SetPoint("TOPLEFT", materialsLabel, "BOTTOMLEFT", 0, -8)
@@ -32,11 +32,24 @@ editBox:SetFontObject(ChatFontNormal)
 editBox:SetWidth(340)
 editBox:SetAutoFocus(false)
 editBox:SetScript("OnEscapePressed", editBox.ClearFocus)
-editBox:SetScript("OnEditFocusGained", editBox.HighlightText)
 scrollFrame:SetScrollChild(editBox)
 
+-- A dedicated button rather than relying on click-to-select: WoW's
+-- native click-to-place-cursor behavior on an EditBox can run after (and
+-- clear) a script-driven HighlightText() from OnMouseUp/OnEditFocusGained,
+-- so a plain click doesn't reliably select everything. A Button's OnClick
+-- doesn't have that native-widget race.
+local selectAllButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+selectAllButton:SetSize(90, 20)
+selectAllButton:SetPoint("TOPLEFT", scrollFrame, "BOTTOMLEFT", 0, -6)
+selectAllButton:SetText("Select All")
+selectAllButton:SetScript("OnClick", function()
+	editBox:SetFocus()
+	editBox:HighlightText()
+end)
+
 local skillLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-skillLabel:SetPoint("TOPLEFT", scrollFrame, "BOTTOMLEFT", 0, -16)
+skillLabel:SetPoint("TOPLEFT", selectAllButton, "BOTTOMLEFT", 0, -12)
 skillLabel:SetWidth(388)
 skillLabel:SetJustifyH("LEFT")
 skillLabel:SetText("Profession skill -- type the current value into ReagentRoute's \"Start skill\" field:")
