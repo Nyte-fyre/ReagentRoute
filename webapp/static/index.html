@@ -59,7 +59,7 @@
       </div>
       <p class="hint" id="skill-cap-hint"></p>
 
-      <div id="pricing-fields">
+      <div id="realm-fields">
         <div class="field-row">
           <div class="field">
             <label for="realm-select">Realm</label>
@@ -71,7 +71,25 @@
           </div>
         </div>
         <p class="hint" id="realm-hint"></p>
+      </div>
 
+      <div id="ah-scan-fields" class="hidden">
+        <div class="field">
+          <label for="ah-scan-textarea">Paste an AH scan from the companion addon <span class="hint">(optional)</span></label>
+          <textarea id="ah-scan-textarea" rows="4" placeholder='itemId,name,marketValue,minBuyout&#10;2589,"Linen Cloth",5416,5416'></textarea>
+          <p class="hint">
+            No live pricing source covers this version yet, but the
+            <a href="https://github.com/Nyte-fyre/ReagentRoute/tree/main/addon" target="_blank" rel="noopener">companion addon</a>
+            can scan your own Auction House searches in-game and export them
+            here for a real priced, optimized plan instead of just a recipe
+            browse. Coverage can be partial &mdash; any skill point whose
+            cheapest recipe needs a reagent you haven't scanned yet will show
+            up as a gap, same as missing price data anywhere else on this site.
+          </p>
+        </div>
+      </div>
+
+      <div id="pricing-fields">
         <div class="field">
           <label for="owned-materials">Materials you already own <span class="hint">(optional &mdash; one per line, "Item Name: quantity")</span></label>
           <textarea id="owned-materials" rows="5" placeholder="Rough Stone: 20&#10;Copper Bar: 40"></textarea>

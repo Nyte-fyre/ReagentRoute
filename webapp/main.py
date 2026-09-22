@@ -21,7 +21,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, ROOT)
 os.chdir(ROOT)  # so relative "data/..." paths in imported modules resolve
 
-from price_recipes import fetch_realm_prices, price_recipes_data, copper_to_gsc  # noqa: E402
+from price_recipes import fetch_realm_prices, load_prices_from_csv_text, price_recipes_data, copper_to_gsc  # noqa: E402
 from optimize_leveling import (  # noqa: E402
     build_recipe_costs_data, optimize, apply_owned_materials, apply_ah_hedge, summarize_plan, build_shopping_list,
 )
@@ -137,6 +137,7 @@ class PlanRequest(BaseModel):
     gathering_professions: list[str] = []
     hedge_ah: bool = False
     ah_hedge_cap: int = 5
+    ah_scan_csv: str | None = None
 
 
 @app.get("/api/game-versions")
@@ -222,21 +223,34 @@ def compute_plan(req: PlanRequest):
     v = GAME_VERSIONS.get(req.game_version)
     if v is None:
         raise HTTPException(400, f"Unknown game_version '{req.game_version}'. Use one of: {list(GAME_VERSIONS)}")
-    if not v["pricing_available"]:
+    if not v["pricing_available"] and not req.ah_scan_csv:
         raise HTTPException(
             409,
             f"No live pricing source exists yet for {v['label']}. "
-            f"Use GET /api/recipes?profession={req.profession}&game_version={req.game_version} to browse recipes instead.",
+            f"Use GET /api/recipes?profession={req.profession}&game_version={req.game_version} to browse recipes instead, "
+            f"or paste an AH scan from the companion addon.",
         )
 
     recipes_path = recipes_path_for(req.profession, req.game_version)
     if not os.path.exists(recipes_path):
         raise HTTPException(404, f"No recipe data for profession '{req.profession}'")
 
-    try:
-        prices = fetch_realm_prices(req.game_type, req.region, req.realm)
-    except Exception as e:
-        raise HTTPException(502, f"Could not fetch prices for {req.game_type}/{req.region}/{req.realm}: {e}")
+    # An addon-supplied AH scan (see addon/WEBSITE_HANDOFF.md section 3) is
+    # the only pricing source that exists for game versions TSM doesn't
+    # cover -- checked first and, when present, used INSTEAD of TSM's feed
+    # regardless of pricing_available, since it's a per-request opt-in, not
+    # a change to what's available by default (pricing_available itself
+    # stays accurate to "does TSM cover this").
+    if req.ah_scan_csv:
+        try:
+            prices = load_prices_from_csv_text(req.ah_scan_csv)
+        except Exception as e:
+            raise HTTPException(400, f"Could not parse the pasted AH scan: {e}")
+    else:
+        try:
+            prices = fetch_realm_prices(req.game_type, req.region, req.realm)
+        except Exception as e:
+            raise HTTPException(502, f"Could not fetch prices for {req.game_type}/{req.region}/{req.realm}: {e}")
 
     gatherable_names = set()
     for prof in req.gathering_professions:
