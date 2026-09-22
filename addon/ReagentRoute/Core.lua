@@ -113,33 +113,48 @@ end
 
 -- ===== Bottom buttons =====
 
+local siteLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+siteLabel:SetPoint("BOTTOMRIGHT", -16, 46)
+siteLabel:SetText("reagentroute.onrender.com")
+
 local refreshButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-refreshButton:SetSize(100, 22)
+refreshButton:SetSize(80, 22)
 refreshButton:SetPoint("BOTTOMLEFT", 16, 16)
 refreshButton:SetText("Rescan")
 refreshButton:SetScript("OnClick", Refresh)
 
+local ahButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+ahButton:SetSize(90, 22)
+ahButton:SetPoint("LEFT", refreshButton, "RIGHT", 8, 0)
+ahButton:SetText("AH Scan...")
+ahButton:SetScript("OnClick", function()
+	frame:Hide()
+	RR.ahFrame:Show()
+end)
+
 local shoppingListButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
-shoppingListButton:SetSize(130, 22)
-shoppingListButton:SetPoint("LEFT", refreshButton, "RIGHT", 8, 0)
+shoppingListButton:SetSize(120, 22)
+shoppingListButton:SetPoint("LEFT", ahButton, "RIGHT", 8, 0)
 shoppingListButton:SetText("Shopping List...")
 shoppingListButton:SetScript("OnClick", function()
 	frame:Hide()
 	RR.checklistFrame:Show()
 end)
 
-local siteLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
-siteLabel:SetPoint("BOTTOMRIGHT", -16, 22)
-siteLabel:SetText("reagentroute.onrender.com")
-
 frame:SetScript("OnShow", Refresh)
 
 SLASH_REAGENTROUTE1 = "/reagentroute"
 SLASH_REAGENTROUTE2 = "/rr"
 SlashCmdList["REAGENTROUTE"] = function(msg)
-	if msg and msg:lower():match("^list") then
+	local sub = msg and msg:lower() or ""
+	if sub:match("^list") then
 		frame:Hide()
 		RR.checklistFrame:Show()
+		return
+	end
+	if sub:match("^ah") then
+		frame:Hide()
+		RR.ahFrame:Show()
 		return
 	end
 	if frame:IsShown() then
