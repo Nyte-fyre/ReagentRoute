@@ -13,3 +13,7 @@ sound-garden/
 # Claude Code's own local tooling config (machine-specific paths).
 .claude/
 
+# Packaged addon builds -- regenerable from addon/ReagentRoute/ per
+# addon/DISTRIBUTION.md, not source, shouldn't be committed.
+addon/*.zip
+

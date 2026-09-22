@@ -326,6 +326,11 @@ All rights reserved. No license is granted -- viewing the source on
 GitHub doesn't give permission to copy, modify, distribute, or reuse
 this code. Contact the repo owner for permission.
 
+**Exception:** the in-game companion addon (`addon/`) is MIT licensed --
+see `addon/LICENSE`. WoW addon distribution platforms (CurseForge, Wago)
+and their communities expect addon source to be viewable/forkable, unlike
+the website's backend logic and hosting.
+
 One caveat regardless of that: the extracted data in `data/*.json` is
 *derived from* cmangos' GPL-3.0-licensed content databases. GPL-3.0 is a
 copyleft license -- it governs redistribution of works derived from it
