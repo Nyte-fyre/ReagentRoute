@@ -354,6 +354,51 @@ table a:hover, .hint a:hover {
   color: var(--accent);
 }
 
+.export-box {
+  margin-top: 12px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 14px 16px;
+}
+
+.export-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.export-box .hint {
+  margin: 6px 0 0;
+}
+
+.export-textarea {
+  margin-top: 10px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.82rem;
+  resize: vertical;
+  color: var(--text-dim);
+}
+
+.copy-btn {
+  width: auto;
+  flex-shrink: 0;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: transparent;
+  border: 1px solid var(--border);
+  color: var(--text);
+}
+
+.copy-btn:hover {
+  border-color: var(--accent-dim);
+  filter: none;
+}
+
 .toggle-card {
   background: var(--bg);
   border: 1px solid var(--border);

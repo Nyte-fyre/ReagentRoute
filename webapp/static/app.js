@@ -388,6 +388,7 @@ function renderResults(data) {
 
 function renderShoppingList(list) {
   const tbody = document.querySelector("#shopping-list-table tbody");
+  document.getElementById("shopping-list-export").value = list.map((e) => `${e.item_id}: ${e.total_count}`).join("\n");
   tbody.innerHTML = list
     .map((e) => {
       let tag = "";
@@ -401,6 +402,23 @@ function renderShoppingList(list) {
       </tr>`;
     })
     .join("");
+}
+
+async function copyShoppingListExport() {
+  const box = document.getElementById("shopping-list-export");
+  const btn = document.getElementById("copy-shopping-list-btn");
+  box.focus();
+  box.select();
+  try {
+    await navigator.clipboard.writeText(box.value);
+  } catch {
+    document.execCommand("copy"); // clipboard API blocked (permissions/non-HTTPS) -- fall back to the selection-based copy command
+  }
+  const original = btn.textContent;
+  btn.textContent = "Copied!";
+  setTimeout(() => {
+    btn.textContent = original;
+  }, 1500);
 }
 
 function renderBrowseResults(data, startSkill, targetSkill) {
@@ -442,5 +460,6 @@ gameVersionSelect.addEventListener("change", onVersionChange);
 professionSelect.addEventListener("change", updateProfessionIcon);
 realmSelect.addEventListener("change", () => realmSelect.classList.remove("input-error"));
 hedgeAhCheckbox.addEventListener("change", () => ahCapRow.classList.toggle("hidden", !hedgeAhCheckbox.checked));
+document.getElementById("copy-shopping-list-btn").addEventListener("click", copyShoppingListExport);
 loadGameVersions();
 loadGatheringProfessions();
