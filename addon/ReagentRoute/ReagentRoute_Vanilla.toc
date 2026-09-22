@@ -4,8 +4,14 @@
 ## Author: Nyte-fyre
 ## Version: 0.1.0
 ## X-Website: https://reagentroute.onrender.com
+## X-License: MIT
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
 ## SavedVariables: ReagentRouteDB
+
+# X-Curse-Project-ID: fill in once a CurseForge project exists (see
+# addon/DISTRIBUTION.md) -- some CurseForge tooling reads this to link
+# an installed addon folder back to its project page. Left as a plain
+# comment, not a live directive, until there's a real ID to put there.
 
 # NOTE: CONFIRMED live in-game 2026-09-22 via `/dump select(4,
 # GetBuildInfo())` on a real Classic Era character -- returned 11509,
