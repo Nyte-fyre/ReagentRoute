@@ -16,6 +16,8 @@
 
 Export.lua
 Import.lua
+AHScan.lua
 UI.lua
 Checklist.lua
+AHWindow.lua
 Core.lua

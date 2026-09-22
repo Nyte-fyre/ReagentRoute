@@ -37,6 +37,32 @@ pick this up cold, with no other context from this project's history.
    checklist rows), Select All still highlights correctly in the new
    layout, and "< Back" correctly returns to the main panel with its
    state intact.
+3. **AH scan export (P2, started).** New `AHScan.lua` (capture logic) +
+   `AHWindow.lua` (UI, `/rr ah` or the "AH Scan..." button) implement the
+   smaller of the two P2 options from the prior round's analysis: purely
+   reactive capture (never calls `QueryAuctionItems()` itself, only reads
+   `AUCTION_ITEM_LIST_UPDATE` results from a search the player already
+   ran -- see HANDOFF's ToS section) that builds a per-realm+faction price
+   cache in `ReagentRouteDB` and exports it as a CSV matching exactly the
+   4 columns `price_recipes.py`'s `fetch_realm_prices()` actually reads
+   (`itemId,name,marketValue,minBuyout` -- verified against its source
+   first; the `recent`/`historical`/`updatedAt` columns TSM's own feed has
+   are never parsed by that function, so they're not invented here either).
+   `marketValue` is set equal to `minBuyout` rather than fabricating a
+   smoothed estimate from a handful of live snapshots. **Verified live**
+   on Classic Era: confirmed empirically via `/dump C_AuctionHouse,
+   QueryAuctionItems, GetAuctionItemInfo` that this client exposes the
+   legacy AH API (`C_AuctionHouse` is nil), confirmed `AuctionFrame` is
+   the real frame even with Auctionator installed alongside it
+   (`AuctionFrame:IsShown()` returned `true`), searched real Linen Cloth
+   listings (two real listings, stacks of 8 and 12) and got an exact
+   hand-verified match: `2589,"Linen Cloth",5416,5416` (both listings
+   independently worked out to 5416 copper/unit). Also verified: a
+   zero-result search doesn't crash or clear existing data, Select All +
+   Ctrl+C copies the exact CSV text, and Clear Scan correctly empties the
+   cache. **Not yet verified:** TBC Anniversary specifically (only tested
+   on Classic Era), and the website-side consumer of this export doesn't
+   exist yet -- see the new spec below.
 
 P0 (owned-materials + skill export) and P1 (shopping-list import/checklist)
 both have an implementation in `addon/ReagentRoute/`:
@@ -51,6 +77,9 @@ both have an implementation in `addon/ReagentRoute/`:
 - `Checklist.lua` -- paste-a-shopping-list-in, get an auto-ticking
   checklist (reads bag counts live on `BAG_UPDATE`), with a "< Back"
   button to return to the main panel
+- `AHScan.lua` -- reactive AH price capture (per-realm+faction cache in
+  `ReagentRouteDB`) + TSM-shaped CSV export
+- `AHWindow.lua` -- UI for the above (`/rr ah` or the "AH Scan..." button)
 - Flavor-suffixed `.toc` files for Classic Era (`_Vanilla`) and TBC
   Anniversary (`_TBC`)
 
@@ -286,12 +315,14 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   actual vendor sell + buyback, not just a Rescan click).
 
 ### P2 -- stretch, but highest strategic value
-- **AH scan export for TBC/Forever.** When the player opens the AH,
-  capture per-item price data and export it in (or close to) TSM's own
-  public CSV shape -- `itemId, name, marketValue, minBuyout, recent,
-  historical, updatedAt` -- so `price_recipes.py` needs minimal changes
-  to consume a pasted/uploaded version of it as a stand-in pricing source
-  for the versions TSM doesn't cover yet. This is the single highest-value
+- **AH scan export for TBC/Forever (addon side implemented and verified
+  live, website side not started -- see `addon/WEBSITE_HANDOFF.md`'s new
+  AH-scan section).** When the player opens the AH, capture per-item
+  price data and export it in the columns `price_recipes.py` actually
+  reads -- `itemId, name, marketValue, minBuyout` -- so it needs minimal
+  changes to consume a pasted/uploaded version of it as a stand-in
+  pricing source for the versions TSM doesn't cover yet. This is the
+  single highest-value
   thing this addon could do, since it's the one gap nothing else can fill.
 
   **How far in-house is worth going (2026-09-22 analysis, not yet built):**

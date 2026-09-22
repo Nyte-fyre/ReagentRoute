@@ -5,8 +5,14 @@ Written by the session working on `addon/ReagentRoute/` (see
 `optimize_leveling.py`. This session was scoped to the addon only and was
 not directed to make website changes, so nothing here has been applied to
 `optimize_leveling.py` or `webapp/` -- it's proposed, verified in
-isolation, and ready to redo through your own process. Two independent
-changes, either can land on its own.
+isolation, and ready to redo through your own process. Each numbered
+section is independent and can land on its own.
+
+**Sections 1 and 2 already landed** (commit `f73635d`) -- kept below as
+historical record of the spec, not pending work. **Section 3 is new and
+not started on the website side** -- the addon half (scanning + CSV
+export) is implemented and verified live; nothing server/frontend-side
+exists yet to consume it.
 
 ## 1. Match owned-materials by item ID, not just name
 
@@ -143,9 +149,101 @@ function renderShoppingList(list) {
 Exact placement/styling is your call -- flagging the data shape and the
 addon-side contract, not prescribing the UI.
 
+## 3. Consume an addon-exported AH scan for TBC/Forever pricing
+
+**Where:** `price_recipes.py` (new function alongside `fetch_realm_prices()`)
+and `webapp/main.py`'s `PlanRequest`/`compute_plan()` (~lines 128-265),
+plus frontend UI for TBC/Forever's currently browse-only path.
+
+**Why:** README.md's Known Limitations and this repo's own `pricing_available`
+flag (`webapp/main.py` ~line 55) say plainly that no pricing source exists
+for TBC Anniversary -- TSM's feed doesn't cover it, Blizzard's API has no
+namespace for it. `addon/ReagentRoute/AHScan.lua` closes that gap from
+inside the game: it passively records buyout prices whenever the player
+searches the in-game AH (never triggers searches itself -- read-only,
+player-initiated, see `addon/HANDOFF.md`'s ToS section) and exports a CSV
+via `RR.FormatAHScanCSV()` (`/rr ah`, "AH Scan..." button). **Verified
+live** against a real Classic Era AH: searched "Linen Cloth" (two real
+listings, stacks of 8 and 12), got `2589,"Linen Cloth",5416,5416` --
+hand-verified against both listings' actual gold/silver/copper buyout
+values divided by stack size. Not yet re-verified on TBC Anniversary
+specifically, but expected to work identically (same legacy AH API,
+confirmed via `/dump C_AuctionHouse, QueryAuctionItems, GetAuctionItemInfo`
+returning nil/function/function on Classic Era).
+
+**Exact CSV shape** (verified against `fetch_realm_prices()`'s own
+parsing before building the export, so it's not guessed at the addon
+side either):
+```
+itemId,name,marketValue,minBuyout
+2589,"Linen Cloth",5416,5416
+4306,"Silk Cloth",8900,8900
+```
+Only these 4 columns -- `fetch_realm_prices()` (`price_recipes.py` ~line
+33) never reads `recent`/`historical`/`updatedAt` even though TSM's own
+feed has them, so the addon doesn't invent those either. `marketValue` is
+set equal to `minBuyout` in the export -- the addon has no way to produce
+an honest smoothed estimate from a handful of live snapshots, and
+`price_recipes_data()` already treats `marketValue` as informational only
+(never used for the actual cost basis, see its own comments ~line 114),
+so this is a safe simplification, not a shortcut that affects pricing
+correctness.
+
+**Proposed backend change:**
+```python
+def load_prices_from_csv_text(text):
+    """Same shape/return value as fetch_realm_prices(), but parses CSV
+    text directly instead of fetching from TSM -- for the addon's AH-scan
+    export (see addon/WEBSITE_HANDOFF.md section 3), which is the only
+    pricing source that exists for game versions TSM doesn't cover."""
+    prices = {}
+    reader = csv.DictReader(text.splitlines())
+    for row in reader:
+        prices[int(row["itemId"])] = {
+            "name": row["name"],
+            "marketValue": int(row["marketValue"] or 0),
+            "minBuyout": int(row["minBuyout"] or 0),
+        }
+    return prices
+```
+This is a near-identical extraction from `fetch_realm_prices()`'s existing
+loop body (~lines 30-37) -- consider factoring both to share it rather
+than duplicating the row-parsing logic.
+
+In `webapp/main.py`, `PlanRequest` needs a new optional field (e.g.
+`ah_scan_csv: str | None = None`), and `compute_plan()`'s pricing-source
+check (~line 225, currently `if not v["pricing_available"]: raise
+HTTPException(409, ...)`) needs to accept an addon-supplied scan as an
+alternative to `pricing_available`: when `ah_scan_csv` is provided,
+call `load_prices_from_csv_text(req.ah_scan_csv)` instead of
+`fetch_realm_prices(...)`, regardless of that game version's
+`pricing_available` flag. `pricing_available` itself should probably stay
+`False` for TBC/Forever (it's still true that *TSM* doesn't cover them --
+this is a per-request opt-in, not a change to what's available by
+default).
+
+**Frontend:** TBC/Forever currently render the browse-only fallback
+(`renderBrowseResults()`, no cost optimization -- see README's Known
+Limitations). Needs a paste box for the addon's CSV export, gated to
+those game versions, that sends `ah_scan_csv` in the `/api/plan` request
+body instead of (or in addition to) hitting the normal cost-optimized
+path. Exact UX is your call -- possibilities: a textarea shown only when
+`game_version` lacks `pricing_available`, with copy pasted from the
+addon's window; or a small "Paste AH scan" link next to the existing
+browse-only notice. Whatever shape, the data flowing in is exactly the
+CSV above, unmodified.
+
+**Not addressed here, left to you:** whether a partial scan (the player
+hasn't searched every reagent yet) should compute a partial plan with
+gaps flagged, or refuse until reagents are fully covered -- `optimize()`
+already produces `gaps` for skill points with no priced recipe available,
+which may already be the right mechanism to surface "reagent X has no
+scanned price yet" without new plumbing. Worth checking before building
+new gap-handling logic.
+
 ## Summary of what NOT to redo
 
-Nothing -- neither change exists in this repo right now (both were
-reverted from `optimize_leveling.py`; no website files were ever
-committed to). This doc is the full spec for both, written so you can
-implement them fresh without needing anything else from this session.
+Sections 1 and 2 already landed (`f73635d`) -- don't redo those, this doc
+just keeps them as the historical spec. Section 3 (AH scan consumption)
+is entirely unimplemented on the website side -- the addon's half is
+done and verified live, this doc is the full spec for what's left.
