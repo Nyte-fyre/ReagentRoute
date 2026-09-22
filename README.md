@@ -177,6 +177,7 @@ scripts/                Data extraction pipeline
 price_recipes.py        Joins recipes against live TSM pricing data
 optimize_leveling.py    The expected-value cost optimizer
 webapp/                 FastAPI backend + vanilla JS/HTML/CSS frontend
+addon/                  In-game companion addon (not started -- see addon/HANDOFF.md)
 test_connection.py      Verifies your Blizzard API credentials work
 legacy/                 Superseded single-profession scripts (see legacy/README.md)
 ```
