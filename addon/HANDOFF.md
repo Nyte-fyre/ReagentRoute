@@ -37,7 +37,8 @@ pick this up cold, with no other context from this project's history.
    checklist rows), Select All still highlights correctly in the new
    layout, and "< Back" correctly returns to the main panel with its
    state intact.
-3. **AH scan export (P2, started).** New `AHScan.lua` (capture logic) +
+3. **AH scan export (P2, full loop closed -- addon captures, website
+   consumes, both verified).** New `AHScan.lua` (capture logic) +
    `AHWindow.lua` (UI, `/rr ah` or the "AH Scan..." button) implement the
    smaller of the two P2 options from the prior round's analysis: purely
    reactive capture (never calls `QueryAuctionItems()` itself, only reads
@@ -60,9 +61,24 @@ pick this up cold, with no other context from this project's history.
    independently worked out to 5416 copper/unit). Also verified: a
    zero-result search doesn't crash or clear existing data, Select All +
    Ctrl+C copies the exact CSV text, and Clear Scan correctly empties the
-   cache. **Not yet verified:** TBC Anniversary specifically (only tested
-   on Classic Era), and the website-side consumer of this export doesn't
-   exist yet -- see the new spec below.
+   cache.
+
+   **Website side shipped and verified too** (commit `8279cb9`, live on
+   reagentroute.onrender.com): `price_recipes.py` gained
+   `load_prices_from_csv_text()` (sharing a `parse_prices_csv()` helper
+   with `fetch_realm_prices()` rather than duplicating the parser),
+   `PlanRequest.ah_scan_csv` lets a request supply a scan as an
+   alternative to `pricing_available`, and the frontend has a paste box
+   for TBC/Forever that routes through the same `renderResults()` path
+   Classic Era uses. Independently verified end to end by this session
+   (not just trusting the other session's summary): POSTed a synthetic
+   2-item AH-scan CSV to the live production `/api/plan` for TBC First
+   Aid and got back a real priced plan (0 gaps, correct net cost);
+   confirmed the no-scan case still correctly 409s with no regression.
+   **Not yet verified:** TBC Anniversary specifically for the *addon's*
+   capture side (only tested capturing on Classic Era so far -- the
+   website consumption above was verified with a synthetic CSV, not a
+   live TBC Anniversary AH capture).
 
 P0 (owned-materials + skill export) and P1 (shopping-list import/checklist)
 both have an implementation in `addon/ReagentRoute/`:
