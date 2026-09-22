@@ -5,6 +5,16 @@ after reading CurseForge's own current support documentation directly
 (not from memory) -- see Sources at the bottom. Decisions already made
 with the user, not open questions:
 
+## Status
+
+**Project created and first file submitted for moderation** (2026-09-23).
+Project ID `1707609`, now recorded as `X-Curse-Project-ID` in both `.toc`
+files. `ReagentRoute-v0.1.0.zip` uploaded as an Alpha release, tagged for
+Classic Era (1.15.9) and Burning Crusade Classic (2.5.6). Both the
+project and the file are pending moderator approval -- not yet publicly
+visible or synced across CurseForge. Nothing further required until that
+resolves one way or another.
+
 - **License: MIT**, scoped to `addon/` only (see `addon/LICENSE`) -- the
   rest of this repo stays all rights reserved. Matches WoW addon
   ecosystem norms; CurseForge itself expects a license selection at
