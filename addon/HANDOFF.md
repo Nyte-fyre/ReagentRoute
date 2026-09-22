@@ -52,10 +52,25 @@ on Classic Era too: this character genuinely owned 4x Silk Cloth (item
 dropped `NET COST` from `17g 52s 93c` to `COST TO YOU` `17g 42s 93c` --
 exactly `4 x 2s50c` (Silk Cloth's unit cost), to the copper.
 
-**Still not tested on Classic Era specifically:** the shopping-list
-checklist round trip (P1) -- only verified on TBC Anniversary so far.
-WoW Forever is untested entirely (addon support there is still an open
-question, see below).
+The P1 shopping-list checklist was also verified on Classic Era: pasted
+the site's real First Aid 1-300 export (`1475: 160`, `4306: 360`,
+`4338: 54`, `14047: 80`, `2589: 326`) into `/rr list`, clicked Build, and
+all five resolved to correct names/icons (Small Venom Sac, Linen Cloth,
+Silk Cloth, Mageweave Cloth, Runecloth) with correct have/need counts --
+`Silk Cloth -- 4 / 360` matched the character's real bag count exactly.
+This also caught and fixed a real bug: `pasteBox` (the paste-in EditBox)
+never got an explicit `SetHeight()`, so its actual clickable area was
+only a sliver of the visible 60px scroll box -- most clicks fell through
+to the game world underneath (observed live: keystrokes toggled
+nameplates instead of typing). Fixed by setting an explicit height and
+having the whole scroll area focus the box on click, not just the box's
+own tiny hit region.
+
+**Still not verified:** re-confirming `BAG_UPDATE` live-refresh
+specifically on Classic Era (proven on TBC Anniversary with a real
+vendor sell/buyback; same Lua code path, not re-run here) -- low risk but
+genuinely untested on this client. WoW Forever is untested entirely
+(addon support there is still an open question, see below).
 
 The two website-side changes P1 needed are live and verified (see Data
 contract below) -- `addon/WEBSITE_HANDOFF.md` is now historical record of
@@ -324,11 +339,14 @@ Blizzard's built-in widget templates (`BasicFrameTemplateWithInset`,
 ## Definition of done for P1 (shopping list round-trip)
 
 - [x] Website produces a copy-able `itemID: quantity` export matching
-  `ParseShoppingList()`'s expected shape -- verified live, `2589: 59`.
+  `ParseShoppingList()`'s expected shape -- verified live on both clients
+  (`2589: 59` on TBC Anniversary, a 5-item First Aid export on Classic
+  Era).
 - [x] Pasting that export into `/rr list` and clicking Build resolves
-  correct item names/icons and correct have/need counts against real
-  bag contents.
+  correct item names/icons and correct have/need counts against real bag
+  contents -- verified on both clients.
 - [x] Checklist updates live on `BAG_UPDATE` with no manual Rescan --
-  verified both directions with a real vendor sell (`9/9` -> `8/9`) and
-  Buyback repurchase (`8/9` -> `9/9`).
-- [ ] Classic Era client -- same caveat as P0, untested there.
+  verified on TBC Anniversary both directions with a real vendor sell
+  (`9/9` -> `8/9`) and Buyback repurchase (`8/9` -> `9/9`). **Not
+  re-verified on Classic Era** -- same Lua code path, low risk, but
+  genuinely untested there.

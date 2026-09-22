@@ -30,9 +30,23 @@ local pasteBox = CreateFrame("EditBox", nil, pasteScroll)
 pasteBox:SetMultiLine(true)
 pasteBox:SetFontObject(ChatFontNormal)
 pasteBox:SetWidth(340)
+-- Without an explicit height, an empty multi-line EditBox's actual
+-- clickable area is only as tall as its (empty) content -- a fraction of
+-- the visible 60px scroll area -- so most clicks inside the box fall
+-- through to whatever is behind it (the game world, in practice) instead
+-- of focusing the box. Found live: typing leaked as WoW hotkeys (toggled
+-- nameplates) instead of landing in the box.
+pasteBox:SetHeight(56)
 pasteBox:SetAutoFocus(false)
 pasteBox:SetScript("OnEscapePressed", pasteBox.ClearFocus)
 pasteScroll:SetScrollChild(pasteBox)
+
+-- Belt-and-suspenders: clicking anywhere in the scroll area (not just
+-- directly on the EditBox's own hit region) should focus it.
+pasteScroll:EnableMouse(true)
+pasteScroll:SetScript("OnMouseDown", function()
+	pasteBox:SetFocus()
+end)
 
 local buildButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
 buildButton:SetSize(100, 22)
