@@ -20,21 +20,46 @@ both have an initial implementation in `addon/ReagentRoute/`:
 - Flavor-suffixed `.toc` files for Classic Era (`_Vanilla`) and TBC
   Anniversary (`_TBC`)
 
-**Not yet tested in-game** -- no live client access when this was written,
-so treat it as a first pass: verify it loads, verify the Interface numbers
-in both `.toc` files (flagged inline in each with what to check), and
-verify the owned-materials export round-trips into the website correctly
-before calling P0 done (see its Definition of done below).
+**Verified live against a real TBC Anniversary client and the live site**
+(2026-09-22, character on `_anniversary_`, found via `.build.info` --
+`wow_anniversary` product, confirmed separate from `_classic_` and
+`_classic_era_`):
+- Addon loads with no "out of date" warning -- the derived Interface
+  number (`20506`) was correct, not just a guess that happened to work.
+- `/rr`'s Select All + Ctrl+C copies the exact `itemID: quantity` text
+  (read the OS clipboard directly to confirm, not just eyeballed).
+- Pasted that exact addon-exported string (`2589: 6`, later `2589: 9`)
+  into the live site's owned-materials box -- `COST TO YOU` dropped by
+  precisely `qty x unit_cost_copper` to the copper, both times.
+- The website's shopping-list export box (`2589: 59`) pasted into `/rr
+  list` resolved to the correct item name/icon and correct have/need
+  counts against the same character's real bags.
+- `BAG_UPDATE` auto-tick verified both directions with a real vendor
+  transaction (sell 1 Linen Cloth -> checklist flipped `9/9` green to
+  `8/9` red with no Rescan click; Buyback tab to repurchase -> flipped
+  back to `9/9` green), so the checklist genuinely updates live, not just
+  on manual refresh.
 
-**The shopping-list checklist (P1) needs two things from the website side
-that don't exist yet**, both specced in `addon/WEBSITE_HANDOFF.md`: (1)
-`apply_owned_materials()` needs to match by `item_id` (currently
-name-only, see Data contract below), and (2) the site needs a
-`itemID: quantity` shopping-list export box for the player to copy from --
-today the shopping list only renders as an HTML table, nothing
-copy-pasteable. Until both land, the checklist works once pasted (parsing
-is addon-side and independent), but there's nothing on the website yet to
-paste *from*.
+**Also verified live on Classic Era** (2026-09-22, different character, on
+`_classic_era_`): addon loads cleanly, `/rr` scans real bags (30 distinct
+items), Select All + Ctrl+C copies correctly (read via OS clipboard). The
+Interface number is no longer just derived here -- `/dump select(4,
+GetBuildInfo())` returned `11509` in-game, an exact match to what was in
+`ReagentRoute_Vanilla.toc`, confirmed rather than assumed from Blizzard's
+usual numbering convention. The owned-materials round trip was verified
+on Classic Era too: this character genuinely owned 4x Silk Cloth (item
+4306), and pasting `4306: 4` into a First Aid 1-300 plan on the live site
+dropped `NET COST` from `17g 52s 93c` to `COST TO YOU` `17g 42s 93c` --
+exactly `4 x 2s50c` (Silk Cloth's unit cost), to the copper.
+
+**Still not tested on Classic Era specifically:** the shopping-list
+checklist round trip (P1) -- only verified on TBC Anniversary so far.
+WoW Forever is untested entirely (addon support there is still an open
+question, see below).
+
+The two website-side changes P1 needed are live and verified (see Data
+contract below) -- `addon/WEBSITE_HANDOFF.md` is now historical record of
+the spec, not a pending TODO.
 
 ## What ReagentRoute is
 
@@ -110,27 +135,24 @@ currently cannot close from outside the game client:
 
 ## Data contract -- match the website's shape
 
-**Still open, patch written but not applied here.** `apply_owned_materials()`
-in `optimize_leveling.py` matches owned-materials entries against each
-recipe reagent's `item_name` field by exact string only, which means a
-paste-in export has to reproduce the exact in-game display name verbatim
--- any mismatch (extra whitespace, a different locale, a hyperlink-wrapped
-item string) silently zeroes out credit for that item with no error
-shown. `Export.lua`'s `ScanOwnedMaterials()` sidesteps this by reading
-item IDs directly off bag slots via the container API (no `GetItemInfo`
-name-cache wait needed) and exporting `itemID: quantity` lines instead of
-names. The website's `"Materials you already own"` textarea and its
-`parseOwnedMaterials()` parser (`webapp/static/app.js`) already accept
-that shape with zero changes -- but until `apply_owned_materials()` is
-patched to also match by `item_id`, those addon-exported lines parse in
-fine and silently apply **zero savings**, same failure mode as a name
-mismatch always had. The exact patch (verified in isolation, not part of
-this repo) is in `addon/WEBSITE_HANDOFF.md` -- this was deliberately kept
-out of `optimize_leveling.py` itself since this session was scoped to the
-addon, not the website; whoever owns that file should apply it through
-their own process. Do the ID-not-name approach for any future export
-feature that adds new owned-material sources, same as `Export.lua`
-already does.
+**Fixed and live.** `apply_owned_materials()` in `optimize_leveling.py`
+used to match owned-materials entries against each recipe reagent's
+`item_name` field by exact string only, which meant a paste-in export had
+to reproduce the exact in-game display name verbatim -- any mismatch
+(extra whitespace, a different locale, a hyperlink-wrapped item string)
+silently zeroed out credit for that item with no error shown.
+`Export.lua`'s `ScanOwnedMaterials()` sidesteps this by reading item IDs
+directly off bag slots via the container API (no `GetItemInfo` name-cache
+wait needed) and exporting `itemID: quantity` lines instead of names.
+`apply_owned_materials()` now matches each reagent's `item_id` first,
+falling back to `item_name`, against one shared pool -- landed in commit
+`f73635d`, live on reagentroute.onrender.com. Verified live end-to-end
+(not just via the website session's own curl test): pasting an
+addon-exported `itemID: quantity` string into the site's existing
+`"Materials you already own"` textarea reduces `COST TO YOU` by exactly
+the expected amount, to the copper. Do the ID-not-name approach for any
+future export feature that adds new owned-material sources, same as
+`Export.lua` already does.
 
 ### Recipe JSON shape (what the addon should assume the site knows)
 
@@ -201,15 +223,18 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   display it plainly for the player to type -- this one's low-stakes
   enough that a full string protocol may be overkill).
 
-### P1 -- shopping list round-trip (implemented, blocked on website export)
+### P1 -- shopping list round-trip (implemented and verified live)
 - `Checklist.lua`/`Import.lua` accept a pasted shopping-list export and
   turn it into an in-game checklist, auto-ticking items off by reading
   current bag counts on `BAG_UPDATE`. Format chosen: `itemID: quantity`
   per line, mirroring the owned-materials export shape rather than
   `Item Name x Quantity`, for the same item-ID-over-name reasoning as the
-  Data contract section above. The website doesn't produce this text yet
-  (`build_shopping_list()` has the right fields, there's just no
-  copy-able export in the UI) -- see `addon/WEBSITE_HANDOFF.md`.
+  Data contract section above. The website now produces this text (a
+  "Copy" button + read-only export box under the shopping list table,
+  commit `f73635d`) -- pasting its output into `/rr list` and clicking
+  Build correctly resolves names/icons and have/need counts against real
+  bags, and the checklist live-updates on `BAG_UPDATE` (verified with an
+  actual vendor sell + buyback, not just a Rescan click).
 
 ### P2 -- stretch, but highest strategic value
 - **AH scan export for TBC/Forever.** When the player opens the AH,
@@ -281,15 +306,29 @@ Blizzard's built-in widget templates (`BasicFrameTemplateWithInset`,
 
 ## Definition of done for the MVP (P0)
 
-- [ ] Addon loads without error on at least Classic Era and TBC Anniversary
-  (Forever pending answer to open question #1). **Not yet verified --
-  needs a real client.**
-- [ ] Player can open the addon's export panel (`/rr`), get a materials
-  string (now `item_id: quantity` per line, not `Item Name: quantity` --
-  see Data contract above for why that changed), paste it into the site's
+- [x] Addon loads without error on both TBC Anniversary and Classic Era
+  -- verified live 2026-09-22 on real characters on both clients, no
+  "out of date" warning on either; Classic Era's Interface number (11509)
+  confirmed exactly via `/dump select(4, GetBuildInfo())` in-game, not
+  just inferred from a clean load. Forever still pending open question #1.
+- [x] Player can open the addon's export panel (`/rr`), get a materials
+  string (`item_id: quantity` per line), paste it into the site's
   existing textarea, and see it correctly reduce the plan's cost --
-  verified with a real in-game test, not just eyeballing the string
-  format. **Not yet verified.**
+  verified live on both clients: TBC Anniversary (`2589: 6`, then
+  `2589: 9`) and Classic Era (`4306: 4`), each reducing `COST TO YOU` by
+  exactly `qty x unit_cost_copper`, to the copper, against the live site.
 - [x] No network calls anywhere in the addon -- confirmed by inspection,
   `Core.lua`/`Export.lua` only touch `CreateFrame`/container/profession
   APIs and string formatting, nothing that could shell out to anything.
+
+## Definition of done for P1 (shopping list round-trip)
+
+- [x] Website produces a copy-able `itemID: quantity` export matching
+  `ParseShoppingList()`'s expected shape -- verified live, `2589: 59`.
+- [x] Pasting that export into `/rr list` and clicking Build resolves
+  correct item names/icons and correct have/need counts against real
+  bag contents.
+- [x] Checklist updates live on `BAG_UPDATE` with no manual Rescan --
+  verified both directions with a real vendor sell (`9/9` -> `8/9`) and
+  Buyback repurchase (`8/9` -> `9/9`).
+- [ ] Classic Era client -- same caveat as P0, untested there.

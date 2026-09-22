@@ -6,17 +6,12 @@
 ## X-Website: https://reagentroute.onrender.com
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
 
-# NOTE: Interface number above is DERIVED, not confirmed in-game: this
-# machine's local install (_classic_era_) reports client version
-# 1.15.9.69722 in .build.info (product "wow_classic_era" -- also the
-# exact build this project's data extraction is pinned to, see
-# README.md), and Blizzard's Interface-number convention is
-# major*10000 + minor*100 + patch, giving 11509. That convention usually
-# holds but isn't guaranteed -- confirm with `/dump select(4,
-# GetBuildInfo())` in-game and update this if it doesn't match. An
-# out-of-date Interface number doesn't stop the addon from loading (with
-# "Load out of date AddOns" enabled), it's only used for Blizzard's
-# compatibility warning.
+# NOTE: CONFIRMED live in-game 2026-09-22 via `/dump select(4,
+# GetBuildInfo())` on a real Classic Era character -- returned 11509,
+# exact match. (Originally derived from this machine's .build.info client
+# version 1.15.9.69722 via Blizzard's major*10000 + minor*100 + patch
+# convention, then verified against the actual client rather than trusted
+# on convention alone.)
 
 Export.lua
 Import.lua
