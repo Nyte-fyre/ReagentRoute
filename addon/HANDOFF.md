@@ -7,16 +7,50 @@ pick this up cold, with no other context from this project's history.
 
 ## Status
 
+**2026-09-22, latest round -- verified live on Classic Era:**
+1. **Bank materials.** `ScanOwnedMaterials()` previously only counted the
+   bank while `BankFrame` was actually open -- the client has no way to
+   read bank container contents otherwise, a hard API restriction, not a
+   choice (this was the user-reported bug: bank items only showed up
+   after being manually moved into bags). Fixed with the standard
+   workaround (same technique Bagnon/Altoholic-style addons use):
+   `Export.lua` now snapshots bank contents into `ReagentRouteDB` (new
+   SavedVariables, declared in both `.toc` files) on
+   `BANKFRAME_OPENED`/`BAG_UPDATE`-while-open/`BANKFRAME_CLOSED`, and
+   `ScanOwnedMaterials()` falls back to that cached snapshot when the bank
+   isn't currently open. `RR.GetBankStatus()` reports live/cached-with-
+   age/none so the UI never silently presents a stale snapshot as
+   current. **Verified live:** opened the bank -- 5 new item IDs appeared
+   in the export, status showed `Bank: live`; closed the bank -- same 5
+   items stayed, status changed to `Bank: cached just now`; ran `/reload`
+   -- snapshot survived (confirms it's genuinely on disk via
+   SavedVariables, not just an in-memory value); the Shopping List
+   checklist also correctly counted a bank-only item as satisfied,
+   confirming both consumers of `ScanOwnedMaterials()` benefit.
+2. **UI overhaul.** New `UI.lua` (shared panel/header/window-chrome
+   helpers, loads before `Core.lua`/`Checklist.lua`) replaces the flat
+   black-void styling with bordered section panels, icon+gold-text
+   headers, and consistent window chrome across both windows. Added a
+   "< Back" button on the Shopping List window so the player doesn't have
+   to close/reopen to get back to the main export panel. **Verified live:**
+   both windows render correctly (panels, icon headers, zebra-striped
+   checklist rows), Select All still highlights correctly in the new
+   layout, and "< Back" correctly returns to the main panel with its
+   state intact.
+
 P0 (owned-materials + skill export) and P1 (shopping-list import/checklist)
-both have an initial implementation in `addon/ReagentRoute/`:
-- `Export.lua` -- bag scanning (owned materials by item ID) + profession
-  skill reads
+both have an implementation in `addon/ReagentRoute/`:
+- `Export.lua` -- bag + bank scanning (owned materials by item ID) +
+  profession skill reads
 - `Import.lua` -- parses a pasted `itemID: quantity` shopping list
+- `UI.lua` -- shared styling helpers (panels, section headers, window
+  chrome) used by both windows below
 - `Core.lua` -- UI: `/rr` or `/reagentroute` opens the export panel (copy-
   able owned-materials box + read-only skill display); `/rr list` or the
   panel's "Shopping List..." button opens the checklist
 - `Checklist.lua` -- paste-a-shopping-list-in, get an auto-ticking
-  checklist (reads bag counts live on `BAG_UPDATE`)
+  checklist (reads bag counts live on `BAG_UPDATE`), with a "< Back"
+  button to return to the main panel
 - Flavor-suffixed `.toc` files for Classic Era (`_Vanilla`) and TBC
   Anniversary (`_TBC`)
 
@@ -259,6 +293,42 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   to consume a pasted/uploaded version of it as a stand-in pricing source
   for the versions TSM doesn't cover yet. This is the single highest-value
   thing this addon could do, since it's the one gap nothing else can fill.
+
+  **How far in-house is worth going (2026-09-22 analysis, not yet built):**
+  the question that prompted this was whether the addon could skip the
+  website's optimizer entirely for TBC -- scan the AH in-game (the way
+  Auctionator/TSM's own scanner addon do) and run the whole plan
+  client-side, no paste-and-visit-the-site round trip at all. Two
+  meaningfully different sizes of that idea:
+  1. **AH-scan export only (the bullet above).** Addon scans + formats
+     TSM-shaped price data; `price_recipes.py`/`optimize_leveling.py`
+     stay the single, already-verified implementation of the skill-up
+     model and greedy optimizer. Addon-side work stays scoped to
+     scanning + an export string (chunking may be needed -- WoW EditBoxes
+     have a length limit, and a full-realm AH scan is not small).
+  2. **Full offline in-addon optimizer.** Port `skillup_chance()`,
+     `optimize()`, and the net-cost/vendor-recovery math to Lua, embed
+     each profession's recipe/reagent data as static Lua tables (sizable
+     but proven workable -- Ackis Recipe List ships this exact pattern
+     for the whole game), and build a local AH price cache from in-addon
+     scanning instead of TSM's feed. This is real engineering, not a
+     paste-string feature: two independent implementations of the same
+     skill-up formula and optimizer, one Python and one Lua, are two
+     things that can silently drift out of agreement with each other --
+     directly against this project's own "don't trust it, check it"
+     standard (see README.md). It also needs the AH's actual scripting
+     API confirmed for these clients before any of this is worth
+     estimating further (unconfirmed whether Classic Era/TBC expose the
+     modern `C_AuctionHouse` namespace or an older one -- check empirically,
+     don't assume, same rule as everything else in this doc), and a full
+     AH scan takes multiple passes to populate (already flagged as open
+     question #4 below).
+
+  **Recommendation:** build (1) first. It closes the exact gap nothing
+  else can close (TBC pricing) without forking the pricing logic, and
+  only reach for (2) if a paste-based round trip through the website
+  turns out to be a real friction point in practice, not a hypothetical
+  one.
 - **Forever acquisition reporting.** When a player opens a trainer,
   vendor, or loots a recipe item in Forever specifically, capture that
   context (NPC name + window type, or loot source) and export it in a
