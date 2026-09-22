@@ -1,0 +1,24 @@
+## Interface: 20506
+## Title: ReagentRoute
+## Notes: Export owned materials and profession skill for reagentroute.onrender.com
+## Author: Nyte-fyre
+## Version: 0.1.0
+## X-Website: https://reagentroute.onrender.com
+## IconTexture: Interface\Icons\INV_Misc_Book_09
+
+# NOTE: Interface number above is DERIVED, not confirmed in-game: this
+# machine's local install has a dedicated _anniversary_ client folder
+# (separate from _classic_ and _classic_era_) reporting client version
+# 2.5.6.69795 in .build.info under product "wow_anniversary" -- that's
+# the live TBC Anniversary line. Applying Blizzard's usual
+# major*10000 + minor*100 + patch Interface-number convention gives
+# 20506. That convention usually holds but isn't guaranteed -- confirm
+# with `/dump select(4, GetBuildInfo())` in-game and update this if it
+# doesn't match. An out-of-date Interface number doesn't stop the addon
+# from loading (with "Load out of date AddOns" enabled), it's only used
+# for Blizzard's compatibility warning.
+
+Export.lua
+Import.lua
+Checklist.lua
+Core.lua

@@ -5,6 +5,37 @@ bridges to [ReagentRoute](https://reagentroute.onrender.com)
 ([GitHub](https://github.com/Nyte-fyre/ReagentRoute)). Written so you can
 pick this up cold, with no other context from this project's history.
 
+## Status
+
+P0 (owned-materials + skill export) and P1 (shopping-list import/checklist)
+both have an initial implementation in `addon/ReagentRoute/`:
+- `Export.lua` -- bag scanning (owned materials by item ID) + profession
+  skill reads
+- `Import.lua` -- parses a pasted `itemID: quantity` shopping list
+- `Core.lua` -- UI: `/rr` or `/reagentroute` opens the export panel (copy-
+  able owned-materials box + read-only skill display); `/rr list` or the
+  panel's "Shopping List..." button opens the checklist
+- `Checklist.lua` -- paste-a-shopping-list-in, get an auto-ticking
+  checklist (reads bag counts live on `BAG_UPDATE`)
+- Flavor-suffixed `.toc` files for Classic Era (`_Vanilla`) and TBC
+  Anniversary (`_TBC`)
+
+**Not yet tested in-game** -- no live client access when this was written,
+so treat it as a first pass: verify it loads, verify the Interface numbers
+in both `.toc` files (flagged inline in each with what to check), and
+verify the owned-materials export round-trips into the website correctly
+before calling P0 done (see its Definition of done below).
+
+**The shopping-list checklist (P1) needs two things from the website side
+that don't exist yet**, both specced in `addon/WEBSITE_HANDOFF.md`: (1)
+`apply_owned_materials()` needs to match by `item_id` (currently
+name-only, see Data contract below), and (2) the site needs a
+`itemID: quantity` shopping-list export box for the player to copy from --
+today the shopping list only renders as an HTML table, nothing
+copy-pasteable. Until both land, the checklist works once pasted (parsing
+is addon-side and independent), but there's nothing on the website yet to
+paste *from*.
+
 ## What ReagentRoute is
 
 A web tool that computes the cheapest path to level a WoW Classic
@@ -79,19 +110,27 @@ currently cannot close from outside the game client:
 
 ## Data contract -- match the website's shape
 
-The site's item-name-based matching is a real fragility worth knowing
-up front: `apply_owned_materials()` in `optimize_leveling.py` matches
-owned-materials entries against each recipe reagent's `item_name` field
-by **exact string**, not by item ID, even though item IDs are already
-present in the data (`g["item_id"]`) and trivially available in-game via
-`GetItemInfo(itemID)`. This means a paste-in export must reproduce the
-exact in-game display name verbatim (which `GetItemInfo` already gives
-you, so this isn't hard) -- but it also means any mismatch (extra
-whitespace, a different locale, a hyperlink-wrapped item string) silently
-zeroes out credit for that item with no error shown. If you're in a
-position to also touch the website side, switching this match to item ID
-would remove that fragility entirely; flagging it here rather than
-quietly working around it in the addon.
+**Still open, patch written but not applied here.** `apply_owned_materials()`
+in `optimize_leveling.py` matches owned-materials entries against each
+recipe reagent's `item_name` field by exact string only, which means a
+paste-in export has to reproduce the exact in-game display name verbatim
+-- any mismatch (extra whitespace, a different locale, a hyperlink-wrapped
+item string) silently zeroes out credit for that item with no error
+shown. `Export.lua`'s `ScanOwnedMaterials()` sidesteps this by reading
+item IDs directly off bag slots via the container API (no `GetItemInfo`
+name-cache wait needed) and exporting `itemID: quantity` lines instead of
+names. The website's `"Materials you already own"` textarea and its
+`parseOwnedMaterials()` parser (`webapp/static/app.js`) already accept
+that shape with zero changes -- but until `apply_owned_materials()` is
+patched to also match by `item_id`, those addon-exported lines parse in
+fine and silently apply **zero savings**, same failure mode as a name
+mismatch always had. The exact patch (verified in isolation, not part of
+this repo) is in `addon/WEBSITE_HANDOFF.md` -- this was deliberately kept
+out of `optimize_leveling.py` itself since this session was scoped to the
+addon, not the website; whoever owns that file should apply it through
+their own process. Do the ID-not-name approach for any future export
+feature that adds new owned-material sources, same as `Export.lua`
+already does.
 
 ### Recipe JSON shape (what the addon should assume the site knows)
 
@@ -162,12 +201,15 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   display it plainly for the player to type -- this one's low-stakes
   enough that a full string protocol may be overkill).
 
-### P1 -- shopping list round-trip
-- Accept a pasted shopping-list export from the site (format TBD -- keep
-  it simple, e.g. one `Item Name x Quantity` per line, mirroring what
-  `build_shopping_list()` already returns) and turn it into an in-game
-  checklist the player can tick off, ideally reading current bag counts
-  to auto-check items already acquired.
+### P1 -- shopping list round-trip (implemented, blocked on website export)
+- `Checklist.lua`/`Import.lua` accept a pasted shopping-list export and
+  turn it into an in-game checklist, auto-ticking items off by reading
+  current bag counts on `BAG_UPDATE`. Format chosen: `itemID: quantity`
+  per line, mirroring the owned-materials export shape rather than
+  `Item Name x Quantity`, for the same item-ID-over-name reasoning as the
+  Data contract section above. The website doesn't produce this text yet
+  (`build_shopping_list()` has the right fields, there's just no
+  copy-able export in the UI) -- see `addon/WEBSITE_HANDOFF.md`.
 
 ### P2 -- stretch, but highest strategic value
 - **AH scan export for TBC/Forever.** When the player opens the AH,
@@ -187,27 +229,40 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   ever resolving Forever's `unknown` acquisition tags, short of a
   community emulator project appearing.
 
-## Suggested repo layout
+## Repo layout (current)
 
-Keep the addon in this repo under `addon/`, alongside `webapp/`,
+The addon lives in this repo under `addon/`, alongside `webapp/`,
 `scripts/`, and `data/` -- it's part of the same product, not a separate
-project. A typical WoW addon layout:
+project.
 
 ```
 addon/
   ReagentRoute/
-    ReagentRoute.toc      # multiple Interface: lines, one per client version
-    Core.lua
-    Export.lua             # owned-materials / skill / AH-scan export
-    Import.lua              # shopping-list paste-in
-    Libs/                   # any embedded libraries (e.g. LibDataBroker, AceAddon)
-  HANDOFF.md               # this file
+    ReagentRoute_Vanilla.toc  # Classic Era -- Interface number flagged for verification
+    ReagentRoute_TBC.toc      # TBC Anniversary -- Interface number flagged for verification
+    Export.lua                 # owned-materials scan + profession skill reads
+    Import.lua                 # shopping-list paste-in parsing
+    Checklist.lua               # shopping-list checklist UI (/rr list)
+    Core.lua                   # main UI: /rr or /reagentroute panel
+  HANDOFF.md                  # this file
+  WEBSITE_HANDOFF.md          # spec for the two website-side changes P1 needs
 ```
 
-The `.toc` needs an `## Interface:` line matching each client build
-you're targeting (Classic Era, TBC Anniversary, and whatever Forever's
-turns out to be -- unconfirmed, verify with `/dump select(4,
-GetBuildInfo())` in-game on that client).
+Two separate `.toc` files (Blizzard's flavor-suffix convention -- `_Vanilla`,
+`_TBC`, `_Wrath`, `_Cata`, `_Mainline`) instead of one `.toc` with multiple
+comma-separated `## Interface:` values, since Classic Era and TBC
+Anniversary are different enough client lines that they may eventually
+need different Lua too (this addon's code happens to be identical across
+both right now via runtime API detection in `Export.lua`, not TOC
+branching). Each `.toc`'s Interface number is a best guess, not verified
+against a live client -- see the NOTE comment inside each file for the
+exact command to check it with, and update before shipping. No WoW
+Forever `.toc` yet -- open question #1 below (whether Forever allows
+addons at all) hasn't been answered.
+
+No `Libs/` folder -- no embedded libraries were needed; the UI uses only
+Blizzard's built-in widget templates (`BasicFrameTemplateWithInset`,
+`UIPanelScrollFrameTemplate`, `UIPanelButtonTemplate`).
 
 ## Open questions to resolve empirically, not by assumption
 
@@ -226,13 +281,15 @@ GetBuildInfo())` in-game on that client).
 
 ## Definition of done for the MVP (P0)
 
-- Addon loads without error on at least Classic Era and TBC Anniversary
-  (Forever pending answer to open question #1).
-- Player can open the addon's export panel, get a materials string in the
-  exact `Item Name: quantity` format, paste it into the site's existing
-  textarea, and see it correctly reduce the plan's cost -- verified with
-  a real in-game test, not just eyeballing the string format.
-- No network calls anywhere in the addon (grep the codebase for any HTTP
-  library usage before calling this done -- there shouldn't be any way to
-  even attempt one, since the WoW API doesn't expose one, but confirm no
-  one tried to shell out to something exotic).
+- [ ] Addon loads without error on at least Classic Era and TBC Anniversary
+  (Forever pending answer to open question #1). **Not yet verified --
+  needs a real client.**
+- [ ] Player can open the addon's export panel (`/rr`), get a materials
+  string (now `item_id: quantity` per line, not `Item Name: quantity` --
+  see Data contract above for why that changed), paste it into the site's
+  existing textarea, and see it correctly reduce the plan's cost --
+  verified with a real in-game test, not just eyeballing the string
+  format. **Not yet verified.**
+- [x] No network calls anywhere in the addon -- confirmed by inspection,
+  `Core.lua`/`Export.lua` only touch `CreateFrame`/container/profession
+  APIs and string formatting, nothing that could shell out to anything.

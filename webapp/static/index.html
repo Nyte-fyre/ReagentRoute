@@ -185,6 +185,18 @@
           <tbody></tbody>
         </table>
       </div>
+
+      <div class="export-box">
+        <div class="export-box-header">
+          <span>Export for addon</span>
+          <button type="button" id="copy-shopping-list-btn" class="copy-btn">Copy</button>
+        </div>
+        <p class="hint">
+          Paste into the ReagentRoute addon's shopping-list checklist &mdash;
+          one <code>itemID: quantity</code> line per reagent.
+        </p>
+        <textarea id="shopping-list-export" class="export-textarea" readonly rows="4"></textarea>
+      </div>
     </div>
 
     <div id="browse-results" class="hidden">

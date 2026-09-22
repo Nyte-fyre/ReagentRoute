@@ -153,18 +153,34 @@ def optimize(recipes, start_skill, target_skill):
 def apply_owned_materials(plan, owned_items):
     """Walk the plan in order, depleting a shared owned-materials pool as
     each step's *expected* reagent consumption is subtracted from it.
-    Returns (total_value_saved_copper, remaining_stock)."""
-    stock = dict(owned_items)
+    Returns (total_value_saved_copper, remaining_stock).
+
+    `owned_items` keys may be either a reagent's exact item_name (what the
+    website's free-text textarea produces, for a human typing "Copper Bar:
+    40") or its numeric item_id (what the companion addon exports instead,
+    since it reads item IDs directly off the client and doesn't have to
+    match a display string byte-for-byte). Both key styles are matched
+    against the same shared pool so a paste from either source works, and
+    a single reagent's demand is only ever covered once even if the pool
+    happens to have entries under both its id and its name."""
+    stock = {}
+    for key, qty in owned_items.items():
+        norm_key = int(key) if isinstance(key, str) and key.isdigit() else key
+        stock[norm_key] = qty
     total_saved = 0.0
     for skill, recipe, expected_crafts, net_ev, gross_ev in plan:
         for g in recipe["reagents"]:
-            have = stock.get(g["item_name"], 0)
-            if have <= 0:
-                continue
-            expected_consumed = expected_crafts * g["count"]
-            covered = min(have, expected_consumed)
-            stock[g["item_name"]] = have - covered
-            total_saved += covered * g["unit_cost_copper"]
+            remaining = expected_crafts * g["count"]
+            for key in (g["item_id"], g["item_name"]):
+                if remaining <= 0:
+                    break
+                have = stock.get(key, 0)
+                if have <= 0:
+                    continue
+                covered = min(have, remaining)
+                stock[key] = have - covered
+                total_saved += covered * g["unit_cost_copper"]
+                remaining -= covered
     return total_saved, stock
 
 
