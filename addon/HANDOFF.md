@@ -331,15 +331,19 @@ Realm/faction convention for pricing: `game_type` (`classic`/`tbc`),
   actual vendor sell + buyback, not just a Rescan click).
 
 ### P2 -- stretch, but highest strategic value
-- **AH scan export for TBC/Forever (addon side implemented and verified
-  live, website side not started -- see `addon/WEBSITE_HANDOFF.md`'s new
-  AH-scan section).** When the player opens the AH, capture per-item
-  price data and export it in the columns `price_recipes.py` actually
-  reads -- `itemId, name, marketValue, minBuyout` -- so it needs minimal
-  changes to consume a pasted/uploaded version of it as a stand-in
-  pricing source for the versions TSM doesn't cover yet. This is the
-  single highest-value
-  thing this addon could do, since it's the one gap nothing else can fill.
+- **AH scan export for TBC/Forever -- DONE, full loop closed and live.**
+  Addon captures per-item price data reactively (`AHScan.lua`) and
+  exports it in the columns `price_recipes.py` actually reads --
+  `itemId, name, marketValue, minBuyout`. Website consumes it as a real
+  pricing source (`load_prices_from_csv_text()` + `PlanRequest.ah_scan_csv`,
+  commit `8279cb9`, live on reagentroute.onrender.com) instead of the
+  browse-only fallback, for the exact versions TSM doesn't cover. This was
+  the single highest-value thing this addon could do, since it's the one
+  gap nothing else can fill -- see the Status section above and the P2
+  Definition of Done below for the full verification trail. Remaining
+  gap: the addon's *capture* side is only verified live on Classic Era,
+  not TBC Anniversary specifically (same legacy AH API, expected to match,
+  genuinely untested there).
 
   **How far in-house is worth going (2026-09-22 analysis, not yet built):**
   the question that prompted this was whether the addon could skip the
@@ -467,3 +471,31 @@ Blizzard's built-in widget templates (`BasicFrameTemplateWithInset`,
   (`9/9` -> `8/9`) and Buyback repurchase (`8/9` -> `9/9`). **Not
   re-verified on Classic Era** -- same Lua code path, low risk, but
   genuinely untested there.
+
+## Definition of done for P2 (AH scan export)
+
+- [x] Addon captures real AH listings reactively (never calls
+  `QueryAuctionItems()` itself) and exports the exact 4-column CSV shape
+  `price_recipes.py` reads -- verified live on Classic Era: searched Linen
+  Cloth, two real listings (stacks of 8 and 12), exported
+  `2589,"Linen Cloth",5416,5416`, hand-checked against both listings'
+  actual buyout/stack-size math. **Not re-verified on TBC Anniversary**
+  specifically -- same legacy AH API (confirmed via `/dump
+  C_AuctionHouse, QueryAuctionItems, GetAuctionItemInfo` on Classic Era),
+  expected to match, genuinely untested there.
+- [x] Website accepts a pasted scan and computes a real priced,
+  optimized plan instead of the browse-only fallback -- verified twice,
+  independently, by two different sessions against the live production
+  API: a synthetic 7-reagent TBC First Aid scan (11/17 recipes priced,
+  correct ordering across the full 1-375 range, gap count exactly
+  matching the reagents left unscanned) and a separate synthetic 2-item
+  scan (0 gaps, correct net cost for a narrower skill range).
+- [x] A partial scan degrades gracefully -- confirmed the existing
+  `price_recipes_data()`/`build_recipe_costs_data()`/`optimize()` gap
+  mechanism already handles missing per-reagent prices with no new code,
+  by tracing it before building anything, not by assuming it would work.
+- [x] No regression on Classic Era's existing TSM-backed pricing path --
+  confirmed byte-identical cost to the pre-change baseline.
+- [x] The no-scan request for a `pricing_available: false` version still
+  correctly 409s (no accidental bypass of the "no pricing source" gate)
+  -- verified against live production.
