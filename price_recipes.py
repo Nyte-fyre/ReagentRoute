@@ -22,11 +22,13 @@ def copper_to_gsc(copper):
     return f"{sign}{gold}g {silver}s {c}c"
 
 
-def fetch_realm_prices(game_type, region_slug, realm_slug):
-    url = f"{TSM_BASE}/{game_type}/{region_slug}/realm/{realm_slug}/items.csv"
-    resp = requests.get(url, headers={"User-Agent": "ReagentRoute/0.1"})
-    resp.raise_for_status()
-    text = resp.text
+def parse_prices_csv(text):
+    """Shared by fetch_realm_prices() (TSM's feed) and
+    load_prices_from_csv_text() (an addon-exported AH scan, see
+    addon/AHScan.lua and addon/WEBSITE_HANDOFF.md section 3) -- both
+    produce/consume the exact same 4-column shape
+    (itemId,name,marketValue,minBuyout), so there's one parser rather than
+    two copies that could drift apart."""
     prices = {}
     reader = csv.DictReader(text.splitlines())
     for row in reader:
@@ -36,6 +38,21 @@ def fetch_realm_prices(game_type, region_slug, realm_slug):
             "minBuyout": int(row["minBuyout"] or 0),
         }
     return prices
+
+
+def fetch_realm_prices(game_type, region_slug, realm_slug):
+    url = f"{TSM_BASE}/{game_type}/{region_slug}/realm/{realm_slug}/items.csv"
+    resp = requests.get(url, headers={"User-Agent": "ReagentRoute/0.1"})
+    resp.raise_for_status()
+    return parse_prices_csv(resp.text)
+
+
+def load_prices_from_csv_text(text):
+    """Same shape/return value as fetch_realm_prices(), but parses CSV
+    text directly instead of fetching from TSM -- for the companion
+    addon's AH-scan export, which is the only pricing source that exists
+    for game versions TSM doesn't cover (TBC Anniversary, WoW Forever)."""
+    return parse_prices_csv(text)
 
 
 def price_recipes_data(data, prices, price_field="minBuyout", gatherable_names=None, vendor_prices=None):

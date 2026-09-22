@@ -6,9 +6,12 @@ const startSkillInput = document.getElementById("start-skill");
 const targetSkillInput = document.getElementById("target-skill");
 const skillCapHint = document.getElementById("skill-cap-hint");
 const pricingFields = document.getElementById("pricing-fields");
+const realmFields = document.getElementById("realm-fields");
 const realmSelect = document.getElementById("realm-select");
 const factionSelect = document.getElementById("faction-select");
 const realmHint = document.getElementById("realm-hint");
+const ahScanFields = document.getElementById("ah-scan-fields");
+const ahScanTextarea = document.getElementById("ah-scan-textarea");
 const ownedTextarea = document.getElementById("owned-materials");
 const gatheringCheckboxes = document.getElementById("gathering-checkboxes");
 const hedgeAhCheckbox = document.getElementById("hedge-ah-checkbox");
@@ -164,10 +167,27 @@ function selectedGatheringProfessions() {
   return Array.from(gatheringCheckboxes.querySelectorAll("input:checked")).map((el) => el.value);
 }
 
+// True when this request will compute a real priced plan rather than just
+// browsing recipes -- either this game version has a live pricing source
+// (Classic Era, via TSM), or the player pasted an AH scan from the
+// companion addon (the only pricing source that exists for versions TSM
+// doesn't cover, see addon/WEBSITE_HANDOFF.md section 3).
+function usingPricedPath() {
+  return currentVersion().pricing_available || ahScanTextarea.value.trim() !== "";
+}
+
+function updateComputeUI() {
+  const priced = usingPricedPath();
+  pricingFields.classList.toggle("hidden", !priced);
+  computeBtn.textContent = priced ? "Craft Route" : "Browse recipes";
+}
+
 function onVersionChange() {
   const v = currentVersion();
-  pricingFields.classList.toggle("hidden", !v.pricing_available);
-  computeBtn.textContent = v.pricing_available ? "Craft Route" : "Browse recipes";
+  realmFields.classList.toggle("hidden", !v.pricing_available);
+  ahScanFields.classList.toggle("hidden", v.pricing_available);
+  ahScanTextarea.value = "";
+  updateComputeUI();
   versionHint.textContent = v.pricing_available
     ? ""
     : "No live Auction House pricing source exists yet for this version -- showing known recipes and reagents only.";
@@ -233,14 +253,14 @@ async function computePlan(event) {
 
   const version = currentVersion();
   const gameVersion = gameVersionSelect.value;
+  const priced = usingPricedPath();
+  const ahScanCsv = ahScanTextarea.value.trim();
 
-  if (version.pricing_available) {
-    if (!realmSelect.value) {
-      showError("No realm selected -- pick one from the list (or this version has none available yet).");
-      realmSelect.classList.add("input-error");
-      realmSelect.focus();
-      return;
-    }
+  if (version.pricing_available && !realmSelect.value) {
+    showError("No realm selected -- pick one from the list (or this version has none available yet).");
+    realmSelect.classList.add("input-error");
+    realmSelect.focus();
+    return;
   }
 
   resultsPanel.classList.remove("hidden");
@@ -248,23 +268,23 @@ async function computePlan(event) {
   browseResultsEl.classList.add("hidden");
   loadingEl.classList.remove("hidden");
   computeBtn.disabled = true;
-  const busyLabel = version.pricing_available ? "Computing…" : "Loading…";
-  computeBtn.textContent = busyLabel;
+  computeBtn.textContent = priced ? "Computing…" : "Loading…";
   resultsPanel.scrollIntoView({ behavior: "smooth", block: "nearest" });
 
   try {
-    if (version.pricing_available) {
+    if (priced) {
       const payload = {
         profession: professionSelect.value,
         game_version: gameVersion,
         start_skill: parseInt(startSkillInput.value, 10) || 1,
-        target_skill: parseInt(targetSkillInput.value, 10) || 300,
-        realm: `${realmSelect.value}-${factionSelect.value}`,
+        target_skill: parseInt(targetSkillInput.value, 10) || (version.pricing_available ? 300 : version.max_skill),
+        realm: version.pricing_available ? `${realmSelect.value}-${factionSelect.value}` : "addon-scan",
         owned_materials: parseOwnedMaterials(ownedTextarea.value),
         gathering_professions: selectedGatheringProfessions(),
         hedge_ah: hedgeAhCheckbox.checked,
         ah_hedge_cap: parseInt(ahCapInput.value, 10) || 0,
       };
+      if (!version.pricing_available && ahScanCsv) payload.ah_scan_csv = ahScanCsv;
       const res = await fetch("/api/plan", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -292,7 +312,7 @@ async function computePlan(event) {
   } finally {
     loadingEl.classList.add("hidden");
     computeBtn.disabled = false;
-    computeBtn.textContent = version.pricing_available ? "Craft Route" : "Browse recipes";
+    computeBtn.textContent = priced ? "Craft Route" : "Browse recipes";
   }
 }
 
@@ -460,6 +480,7 @@ gameVersionSelect.addEventListener("change", onVersionChange);
 professionSelect.addEventListener("change", updateProfessionIcon);
 realmSelect.addEventListener("change", () => realmSelect.classList.remove("input-error"));
 hedgeAhCheckbox.addEventListener("change", () => ahCapRow.classList.toggle("hidden", !hedgeAhCheckbox.checked));
+ahScanTextarea.addEventListener("input", updateComputeUI);
 document.getElementById("copy-shopping-list-btn").addEventListener("click", copyShoppingListExport);
 loadGameVersions();
 loadGatheringProfessions();
