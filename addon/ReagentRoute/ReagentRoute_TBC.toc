@@ -5,6 +5,7 @@
 ## Version: 0.1.0
 ## X-Website: https://reagentroute.onrender.com
 ## IconTexture: Interface\Icons\INV_Misc_Book_09
+## SavedVariables: ReagentRouteDB
 
 # NOTE: Interface number above is DERIVED, not confirmed in-game: this
 # machine's local install has a dedicated _anniversary_ client folder
@@ -20,5 +21,6 @@
 
 Export.lua
 Import.lua
+UI.lua
 Checklist.lua
 Core.lua

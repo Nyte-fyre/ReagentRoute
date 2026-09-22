@@ -1,42 +1,35 @@
 local ADDON_NAME, RR = ...
+local UI = RR.UI
 
-local frame = CreateFrame("Frame", "ReagentRouteChecklistFrame", UIParent, "BasicFrameTemplateWithInset")
-frame:SetSize(420, 480)
-frame:SetPoint("CENTER")
-frame:SetMovable(true)
-frame:EnableMouse(true)
-frame:RegisterForDrag("LeftButton")
-frame:SetScript("OnDragStart", frame.StartMoving)
-frame:SetScript("OnDragStop", frame.StopMovingOrSizing)
-frame:SetFrameStrata("HIGH")
-frame:Hide()
-tinsert(UISpecialFrames, "ReagentRouteChecklistFrame")
+local frame = UI.NewWindow("ReagentRouteChecklistFrame", 420, 540, "ReagentRoute -- Shopping List")
 
-frame.TitleText = frame.TitleText or frame:CreateFontString(nil, "OVERLAY", "GameFontHeader")
-frame.TitleText:SetPoint("TOP", 0, -6)
-frame.TitleText:SetText("ReagentRoute Shopping List")
+-- ===== Paste panel =====
+local pastePanel = UI.Panel(frame)
+pastePanel:SetPoint("TOPLEFT", 14, -44)
+pastePanel:SetPoint("TOPRIGHT", -14, -44)
+pastePanel:SetHeight(164)
 
-local pasteLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-pasteLabel:SetPoint("TOPLEFT", 16, -32)
-pasteLabel:SetWidth(388)
-pasteLabel:SetJustifyH("LEFT")
-pasteLabel:SetText("Paste the shopping list exported from ReagentRoute, then click Build:")
+UI.SectionHeader(pastePanel, "Interface\\Icons\\INV_Scroll_03", "Paste Shopping List", 10, -10)
 
-local pasteScroll = CreateFrame("ScrollFrame", nil, frame, "UIPanelScrollFrameTemplate")
-pasteScroll:SetPoint("TOPLEFT", pasteLabel, "BOTTOMLEFT", 0, -8)
-pasteScroll:SetSize(360, 60)
+local pasteHelp = UI.HelpText(pastePanel, 372)
+pasteHelp:SetPoint("TOPLEFT", pastePanel, "TOPLEFT", 10, -32)
+pasteHelp:SetText("Paste the shopping list exported from ReagentRoute, then click Build.")
+
+local pasteScroll = CreateFrame("ScrollFrame", nil, pastePanel, "UIPanelScrollFrameTemplate")
+pasteScroll:SetPoint("TOPLEFT", pasteHelp, "BOTTOMLEFT", 0, -8)
+pasteScroll:SetSize(350, 56)
 
 local pasteBox = CreateFrame("EditBox", nil, pasteScroll)
 pasteBox:SetMultiLine(true)
 pasteBox:SetFontObject(ChatFontNormal)
-pasteBox:SetWidth(340)
+pasteBox:SetWidth(330)
 -- Without an explicit height, an empty multi-line EditBox's actual
 -- clickable area is only as tall as its (empty) content -- a fraction of
--- the visible 60px scroll area -- so most clicks inside the box fall
--- through to whatever is behind it (the game world, in practice) instead
--- of focusing the box. Found live: typing leaked as WoW hotkeys (toggled
+-- the visible scroll area -- so most clicks inside the box fall through
+-- to whatever is behind it (the game world, in practice) instead of
+-- focusing the box. Found live: typing leaked as WoW hotkeys (toggled
 -- nameplates) instead of landing in the box.
-pasteBox:SetHeight(56)
+pasteBox:SetHeight(52)
 pasteBox:SetAutoFocus(false)
 pasteBox:SetScript("OnEscapePressed", pasteBox.ClearFocus)
 pasteScroll:SetScrollChild(pasteBox)
@@ -48,23 +41,32 @@ pasteScroll:SetScript("OnMouseDown", function()
 	pasteBox:SetFocus()
 end)
 
-local buildButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+local buildButton = CreateFrame("Button", nil, pastePanel, "UIPanelButtonTemplate")
 buildButton:SetSize(100, 22)
 buildButton:SetPoint("TOPLEFT", pasteScroll, "BOTTOMLEFT", 0, -8)
 buildButton:SetText("Build")
 
-local progressText = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
+local progressText = pastePanel:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
 progressText:SetPoint("LEFT", buildButton, "RIGHT", 12, 0)
 
-local listScroll = CreateFrame("ScrollFrame", "ReagentRouteChecklistScroll", frame, "UIPanelScrollFrameTemplate")
-listScroll:SetPoint("TOPLEFT", buildButton, "BOTTOMLEFT", 0, -12)
-listScroll:SetPoint("BOTTOMRIGHT", -34, 16)
+-- ===== Results panel =====
+local resultsPanel = UI.Panel(frame)
+resultsPanel:SetPoint("TOPLEFT", pastePanel, "BOTTOMLEFT", 0, -10)
+resultsPanel:SetPoint("TOPRIGHT", pastePanel, "BOTTOMRIGHT", 0, -10)
+resultsPanel:SetPoint("BOTTOMLEFT", frame, "BOTTOMLEFT", 14, 50)
+resultsPanel:SetPoint("BOTTOMRIGHT", frame, "BOTTOMRIGHT", -14, 50)
+
+UI.SectionHeader(resultsPanel, "Interface\\Icons\\Achievement_Quests_Completed", "Checklist", 10, -10)
+
+local listScroll = CreateFrame("ScrollFrame", "ReagentRouteChecklistScroll", resultsPanel, "UIPanelScrollFrameTemplate")
+listScroll:SetPoint("TOPLEFT", resultsPanel, "TOPLEFT", 10, -34)
+listScroll:SetPoint("BOTTOMRIGHT", resultsPanel, "BOTTOMRIGHT", -28, 10)
 
 local listChild = CreateFrame("Frame", nil, listScroll)
-listChild:SetSize(360, 1)
+listChild:SetSize(1, 1)
 listScroll:SetScrollChild(listChild)
 
-local ROW_HEIGHT = 18
+local ROW_HEIGHT = 20
 local rows = {}
 local currentList = {}
 
@@ -74,20 +76,26 @@ local function GetOrCreateRow(index)
 		return row
 	end
 	row = CreateFrame("Frame", nil, listChild)
-	row:SetSize(360, ROW_HEIGHT)
+	row:SetSize(340, ROW_HEIGHT)
 	row:SetPoint("TOPLEFT", 0, -(index - 1) * ROW_HEIGHT)
 
+	-- Faint zebra striping -- readability polish, no custom art needed.
+	row.bg = row:CreateTexture(nil, "BACKGROUND")
+	row.bg:SetAllPoints(row)
+	row.bg:SetTexture("Interface\\Buttons\\WHITE8x8")
+	row.bg:SetVertexColor(1, 1, 1, (index % 2 == 0) and 0.04 or 0)
+
 	row.check = row:CreateFontString(nil, "OVERLAY", "GameFontNormal")
-	row.check:SetPoint("LEFT", 0, 0)
+	row.check:SetPoint("LEFT", 4, 0)
 	row.check:SetWidth(28)
 
 	row.icon = row:CreateTexture(nil, "ARTWORK")
-	row.icon:SetSize(14, 14)
+	row.icon:SetSize(16, 16)
 	row.icon:SetPoint("LEFT", row.check, "RIGHT", 2, 0)
 
 	row.text = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall")
-	row.text:SetPoint("LEFT", row.icon, "RIGHT", 4, 0)
-	row.text:SetPoint("RIGHT", 0, 0)
+	row.text:SetPoint("LEFT", row.icon, "RIGHT", 6, 0)
+	row.text:SetPoint("RIGHT", -4, 0)
 	row.text:SetJustifyH("LEFT")
 
 	rows[index] = row
@@ -122,7 +130,7 @@ local function RefreshChecklist()
 	for i = #currentList + 1, #rows do
 		rows[i]:Hide()
 	end
-	listChild:SetHeight(math.max(1, #currentList * ROW_HEIGHT))
+	listChild:SetSize(340, math.max(1, #currentList * ROW_HEIGHT))
 	progressText:SetText(string.format("%d / %d complete", doneCount, #currentList))
 end
 
@@ -141,5 +149,20 @@ frame:SetScript("OnEvent", function(self)
 		RefreshChecklist()
 	end
 end)
+
+-- ===== Bottom buttons =====
+
+local backButton = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate")
+backButton:SetSize(100, 22)
+backButton:SetPoint("BOTTOMLEFT", 16, 16)
+backButton:SetText("< Back")
+backButton:SetScript("OnClick", function()
+	frame:Hide()
+	RR.frame:Show()
+end)
+
+local siteLabel = frame:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall")
+siteLabel:SetPoint("BOTTOMRIGHT", -16, 22)
+siteLabel:SetText("reagentroute.onrender.com")
 
 RR.checklistFrame = frame
